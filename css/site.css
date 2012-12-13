@@ -286,6 +286,10 @@ width:300px
 top:220px
 }
 
+#people .person-0 {
+left:-30px
+}
+
 #people .person-1 {
 left:90px
 }
@@ -314,6 +318,10 @@ left:690px
 left:810px
 }
 
+#people .person-8{
+  left:930px;
+}
+
 #people .person .show-details {
 text-decoration:none
 }
@@ -325,7 +333,7 @@ top:0;
 left:50%;
 width:170px;
 height:170px;
-background:#000 url(../images/people/egil.jpg) right bottom no-repeat;
+background:#000 url(../images/people/andre.png) right bottom no-repeat;
 z-index:2;
 -webkit-transform:rotate(45deg);
 -webkit-transform-origin:top left;
@@ -343,34 +351,40 @@ left:40px;
 filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678,M12=-0.70710678,M21=0.70710678,M22=0.70710678,sizingMethod='auto expand')
 }
 
-#people .joachim .show-details
-.background {
-background-image:url(../images/people/joachim.jpg)
+#people .gale .show-details .background {
+  background-image:url(../images/people/gale.png)
 }
 
-#people .eric .show-details
-.background {
-background-image:url(../images/people/eric.jpg)
+#people .ryan-chatman .show-details .background {
+background-image:url(../images/people/ryan.png)
 }
 
-#people .simen .show-details
-.background {
-background-image:url(../images/people/simen.jpg)
+#people .arthur .show-details .background {
+background-image:url(../images/people/arthur.png)
 }
 
-#people .pablo .show-details
-.background {
-background-image:url(../images/people/pablo.jpg)
+#people .trish .show-details .background {
+background-image:url(../images/people/trish.png)
 }
 
-#people .daniel .show-details
+#people .krystal .show-details
 .background {
-background-image:url(../images/people/daniel.jpg)
+background-image:url(../images/people/krystal.png)
 }
 
-#people .marita .show-details
+#people .chris .show-details
 .background {
-background-image:url(../images/people/marita.jpg)
+background-image:url(../images/people/chris.png)
+}
+
+#people .clint .show-details
+.background {
+background-image:url(../images/people/clint.png)
+}
+
+#people .stesha .show-details
+.background {
+background-image:url(../images/people/stesha.png)
 }
 
 #people .person .show-details
@@ -421,7 +435,7 @@ text-align:center;
 z-index:3
 }
 
-#people .marita
+#people .clint
 .details {
 top:-55px
 }
