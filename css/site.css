@@ -1,407 +1,223 @@
-@font-face {
-font-family:'Soho Condensed Regular';
-src:url(/fonts/sohostd-condensed-webfont.eot);
-src:url(/fonts/sohostd-condensed-webfont.eot?iefix) format("eot"),url(/fonts/sohostd-condensed-webfont.woff) format("woff"),url(/fonts/sohostd-condensed-webfont.ttf) format("truetype"),url(/fonts/sohostd-condensed-webfont.svg#webfontHAcLKUtS) format("svg");
-font-weight:400;
-font-style:normal
+@charset "utf-8";
+/* CSS Document */
+
+/*@font-face {*/
+/*font-family: 'BebasRegular';*/
+/*src: url('font/BEBAS___-webfont.eot');*/
+/*src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),*/
+/*url('font/BEBAS___-webfont.woff') format('woff'),*/
+/*url('font/BEBAS___-webfont.ttf') format('truetype'),*/
+/*url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');*/
+/*font-weight: normal;*/
+/*font-style: normal;*/
+
+/*}*/
+html,body{
+    font-family: 'BebasRegular';
+    width:100%;
+    height:100%;
 }
 
-@font-face {
-font-family:'Soho Condensed Light';
-src:url(/fonts/sohostd-lightcondensed-webfont.eot);
-src:url(/fonts/sohostd-lightcondensed-webfont.eot?iefix) format("eot"),url(/fonts/sohostd-lightcondensed-webfont.woff) format("woff"),url(/fonts/sohostd-lightcondensed-webfont.ttf) format("truetype"),url(/fonts/sohostd-lightcondensed-webfont.svg#webfont1ORVSga7) format("svg");
-font-weight:400;
-font-style:normal
+.navigation{
+    position:fixed;
+    z-index:1;
+    top:20px;
 }
-
-@font-face {
-font-family:'Soho Condensed Medium';
-src:url(/fonts/sohostd-mediumcondensed-webfont.eot);
-src:url(/fonts/sohostd-mediumcondensed-webfont.eot?iefix) format("eot"),url(/fonts/sohostd-mediumcondensed-webfont.woff) format("woff"),url(/fonts/sohostd-mediumcondensed-webfont.ttf) format("truetype"),url(/fonts/sohostd-mediumcondensed-webfont.svg#webfontUAOpPJFJ) format("svg");
-font-weight:400;
-font-style:normal
+.navigation li{
+    color:#333333;
+    display:block;
+    padding: 0 10px;
+    line-height:30px;
+    margin-bottom:2px;
+    font-weight:bold;
+    -webkit-transition: all .2s ease-in-out;
+    border-bottom:1px solid black;
+    text-align:left;
+    width:53px;
 }
-
-@font-face {
-font-family:'Soho Regular';
-src:url(/fonts/sohostd-regular-webfont.eot);
-src:url(/fonts/sohostd-regular-webfont.eot?iefix) format("eot"),url(/fonts/sohostd-regular-webfont.woff) format("woff"),url(/fonts/sohostd-regular-webfont.ttf) format("truetype"),url(/fonts/sohostd-regular-webfont.svg#webfontqHtaJXsn) format("svg");
-font-weight:400;
-font-style:normal
+.navigation li:hover,.active{
+    font-size:25px;
+    cursor:pointer;
+    width:100px!important;
 }
-
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-margin:0;
-padding:0;
-border:0;
-outline:0;
-font-size:100%;
-font:inherit;
-vertical-align:baseline
+.envatologo{
+    position:fixed;
+    /*top:50%;*/
+    /*left:50%;*/
+    /*width:446px;*/
+    /*margin-top:-41px;*/
+    /*margin-left:-223px;*/
+    /*z-index:1;*/
+    margin-top: 30%;
 }
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-display:block
+.slide{
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
-
-body {
-line-height:1
+.wrapper{
+    width:960px;
+    height:200px;
+    margin:0 auto;
+    position:relative;
 }
-
-ol,ul {
-list-style:none
+.slideno{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    font-size:100px;
+    font-weight:bold;
+    color:rgba(255,255,255,0.3);
 }
-
-blockquote,q {
-quotes:none
+.button{
+    display:block;
+    width:66px;
+    height:40px;
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    background-image:url(../images/01/down-arrow-white.png);
 }
-
-blockquote:before,blockquote:after,q:before,q:after {
-content:'';
-content:none
+.button:hover{
+    cursor:pointer;
 }
-
-ins {
-text-decoration:none
+.green-button{
+    display:block;
+    width:66px;
+    height:40px;
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    background-image:url(../images/02/down-arrow-green.png);
 }
-
-del {
-text-decoration:line-through
+.green-button:hover{
+    cursor:pointer;
 }
-
-table {
-border-collapse:collapse;
-border-spacing:0
+.profile-pic {
+    float: left;
+    width: 200px;
+    /*height: 20px;*/
+    margin-right: 8px;
+    background-color: linen;
 }
-
-html,body {
-background:#e4e2dd;
-font-family:"Droid Serif"
+.profile-bio {
+    margin-left: 200px;
+    background-color: lime;
+}​
+.profile-box {
+    /*border: 1px solid #CCC;*/
+    background-color: #ee5f5b;
 }
-
-html.touch,.touch
-body {
-width:100%;
-height:100%;
-overflow:hidden
+.various < img{
+    width: 220px;
+    height: 255px;
 }
-
-.ie7 #people {
-  margin-bottom:330px
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1{
+    /*background-color:#5c9900;*/
+    background: url(../images/01/background-green.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
-
-#home-slide { 
-  background: url(../images/01-mint.jpg) 50% 0 no-repeat fixed; 
-  height: 1000px;  
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+#slide1-transition{
+    background: url(../images/01/01-transition.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-/*#home-slide article { background: url("../images/intro.png") no-repeat scroll center top transparent; height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }*/
-/*#who-we-are-slide  article { background: url("../images/parallax.png") no-repeat scroll center top transparent; height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }*/
-
-#home-slide article{
-  font-size: 32px;
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2{
+    background: url(../images/02/background-white.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-#who-we-are-slide{
-  background: url(../images/02-whoweare.jpg) 50% 0 no-repeat fixed; 
-  height: 1000px;
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+#easel{
+    top: 15%;
+    left: 3%;
+    position:absolute;
 }
-
-#mission-slide{
-  background: url(../images/03-mission.jpg) 50% 0 no-repeat fixed; 
-  height: 1000px;
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+#results-driven{
+    position:absolute;
+    top: 30%;
+    left: 8%;
 }
-
+#bishop{
+    position:absolute;
+    top:500px;
+    left:100px;
+}
+#sound-strategy{
+    position:absolute;
+    top:600px;
+    left:300px;
+}
+#brand-loyalty{
+    position:absolute;
+    top:400px;
+    left:900px;
+}
+#mint-logo-small{
+    position:absolute;
+    bottom:20px;
+    right:30px;
+}
+#slide2-transition{
+    background: url(../images/02/02-transition.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/******************************
+ SLIDE 3 
+*******************************/
+#slide3{
+    background: url(../images/03/03-mission.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#slide3-transition{
+    background: url(../images/02/02-transition.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/******************************
+ SLIDE 4 
+*******************************/
 
 #leadership-slide{
-  background: url(../images/04A-leadershipbio.jpg) 50% 0 no-repeat fixed; 
-  height: 1000px;
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    background: url(../images/04/04-leadership.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-#core-services-slide{
-  background: url(../images/06-coreservices.jpg) 50% 0 no-repeat fixed; 
-  height: 1000px;
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
-}
-
-#people{
-  /*background: url(../images/06-coreservices.jpg) 50% 0 no-repeat fixed; */
-  height: 1000px;
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
-}
-
-#people .wrapper {
-position:absolute;
-left:50%;
-margin-left:-600px
-}
-
-#people .person {
-position:absolute;
-top:100px;
-width:300px
-}
-
-#people .person.bottom {
-top:220px
-}
-
-#people .person-0 {
-left:-30px
-}
-
-#people .person-1 {
-left:90px
-}
-
-#people .person-2 {
-left:210px
-}
-
-#people .person-3 {
-left:330px
-}
-
-#people .person-4 {
-left:450px
-}
-
-#people .person-5 {
-left:570px
-}
-
-#people .person-6 {
-left:690px
-}
-
-#people .person-7 {
-left:810px
-}
-
-#people .person-8{
-  left:930px;
-}
-
-#people .person .show-details {
-text-decoration:none
-}
-
-#people .person .show-details
-.background {
-position:absolute;
-top:0;
-left:50%;
-width:170px;
-height:170px;
-background:#000 url(../images/people/andre.png) right bottom no-repeat;
-z-index:2;
--webkit-transform:rotate(45deg);
--webkit-transform-origin:top left;
--moz-transform:rotate(45deg);
--moz-transform-origin:top left;
--ms-transform:rotate(45deg);
--ms-transform-origin:top left;
--o-transform:rotate(45deg);
--o-transform-origin:top left
-}
-
-.no-csstransforms #people .person .show-details
-.background {
-left:40px;
-filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678,M12=-0.70710678,M21=0.70710678,M22=0.70710678,sizingMethod='auto expand')
-}
-
-#people .gale .show-details .background {
-  background-image:url(../images/people/gale.png)
-}
-
-#people .ryan-chatman .show-details .background {
-background-image:url(../images/people/ryan.png)
-}
-
-#people .arthur .show-details .background {
-background-image:url(../images/people/arthur.png)
-}
-
-#people .trish .show-details .background {
-background-image:url(../images/people/trish.png)
-}
-
-#people .krystal .show-details
-.background {
-background-image:url(../images/people/krystal.png)
-}
-
-#people .chris .show-details
-.background {
-background-image:url(../images/people/chris.png)
-}
-
-#people .clint .show-details
-.background {
-background-image:url(../images/people/clint.png)
-}
-
-#people .stesha .show-details
-.background {
-background-image:url(../images/people/stesha.png)
-}
-
-#people .person .show-details
-.name {
-position:absolute;
-top:-20px;
-left:170px;
-width:180px;
-font-family:"Soho Regular";
-font-size:16px;
-color:#2d0016;
-z-index:1;
--webkit-transform:rotate(45deg);
--webkit-transform-origin:top left;
--moz-transform:rotate(45deg);
--moz-transform-origin:top left;
--ms-transform:rotate(45deg);
--ms-transform-origin:top left;
--o-transform:rotate(45deg);
--o-transform-origin:top left
-}
-
-.no-csstransforms #people .person .show-details
-.name {
-filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678,M12=-0.70710678,M21=0.70710678,M22=0.70710678,sizingMethod='auto expand')
-}
-
-#people .bottom .show-details
-.name {
-top:117px;
-left:12px;
-text-align:right
-}
-
-.no-csstransforms #people .bottom .show-details
-.name {
-}
-
-#people .person
-.details {
-display:none;
-position:absolute;
-top:-40px;
-left:0;
-color:#fff;
-width:100%;
-text-align:center;
-z-index:3
-}
-
-#people .clint
-.details {
-top:-55px
-}
-
-.ie8 #people .person .details,.ie7 #people .person
-.details {
-top:-1px;
-left:-81px;
-width:300px;
-padding:150px 91px 0;
-height:332px;
-background:url(/css../images/people-diamond.png)
-}
-
-.ie8 #people .top .details,.ie7 #people .top
-.details {
-top:-241px
-}
-
-#people .top
-.details {
-top:-80px
-}
-
-#people .person .details
-h1 {
-font-family:"Soho Condensed Medium";
-line-height:1.2em;
-font-size:22px;
-margin-bottom:3px
-}
-
-#people .person .details
-dl {
-color:#999;
-font-size:15px;
-line-height:1.3em;
-letter-spacing:.1em;
-font-family:"Soho Condensed Regular";
-margin-bottom:10px;
-line-height:21px
-}
-
-#people .person .details dl
-dd {
-display:inline
-}
-
-#people .person .details dl
-.title {
-display:block;
-color:#fff
-}
-
-#people .person .details dl
-a {
-color:#999;
-text-decoration:none
-}
-
-#people .person .details dl a:hover {
-color:#00ace5
-}
-
-#people .person .details dl
-dt {
-display:none
-}
-
-#people .person .details dl
-.email {
-margin-right:5px
-}
-
-#people .person .details
-p {
-font-size:13px;
-line-height:1.3em;
-color:#999
+#slide4A{
+    background: url(../images/04/04A-leadershipbio.jpg) no-repeat center center fixed;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
 }

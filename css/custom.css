@@ -1,0 +1,317 @@
+/*
+CSS for the demo: Recreating the Nikebetterworld.com Parallax Demo
+Demo: Recreating the Nikebetterworld.com Parallax Demo
+Author: Ian Lunn
+Author URL: http://www.ianlunn.co.uk/
+Demo URL: http://www.ianlunn.co.uk/demos/recreate-nikebetterworld-parallax/
+Tutorial URL: http://www.ianlunn.co.uk/blog/code-tutorials/recreate-nikebetterworld-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+
+Dual licensed under the MIT and GPL licenses:
+http://www.opensource.org/licenses/mit-license.php
+http://www.gnu.org/licenses/gpl.html
+*/
+
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    background-color: #fbf8f0;
+    overflow-x:hidden;
+}
+
+body p {
+    color: #333333;
+}
+
+/* Newsworthy bits */
+
+@font-face {font-family: 'NewsworthyJNL';src: url('webfonts/20EFF1_0_0.eot');src: url('webfonts/20EFF1_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/20EFF1_0_0.woff') format('woff'),url('webfonts/20EFF1_0_0.ttf') format('truetype');}
+
+.logonav {
+    font-family: NewsworthyJNL, Helvetica, Arial;
+    font-size: 21px !important;
+    letter-spacing: 2px !important;
+    font-weight: normal !important;
+    padding-bottom: 2px !important;
+    border-bottom: 5px solid #fbf8f0 !important;
+    margin-right: 5px;
+    padding-right:0;
+    margin-top: 2px !important;
+}
+.logonav a:hover {
+    border-bottom: 5px solid #222 !important;
+}
+
+.frontover {
+    position: absolute;
+    top: 288px;
+    z-index: 50;
+}
+
+.frontimg {
+    margin-left: 33%;
+    margin-top: -235px;
+}
+
+.frontimgla {
+    margin-left: 84px;
+    margin-top: 80px;
+    float: left;
+}
+
+.fronttitle {
+    font-family: NewsworthyJNL, Helvetica, Arial;
+    font-weight: normal !important;
+    font-size: 144px;
+    margin-top: 50px;
+    letter-spacing: 3px !important;
+    color: #000;
+}
+.frontsubhead {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 70px;
+
+    margin-left: 90px;
+}
+
+.fronth2
+{
+    font-size: 800%; text-transform: uppercase; margin-bottom: 80px;margin-top: 110px;position: relative;
+}
+
+/* Navigation */
+
+.subnav {
+    left: 0;
+    visibility: visible;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1020;
+}
+
+.navbar .nav > li > a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 2px;
+    margin-right: 42px;
+    font-size: 11px;
+    letter-spacing: normal;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.navbar .nav > li > a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: 5px solid #222;
+    margin-bottom: 0px;
+}
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 5px solid #222;
+}
+
+#navhome .active > a,
+#navhome .active > a:hover {
+    border-bottom: 5px solid #fbf8f0; !important
+}
+
+.navbar-inner {
+    min-height: 30px;
+    background-color: #fbf8f0;
+    filter:alpha(opacity=90); /* msie */
+    -moz-opacity: 0.9; /* firefox 1.0 */
+    -khtml-opacity: 0.9; /* webkit */
+    opacity: 0.9; /* css 3 */
+}
+
+.sidenav ul {margin-left: 0; padding-bottom: 4px; }
+.sidenav ul, .sidenav ul a, .sidenav ul a:visited {list-style:none;text-transform: uppercase;text-decoration:none;color: black;font-weight: bold;}
+.sidenav ul a:hover, .sidenav ul a:active, .lightsidenav ul a:hover, .lightsidenav ul a:active {color: #66DBCD;text-decoration:underline}
+.sidenav li  {line-height: 12px; margin-bottom:7px;}
+
+
+.lightsidenav ul, .lightsidenav ul a, .lightsidenav ul a:visited {list-style:none;text-decoration:none;margin-left: 4px;}
+.lightsidenav {margin-left: -4px;}
+.lightsidenav h3 {margin-left: 4px;}
+
+#signupform {z-index:100;background-color: #333;height: 0px;width: 100%;position:fixed; top:0;left:0; background: rgba(0, 0, 10, 0.7);overflow:hidden;}
+
+/* Video */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper {
+    width: 960px;
+    max-width: 100%;
+}
+
+/* Page elements */
+
+a {color: #02a2a0;}
+
+#about h2, #media h2, #getinvolved h2, #news2 h2 {font-size: 800%; text-transform: uppercase; margin-bottom: 80px;margin-top: 110px;position: relative;}
+#trailer h2 {font-size: 800%; text-transform: uppercase; margin-bottom: 45px;margin-top: 80px;position: relative;}
+
+#about h1, #media h1, #getinvolved h1, #news h1 {font-size: 800%; text-transform: uppercase; margin-bottom: 80px;margin-top: 110px;position: relative;}
+#trailer h1 {font-size: 850%; text-transform: uppercase; margin-bottom: 45px;margin-top: 80px;position: relative;}
+#news .detail {color: #01a19f;font-size: 90%;}
+#media .detail {margin-top: 6px; font-size: 110%; font-weight: bold;}
+#subp .detail, .blogdetail {font-size: 11px; color: #666;}
+.subp-links ul {list-style: none; margin-left: 0px; margin-bottom: 5px;}
+.subp-links li {margin-bottom: 3px;}
+#subp h3 {font-size: 18px; text-transform:uppercase; border-bottom: 2px solid black; padding-bottom: 3px; margin-bottom: 24px; }
+h3.sidenav, .sidenav h3 {font-size: 18px; text-transform:uppercase; border-bottom: 2px solid black; padding-bottom: 3px; margin-bottom: 24px; margin-top: 18px; }
+#subp h3.itempage {font-size: 18px; text-transform:uppercase; border-bottom: 2px solid black; padding-bottom: 3px; margin-bottom: 4px; }
+
+#home  {z-index: 100;}
+
+h2.blogs {font-size: 200%;line-height: 100%; text-transform: uppercase; margin-bottom: 20px;margin-top: 20px;color:black;}
+h2.blogs a {color:black;}
+
+h6 {text-transform: uppercase; font-weight: bold; border-bottom: 1px solid black;color: #333;margin-top: 13px; padding-bottom: 5px;margin-bottom: 5px;line-height: 96%;}
+
+hr {border: 1px solid black; width: 100px; algin: left;margin-right:100%;margin-top: 0px;}
+
+.intro {font-weight: bold; font-size: 120%;}
+
+.quote-author {text-transform:uppercase;font-weight: bold;font-size: 10px;}
+.artquote-author {font-size: 12px;margin-left:11px;}
+.quotation {font-weight: bold; font-size: 30px;line-height: 36px; margin-left:11px;}
+.artquotation {font-weight: bold; font-size: 18px;;line-height: 24px; margin-left:11px;margin-top:18px;}
+
+#upcomming {margin-top: 35px;}
+#upcomming h3 {font-size: 24px;margin-bottom:12px;line-height:28px;}
+#upcomming h4 {font-size: 18px; text-transform:uppercase; padding-bottom: 4px; border-bottom: 2px solid black;margin-bottom:6px;color: #02a2a0; }
+
+.imgleft {z-index: 0;position: absolute; left:0;float: left;}
+
+#trailer {width: 100%; margin: 0 auto; height: 900px;}
+
+#subp h1.small {font-size: 300%; line-height:100%;text-transform: uppercase; margin-bottom: 80px;margin-top: 50px;position: relative;width: 900px;}
+#subp h1 {font-size: 500%; line-height:100%;text-transform: uppercase; margin-bottom: 80px;margin-top: 50px;position: relative;width: 900px;}
+#subp h1.large {font-size: 900%; line-height:100%;text-transform: uppercase; margin-bottom: 80px;margin-top: 50px;position: relative;width: 900px;}
+#subp h1 a {color:black;}
+
+
+/* system messages */
+
+#system-message-container dt {visibility: hidden;}
+#system-message ul, #system-message li {list-style: none;margin-left: 0px; }
+#system-message-container dl {padding: 3px; background-color: #ffbfbc; border-top: 2px solid red; border-bottom: 2px solid red;}
+
+.btn-info {
+    background-color: #02A2A0;
+    *background-color: #2f96b4;
+    background-image: -ms-linear-gradient(top, #02A2A0, #02A2A0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#02A2A0), to(#02A2A0));
+    background-image: -webkit-linear-gradient(top, #02A2A0, #02A2A0);
+    background-image: -o-linear-gradient(top, #02A2A0, #02A2A0);
+    background-image: -moz-linear-gradient(top, #02A2A0, #02A2A0);
+    background-image: linear-gradient(top, #02A2A0, #02A2A0);
+    background-repeat: repeat-x;
+    border-color: #02A2A0 #02A2A0 #1f6377;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#02A2A0', endColorstr='#02A2A0', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+    background-color: #02A2A0;
+    *background-color: #02A2A0;
+}
+
+.btn-info:active,
+.btn-info.active {
+    background-color: #02A2A0 \9;
+}
+
+/* Boxes (thanks to YooTheme YooMaster)
+----------------------------------------------------------------------------------------------------*/
+
+
+.box-content {
+    background: #fafafa;
+    border: 1px solid #ddd;
+}
+
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download {
+    background: #fafafa;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.box-info {
+    background: #ebf5fa url(../img/tools/box_info.png) 0 0 no-repeat;
+    border-color: #d2dce1;
+}
+
+.box-warning {
+    background: #fff0eb url(../img/tools/box_warning.png) 0 0 no-repeat;
+    border-color: #ffd7cd;
+}
+
+.box-hint {
+    background: #fffae6 url(../img/tools/box_hint.png) 0 0 no-repeat;
+    border-color: #fae6be;
+}
+
+.box-download {
+    background: #f6fbe8 url(../img/tools/box_download.png) 0 0 no-repeat;
+    border-color: #dce6be;
+}
+
+.box-content,
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download {
+    margin: 15px 0;
+    padding: 10px;
+    text-align: justify;
+}
+
+.box-content { padding: 20px; }
+
+.box-info,
+.box-warning,
+.box-hint,
+.box-download { padding-left: 40px; }

@@ -1,0 +1,194 @@
+.subnav {
+    z-index:101;
+    /*	box-shadow:0 1px 5px rgba(0,0,0,.4);*/
+}
+
+#signupform {
+    color:#fff;
+    z-index:102;
+}
+
+#signupclose {
+    display:block;
+    float:right;
+    color:#ddd;
+    margin-right: 130px;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 950px) and (max-width: 1040px) {
+    .img_fragment {
+        margin-left:-70px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 950px) {
+    .img_fragment {
+        visibility: hidden;
+    }
+
+    #about h2, #media h2, #getinvolved h2, #news2 h2 {font-size: 400%; text-transform: uppercase; line-height: 100px; margin-bottom: 150px;margin-top: 110px;position: relative;}
+    #trailer h2 {font-size: 400%; text-transform: uppercase; margin-bottom: 150px; line-height: 100px; margin-top: 80px;position: relative;}
+
+
+    .frontover {
+        position: absolute;
+        top: 25%;
+        z-index: 999;
+    }
+
+    .frontimg {
+        margin-left: 10%;
+        width: 100%;
+    }
+
+    .frontimgla {
+        visibility: hidden;
+        margin-top: 0px;
+
+    }
+    .fronttitle {
+        font-family: NewsworthyJNL, Helvetica, Arial;
+        font-weight: normal !important;
+        font-size: 100px !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase;
+        margin-left: 50px
+        color: #333;
+    }
+    .frontsubhead {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-left: 90px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #naves {
+        margin:0;
+    }
+    .frontover {
+        position: absolute;
+        top: 10%;
+        z-index: 999;
+    }
+    .fronttitle {
+        visibility: hidden;
+    }
+    .frontimgla {
+        visibility: hidden;
+        margin-top: 0px !important;
+
+    }
+
+    .frontimg {
+        margin-left: 13%;
+        margin-top: -200px;
+    }
+
+    .frontsubhead {
+        visibility: hidden;
+    }
+
+
+    .logonav {
+        margin-right: 5px;margin-top:15px;
+    }
+
+    #nav {
+        text-align:left;
+    }
+
+    #nav a {
+        margin:0 !important;
+        padding:0.1em 0 !important;
+    }
+
+    .pull-right {
+        margin:0 !important;
+        margin-left: -7px;
+    }
+
+    .navbar .nav.pull-right {
+        float: none !important;
+        padding: 0;
+    }
+
+
+    .subnav {
+        position:static;
+        box-shadow:none;
+    }
+
+    .subnav a {
+        font-size:130% !important;
+    }
+
+    .subnav a:hover, .subnav .active a {
+        border:none !important;
+    }
+
+    .navbar > .nav {
+        display:block;
+        float:none;
+    }
+
+    .navbar > .nav > li {
+        display:block;
+        float:none;
+    }
+
+    #trailer {
+        height:auto;
+    }
+
+    .img_fragment {display:none;}
+
+    .quotation {
+        font-size:2em !important;
+        margin:.25em !important;
+    }
+
+    .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12 {
+        width:auto !important;
+        float:none !important;
+    }
+
+    .offset1,.offset2,.offset3,.offset4,.offset5,.offset6,.offset7,.offset8,.offset9,.offset10,.offset11,.offset12 {
+        margin:0 !important;
+    }
+
+    hr {
+        border: 1px solid black;
+        width: 100px;
+    }
+
+    #thumbs4:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+
+    h1 {
+        font-size:4em !important;
+        margin:0 !important;
+        text-align:left;
+        padding:.5em !important;
+        border-width:1px 0;
+    }
+
+    #signupform {
+        position:static !important;
+    }
+    #signupclose {
+        margin-right: 0px;
+        padding: 5px;
+        margin-top: 0px;
+        text-transform: uppercase;
+    }
+
+    #subp h1 {width: auto !important;}
+}
