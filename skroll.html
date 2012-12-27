@@ -22,20 +22,33 @@
 <div id="skrollr-body">
 
     <section id="my-first" class="story" data-speed="8" data-type="background">
-        <div class="mintlogo" data-0="transform:scale(1); opacity:1" data-500="transform:scale(5);opacity:1;" data-600="" data-700="transform:scale(8);opacity:0;"></div>
+        <div id="logo-container">
+            <img id="logo" src="images/01/mint-logo.png" data-0="transform:scale(1); opacity:1"
+                 data-500="transform:scale(5);opacity:1;"
+                 data-600="" data-700="transform:scale(8);opacity:0;"/>
+        </div>
+        <a class="nav-button" href="#who-we-are" title=""></a>
     </section>
 
     <section id="first-transition" class="transition" data-speed="4" data-type="sprite">
     </section>
 
     <section id="who-we-are" class="story" data-speed="200" data-type="background">
-        <div id="easel" data-type="subxmove" data-offsety="100" data-xposition="350" data-speed="250"></div>
-        <div id="results-driven"
-             data-type="subymove" data-speed="200"></div>
-        <div id="bishop" data-type="subxmove" data-speed="150" data-xposition="5%" data-offsetY="375"></div>
-        <div id="sound-strategy" data-type="subxmove" data-offsety="600" data-xposition="50" data-speed="50"></div>
+        <img id="easel" src="images/02/easel.png" alt=""
+             data-1400="opacity:0" data-1700="opacity:1" data-1900="opacity:1"/>
+
+        <img id="result-driven" src="images/02/results-driven.png" alt=""
+             data-1300="opacity:0" data-1600="opacity:1"/>
+
+        <img src="images/02/bishop.png" style="position:absolute;"
+             data-1450="bottom: 100px; left:-200px; opacity:1"
+             data-1500="bottom: 100px; left: 100px;opacity:1"/>
+
+        <img id="sound-in-strategy" src="images/02/sound-strategy.png" alt=""
+             data-200="opacity:0" data-500="opacity:1"/>
         <img id="brand-loyalty" src="images/02/creators-of.png" alt=""/>
         <img id="mint-logo-small" src="images/02/mint-logo-small.png" alt=""/>
+        <a class="green-button" href="#mission" title=""></a>
     </section>
 
     <section id="mission-transition" class="transition" data-speed="-40" data-type="transition" data-offsetY="-200">
@@ -123,6 +136,9 @@
         </div>
     </section>
 
+    <section id="core-services" class="story" data-speed="200" data-type="background">
+    </section>
+
     <!--<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>-->
     <!-- Section #3 / Photos -->
     <!--<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">-->
@@ -157,17 +173,18 @@
 
     <!-- Section #5 / The End-->
     <!--<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">-->
-        <!--<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>-->
+    <!--<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>-->
     <!--</section>-->
 
-</div> <!-- // End of #main -->
-
+</div>
+<!-- // End of #main -->
 
 
 <!-- Our Javascript, starting with jQuery -->
 <script src='js/libs/jquery-1.7.2.min.js'></script>
 <script src='js/libs/skrollr.min.js'></script>
 <script src='js/libs/jquery.fancybox.pack.js'></script>
+<script src='js/libs/jquery.scrollTo.min.js'></script>
 <script src="js/script.js"></script>
 <!--[if lt IE 7 ]>
 <script src="js/libs/dd_belatedpng.js"></script>

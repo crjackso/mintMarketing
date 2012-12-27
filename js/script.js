@@ -117,6 +117,9 @@ $(document).ready(function(){
         closeEffect	: 'elastic'
     });
 
+    $('.nav-button').live('click', button_clicked);
+    $('.green-button').live('click', button_clicked);
+
     skrollr.init({
         forceHeight: false,
         beforerender:function (data) {
@@ -133,3 +136,9 @@ $(document).ready(function(){
         }
     });
 }); // document ready
+
+function button_clicked(element){
+    var nav_to = $(this).attr('href');
+
+    $.scrollTo(nav_to, 1200);
+}

@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb0f3c3-141b-4aa6-bf47-afda1eb09948" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.fancybox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/stellar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.lettering-0.6.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.stellar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.superscrollorama.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery.fancybox.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery.jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/my-popups.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/my-skrollorama.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/skrollr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/waypoints.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrollarama.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skrollr.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/people/daniel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/people/egil.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/people/eric.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/people/joachim.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/people/marita.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/people/pablo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/people/simen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/textZoom.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/03-mission.jpg" afterPath="$PROJECT_DIR$/images/03/03-mission.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/04-leadership.jpg" afterPath="$PROJECT_DIR$/images/04/04-leadership.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/04A-leadershipbio.jpg" afterPath="$PROJECT_DIR$/images/04/04A-leadershipbio.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/site.css" afterPath="$PROJECT_DIR$/css/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation.html" afterPath="$PROJECT_DIR$/presentation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery.scrollTo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skroll.html" afterPath="$PROJECT_DIR$/skroll.html" />
     </list>
     <ignored path="presentation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,97 +26,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="presentation.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/presentation.html">
+      <file leaf-file-name="skroll.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/skroll.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="452" selection-end="452" vertical-scroll-proportion="0.068306014">
+            <state line="35" column="82" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.27188328">
               <folding>
-                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="n#style#0;n#div#1;n#section#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#1;tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="n#style#0;n#div#2;n#section#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#2;tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="n#style#0;n#img#2;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="skrollr_main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/skrollr_main.css">
+      <file leaf-file-name="jquery.scrollTo.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/libs/jquery.scrollTo.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="12" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="6" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="skroll-fixed-positioning.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/skroll-fixed-positioning.css">
+      <file leaf-file-name="test.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="10" selection-start="14329" selection-end="14329" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my-popups.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/my-popups.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="234" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.fancybox.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jquery.fancybox.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="19" selection-start="3209" selection-end="3209" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="skroll.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skroll.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="40" selection-start="0" selection-end="8152" vertical-scroll-proportion="-12.967742">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/site.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="23" selection-start="1955" selection-end="2285" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my-skrollorama.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/my-skrollorama.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="25" selection-start="3188" selection-end="3188" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="123" selection-end="210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/scrollarama/style.css">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="55" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+            <state line="144" column="49" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="52" selection-start="4086" selection-end="4086" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,10 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/stellar.css" />
-        <option value="$PROJECT_DIR$/css/skrollr_main.css" />
-        <option value="$PROJECT_DIR$/skrollr.html" />
-        <option value="$PROJECT_DIR$/js/skrollr.js" />
         <option value="$PROJECT_DIR$/js/jquery.superscrollorama.js" />
         <option value="$PROJECT_DIR$/js/jquery.lettering-0.6.1.min.js" />
         <option value="$PROJECT_DIR$/scrollarama.html" />
@@ -173,8 +100,12 @@
         <option value="$PROJECT_DIR$/js/my-popups.js" />
         <option value="$PROJECT_DIR$/css/site.css" />
         <option value="$PROJECT_DIR$/js/my-skrollorama.js" />
-        <option value="$PROJECT_DIR$/skroll.html" />
         <option value="$PROJECT_DIR$/presentation.html" />
+        <option value="$PROJECT_DIR$/test.css" />
+        <option value="$PROJECT_DIR$/js/libs/jquery.scrollTo.min.js" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/skroll.html" />
       </list>
     </option>
   </component>
@@ -236,25 +167,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,7 +318,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67030305" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.67030305" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -473,28 +386,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/skrollr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1128" column="21" selection-start="37729" selection-end="37729" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.superscrollorama.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="292" column="11" selection-start="12366" selection-end="12366" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.lettering-0.6.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="859" selection-start="924" selection-end="924" vertical-scroll-proportion="0.028833551" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollarama.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="302" column="12" selection-start="13027" selection-end="13235" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/libs/jquery.jquery-ui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0" />
@@ -531,13 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="23" selection-start="1955" selection-end="2285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="360" column="10" selection-start="14329" selection-end="14329" vertical-scroll-proportion="0.0">
@@ -561,27 +445,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/scrollarama/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="55" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+        <state line="22" column="55" selection-start="322" selection-end="322" vertical-scroll-proportion="-2.453634">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="123" selection-end="210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/jquery.scrollTo.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="452" selection-end="452" vertical-scroll-proportion="0.1750663">
+          <folding>
+            <element signature="tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#section#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#1;tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#section#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#2;tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="1513" selection-end="1954" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="52" selection-start="4086" selection-end="4086" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="49" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skroll.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="40" selection-start="0" selection-end="8152" vertical-scroll-proportion="-12.967742">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="452" selection-end="452" vertical-scroll-proportion="0.068306014">
+        <state line="35" column="82" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.27188328">
           <folding>
-            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#section#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#1;tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#section#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#2;tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#img#2;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>

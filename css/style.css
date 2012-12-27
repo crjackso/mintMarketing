@@ -12,6 +12,35 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 
 .story { height: 864px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
 .transition{ height:700px; margin: 0 auto; width: 80%; }
+.scene {
+    position: fixed;
+    width: 940px
+}
+
+.scene>img {
+    position: absolute
+}
+.nav-button{
+    display:block;
+    width:66px;
+    height:40px;
+    position:absolute;
+    bottom:20%;
+    left:50%;
+    background-image:url(../images/01/down-arrow-white.png);
+}
+.nav-button:hover, .green-button:hover{
+    cursor:pointer;
+}
+.green-button{
+    display:block;
+    width:66px;
+    height:40px;
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    background-image:url(../images/02/down-arrow-green.png);
+}
 
 .profile-pic {
     float: left;
@@ -42,6 +71,10 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 
 /* Introduction */
 #first .smashinglogo { background: url(../images/smashing-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#logo-container{
+    text-align: center;
+}
+#logo{margin-top: 3%;}
 #my-first .mintlogo {
     background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed;
     min-height: 1000px;
@@ -62,26 +95,17 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #second article p { margin-bottom: 25px; }
 #second article a { color: #ff0;}
 
-/*#who-we-are { padding: 50px 0;}*/
 #who-we-are { background: url(../images/02/background-white.jpg) 50% 0 no-repeat fixed; }
 
 #who-we-are #easel{
-    background: url(../images/02/easel.png) 100% 100px  no-repeat fixed;
-    min-height: 1000px;
-    padding: 0;
-    width: 100%;
-    max-width: 1920px;
     position: absolute;
-    margin: 0 auto;
+    left:7%;
+    top: 11%;
 }
-#who-we-are #results-driven{
-    background: url(../images/02/results-driven.png) transparent 15% 25% no-repeat fixed;
-    min-height: 1000px;
-    padding: 0;
-    width: 100%;
-    max-width: 1920px;
+#who-we-are #result-driven{
+    top:23%;
+    left:13%;
     position: absolute;
-    margin: 0 auto;
 }
 #who-we-are #bishop {
     background: url(../images/02/bishop.png) 10% 85% no-repeat fixed;
@@ -91,6 +115,11 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     max-width: 1920px;
     position: absolute;
     margin: 0 auto;
+}
+#who-we-are #sound-in-strategy{
+    bottom:20%;
+    left:12%;
+    position: absolute;
 }
 #who-we-are #sound-strategy {
     background: url(../images/02/sound-strategy.png) transparent 15% 100px no-repeat fixed;
@@ -108,8 +137,12 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 }
 #mint-logo-small{
     position:absolute;
-    bottom:20px;
-    right:30px;
+    bottom:10%;
+    right:3%;
+}
+
+#core-services{
+    background: url(../images/06-coreservices.jpg) 50% 0 no-repeat fixed;
 }
 
 /* Photograph */

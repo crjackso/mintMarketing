@@ -1,0 +1,404 @@
+#Top {
+    height: 105px
+}
+
+#gia-us-election-scroll {
+    visibility: hidden;
+    margin-top: 30px;
+    height: 17500px
+}
+
+.scene {
+    position: fixed;
+    width: 940px
+}
+
+.scene>img {
+    position: absolute
+}
+
+#scene1 {
+    position: relative;
+    height: 945px
+}
+
+#s1b1, #s1b2, #s1b3 {
+    right: 40px
+}
+
+#s1scroll {
+    right: 110px;
+    top: 280px
+}
+
+#s1b1 {
+    top: 10px
+}
+
+#s1b2 {
+    top: 260px
+}
+
+#s1b3 {
+    top: 510px
+}
+
+#scene2 {
+    height: 2500px
+}
+
+#s2b1 {
+    right: 0;
+    top: 20px
+}
+
+#s2crowdBg {
+    bottom: 1400px
+}
+
+#s2crowdFg {
+    right: 0
+}
+
+#s2crowdC {
+    left: 200px
+}
+
+#s2b2 {
+    bottom: 1420px;
+    left: 20px
+}
+
+#s2issue1 {
+    left: 30px
+}
+
+#s2issue2 {
+    left: 257px
+}
+
+#s2issue3 {
+    left: 484px
+}
+
+#s2issue4 {
+    left: 711px
+}
+
+#s2b3 {
+    bottom: 600px;
+    left: 20px
+}
+
+#s2moneyBig {
+    bottom: 0
+}
+
+#s2moneySmall {
+    bottom: 260px;
+    left: 260px
+}
+
+#s2moneyChest {
+    left: 380px;
+    bottom: 380px
+}
+
+#s2swirl {
+    bottom: 0
+}
+
+#scene3 {
+    height: 1200px;
+    overflow: hidden
+}
+
+#s3b1 {
+    left: 10px;
+    top: 20px
+}
+
+#s3b2 {
+    position: absolute;
+    width: 600px;
+    height: 168px;
+    background: #fff
+}
+
+#s3scratches {
+    position: relative
+}
+
+#s3scratches>img {
+    position: absolute
+}
+
+#scratch2, #scratch4, #scratch6, #scratch8 {
+    left: 260px
+}
+
+#scratch1, #scratch2 {
+    top: 20px
+}
+
+#scratch3, #scratch4 {
+    top: 260px
+}
+
+#scratch5, #scratch6 {
+    top: 500px
+}
+
+#scratch7, #scratch8 {
+    top: 740px
+}
+
+#scene4 {
+    height: 800px;
+    overflow: visible
+}
+
+#s4obama {
+    top: 95px;
+    left: 35px
+}
+
+#s4gm {
+    top: 460px;
+    left: 245px
+}
+
+#s4b1 {
+    right: 10px;
+    top: 10px
+}
+
+#s4laden1 {
+    right: 50px
+}
+
+#s4laden2 {
+    right: 30px
+}
+
+#scene5 {
+    height: 1370px
+}
+
+#s5bg2 {
+    bottom: 0
+}
+
+#s5elephant {
+    top: 460px
+}
+
+#s5tree, #s5tree2 {
+    top: 300px;
+    left: 230px
+}
+
+#s5b1 {
+    right: 0;
+    top: 530px
+}
+
+#s5rec {
+    right: 90px;
+    bottom: 520px
+}
+
+#s5bubble {
+    left: 225px;
+    bottom: 420px
+}
+
+#s5b2 {
+    left: 40px;
+    bottom: 40px
+}
+
+#scene6 {
+    height: 800px
+}
+
+#s6b1 {
+    top: 20px
+}
+
+#s6hillary {
+    left: 0;
+    top: 140px
+}
+
+#s6yo-b {
+    position: absolute;
+    height: 38px;
+    left: 300px;
+    bottom: 90px;
+    background: url(../img/scene6/yo-b.png)
+}
+
+#scene7 {
+    height: 1000px;
+    overflow: hidden
+}
+
+#s7b1 {
+    top: 20px;
+    left: 0
+}
+
+#s7b2 {
+    bottom: 60px;
+    right: 0
+}
+
+#s7romney {
+    top: 160px
+}
+
+#s7obama {
+    left: 210px
+}
+
+#s7big-bird {
+    top: 160px
+}
+
+#scene8 {
+    height: 800px
+}
+
+#s8b1 {
+    bottom: 10%;
+    left: 30px
+}
+
+#s8shake {
+    left: 240px;
+    top: 40px
+}
+
+#scene9 {
+    height: 1750px
+}
+
+#s9b1 {
+    top: 200px;
+    left: 180px
+}
+
+#scene10 {
+    overflow: hidden;
+    height: 1000px
+}
+
+#s10obama-l {
+    top: 20px
+}
+
+#s10obama-r {
+    position: absolute;
+    overflow: hidden;
+    width: 480px;
+    height: 658px;
+    top: -10px
+}
+
+#s10obama-r-cut {
+    position: absolute;
+    right: 0;
+    border-left: 300px solid #fff
+}
+
+#s10etch {
+    position: absolute;
+    top: 20px;
+    width: 703px;
+    height: 603px
+}
+
+#s10etch>img {
+    position: absolute
+}
+
+#s10obama-sketch {
+    left: 200px;
+    top: 165px
+}
+
+#s10romney-bg {
+    top: 20px
+}
+
+#s10romney-fg {
+    top: 60px;
+    left: 300px
+}
+
+#gia-header div, #gia-header h1, #gia-header p, #gia-header ul, #gia-header li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif
+}
+
+#article-header {
+    display: none
+}
+
+#gia-header {
+    width: 780px;
+    margin: 0 auto
+}
+
+#gia-header .clearfix {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+#gia-header #social-tools-container {
+    display: block;
+    width: 420px;
+    min-height: 20px;
+    margin: 0 auto;
+    padding-top: 20px
+}
+
+#gia-header #social-tools-container ul#content-actions {
+    float: none;
+    width: 420px
+}
+
+#gia-header #social-tools-container ul#content-actions li {
+    display: block;
+    float: left;
+    width: 100px;
+    margin: 0 20px
+}
+
+#gia-header h1 {
+    margin-bottom: 8px;
+    font-family: Georgia, Times, serif;
+    font-size: 36px;
+    line-height: 1.1em;
+    text-align: center
+}
+
+#gia-header p {
+    font-size: 15px;
+    line-height: 1.4em;
+    text-align: center
+}
