@@ -25,7 +25,7 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     width:66px;
     height:40px;
     position:absolute;
-    bottom:20%;
+    bottom:10%;
     left:50%;
     background-image:url(../images/01/down-arrow-white.png);
 }
@@ -184,6 +184,9 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     top:55%;
     left: -37%;
     position:relative;
+}
+#mission .nav-button{
+    left: 49%;
 }
 #mission-transition { background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; }
 

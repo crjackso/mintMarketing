@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb0f3c3-141b-4aa6-bf47-afda1eb09948" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skroll.html" afterPath="$PROJECT_DIR$/skroll.html" />
     </list>
@@ -23,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="skroll.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="skroll.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skroll.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="50" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.4071618">
+            <state line="73" column="33" selection-start="3216" selection-end="3216" vertical-scroll-proportion="-10.612904">
               <folding>
                 <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#img#2;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -37,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="10" selection-start="5774" selection-end="5774" vertical-scroll-proportion="0.0">
+            <state line="27" column="12" selection-start="751" selection-end="751" vertical-scroll-proportion="0.6917198">
               <folding />
             </state>
           </provider>
@@ -73,8 +72,8 @@
         <option value="$PROJECT_DIR$/js/libs/jquery.scrollTo.min.js" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/skroll.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -470,22 +469,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="10" selection-start="5774" selection-end="5774" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skroll.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="50" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.4071618">
+        <state line="73" column="33" selection-start="3216" selection-end="3216" vertical-scroll-proportion="-10.612904">
           <folding>
             <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#img#2;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#9;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="12" selection-start="751" selection-end="751" vertical-scroll-proportion="0.6917198">
+          <folding />
         </state>
       </provider>
     </entry>
