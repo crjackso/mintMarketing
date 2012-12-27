@@ -164,7 +164,27 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #my-first-transition { background: url(../images/01/01-transition.jpg) 50% 0 no-repeat fixed; }
 
 /* Our Mission */
-#mission { background: url(../images/03/03-mission.jpg) 50% 0 no-repeat fixed; }
+#mission {
+    background: url(../images/03/background-green-glow.jpg) 50% 0 no-repeat fixed;
+    margin: 0 auto;
+    text-align: center;
+}
+#mission #our-mission-is{
+    top: 15%;
+    position: relative;
+    display: inline-block;
+    left: 30%;
+}
+#mission #evolve-brands{
+    top: 33%;
+    position: relative;
+    left: -8%;
+}
+#mission #mint-leaf{
+    top:55%;
+    left: -37%;
+    position:relative;
+}
 #mission-transition { background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; }
 
 /* Leadership */
