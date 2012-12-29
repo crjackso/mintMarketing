@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Parallax Scrolling Tutorial</title>
+    <title>The Mint Marketing Agency</title>
     <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
     <meta name="author" content="Richard Shepherd, Smashing Magazine">
 
@@ -23,9 +23,11 @@
 
     <section id="my-first" class="story" data-speed="8" data-type="background">
         <div id="logo-container">
-            <img id="logo" src="images/01/mint-logo.png" data-0="transform:scale(1); opacity:1"
-                 data-500="transform:scale(5);opacity:1;"
-                 data-700="transform:scale(8);opacity:0;"/>
+            <img id="logo" src="images/01/mint-logo.png"
+                 data-0="display:inline-block;transform:scale(1); opacity:1"
+                 data-500="display:inline-block;transform:scale(5);opacity:1;"
+                 data-700="display:inline-block;transform:scale(8);opacity:0;"
+                 data-1100="display:none"/>
         </div>
         <a class="nav-button" href="#who-we-are" title=""></a>
     </section>
@@ -72,7 +74,7 @@
              data-3100="opacity:1"
              data-3150="opacity:1"
              data-3250="opacity:1"/>
-        <a class="nav-button" href="#leadership" title=""></a>
+        <a class="nav-button show-gale" href="#leadership" title=""></a>
     </section>
 
     <section id="leadership-transition" class="transition" data-speed="-40" data-type="transition" data-offsetY="-200">
@@ -83,18 +85,20 @@
              data-4500="right: -60%"
              data-4600="right: 15%"
              data-5500="right: -60%"/>
-        <img id="leadership-gale" src="images/04/gale-pic.png" alt=""
-             data-4500="bottom: -30%; position: absolute;opacity:1"
-             data-4600="bottom: -10%; position: fixed;opacity:1"
-             data-7100="opacity:0"/>
+        <img id="leadership-gale" src="images/04/gale-pic.png" alt=""/>
         <img id="leadership-gale-text" src="images/04/galehill.png" alt=""
              data-4500="opacity:0"
              data-4600="opacity:1"
              data-4900="opacity:0"/>
         <img id="leadership-learn-more" src="images/04/learn-more.png" alt=""
-                     data-4200="right: -10%"
-                     data-4400="right: 15%"/>
-        <a class="green-button" href="#team" title=""></a>
+             data-4600="left: -50%"
+             data-4700="left: 45%"
+             data-4800="left: 120%"/>
+        <img id="leadership-experience" src="images/04/previous-experience.png" alt=""
+             data-4500="right: -60%"
+             data-4600="right: 45%"
+             data-5500="right: -60%"/>
+        <a class="green-button hide-gale" href="#team" title=""></a>
     </section>
 
     <section id="leadership-bio" class="story" data-speed="200" data-type="background">
@@ -103,9 +107,8 @@
         <img id="leadership-back" src="images/04A/back-arrow.png" alt=""
             data-5500="opacity:0"
             data-5600="opacity:1"
-            data-5700="opacity:0"
-                />
-        <a class="green-button" href="#team" title=""></a>
+            data-5700="opacity:0"/>
+        <a class="green-button hide-gale" href="#team" title=""></a>
     </section>
 
     <section id="team-transition" class="transition" data-speed="-40" data-type="transition" data-offsetY="-200">
@@ -195,6 +198,7 @@
 <script src='js/libs/skrollr.min.js'></script>
 <script src='js/libs/jquery.fancybox.pack.js'></script>
 <script src='js/libs/jquery.scrollTo.min.js'></script>
+<script src="http://remysharp.com/downloads/jquery.inview.js"></script>
 <script src="js/script.js"></script>
 <!--[if lt IE 7 ]>
 <script src="js/libs/dd_belatedpng.js"></script>

@@ -10,11 +10,21 @@
 
 article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
 
-.story { height: 864px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+.story { height: 864px;
+    padding: 0;
+    width: 100%;
+    max-width: 1920px;
+    position: relative; margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
 .transition{ height:700px; margin: 0 auto; width: 80%; }
 .scene {
     position: fixed;
-    width: 940px
+    width: 940px;
+    overflow: hidden;
 }
 
 .scene>img {
@@ -62,17 +72,15 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     margin-left: 200px;
     background-color: lime;
 }​
-#first { background: url(../images/puckered.png) 50% 0 no-repeat fixed; }
-#second { background: url(../images/slide2.jpg) 50% 0 no-repeat fixed; }
+
 #first-transition { background: url(../images/01/01-transition.jpg) 50% 0 no-repeat fixed; }
-#fourth { background: url(../images/slide3.jpg) 50% 0 no-repeat fixed; }
-#third { background: url(../images/slide4.jpg) 50% 0 no-repeat fixed; }
-#theend { background: url(../images/puckered.png) 50% bottom no-repeat fixed; }
+
 
 /* Introduction */
 #first .smashinglogo { background: url(../images/smashing-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #logo-container{
     text-align: center;
+    overflow: hidden;
 }
 #logo{margin-top: 3%;}
 #my-first .mintlogo {
@@ -82,6 +90,7 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     width: 100%;
     max-width: 1920px;
     position: relative; margin: 0 auto;
+    overflow: hidden;
 }
 #first article { width: 100%; top: 300px; position: absolute; text-align: center; }
 #first article p,
@@ -198,9 +207,10 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     top: 40%;
     position: absolute;
 }
-#leadership #leadership-gale{position: absolute;}
+#leadership #leadership-gale{position: absolute;bottom:-4%}
 #leadership #leadership-gale-text{position:absolute; bottom: 45%; left: 50%;}
 #leadership #leadership-learn-more{ position: absolute; bottom: 40%; cursor: pointer;}
+#leadership #leadership-experience{position: absolute; bottom: 30%}
 #leadership-bio {
     display: none;
     background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
