@@ -37,10 +37,10 @@ $(document).ready(function () {
         forceHeight: false,
         smoothScrolling: true,
         beforerender:function (data) {
-            console.log('beforerender');
+//            console.log('beforerender');
         },
         render:function () {
-            console.log('render');
+//            console.log('render');
         },
         easing:{
             WTF:Math.random,
@@ -50,7 +50,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#team-transition').bind('inview', team_transition_in_view);
+//    $('#team-transition').bind('inview', team_transition_in_view);
 //    $('#leadership-transition').bind('inview', leadership_transition_in_view);
 //    $('#leadership').bind('inview', leadership_in_view);
 //    $('#leadership-bio').bind('inview', leadership_bio_in_view);
@@ -173,7 +173,7 @@ function skrollr_init() {
         // When the window is scrolled...
         $(window).scroll(function () {
 
-            console.log($window.scrollTop());
+//            console.log($window.scrollTop());
 
             // If this section is in view
             if (($window.scrollTop() + $window.height()) > (topOffset) &&

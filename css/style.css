@@ -10,7 +10,8 @@
 
 article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
 
-.story { height: 864px;
+.story {
+    height: 864px;
     padding: 0;
     width: 100%;
     max-width: 1920px;
@@ -19,6 +20,25 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     border-bottom: 1px solid rgba(0,0,0,0.4);
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     overflow: hidden;
+
+
+
+    /*width: 100%;*/
+    /*max-width: 1600px;*/
+    /*min-width: 960px;*/
+    /*overflow: hidden;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*height: 864px;*/
+    /*margin: 0 auto;*/
+    /*background: #fff;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 0;*/
+    /*margin-top: 0px;*/
+    /*-moz-box-shadow: 0 0 12px #666;*/
+    /*-webkit-box-shadow: 0 3px 8px #333;*/
+    /*-o-box-shadow: 0 1px 5px #000;*/
+    /*box-shadow: 0 1px 5px #000;*/
 }
 .transition{ height:700px; margin: 0 auto; width: 80%; }
 .scene {
@@ -202,6 +222,10 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 /* Leadership */
 #leadership {
     background: url(../images/04/background-white.jpg) 50% 0 no-repeat fixed;
+    z-index: 898;
+}
+
+
 }
 #leadership .leadership-text{
     top: 40%;
@@ -235,3 +259,70 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 
 
+.sub-page1{
+    z-index: 900;
+}
+.sub-container{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    max-width: 1600px;
+    min-width: 960px;
+    height: 100%;
+    left: 100%;
+    overflow: hidden;
+    background: #000;
+    z-index: 999;
+}
+.sub-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    left: 100%;
+    max-width: 1600px;
+    min-width: 960px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.greybg{
+    background: url(../images/grey_bg.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
+.close-all{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    background-position: right bottom;
+    background-color: #000;
+    -moz-transition: background-color 0.2s ease 0s;
+    -webkit-transition: background-color .2s;
+    o-transition: background-color .2s;
+}
+
+.close-all:hover{
+    background-color: #777;
+}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+#three div.ingress{
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#wrapper{
+    position: fixed;
+    height: 1000px;
+    width: 100%;
+    max-width: 1600px;
+    min-width: 960px;
+    top: 0;
+    overflow: hidden;
+}
