@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
         $window = $(window),
         $body = $('body'),
         $scroll = ($.browser.mozilla || $.browser.msie) ? $('html') : $body,
-        $slides = $("#wrapper .page"),
+        $slides = $("#scrollr-body .page"),
         $tocLinks = $("a.scrollto"),
         toclinks = 0,
         staticPos = 0,
@@ -118,10 +118,7 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    /**
-     *  Open sub pages
-     */
-    $("a.to-sub").click(function (e) {
+    function showSub(e) {
         if (isIpad) {
             e.preventDefault();
             return;
@@ -152,7 +149,13 @@ jQuery(document).ready(function ($) {
         });
 
         e.preventDefault();
-    });
+    }
+
+    /**
+     *  Open sub pages
+     */
+    $("a.to-sub").click(showSub);
+    $("img.to-sub").click(showSub);
 
     /**
      *  Close subpages
@@ -241,7 +244,7 @@ jQuery(document).ready(function ($) {
             left: '100%'
         }, 450, 'easeOutQuart', function () {});
 
-        $("#three .sub-page").eq(0).find("a.close-sub").click();
+        $("#leadership .sub-page").eq(0).find("a.close-sub").click();
 
         e.preventDefault();
     });

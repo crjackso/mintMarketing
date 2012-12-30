@@ -517,7 +517,7 @@ nav ul li a{
     width: 1600px;
 }
 
-#wrapper{
+#scrollr-body {
     position: fixed;
     height: 1000px;
     width: 100%;
@@ -837,24 +837,37 @@ nav ul li a{
     margin: 130px auto 0 auto;
 }
 
-/* THREE */
+/* Leadership */
 
-#three{
+#leadership {
     height: 1000px;
-    background-image: url(../images/test/slide3_bg.jpg);
+    background-image: url(../images/04/background-white.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     height: 1000px;
     z-index: 898;
 }
 
-#three div.ingress{
+#leadership .leadership-text{
+    top: 20%;
+    left: 35%;
+    position: absolute;
+}
+#leadership #leadership-gale{position: absolute;
+    bottom: -4%;
+    z-index: 999;
+    left: 4%;}
+#leadership #leadership-gale-text{position:absolute; bottom: 45%; left: 50%;}
+#leadership #leadership-learn-more{ position: absolute; bottom: 40%; left: 45%; cursor: pointer;}
+#leadership #leadership-experience{position: absolute; bottom: 30%; left: 50%;}
+
+#leadership div.ingress{
     width: 960px;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-#three .sub-page .inner{
+#leadership .sub-page .inner{
     margin-top: 170px;
 }
 
@@ -863,7 +876,7 @@ nav ul li a{
 
 }
 
-#three .sergei2 .inner{
+#leadership .sergei2 .inner{
     margin-top: 100px;
 }
 
@@ -871,7 +884,7 @@ nav ul li a{
     padding-top: 25px;
 }
 
-#three .col em{
+#leadership .col em{
     font-weight: bold;
 }
 
@@ -879,11 +892,11 @@ nav ul li a{
     background-image: url(../images/test/sergeipage4.jpg);
 }
 
-#three .sergei4 .inner{
+#leadership .sergei4 .inner{
     margin-top: 170px;
 }
 
-#three .sergei4 blockquote{
+#leadership .sergei4 blockquote{
     padding-top: 40px;
 }
 
@@ -891,11 +904,11 @@ nav ul li a{
     background-image: url(../images/test/sergeipage6.jpg);
 }
 
-#three .sergei6 .inner{
+#leadership .sergei6 .inner{
     margin-top: 280px;
 }
 
-#three .sergei6 blockquote{
+#leadership .sergei6 blockquote{
     padding-top: 5px;
     padding-left: 50px;
 }
@@ -1319,8 +1332,8 @@ a.to-sub{
 }
 
 a.square{
-    height: 125px;
-    width: 125px;
+    height: 110px;
+    width: 80px;
     position: absolute;
     right: 0;
     top: 435px;
@@ -1338,7 +1351,7 @@ a.square.black.next{
 }
 
 a.square.black.prev{
-    background-position: -130px -840px;
+    background-position: -150px -840px;
 }
 
 a.square.black:hover{
@@ -1385,4 +1398,16 @@ footer{
     text-align: center;
 }
 
+/* CJ Additions */
+#leadership-bio {
+    /*display: none;*/
+    /*background: url(../images/04A/background-leadership.jpg);*/
+    /*background-position: 50% 0;*/
+    /*background-repeat: no-repeat;*/
+    background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
+}
+#leadership-bio #leadership-back{position: absolute;bottom: 20%;z-index: 1;left: 2%;cursor: pointer;}
+#leadership-bio #leadership-gale-bio{position: absolute; top: 20%; left: 42%;}
+#leadership-bio .leadership-text{position: absolute; right: 15%; top: 5%;}
+#leadership-bio .green-button {bottom: 8%}
 
