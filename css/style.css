@@ -11,34 +11,33 @@
 article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
 
 .story {
-    height: 864px;
-    padding: 0;
-    width: 100%;
-    max-width: 1920px;
-    position: relative; margin: 0 auto;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.4);
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    overflow: hidden;
-
-
-
-    /*width: 100%;*/
-    /*max-width: 1600px;*/
-    /*min-width: 960px;*/
-    /*overflow: hidden;*/
-    /*position: absolute;*/
-    /*top: 0;*/
     /*height: 864px;*/
-    /*margin: 0 auto;*/
-    /*background: #fff;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 50% 0;*/
-    /*margin-top: 0px;*/
-    /*-moz-box-shadow: 0 0 12px #666;*/
-    /*-webkit-box-shadow: 0 3px 8px #333;*/
-    /*-o-box-shadow: 0 1px 5px #000;*/
-    /*box-shadow: 0 1px 5px #000;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*max-width: 1920px;*/
+    /*position: relative; margin: 0 auto;*/
+    /*border-top: 1px solid rgba(255,255,255,0.3);*/
+    /*border-bottom: 1px solid rgba(0,0,0,0.4);*/
+    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+    /*overflow: hidden;*/
+
+
+    width: 100%;
+    max-width: 1600px;
+    min-width: 960px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 1000px;
+    margin: 0 auto;
+    background: white;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    margin-top: 0px;
+    -moz-box-shadow: 0 0 12px #666;
+    -webkit-box-shadow: 0 3px 8px #333;
+    -o-box-shadow: 0 1px 5px #000;
+    box-shadow: 0 1px 5px black;
 }
 .transition{ height:700px; margin: 0 auto; width: 80%; }
 .scene {
@@ -229,17 +228,23 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     top: 40%;
     position: absolute;
 }
-#leadership #leadership-gale{position: absolute;bottom:-4%}
+#leadership #leadership-gale{position: absolute;
+    bottom: -4%;
+    z-index: 999;
+    left: 4%;}
 #leadership #leadership-gale-text{position:absolute; bottom: 45%; left: 50%;}
 #leadership #leadership-learn-more{ position: absolute; bottom: 40%; cursor: pointer;}
 #leadership #leadership-experience{position: absolute; bottom: 30%}
 #leadership-bio {
-    display: none;
+    /*display: none;*/
+    /*background: url(../images/04A/background-leadership.jpg);*/
+    /*background-position: 50% 0;*/
+    /*background-repeat: no-repeat;*/
     background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
 }
 #leadership-bio #leadership-back{position: absolute;bottom: 20%;z-index: 1;left: 2%;cursor: pointer;}
-#leadership-bio #leadership-gale-bio{position: absolute; top: 20%; left: 40%;}
-#leadership-bio .leadership-text{position: absolute; right: 15%;}
+#leadership-bio #leadership-gale-bio{position: absolute; top: 20%; left: 42%;}
+#leadership-bio .leadership-text{position: absolute; right: 15%; top: 5%;}
 #leadership-bio .green-button {bottom: 8%}
 #leadership-transition { background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; }
 

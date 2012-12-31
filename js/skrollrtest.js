@@ -10,13 +10,13 @@ jQuery(document).ready(function () {
         $window = $(window),
         $body = $('body'),
         $scroll = ($.browser.mozilla || $.browser.msie) ? $('html') : $body,
-        $slides = $("#scrollr-body .page"),
+        $slides = $('#skrollr-body .story'),
         staticPos = 0,
         destinations = [ // Startposition of each "page"
             0,
-            1000,
-            2000,
-            3000,
+            500,
+            1728,
+            2800,
             5520,
             6520,
             7520,
@@ -24,23 +24,21 @@ jQuery(document).ready(function () {
             10660,
             11660,
             12660,
-            13660,
-            15000
+            13660
         ],
         destinationslength = destinations.length,
         leftOver = $window.height() - 1000,
-        bodyHeight = destinations[12] + leftOver,
+        bodyHeight = destinations[11] + leftOver,
         isIpad = (function () {
             return $("#mobileonly").css("visibility") === "visible";
         }());
 
-    console.log("slides count: " + $slides.size());
     /**
      *  Window resize
      */
-    $window.bind('resize', function () {
-        setBodyHeight();
-    });
+//    $window.bind('resize', function () {
+//        setBodyHeight();
+//    });
 
     function setBodyHeight() {
         leftOver = $window.height() - 1000;
@@ -60,10 +58,12 @@ jQuery(document).ready(function () {
             x = null;
 
         if (isIpad) {
+            alert('on ipad');
             return;
         } // Don't do this on pads.
 
         if (subOpen === 1) {
+            alert('scroll open');
             $scroll.css({
                 scrollTop: '1000px'
             });
@@ -76,6 +76,7 @@ jQuery(document).ready(function () {
             if (scrollTop >= (destinations[x] + 1) && scrollTop <= destinations[(x + 1)]) {
                 eq = x;
                 activeSlide = $slides.eq(x);
+
                 break;
             }
         }
@@ -84,28 +85,28 @@ jQuery(document).ready(function () {
             'margin-top': (-scrollTop + destinations[eq]) + 'px'
         });
 
-//        $slides.eq(eq + 1).css({
-//            'margin-top': '0px'
-//        });
+        $slides.eq(eq + 1).css({
+            'margin-top': '0px'
+        });
 
-//        $slides.slice(0, eq).each(function (i) {
-//            $(this).css('margin-top', -(destinations[i + 1] - destinations[i]) + 'px');
-//        });
-//
-//        height = $(activeSlide).height();
-//        margintop = $(activeSlide).css('marginTop').replace('px', '');
+        $slides.slice(0, eq).each(function (i) {
+            $(this).css('margin-top', -(destinations[i + 1] - destinations[i]) + 'px');
+        });
 
-//        if ((height - Math.abs(margintop)) < 500) {
-//            inView = eq + 1;
-//        }
-//
-//        $slides.slice(eq + 1, 12).hide();
-//        $slides.eq(eq + 1).show();
+        height = $(activeSlide).height();
+        margintop = $(activeSlide).css('marginTop').replace('px', '');
+
+        if ((height - Math.abs(margintop)) < 500) {
+            inView = eq + 1;
+        }
+
+        $slides.slice(eq + 1, 11).hide();
+        $slides.eq(eq + 1).show();
     }
 
-    $window.bind('scroll', function (e) {
-        animateMain(e);
-    });
+//    $window.bind('scroll', function (e) {
+//        animateMain(e);
+//    });
 
     /**
      *  Sub page scroll
@@ -126,6 +127,8 @@ jQuery(document).ready(function () {
 
         activeSubIndex = $slides.index($(this).parents('article'));
 
+//        $("#toc").stop().fadeOut(400); // hide TOC
+
         $scroll.stop().animate({
             scrollTop: destinations[activeSubIndex]
         }, 200, 'easeOutQuint', function () {
@@ -138,8 +141,8 @@ jQuery(document).ready(function () {
                 animateSub(e);
             });
 
-            $body.height(bodyHeight);
-            $window.scrollTop(0);
+//            $body.height(bodyHeight);
+//            $window.scrollTop(0);
 
             $slides.eq(activeSubIndex).find(".sub-container:eq(0)").addClass("activesub").stop().animate({
                 left: '0%'

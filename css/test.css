@@ -810,8 +810,12 @@ nav ul li a{
 
 /* TWO */
 #first-transition {
-    background: url(../images/01/01-transition.jpg) 50% 0 no-repeat;
-
+    background-image: url(../images/01/01-transition.jpg);
+    color: #363636;
+    font-size: 11px;
+    line-height: 22px;
+    z-index: 900;
+    height: 864px;
 }
 #who-we-are {
     background-image: url(../images/test/grey_bg.jpg);

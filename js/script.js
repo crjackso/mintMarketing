@@ -11,7 +11,7 @@
 // On your marks, get set...
 $(document).ready(function () {
 
-    skrollr_init();
+//    skrollr_init();
 
     $(".various").fancybox({
         maxWidth:800,
@@ -33,22 +33,16 @@ $(document).ready(function () {
 
     mission_button_init();
 
-    skrollr.init({
-        forceHeight: false,
-        smoothScrolling: true,
-        beforerender:function (data) {
-//            console.log('beforerender');
-        },
-        render:function () {
-//            console.log('render');
-        },
-        easing:{
-            WTF:Math.random,
-            inverted:function (p) {
-                return 1 - p;
-            }
-        }
-    });
+//    skrollr.init({
+//        forceHeight: false,
+//        smoothScrolling: true,
+//        easing:{
+//            WTF:Math.random,
+//            inverted:function (p) {
+//                return 1 - p;
+//            }
+//        }
+//    });
 
 //    $('#team-transition').bind('inview', team_transition_in_view);
 //    $('#leadership-transition').bind('inview', leadership_transition_in_view);
