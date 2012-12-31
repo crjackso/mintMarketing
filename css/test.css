@@ -744,12 +744,13 @@ nav ul li a{
 
 
 /* ONE */
-#one{
-    background-image: url(../images/test/slide1_bg.jpg);
+#title-page{
+    background-image: url(../images/01/background-green.jpg);
     background-position: 50% 0;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 864px;
     z-index: 901;
+    text-align: center;
 }
 
 .redbanner{
@@ -801,9 +802,18 @@ nav ul li a{
     margin-bottom: 20px;
 }
 
+#logo-container{
+    text-align: center;
+    overflow: hidden;
+}
+#logo{margin-top: 10%;}
 
 /* TWO */
-#two{
+#first-transition {
+    background: url(../images/01/01-transition.jpg) 50% 0 no-repeat;
+
+}
+#who-we-are {
     background-image: url(../images/test/grey_bg.jpg);
     z-index: 899;
     color: #363636;
@@ -811,28 +821,28 @@ nav ul li a{
     line-height: 22px;
 }
 
-#two .innerbg{
+#who-we-are .innerbg{
     background-image: url(../images/test/diagonal-up.png);
     background-position: center -150px;
     background-attachment: fixed;
 }
 
 
-#two h1{
+#who-we-are h1{
     color: #000;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
-#two .quotebox{
+#who-we-are .quotebox{
     padding-left: 50%;
 }
 
-#two blockquote{
+#who-we-are blockquote{
     padding: 15px 20px 15px 60px;
 }
 
-#two .inner{
+#who-we-are .inner{
     width: 960px;
     margin: 130px auto 0 auto;
 }

@@ -46,24 +46,22 @@
 <div id="awwwards"><a href="http://www.awwwards.com/web-design-awards/suit-up-or-die-magazine-1" target="_blank">css
     gallery</a></div>
 <!--<div style="display: block; width: 1600px; height: 1000px; margin-top: -1000px; position: absolute;"></div>-->
-<div id="one" class="page">
+<div id="title-page" class="page">
 
-
-    <hgroup class="redbanner textcenter droidserif">
-
-        <h1 class="sprite">Suit Up or Die Magazine #1 - A look at how fashion, art and aesthetics are transformed by the
-            online revolution</h1>
-
-        <h2 class="sprite">THE MODERN CLASSICIST</h2>
-
-        <h3 class="sprite">Plus New York City. The New Steve McQueen. Plastic & Walnut. And Much More</h3>
-    </hgroup>
-
-    <p class="droidserif fontsize32 textcenter notitalic white logo sprite">Suit up or die.</p>
-
+    <div id="logo-container">
+        <img id="logo" src="images/01/mint-logo.png"
+             data-0="display:inline-block;transform:scale(1); opacity:1"
+             data-500="display:inline-block;transform:scale(5);opacity:1;"
+             data-700="display:inline-block;transform:scale(8);opacity:0;"
+             data-1100="display:none"/>
+    </div>
 
 </div>
-<article id="two" class="page">
+
+<article id="first-transition" class="transition page">
+</article>
+
+<article id="who-we-are" class="page">
     <div class="innerbg">
         <div class="clearfix droidserif inner">
 
@@ -135,6 +133,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="leadership" class="page droidserif fontsize11">
     <a class="to-sub next sprite black square" href="#">to sub</a>
@@ -664,53 +663,6 @@
 <div id="eleven" class="page">
 </div>
 
-<div id="toc" class="closed white droidserif">
-
-    <nav>
-        <h1 class="fontsize32 textcenter lighter">Table of Contents</h1>
-
-
-        <div class="twocol clearfix fontsize22">
-
-            <div class="col floatleft">
-
-                <a href="#one">I. Cover</a>
-                <a href="#two">II. A Change Is Coming</a>
-                <a href="#three">III. The Modern Classicist</a>
-                <a href="#four">IV. New York City</a>
-                <a href="#five">V. Ode to the Internet</a>
-
-
-            </div>
-
-            <div class="col floatright">
-
-                <a href="#six">VI. Marlon Brando</a>
-                <a href="#seven">VII. Plastic & Walnut</a>
-                <a href="#eight">VIII. The New McQ</a>
-                <a href="#nine">IX. Short Range</a>
-                <a href="#ten">X. Credits</a>
-
-            </div>
-
-
-        </div>
-
-        <p class="droidserif fontsize32 textcenter notitalic sprite">Suit up or die.</p>
-
-        <div class="fontsize14 white block followus">
-            <a href="http://www.suitupordie.com" target="_blank" class="outgoing">Blog</a> |
-            <a href="http://www.facebook.com/suitupordie" target="_blank" class="outgoing">Facebook</a> |
-            <a href="http://www.twitter.com/suit_up_or_die" target="_blank" class="outgoing">Twitter</a> |
-            <a href="http://www.pinterest.com/suitupordie" target="_blank" class="outgoing">Pinterest</a>
-        </div>
-
-    </nav>
-
-    <a id="flerp" href="#" class="unfoldtoc vollkorn">Table of Contents</a>
-
-</div>
-
 
 </div>
 
@@ -736,8 +688,8 @@
 </div>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery-1.7.2.min.js"></script>
+<script src="js/libs/jquery.jquery-ui.min.js"></script>
 
 <script src="js/test.plugins.js"></script>
 <script src="js/test.js"></script>

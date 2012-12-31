@@ -1,21 +1,16 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function () {
     "use strict";
 
     var subOpen = 0,
         activeSubIndex = 0,
-        scrollDirection = 0,
         keyboardPlace = 0,
         eq = 0,
-        navhidden = 1,
         inView = 0,
-        posRight = 0,
-        activeSlide = $('#one'),
+        activeSlide = $('#title-page'),
         $window = $(window),
         $body = $('body'),
         $scroll = ($.browser.mozilla || $.browser.msie) ? $('html') : $body,
         $slides = $("#scrollr-body .page"),
-        $tocLinks = $("a.scrollto"),
-        toclinks = 0,
         staticPos = 0,
         destinations = [ // Startposition of each "page"
             0,
@@ -42,12 +37,16 @@ jQuery(document).ready(function ($) {
      *  Window resize
      */
     $window.bind('resize', function () {
+        setBodyHeight();
+    });
+
+    function setBodyHeight() {
         leftOver = $window.height() - 1000;
 
         if ((bodyHeight + leftOver) > 1000) {
             $body.height(bodyHeight + leftOver);
         }
-    });
+    }
 
     /**
      *  Window scroll
@@ -365,18 +364,5 @@ jQuery(document).ready(function ($) {
         }
     }
 
-//    $("#entermag").fadeTo(1, 0);
-
-//    $body.queryLoader2({
-//        backgroundColor: '#000000',
-//        percentage: true,
-//        completeAnimation: 'wait',
-//        onLoadComplete: showReadMagazine(),
-//        barColor: '#ffffff'
-//    });
-
-    function showReadMagazine() {
-        $scroll.scrollTop(0);
-        $("#overlay").hide();
-    }
+    setBodyHeight();
 });
