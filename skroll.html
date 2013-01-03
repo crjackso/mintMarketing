@@ -169,7 +169,7 @@
                 <img src="images/people/chris.png"/>
             </div>
             <div class="profile-bio">
-                Waddup
+                TODO
             </div>
         </div>
 
@@ -181,6 +181,9 @@
                 Andre Hill, COO
                 Clark Atlanta University
             </div>
+        </div>
+        <div id="teamMemberPlaceholder">
+
         </div>
     </article>
 
@@ -204,6 +207,7 @@
     </div>
 
 </div>
+<input id="teamJson" type="hidden" />
 <!-- // End of #main -->
 
 
@@ -213,13 +217,17 @@
 <script src='js/libs/skrollr.min.js'></script>
 <script src='js/libs/jquery.fancybox.pack.js'></script>
 <script src='js/libs/jquery.scrollTo.min.js'></script>
-<script src="http://remysharp.com/downloads/jquery.inview.js"></script>
-<!--<script src="js/skrollrtest.js"></script>-->
+<script src="js/team.js"></script>
 <script src="js/script.js"></script>
 <!--[if lt IE 7 ]>
 <script src="js/libs/dd_belatedpng.js"></script>
 <script>DD_belatedPNG.fix("img, .png_bg");
 <![endif]-->
-
+<script id="flickrTemplate" type="text/x-jquery-tmpl">
+    <li>
+        <h2>${title}</h2>
+        <div><a href="${link}"><img src="${media.m}" alt="${title}" /></a></div>
+    </li>
+</script>
 </body>
 </html>

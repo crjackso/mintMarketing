@@ -45,17 +45,28 @@ $(document).ready(function () {
         'transitionOut'		: 'fade'
     });
 
-    $(".various").fancybox({
-        maxWidth:800,
-        maxHeight:800,
-        fitToView:true,
-        width:'70%',
-        height:'70%',
-        autoSize:false,
-        closeClick:true,
-        openEffect:'elastic',
-        closeEffect:'elastic'
+    $('.various').live('click', function(e){
+        e.preventDefault();
+        var id = $(this).attr('href').replace('#', '');
+        var person = people[id];
+        $("#flickrTemplate").tmpl(person).appendTo("#teamMemberPlaceholder");
     });
+
+//    $(".various").fancybox({
+//        ajax: {
+//            data:
+//        }
+
+//        maxWidth:800,
+//        maxHeight:800,
+//        fitToView:true,
+//        width:'70%',
+//        height:'70%',
+//        autoSize:false,
+//        closeClick:true,
+//        openEffect:'elastic',
+//        closeEffect:'elastic'
+//    });
 
     $('.nav-button').live('click', button_clicked);
     $('.green-button').live('click', button_clicked);
@@ -70,8 +81,9 @@ $(document).ready(function () {
             }
         }
     });
-}); // document ready
 
+    $("#teamJson").html(JSON.stringify(people));
+}); // document ready
 
 
 function skrollr_init() {

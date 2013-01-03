@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb0f3c3-141b-4aa6-bf47-afda1eb09948" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/team.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/team.js" afterPath="$PROJECT_DIR$/js/team.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skroll.html" afterPath="$PROJECT_DIR$/skroll.html" />
     </list>
     <ignored path="presentation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="team.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/team.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="42" selection-end="42" vertical-scroll-proportion="0.110275686">
+            <state line="33" column="20" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -43,14 +44,13 @@
       <file leaf-file-name="skroll.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skroll.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="81" selection-start="4649" selection-end="4649" vertical-scroll-proportion="-18.225807">
+            <state line="184" column="38" selection-start="7880" selection-end="7901" vertical-scroll-proportion="-14.387096">
               <folding>
                 <element signature="tag#article#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#article#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#img#2;n#article#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="tag#article#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#article#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#article#8;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#div#1;n#article#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#article#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
+            <state line="51" column="74" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.5235669">
               <folding />
             </state>
           </provider>
@@ -111,10 +111,10 @@
         <option value="$PROJECT_DIR$/js/test.js" />
         <option value="$PROJECT_DIR$/css/test.css" />
         <option value="$PROJECT_DIR$/css/jquery.fancybox.css" />
-        <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/skroll.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/team.js" />
+        <option value="$PROJECT_DIR$/skroll.html" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -177,6 +177,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,30 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skroll.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="81" selection-start="4649" selection-end="4649" vertical-scroll-proportion="-18.225807">
-          <folding>
-            <element signature="tag#article#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#article#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#img#2;n#article#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#article#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#article#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#article#8;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#article#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#article#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="243" column="58" selection-start="7047" selection-end="7047" vertical-scroll-proportion="0.0">
@@ -570,7 +564,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/team.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="42" selection-end="42" vertical-scroll-proportion="0.110275686">
+        <state line="33" column="20" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="38" selection-start="7880" selection-end="7901" vertical-scroll-proportion="-14.387096">
+          <folding>
+            <element signature="tag#article#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#article#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#img#2;n#article#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#article#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#article#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#article#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#article#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="74" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.5235669">
           <folding />
         </state>
       </provider>
