@@ -13,10 +13,42 @@ $(document).ready(function () {
 
 //    skrollr_init();
 
+//    $("#leadership-learn-more").fancybox({
+//        openEffect:'elastic',
+//        fitToView: false,
+//        width: '85%',
+//        closeEffect: 'elastic'
+//    });
+
+//    $(".various2").fancybox({
+//        maxWidth:800,
+//        maxHeight:600,
+//        fitToView:true,
+//        width:'80%',
+//        height:'80%',
+//        autoSize:true,
+//        closeClick:true,
+//        openEffect:'elastic',
+//        closeEffect:'elastic'
+//    });
+
+    $(".show-gale").fancybox({
+        'autoDimensions'	: false,
+        'width'         		: '80%',
+        height: '95%',
+        autoHeight: false,
+        autoWidth: false,
+        minWidth: '80%',
+        minHeight: '95%',
+        openEffect: 'elastic',
+        'transitionIn'		: 'elastic',
+        'transitionOut'		: 'fade'
+    });
+
     $(".various").fancybox({
         maxWidth:800,
-        maxHeight:600,
-        fitToView:false,
+        maxHeight:800,
+        fitToView:true,
         width:'70%',
         height:'70%',
         autoSize:false,
@@ -28,122 +60,19 @@ $(document).ready(function () {
     $('.nav-button').live('click', button_clicked);
     $('.green-button').live('click', button_clicked);
 
-    $('#leadership-learn-more').live('click', on_gale_learn_more);
-    $('#leadership-back').live('click', on_gale_back);
-
-    mission_button_init();
-
-//    skrollr.init({
-//        forceHeight: false,
-//        smoothScrolling: true,
-//        easing:{
-//            WTF:Math.random,
-//            inverted:function (p) {
-//                return 1 - p;
-//            }
-//        }
-//    });
-
-//    $('#team-transition').bind('inview', team_transition_in_view);
-//    $('#leadership-transition').bind('inview', leadership_transition_in_view);
-//    $('#leadership').bind('inview', leadership_in_view);
-//    $('#leadership-bio').bind('inview', leadership_bio_in_view);
-//    $('#mission-transition').bind('inview', mission_transition_in_view);
-
+    skrollr.init({
+        forceHeight:false,
+        smoothScrolling:true,
+        easing:{
+            WTF:Math.random,
+            inverted:function (p) {
+                return 1 - p;
+            }
+        }
+    });
 }); // document ready
 
-function team_transition_in_view(event, visible){
-    var gale_pic = $('#leadership-gale');
 
-    if(visible === true)
-        gale_pic.fadeOut(8000);
-//        gale_pic.css('position', 'absolute');
-}
-
-function leadership_bio_in_view(event, visible) {
-    var gale_pic = $('#leadership-gale');
-
-    var already_in_view = gale_pic.css('display') == 'block';
-
-    if (visible === true && !already_in_view)
-        gale_pic.fadeIn(600);
-}
-
-function mission_transition_in_view(event, visible) {
-    var gale_pic = $('#leadership-gale');
-
-    if (visible === true)
-        gale_pic.fadeOut(600);
-}
-
-function mission_button_init() {
-    $(".hide-gale").click(function () {
-//        $('#leadership-gale').fadeOut(600);
-    });
-
-    $('.show-gale').click(function () {
-//        fade_in();
-    });
-}
-
-function leadership_in_view(event, visible) {
-    var gale_pic = $('#leadership-gale');
-
-    var already_in_view = gale_pic.css('display') == 'block';
-
-    if (!already_in_view && visible === true)
-        fade_in();
-}
-
-function fade_in() {
-    $('#leadership-gale').fadeIn(600);
-}
-
-function leadership_transition_in_view(event, visible) {
-
-//    var show = false;
-//    var elementId = event.currentTarget.id;
-//    var asdf = event.delegateTarget.id;
-//
-//    if(elementId == 'leadership')
-//        show = true;
-//    if(elementId == 'leadership-bio')
-//        show = true;
-
-    var gale_pic = $('#leadership-gale');
-
-//    var already_in_view = gale_pic.css('display') == 'block';
-
-//    if(show && already_in_view)
-//        return;
-
-//    if (show) {
-//        gale_pic.fadeIn(600);
-//    } else {
-//        gale_pic.fadeOut(600);
-//    }
-
-    if (visible === true)
-        gale_pic.fadeOut(800);
-//    else
-//        gale_pic.fadeIn(800);
-}
-
-function on_gale_back() {
-    $.scrollTo('#leadership', 800);
-}
-
-function on_gale_learn_more() {
-    $('#leadership-bio').css('display', 'block');
-    $('#leadership-gale')
-        .css('position', 'fixed')
-        .css('opacity', 1)
-        .css('z-index', 1);
-    $('#leadership-text')
-        .css('position', 'fixed')
-        .css('z-index', 1);
-    $.scrollTo('#leadership-bio', 800);
-}
 
 function skrollr_init() {
     // Cache the Window object
