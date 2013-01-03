@@ -161,7 +161,7 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     top:40%;
     left:900px;
 }
-#mint-logo-small{
+.mint-logo-small{
     position:absolute;
     bottom:10%;
     right:3%;
@@ -241,7 +241,7 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
     height: 100%;
 }
-#leadership-bio #gale-bio-pic{position: absolute; left:3%;}
+#leadership-bio #gale-bio-pic{position: absolute; left:-10%;}
 #leadership-bio #leadership-back{position: absolute;bottom: 20%;z-index: 1;left: 2%;cursor: pointer;}
 #leadership-bio #leadership-gale-bio{position: absolute; top: 20%; left: 37%;}
 #leadership-bio .leadership-text{position: absolute; right: 5%; top: 3%;}
