@@ -1,17 +1,8 @@
-/**
- * Parallax Scrolling Tutorial
- * For Smashing Magazine
- * July 2011
- *
- * Author: Richard Shepherd
- *            www.richardshepherd.com
- *            @richardshepherd
- */
-
-// On your marks, get set...
 $(document).ready(function () {
 
     //    skrollr_init();
+
+    set_slide_heights();
 
     $(".show-gale").fancybox({
         'autoDimensions': false,
@@ -52,8 +43,9 @@ $(document).ready(function () {
         });
     });
 
-    $('.nav-button').live('click', button_clicked);
-    $('.green-button').live('click', button_clicked);
+    $('.nav-button').live('click', navButtonClicked);
+    $('.green-button').live('click', navButtonClicked);
+    $(window).bind('resize', set_slide_heights);
 
     skrollr.init({
         forceHeight: false,
@@ -67,8 +59,28 @@ $(document).ready(function () {
     });
 
     $("#teamJson").val(JSON.stringify(people));
-}); 
 
+//    ieHack();
+});
+
+function ieHack() {
+    var i;
+    for (i in document.images) {
+        if (document.images[i].src) {
+            var imgSrc = document.images[i].src;
+            if (imgSrc.substr(imgSrc.length - 4) === '.png' || imgSrc.substr(imgSrc.length - 4) === '.PNG') {
+                document.images[i].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='crop',src='" + imgSrc + "')";
+            }
+        }
+    }
+}
+
+function set_slide_heights() {
+    var height = $(window).height();
+//    var thirtypc = (30 * height) / 100;
+    var newHeight = parseInt(height) + 'px';
+    $(".story").css('height', newHeight);
+}
 
 function skrollr_init() {
     // Cache the Window object
@@ -169,7 +181,7 @@ function skrollr_init() {
     });	// each data-type
 }
 
-function button_clicked(element) {
+function navButtonClicked(e) {
     var nav_to = $(this).attr('href');
 
     $.scrollTo(nav_to, 1500);

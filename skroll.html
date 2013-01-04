@@ -163,18 +163,27 @@
     <script src='js/libs/jquery.jquery-ui.min.js'></script>
     <script src='js/libs/json2.js'></script>
     <script src='js/libs/skrollr.min.js'></script>
+    <!--[if lt IE 9]>
+        <script src='js/libs/skrollr.ie.min.js'></script>
+    <![endif]-->
+    
+    <!--[if IE 8]>
+        <script src='js/libs/ie8.js'></script>
+    <![endif]-->
+    
     <script src='js/libs/jquery.fancybox.pack.js'></script>
     <script src='js/libs/jquery.scrollTo.min.js'></script>
     <script src="js/team.js"></script>
     <script src="js/libs/handleBars.js"></script>
+    <script src="js/libs/jquery.fixpng.js"></script>
     <script src="js/script.js"></script>
-<!--    <script type="text/javascript">-->
-<!--        var script = document.createElement("script");-->
-<!--        script.setAttribute("type", "text/javascript");-->
-<!--        script.setAttribute("src", "https://getfirebug.com/firebug-lite.js#startOpened");-->
-<!---->
-<!--        var head = document.getElementsByTagName("head")[0];-->
-<!--        head.appendChild(script);-->
-<!--    </script>-->
+    <script type="text/javascript">
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        script.setAttribute("src", "https://getfirebug.com/firebug-lite.js#startOpened");
+
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(script);
+    </script>
 </body>
 </html>
