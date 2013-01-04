@@ -82,7 +82,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#teamJson").html(JSON.stringify(people));
+    $("#teamJson").val(JSON.stringify(people));
 }); // document ready
 
 

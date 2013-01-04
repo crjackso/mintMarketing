@@ -7,6 +7,10 @@
     <title>The Mint Marketing Agency</title>
     <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
     <meta name="author" content="Richard Shepherd, Smashing Magazine">
+    
+    <!--[if lt IE 9]>
+        <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
 
     <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
     <!--<link rel="stylesheet" href="css/skroll-fixed-positioning.css">-->
@@ -207,27 +211,38 @@
     </div>
 
 </div>
-<input id="teamJson" type="hidden" />
+<!--    <input id="teamJson" type="hidden" />-->
+    <input type="hidden" id="teamJson" name="teamJson" value="bar" />
+
+
 <!-- // End of #main -->
 
 
 <!-- Our Javascript, starting with jQuery -->
 <script src='js/libs/jquery-1.7.2.min.js'></script>
 <script src='js/libs/jquery.jquery-ui.min.js'></script>
+<script src='js/libs/json2.js'></script>
 <script src='js/libs/skrollr.min.js'></script>
 <script src='js/libs/jquery.fancybox.pack.js'></script>
 <script src='js/libs/jquery.scrollTo.min.js'></script>
 <script src="js/team.js"></script>
 <script src="js/script.js"></script>
-<!--[if lt IE 7 ]>
-<script src="js/libs/dd_belatedpng.js"></script>
-<script>DD_belatedPNG.fix("img, .png_bg");
-<![endif]-->
-<script id="flickrTemplate" type="text/x-jquery-tmpl">
-    <li>
-        <h2>${title}</h2>
-        <div><a href="${link}"><img src="${media.m}" alt="${title}" /></a></div>
-    </li>
-</script>
+
+    <script id="flickrTemplate" type="text/x-jquery-tmpl">
+        <li>
+            <h2>${title}</h2>
+            <div><a href="${link}"><img src="${media.m}" alt="${title}" /></a></div>
+        </li>
+    </script>
+    
+    <script type="text/javascript">
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        script.setAttribute("src", "https://getfirebug.com/firebug-lite.js#startOpened");
+
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(script);
+    </script>
+
 </body>
 </html>

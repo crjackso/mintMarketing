@@ -1,7 +1,7 @@
-people = [];
+var people = [];
 
-var Person = function(options){
-    self = {};
+var Person = function(options) {
+    var self = {};
 
     self.id = options.id;
     self.name = options.name;
