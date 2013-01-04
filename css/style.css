@@ -40,13 +40,15 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     position: absolute
 }
 .nav-button{
-    display:block;
     width:66px;
     height:40px;
     position:absolute;
     bottom:10%;
     left:50%;
     background-image:url(../images/01/down-arrow-white.png);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .nav-button:hover, .green-button:hover{
     cursor:pointer;
@@ -183,24 +185,31 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     margin: 0 auto;
     text-align: center;
 }
-#mission #our-mission-is{
+#mission #our-mission-is {
     top: 15%;
     position: relative;
-    display: inline-block;
-    left: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 #mission #evolve-brands{
-    top: 33%;
+    top: 20%;
     position: relative;
-    left: -8%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 #mission #mint-leaf{
-    top:55%;
-    left: -37%;
-    position:relative;
+    top: 30%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 #mission .nav-button{
-    left: 49%;
+    position: relative;
+    bottom: -40%;
+    left: 0%;
 }
 #mission-transition { background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; }
 
