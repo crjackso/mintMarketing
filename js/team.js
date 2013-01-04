@@ -19,7 +19,15 @@ var andre = new Person({
     name: 'Andre Hill',
     school: 'Clark Atlanta University',
     major: 'MBA Marketing',
-    picture_url: '../images/people/andre.png'
+    picture_url: 'images/people/andre.png'
+});
+
+var ryan = new Person({
+    id: 'ryan',
+    name: 'Ryan Jackson',
+    school: 'University of Michigan',
+    major: 'Electrical Engineering',
+    picture_url: 'images/people/ryan.png'
 });
 
 var chris = new Person({
@@ -27,8 +35,54 @@ var chris = new Person({
     name: 'Chris Jackson',
     school: 'University of Michigan',
     major: 'Electrical Engineering',
-    picture_url: '../images/people/chris.png'
+    picture_url: 'images/people/chris.png'
+});
+
+var krystal = new Person({
+    id: 'krystal',
+    name: 'Krystal Mays',
+    school: 'University of Michigan',
+    major: 'Electrical Engineering',
+    picture_url: 'images/people/krystal.png'
+});
+
+var arthur = new Person({
+    id: 'arthur',
+    name: 'Arthur Sawyer',
+    school: 'University of Michigan',
+    major: 'Electrical Engineering',
+    picture_url: 'images/people/arthur.png'
+});
+
+var clint = new Person({
+    id: 'arthur',
+    name: 'Arthur Sawyer',
+    school: 'University of Michigan',
+    major: 'Electrical Engineering',
+    picture_url: 'images/people/clint.png'
+});
+
+var trish = new Person({
+    id: 'arthur',
+    name: 'Trish Dave',
+    school: 'University of Michigan',
+    major: 'Electrical Engineering',
+    picture_url: 'images/people/trish.png'
+});
+
+var stesha = new Person({
+    id: 'arthur',
+    name: 'Stesha Mays',
+    school: 'University of Michigan',
+    major: 'Electrical Engineering',
+    picture_url: 'images/people/stesha.png'
 });
 
 people.andre = andre;
 people.chris = chris;
+people.ryan = ryan;
+people.krystal = krystal;
+people.clint = clint;
+people.trish = trish;
+people.stesha = stesha;
+people.arthur = arthur;

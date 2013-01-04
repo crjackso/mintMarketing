@@ -1,13 +1,3 @@
-/**
- * Parallax Scrolling Tutorial
- * For Smashing Magazine
- * July 2011
- *  
- * Author: Richard Shepherd
- *		   www.richardshepherd.com
- * 		   @richardshepherd   
- */
-
 article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
 
 .story {
@@ -76,10 +66,8 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
     width: 200px;
     /*height: 20px;*/
     margin-right: 8px;
-    background-color: linen;
 }
 #team .profile-box {
-    border: 1px solid #CCC;
     max-height: 220px;
     overflow: hidden;
  }

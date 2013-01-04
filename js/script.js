@@ -11,79 +11,63 @@
 // On your marks, get set...
 $(document).ready(function () {
 
-//    skrollr_init();
-
-//    $("#leadership-learn-more").fancybox({
-//        openEffect:'elastic',
-//        fitToView: false,
-//        width: '85%',
-//        closeEffect: 'elastic'
-//    });
-
-//    $(".various2").fancybox({
-//        maxWidth:800,
-//        maxHeight:600,
-//        fitToView:true,
-//        width:'80%',
-//        height:'80%',
-//        autoSize:true,
-//        closeClick:true,
-//        openEffect:'elastic',
-//        closeEffect:'elastic'
-//    });
+    //    skrollr_init();
 
     $(".show-gale").fancybox({
-        'autoDimensions'	: false,
-        'width'         		: '80%',
+        'autoDimensions': false,
+        'width': '80%',
         height: '95%',
         autoHeight: false,
         autoWidth: false,
         minWidth: '80%',
         minHeight: '95%',
         openEffect: 'elastic',
-        'transitionIn'		: 'elastic',
-        'transitionOut'		: 'fade'
+        'transitionIn': 'elastic',
+        'transitionOut': 'fade'
     });
 
-    $('.various').live('click', function(e){
+    $('.various').fancybox({
+        minHeight: '70%',
+        minWidth: '50%',
+        openEffect: 'elastic'
+    });
+
+    $('.various').live('click', function (e) {
         e.preventDefault();
-        var id = $(this).attr('href').replace('#', '');
+        var id = $(this).data('person');
         var person = people[id];
-        $("#flickrTemplate").tmpl(person).appendTo("#teamMemberPlaceholder");
+
+        var source = $("#entry-template").html();
+        var template = Handlebars.compile(source);
+
+        var context = {
+            picture_url: person.picture_url
+        };
+        var html = template(context);
+        $('#teamMemberPlaceholder').html(html);
+
+        $(this).fancybox({
+            minHeight: '70%',
+            openEffect: 'elastic'
+        });
     });
-
-//    $(".various").fancybox({
-//        ajax: {
-//            data:
-//        }
-
-//        maxWidth:800,
-//        maxHeight:800,
-//        fitToView:true,
-//        width:'70%',
-//        height:'70%',
-//        autoSize:false,
-//        closeClick:true,
-//        openEffect:'elastic',
-//        closeEffect:'elastic'
-//    });
 
     $('.nav-button').live('click', button_clicked);
     $('.green-button').live('click', button_clicked);
 
     skrollr.init({
-        forceHeight:false,
-        smoothScrolling:true,
-        easing:{
-            WTF:Math.random,
-            inverted:function (p) {
+        forceHeight: false,
+        smoothScrolling: true,
+        easing: {
+            WTF: Math.random,
+            inverted: function (p) {
                 return 1 - p;
             }
         }
     });
 
     $("#teamJson").val(JSON.stringify(people));
-}); // document ready
+}); 
 
 
 function skrollr_init() {
