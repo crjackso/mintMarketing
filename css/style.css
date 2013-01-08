@@ -52,9 +52,38 @@ img {
     background-image:url(../images/02/down-arrow-green.png);
 }
 
+/* Team */
+#teamMemberDialog{
+    position: relative;
+}
+.banner{
+    top: 0;
+    /*position: absolute;*/
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/05/headerbar.png);
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+#teamTextPic{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+#bannerLeaf{
+    position: relative;
+    left: 45%;
+    height: 345px;
+    z-index: 1;
+}
+#teamMember{
+    z-index:1000;
+}
 .profile-pic {
     float: left;
     width: 200px;
+    background-color: blue;
     /*height: 20px;*/
     margin-right: 8px;
 }

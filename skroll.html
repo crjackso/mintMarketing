@@ -7,183 +7,209 @@
     <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
     <meta name="author" content="Richard Shepherd, Smashing Magazine">
     <!--[if lt IE 9]>
-        <script src="js/libs/html5shiv.js"></script>
+    <script src="js/libs/html5shiv.js"></script>
     <![endif]-->
     <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
     <!--<link rel="stylesheet" href="css/skroll-fixed-positioning.css">-->
     <link rel="stylesheet" href="css/skrollr_main.css">
     <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet'
-        type='text/css'>
+          type='text/css'>
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script id="entry-template" type="text/x-handlebars-template">
+        <div id="teamMemberDialog">
+            <div class="banner">
+                <img src="images/05/header-leaf.png" alt="" id="bannerLeaf">
+            </div>
+            <img src="images/05/the-team.png" alt="" id="teamTextPic">
+
             <div id="teamMember" class="row">
-                <div class="profile-pic">
-                    <img src="{{picture_url}}" alt="" />
+                <div class="profile-pic span4">
+                    <img src="{{picture_url}}" alt=""/>
+                </div>
+                <div class="span8">
+                    <div class="span12">
+                        <h1 style="text-align:left;float:left;">{{name}}, </h1>
+                        <h2>{{title}}</h2>
+                    </div>
+                    <div class="span12">
+                        <span>{{school}}</span><br/>
+                        <span>{{major}}</span><br/>
+                    </div>
+                    <div class="span12">
+                        Specialties:<br>
+                        <ul class="specialty_list">
+                            {{#each specialties}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
     </script>
 </head>
 <body>
-    <div id="skrollr-body" class="wrapper">
-        <article id="my-first" class="story" data-speed="8" data-type="background">
-            <div id="logo-container">
-                <img id="logo" src="images/01/mint-logo.png" data-0="display:inline-block;transform:scale(1); opacity:1"
-                    data-500="display:inline-block;transform:scale(5);opacity:1;" data-700="display:inline-block;transform:scale(8);opacity:0;"
-                    data-1100="display:none" />
-            </div>
-            <a class="nav-button" href="#who-we-are" title=""></a>
-        </article>
-        <article id="first-transition" class="transition" data-speed="4" data-type="background">
-        </article>
-        <article id="who-we-are" class="story" data-speed="200" data-type="background">
-            <img id="easel" src="images/02/easel.png" alt="" data-1400="opacity:0" data-1700="opacity:1"
-                data-1900="opacity:1" />
-            <img id="result-driven" src="images/02/results-driven.png" alt="" data-1300="opacity:0"
-                data-1600="opacity:1" />
-            <img src="images/02/bishop.png" style="position: absolute;" data-1450="bottom: 100px; left:-200px; opacity:1"
-                data-1500="bottom: 100px; left: 100px;opacity:1" />
-            <img id="sound-in-strategy" src="images/02/sound-strategy.png" alt="" data-200="opacity:0"
-                data-500="opacity:1" />
-            <img id="brand-loyalty" src="images/02/creators-of.png" alt="" />
-            <img class="mint-logo-small" src="images/02/mint-logo-small.png" alt="" />
-            <a class="green-button" href="#mission" title=""></a>
-        </article>
-        <article id="mission-transition" class="transition" data-speed="-40" data-type="transition"
-            data-offsety="-200">
-        </article>
-        <!-- Section #3 / Mission -->
-        <article id="mission" class="story" data-speed="200" data-type="background">
-            <img id="our-mission-is" src="images/03/ourmissionis.png" alt="" data-bottom-center="opacity:0"
-                 data-center-center="opacity:1" />
-            <img id="evolve-brands" src="images/03/evolvebrands.png" alt="" data-bottom-center="opacity:0"
-                data-center-center="opacity:1" data-top="opacity:1" data-3450="opacity:0" />
-            <img id="mint-leaf" src="images/03/mintleaf.png" alt="" data-bottom-center="opacity:0"
-                 data-center-center="opacity:1" />
-            <a class="nav-button" href="#leadership" title=""></a>
-        </article>
-        <article id="leadership-transition" class="transition" data-speed="-40" data-type="transition"
-            data-offsety="-200">
-        </article>
-        <article id="leadership" class="story" data-speed="200" data-type="background">
-            <img class="leadership-text" src="images/04/leadership.png" alt="" data-4500="right: -60%"
-                data-4600="right: 15%" data-5500="right: -60%" />
-            <img id="leadership-gale" src="images/04/gale-pic.png" alt="" />
-            <img id="leadership-gale-text" src="images/04/galehill.png" alt="" data-4500="opacity:0"
-                data-4600="opacity:1" data-4900="opacity:0" />
-            <a class="show-gale" href="#leadership-bio">
-                <img id="leadership-learn-more" src="images/04/learn-more.png" alt="" data-bottom-center="left: -50%"
-                    data-center-center="left: 65%" data--100-top="left: 120%" />
-            </a>
-            <img id="leadership-experience" src="images/04/previous-experience.png" alt="" data-4500="right: -60%"
-                data-4600="right: 45%" data-5500="right: -60%" />
-            <img class="mint-logo-small" src="images/02/mint-logo-small.png" alt="" />
-            <a class="green-button" href="#team" title=""></a>
-        </article>
-        <!--<article id="leadership-bio" class="story" data-speed="200" data-type="background">-->
-        <!--<img class="leadership-text" src="images/04A/leadership.png" alt=""/>-->
-        <!--<img id="leadership-gale-bio" src="images/04A/galebio.png" alt=""/>-->
-        <!--<img id="leadership-back" src="images/04A/back-arrow.png" alt=""-->
-        <!--data-5500="opacity:0"-->
-        <!--data-5600="opacity:1"-->
-        <!--data-5700="opacity:0"/>-->
-        <!--<a class="green-button hide-gale" href="#team" title=""></a>-->
-        <!--</article>-->
-        <article id="team-transition" class="transition" data-speed="-40" data-type="transition"
-            data-offsety="-200">
-        </article>
-        <article id="team" class="story" data-speed="200" data-type="background">
-            <div class="container">
-                <div class="row">
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="andre">
-                            <img src="images/people/andre.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="ryan">
-                            <img src="images/people/ryan.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="chris">
-                            <img src="images/people/chris.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="krystal">
-                            <img src="images/people/krystal.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="arthur">
-                            <img src="images/people/arthur.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="clint">
-                            <img src="images/people/clint.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="stesha">
-                            <img src="images/people/stesha.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="profile-box span3">
-                        <a class="various" href="#teamMemberPlaceholder" data-person="trish">
-                            <img src="images/people/trish.png" alt="" />
-                        </a>
-                    </div>
+<div id="skrollr-body" class="wrapper">
+    <article id="my-first" class="story" data-speed="8" data-type="background">
+        <div id="logo-container">
+            <img id="logo" src="images/01/mint-logo.png" data-0="display:inline-block;transform:scale(1); opacity:1"
+                 data-500="display:inline-block;transform:scale(5);opacity:1;"
+                 data-700="display:inline-block;transform:scale(8);opacity:0;"
+                 data-1100="display:none"/>
+        </div>
+        <a class="nav-button" href="#who-we-are" title=""></a>
+    </article>
+    <article id="first-transition" class="transition" data-speed="4" data-type="background">
+    </article>
+    <article id="who-we-are" class="story" data-speed="200" data-type="background">
+        <img id="easel" src="images/02/easel.png" alt="" data-1400="opacity:0" data-1700="opacity:1"
+             data-1900="opacity:1"/>
+        <img id="result-driven" src="images/02/results-driven.png" alt="" data-1300="opacity:0"
+             data-1600="opacity:1"/>
+        <img src="images/02/bishop.png" style="position: absolute;" data-1450="bottom: 100px; left:-200px; opacity:1"
+             data-1500="bottom: 100px; left: 100px;opacity:1"/>
+        <img id="sound-in-strategy" src="images/02/sound-strategy.png" alt="" data-200="opacity:0"
+             data-500="opacity:1"/>
+        <img id="brand-loyalty" src="images/02/creators-of.png" alt=""/>
+        <img class="mint-logo-small" src="images/02/mint-logo-small.png" alt=""/>
+        <a class="green-button" href="#mission" title=""></a>
+    </article>
+    <article id="mission-transition" class="transition" data-speed="-40" data-type="transition"
+             data-offsety="-200">
+    </article>
+    <!-- Section #3 / Mission -->
+    <article id="mission" class="story" data-speed="200" data-type="background">
+        <img id="our-mission-is" src="images/03/ourmissionis.png" alt="" data-bottom-center="opacity:0"
+             data-center-center="opacity:1"/>
+        <img id="evolve-brands" src="images/03/evolvebrands.png" alt="" data-bottom-center="opacity:0"
+             data-center-center="opacity:1" data-top="opacity:1" data-3450="opacity:0"/>
+        <img id="mint-leaf" src="images/03/mintleaf.png" alt="" data-bottom-center="opacity:0"
+             data-center-center="opacity:1"/>
+        <a class="nav-button" href="#leadership" title=""></a>
+    </article>
+    <article id="leadership-transition" class="transition" data-speed="-40" data-type="transition"
+             data-offsety="-200">
+    </article>
+    <article id="leadership" class="story" data-speed="200" data-type="background">
+        <img class="leadership-text" src="images/04/leadership.png" alt="" data-4500="right: -60%"
+             data-4600="right: 15%" data-5500="right: -60%"/>
+        <img id="leadership-gale" src="images/04/gale-pic.png" alt=""/>
+        <img id="leadership-gale-text" src="images/04/galehill.png" alt="" data-4500="opacity:0"
+             data-4600="opacity:1" data-4900="opacity:0"/>
+        <a class="show-gale" href="#leadership-bio">
+            <img id="leadership-learn-more" src="images/04/learn-more.png" alt="" data-bottom-center="left: -50%"
+                 data-center-center="left: 65%" data--100-top="left: 120%"/>
+        </a>
+        <img id="leadership-experience" src="images/04/previous-experience.png" alt="" data-4500="right: -60%"
+             data-4600="right: 45%" data-5500="right: -60%"/>
+        <img class="mint-logo-small" src="images/02/mint-logo-small.png" alt=""/>
+        <a class="green-button" href="#team" title=""></a>
+    </article>
+    <!--<article id="leadership-bio" class="story" data-speed="200" data-type="background">-->
+    <!--<img class="leadership-text" src="images/04A/leadership.png" alt=""/>-->
+    <!--<img id="leadership-gale-bio" src="images/04A/galebio.png" alt=""/>-->
+    <!--<img id="leadership-back" src="images/04A/back-arrow.png" alt=""-->
+    <!--data-5500="opacity:0"-->
+    <!--data-5600="opacity:1"-->
+    <!--data-5700="opacity:0"/>-->
+    <!--<a class="green-button hide-gale" href="#team" title=""></a>-->
+    <!--</article>-->
+    <article id="team-transition" class="transition" data-speed="-40" data-type="transition"
+             data-offsety="-200">
+    </article>
+    <article id="team" class="story" data-speed="200" data-type="background">
+        <div class="container">
+            <div class="row">
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="andre">
+                        <img src="images/people/andre.png" alt=""/>
+                    </a>
+                </div>
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="ryan">
+                        <img src="images/people/ryan.png" alt=""/>
+                    </a>
+                </div>
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="chris">
+                        <img src="images/people/chris.png" alt=""/>
+                    </a>
+                </div>
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="krystal">
+                        <img src="images/people/krystal.png" alt=""/>
+                    </a>
+                </div>
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="arthur">
+                        <img src="images/people/arthur.png" alt=""/>
+                    </a>
+                </div>
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="clint">
+                        <img src="images/people/clint.png" alt=""/>
+                    </a>
+                </div>
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="stesha">
+                        <img src="images/people/stesha.png" alt=""/>
+                    </a>
+                </div>
+                <div class="profile-box span3">
+                    <a class="various" href="#teamMemberPlaceholder" data-person="trish">
+                        <img src="images/people/trish.png" alt=""/>
+                    </a>
                 </div>
             </div>
-        </article>
-        <article id="core-services" class="story" data-speed="200" data-type="background">
-        </article>
-        <div id="teamMemberPlaceholder" style="display:none">
-            
         </div>
-        <!-- Section #5 / The End-->
-        <!--<article id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">-->
-        <!--<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>-->
-        <!--</article>-->
-        <div id="leadership-bio" style="display: none">
-            <img id="gale-bio-pic" src="images/04/gale-pic.png" alt="" />
-            <img class="leadership-text" src="images/04A/leadership.png" alt="" />
-            <img id="leadership-gale-bio" src="images/04A/galebio.png" alt="" />
-            <img id="leadership-back" src="images/04A/back-arrow.png" alt="" data-5500="opacity:0"
-                data-5600="opacity:1" data-5700="opacity:0" />
-        </div>
+    </article>
+    <article id="core-services" class="story" data-speed="200" data-type="background">
+    </article>
+    <div id="teamMemberPlaceholder" style="display:none">
+
     </div>
-    <input type="hidden" id="teamJson" name="teamJson" />
+    <!-- Section #5 / The End-->
+    <!--<article id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">-->
+    <!--<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>-->
+    <!--</article>-->
+    <div id="leadership-bio" style="display: none">
+        <img id="gale-bio-pic" src="images/04/gale-pic.png" alt=""/>
+        <img class="leadership-text" src="images/04A/leadership.png" alt=""/>
+        <img id="leadership-gale-bio" src="images/04A/galebio.png" alt=""/>
+        <img id="leadership-back" src="images/04A/back-arrow.png" alt="" data-5500="opacity:0"
+             data-5600="opacity:1" data-5700="opacity:0"/>
+    </div>
+</div>
+<input type="hidden" id="teamJson" name="teamJson"/>
 
-    <script src='js/libs/jquery-1.7.2.min.js'></script>
-    <script src='js/libs/jquery.jquery-ui.min.js'></script>
-    <script src='js/libs/json2.js'></script>
-    <script src='js/libs/skrollr.min.js'></script>
-    <!--[if lt IE 9]>
-        <script src='js/libs/skrollr.ie.min.js'></script>
-    <![endif]-->
-    
-    <!--[if IE 8]>
-        <script src='js/libs/ie8.js'></script>
-    <![endif]-->
-    
-    <script src='js/libs/jquery.fancybox.pack.js'></script>
-    <script src='js/libs/jquery.scrollTo.min.js'></script>
-    <script src="js/team.js"></script>
-    <script src="js/libs/handleBars.js"></script>
-    <script src="js/libs/jquery.fixpng.js"></script>
-    <script src="js/libs/jquery.localScroll-min.js"></script>
-    <script src="js/script.js"></script>
-    <!--<script type="text/javascript">-->
-        <!--var script = document.createElement("script");-->
-        <!--script.setAttribute("type", "text/javascript");-->
-        <!--script.setAttribute("src", "https://getfirebug.com/firebug-lite.js#startOpened");-->
+<script src='js/libs/jquery-1.7.2.min.js'></script>
+<script src='js/libs/jquery.jquery-ui.min.js'></script>
+<script src='js/libs/json2.js'></script>
+<script src='js/libs/skrollr.min.js'></script>
+<!--[if lt IE 9]>
+<script src='js/libs/skrollr.ie.min.js'></script>
+<![endif]-->
 
-        <!--var head = document.getElementsByTagName("head")[0];-->
-        <!--head.appendChild(script);-->
-    <!--</script>-->
+<!--[if IE 8]>
+<script src='js/libs/ie8.js'></script>
+<![endif]-->
+
+<script src='js/libs/jquery.fancybox.pack.js'></script>
+<script src='js/libs/jquery.scrollTo.min.js'></script>
+<script src="js/team.js"></script>
+<script src="js/libs/handleBars.js"></script>
+<script src="js/libs/jquery.fixpng.js"></script>
+<script src="js/libs/jquery.localScroll-min.js"></script>
+<script src="js/script.js"></script>
+<!--<script type="text/javascript">-->
+<!--var script = document.createElement("script");-->
+<!--script.setAttribute("type", "text/javascript");-->
+<!--script.setAttribute("src", "https://getfirebug.com/firebug-lite.js#startOpened");-->
+
+<!--var head = document.getElementsByTagName("head")[0];-->
+<!--head.appendChild(script);-->
+<!--</script>-->
 </body>
 </html>

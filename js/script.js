@@ -33,9 +33,9 @@ $(document).ready(function () {
         var source = $("#entry-template").html();
         var template = Handlebars.compile(source);
 
-        var context = {
-            picture_url: person.picture_url
-        };
+        var context = {};
+        context = $.extend(context, person);
+
         var html = template(context);
         $('#teamMemberPlaceholder').html(html);
 
