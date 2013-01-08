@@ -4,6 +4,8 @@ $(document).ready(function () {
 
     set_slide_heights();
 
+    init_local_scroll();
+
     $(".show-gale").fancybox({
         'autoDimensions': false,
         'width': '80%',
@@ -43,8 +45,8 @@ $(document).ready(function () {
         });
     });
 
-    $('.nav-button').live('click', navButtonClicked);
-    $('.green-button').live('click', navButtonClicked);
+//    $('.nav-button').live('click', navButtonClicked);
+//    $('.green-button').live('click', navButtonClicked);
     $(window).bind('resize', set_slide_heights);
 
     skrollr.init({
@@ -63,6 +65,29 @@ $(document).ready(function () {
 //    ieHack();
 });
 
+function init_local_scroll(){
+
+    // Scroll initially if there's a hash (#something) in the url
+    $.localScroll.hash({
+        target: '#skrollr-body', // Could be a selector or a jQuery object too.
+        queue:true,
+        duration:1500
+    });
+
+    $.localScroll({
+//        target: '#skrollr-body', // could be a selector or a jQuery object too.
+        queue:true,
+        duration:1000,
+        hash:true,
+        onBefore:function( e, anchor, $target ){
+            // The 'this' is the settings object, can be modified
+        },
+        onAfter:function( anchor, settings ){
+            // The 'this' contains the scrolled element (#content)
+        }
+    });
+}
+
 function ieHack() {
     var i;
     for (i in document.images) {
@@ -77,7 +102,6 @@ function ieHack() {
 
 function set_slide_heights() {
     var height = $(window).height();
-//    var thirtypc = (30 * height) / 100;
     var newHeight = parseInt(height) + 'px';
     $(".story").css('height', newHeight);
 }
