@@ -14,15 +14,17 @@ $(document).ready(function () {
         autoWidth: false,
         minWidth: '80%',
         minHeight: '95%',
-        openEffect: 'elastic',
+        openEffect: 'fade',
         'transitionIn': 'elastic',
+        scrolling: 'no',
         'transitionOut': 'fade'
     });
 
     $('.various').fancybox({
         minHeight: '70%',
         minWidth: '50%',
-        openEffect: 'elastic'
+        openEffect: 'fade',
+        closeEffect: 'elastic'
     });
 
     $('.various').live('click', function (e) {

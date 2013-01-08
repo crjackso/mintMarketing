@@ -66,12 +66,12 @@ img {
     right: 0px;
     overflow: hidden;
 }
-#teamTextPic{
+.teamTextPic{
     position: absolute;
     top: 25px;
     left: 10px;
 }
-#bannerLeaf{
+.bannerLeaf{
     position: relative;
     left: 45%;
     height: 345px;
@@ -89,7 +89,9 @@ img {
 }
 #team .profile-box {
     max-height: 220px;
+    height: 205px;
     overflow: hidden;
+    background: url(../images/05/profile-box.png) no-repeat fixed;
  }
 #team .various < img{
     width: 220px;
@@ -172,7 +174,7 @@ img {
 .mint-logo-small{
     position:absolute;
     bottom:10%;
-    right:3%;
+    right:15%;
 }
 
 #core-services{
