@@ -17,8 +17,12 @@ img {
     border-bottom: 1px solid rgba(0,0,0,0.4);
     box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
     overflow: hidden;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 }
-.transition{ height:700px; margin: 0 auto; width: 80%; }
+.transition{ height:700px; margin: 0 auto; width: 100%; }
 .scene {
     position: fixed;
     width: 940px;
@@ -53,6 +57,16 @@ img {
 }
 
 /* Team */
+
+#team{
+    background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#team-transition { background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; }
+
 #teamMemberDialog{
     position: relative;
 }
@@ -131,7 +145,13 @@ img {
 #second article p { margin-bottom: 25px; }
 #second article a { color: #ff0;}
 
-#who-we-are { background: url(../images/02/background-white.jpg) 50% 0 no-repeat fixed; }
+#who-we-are {
+    background: url(../images/02/background-white.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 #who-we-are #easel{
     position: absolute;
@@ -179,6 +199,10 @@ img {
 
 #core-services{
     background: url(../images/06-coreservices.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Photograph */
@@ -189,7 +213,13 @@ img {
 #second { background: url(../images/slide2.jpg) 50% 0 no-repeat fixed; }
 
 /* Home Slide */
-#my-first { background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed; }
+#my-first {
+    background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #my-first .smashinglogo { background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #my-first article { width: 100%; top: 300px; position: absolute; text-align: center; }
 #my-first article p,
@@ -204,6 +234,10 @@ img {
     background: url(../images/03/background-green-glow.jpg) 50% 0 no-repeat fixed;
     margin: 0 auto;
     text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #mission #our-mission-is {
     top: 15%;
@@ -265,10 +299,6 @@ img {
 #leadership-bio .green-button {bottom: 8%}
 #leadership-transition { background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; }
 
-/* Team */
-
-#team{background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed; }
-#team-transition { background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; }
 
 /* HTML5 Video */
 #fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
