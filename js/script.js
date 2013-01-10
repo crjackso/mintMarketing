@@ -1,10 +1,32 @@
+
+var mint = {};
+
+mint.screens = ["my-first",
+    "who-we-are",
+    "mission",
+    "leadership",
+    "team",
+    "core-services",
+    "core-services-slider"
+];
+
+mint.screenCount = mint.screens.length;
+
 $(document).ready(function () {
 
     //    skrollr_init();
 
+    $(".touchslider").touchSlider({
+        duration:350,
+        mouseTouch:true
+    });
+
     set_slide_heights();
 
     init_local_scroll();
+
+//    init_screen_scroll();
+//    init_sauc_code();
 
     $(".show-gale").fancybox({
         'autoDimensions': false,
@@ -67,6 +89,47 @@ $(document).ready(function () {
 //    ieHack();
 });
 
+var shoeBrowserSetupComplete = false;
+var documentGutterWidth = (($(document).width() - documentWrapWidth) / 2);
+var documentWrapWidth = 1100;
+var colorBrowserMenuLeftOffset = 0; //documentGutterWidth + ((documentWrapWidth-$('#chooser_menu').width())/2);
+var colorBrowserCurrentItem = 1;
+var colorBrowserMenuItemWidth = 0;
+var shoeBrowserCount = 6;
+var shoeBrowserGender = 'm';
+var mens_bg_colors = new Array('#ba2c2c','#395bae','#afcf3b','#6a6a6a','#dd7d04','#e2cb04' );
+var womens_bg_colors = new Array('#b93457','#2c92cc','#ca4b4f','#7e5193','#b93457','#e2cb04');
+
+var mens_urls = new Array(
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=20157-2&showDefaultOption=true&skuId=***4********20157-2*M080&productId=4-109350&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=20157-1&showDefaultOption=true&skuId=***4********20157-1*M085&productId=4-109350&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=20157-4&showDefaultOption=true&skuId=***4********20157-4*M090&productId=4-109350&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=20157-3&showDefaultOption=true&skuId=***4********20157-3*M075&productId=4-109350&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=20157-8&showDefaultOption=true&skuId=***4********20157-8*M095&productId=4-109350&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=20157-7&showDefaultOption=true&skuId=***4********20157-7*M095&productId=4-109350&searched=true&CID=LP-Kinvara3");
+
+var womens_urls = new Array(
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=10157-1&showDefaultOption=true&skuId=***4********10157-1*M050&productId=4-109360&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=10157-3&showDefaultOption=true&skuId=***4********10157-3*M080&productId=4-109360&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=10157-4&showDefaultOption=true&skuId=***4********10157-4*M060&productId=4-109360&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=10157-5&showDefaultOption=true&skuId=***4********10157-5*M065&productId=4-109360&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=10157-2&showDefaultOption=true&skuId=***4********10157-2*M060&productId=4-109360&searched=true&CID=LP-Kinvara3",
+    "http://www.saucony.com/store/SiteController/saucony/productdetails?stockNumber=10157-6&showDefaultOption=true&skuId=***4********10157-6*M070&productId=4-109360&searched=true&CID=LP-Kinvara3");
+
+function init_sauc_code(){
+    $('#shoeScrollLeft').on('click', function(evt){
+        colorBrowserCurrentItem--;
+        if(colorBrowserCurrentItem < 1) colorBrowserCurrentItem = shoeBrowserCount;
+        scroll_shoeBrowser();
+    });
+
+    $('#shoeScrollRight').on('click', function(evt){
+        colorBrowserCurrentItem++;
+        if(colorBrowserCurrentItem > shoeBrowserCount) colorBrowserCurrentItem = 1;
+        scroll_shoeBrowser();
+    });
+}
+
 function init_local_scroll(){
 
     // Scroll initially if there's a hash (#something) in the url
@@ -85,7 +148,12 @@ function init_local_scroll(){
             // The 'this' is the settings object, can be modified
         },
         onAfter:function( anchor, settings ){
-            // The 'this' contains the scrolled element (#content)
+            var screenId = $(anchor).attr('id');
+            for(var i = 0; i < mint.screenCount; i++) {
+                if(mint.screens[i] == screenId){
+                    currentScreen = i;
+                }
+            }
         }
     });
 }
@@ -103,9 +171,19 @@ function ieHack() {
 }
 
 function set_slide_heights() {
+    var width = $(window).width();
     var height = $(window).height();
     var newHeight = parseInt(height) + 'px';
     $(".story").css('height', newHeight);
+
+
+    // Shoe Browser Sizing
+    $('#scrollWrap').width($(window).width());
+    $('#zebra_stripe').width($(window).width());
+
+    $('.touchslider-item img').css('width', width + 'px');
+    $('.touchslider-item img').height(height);
+    $('.touchslider-viewport').height(height - 20);
 }
 
 function skrollr_init() {
@@ -211,4 +289,85 @@ function navButtonClicked(e) {
     var nav_to = $(this).attr('href');
 
     $.scrollTo(nav_to, 1500);
+}
+
+function init_screen_scroll(){
+    var lastScrollTop = 0;
+    $(window).scroll(function() {
+        var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+        var cushion = 7; // Amount to cusion for browser sizing weirdness
+
+
+        // Save which direction we are going to a global
+        if( lastScrollTop >= wintop ) scrollDirection = 'up';
+        else scrollDirection = 'down';
+
+        //Shoe Browser
+        if(scrollDirection == 'down'	&& wintop >= winheight*6			&& lastScrollTop < winheight*6)				setup_shoeBrowser();
+        if(scrollDirection == 'down'	&& wintop >= winheight*6+cushion	&& lastScrollTop < winheight*6+cushion)		reset_shoeBrowser();
+        if(scrollDirection == 'up'		&& wintop <= winheight*6+cushion	&& lastScrollTop > winheight*6+cushion)		setup_shoeBrowser();
+        if(scrollDirection == 'up'		&& wintop < winheight*6				&& lastScrollTop >= winheight*6)			reset_shoeBrowser();
+
+        // Records last scroll top for acertaining direction
+        lastScrollTop = wintop;
+    });
+}
+
+function setup_shoeBrowser()
+{
+    if( !shoeBrowserSetupComplete ) {
+        $('#genderNav').animate({'left':(documentGutterWidth+50)+"px"}, 250 );
+        scroll_shoeBrowser();
+
+        $('#zebra_stripe').animate({'right':"0px"}, 350, function() {
+            $('#shoeBrowser .scrollLeft').animate({'left':'0px'}, 250 );
+            $('#shoeBrowser .scrollRight').animate({'right':'0px'}, 250 );
+
+        });
+
+        // Set Shop Now Link
+        $('p#shopNowLink').html('<a href="'+mens_urls[0]+'" target="_blank">SHOP NOW</a>');
+
+        shoeBrowserSetupComplete = true;
+    }
+}
+function reset_shoeBrowser(){}
+
+function scroll_shoeBrowser() {
+    animateSelector();
+    $('#shoe_scroller div.shoe_container').addClass('hidden');
+
+    $('#'+(shoeBrowserGender=='m'?'men':'women')+'-scroll-'+colorBrowserCurrentItem).removeClass('hidden');
+
+    $('#shoe_display').stop().animate({'right':$(window).width()+"px"}, 500, function() {
+        $('#shoe_display div.shoe_container').addClass('hidden');
+        $('#'+(shoeBrowserGender=='m'?'men':'women')+'-disp-'+colorBrowserCurrentItem).removeClass('hidden');
+        $('#shoe_display').css('display', 'block').css('right',(documentGutterWidth+50)+"px");
+        $('#shoe_scroller').css('display','none');
+    });
+
+    // Set Shop Now Link
+    var shopURL = shoeBrowserGender=='m' ? mens_urls[colorBrowserCurrentItem-1] : womens_urls[colorBrowserCurrentItem-1];
+    if( shopURL.length > 0 ) $('p#shopNowLink').html('<a href="'+shopURL+'" target="_blank">SHOP NOW</a>');
+    else $('p#shopNowLink').html('Available 7/1');
+
+    $('#shoe_scroller').css('right', ($('#shoe_scroller').width()*-1) + "px" );
+    $('#shoe_scroller').stop().css('display', 'block').animate({'right':(documentGutterWidth+50)+"px"}, 500);
+
+    var newColor = (shoeBrowserGender=='m' ? mens_bg_colors[colorBrowserCurrentItem-1]:womens_bg_colors[colorBrowserCurrentItem-1]);
+    $('#zebra_stripe').css('background-color',newColor);
+    $('#zebra_stripe .color_b').fadeOut('fast', function(){
+        $('#zebra_stripe .color_b').css('background-color',newColor).show();
+    });
+}
+
+/***********************************************************
+ Animates "selected" indicator for Shoe Color Browser
+ **********************************************************/
+function animateSelector() {
+    oldLeft = parseInt($('#chooser_selected').css('left'));
+    newLeft = colorBrowserMenuLeftOffset + ((colorBrowserCurrentItem - 1) * colorBrowserMenuItemWidth);
+    speed = Math.abs(newLeft - oldLeft) / colorBrowserMenuItemWidth;
+    // tweaked as per tom's request - ss
+    $('#chooser_selected').animate({ left:newLeft + "px" }, 200 * speed);
 }
