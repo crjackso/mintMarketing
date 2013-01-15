@@ -35,24 +35,32 @@ img {
 .nav-button{
     width:66px;
     height:40px;
-    position:absolute;
-    bottom:10%;
-    left:50%;
+    /*position:absolute;*/
+    /*bottom:10%;*/
+    /*left:50%;*/
     background-image:url(../images/01/down-arrow-white.png);
     margin-left: auto;
     margin-right: auto;
     display: block;
+    bottom: -40%;
+    position: relative;
+    left: 0%;
 }
 .nav-button:hover, .green-button:hover{
     cursor:pointer;
 }
 .green-button{
-    display:block;
     width:66px;
     height:40px;
-    position:absolute;
-    bottom:10%;
-    left:50%;
+    /*position:absolute;*/
+    /*bottom:10%;*/
+    /*left:50%;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    bottom: -40%;
+    position: relative;
+    left: 0%;
     background-image:url(../images/02/down-arrow-green.png);
 }
 
@@ -198,11 +206,34 @@ img {
 }
 
 #core-services{
-    background: url(../images/06-coreservices.jpg) 50% 0 no-repeat fixed;
+    background: url(../images/06/green-background.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#core-services .digital-campaigns{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+#core-services .amp{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+#core-services .core-services{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 25%;
+}
+#core-services .spotlights{
+    position: absolute;
+    top: 15%;
+    left: 60%;
 }
 
 #core-services-roundup {
@@ -278,6 +309,29 @@ img {
     position: absolute;
     top: 80%;
     left: 60%;
+}
+
+#our-process{
+    background: url(../images/08/background-green.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#our-process #our-process-text{
+    top: 15%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#our-process-container{
+    margin-top: 15%;
+    text-align: center;
+    margin-left: 5%;
+}
+#generations-gap{
+
 }
 /* Home Slide */
 #my-first {

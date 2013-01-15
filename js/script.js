@@ -9,7 +9,9 @@ mint.screens = [
     "team",
     "core-services",
     "core-services-slider",
-    "core-services-roundup"
+    "core-services-roundup",
+    "our-process",
+    "generations-gap"
 ];
 
 mint.screenCount = mint.screens.length;
