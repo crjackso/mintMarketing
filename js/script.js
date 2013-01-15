@@ -1,13 +1,15 @@
 
 var mint = {};
 
-mint.screens = ["my-first",
+mint.screens = [
+    "my-first",
     "who-we-are",
     "mission",
     "leadership",
     "team",
     "core-services",
-    "core-services-slider"
+    "core-services-slider",
+    "core-services-roundup"
 ];
 
 mint.screenCount = mint.screens.length;
@@ -22,8 +24,6 @@ $(document).ready(function () {
     });
 
     set_slide_heights();
-
-    init_local_scroll();
 
 //    init_screen_scroll();
 //    init_sauc_code();
@@ -127,34 +127,6 @@ function init_sauc_code(){
         colorBrowserCurrentItem++;
         if(colorBrowserCurrentItem > shoeBrowserCount) colorBrowserCurrentItem = 1;
         scroll_shoeBrowser();
-    });
-}
-
-function init_local_scroll(){
-
-    // Scroll initially if there's a hash (#something) in the url
-    $.localScroll.hash({
-        target: '#skrollr-body', // Could be a selector or a jQuery object too.
-        queue:true,
-        duration:1500
-    });
-
-    $.localScroll({
-//        target: '#skrollr-body', // could be a selector or a jQuery object too.
-        queue:true,
-        duration:1000,
-        hash:true,
-        onBefore:function( e, anchor, $target ){
-            // The 'this' is the settings object, can be modified
-        },
-        onAfter:function( anchor, settings ){
-            var screenId = $(anchor).attr('id');
-            for(var i = 0; i < mint.screenCount; i++) {
-                if(mint.screens[i] == screenId){
-                    currentScreen = i;
-                }
-            }
-        }
     });
 }
 

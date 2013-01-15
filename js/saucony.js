@@ -127,10 +127,6 @@ $(document).ready(function() {
         if(scrollLocked) preventScroll();
     });
 
-
-
-
-
     /****************************************************************************************
      Process Window Resizing - Delay reaction until resize complete
      ***************************************************************************************/
@@ -156,8 +152,6 @@ $(document).ready(function() {
         }
     }
 
-
-
     /****************************************************************************************
      Button Click / Hover Actions
      ***************************************************************************************/
@@ -167,6 +161,15 @@ $(document).ready(function() {
         currentScreen = 0;
         scrollNext();
     });
+
+    function scrollToTop() {
+        scrollReady = false;
+        $("html,body").animate({scrollTop:"0px"}, 2500,
+            function(){
+                scrollReady = true;
+                currentScreen = 0;
+            });
+    }
 
     $('.nav-button').click(clickScroll);
     $('.green-button').click(clickScroll);
@@ -178,13 +181,6 @@ $(document).ready(function() {
         currentScreen = parseInt(slideNumber);
         performScroll();
     }
-
-//    $('.nav-button').click(function(){	currentScreen = 1;     scrollNext(); });
-//    $('#downBtnUpper').click(function(){	currentScreen = 2; scrollNext(); });
-//    $('#downBtnProgrid').click(function(){	currentScreen = 3; scrollNext(); });
-//    $('#downBtnMidsole').click(function(){	currentScreen = 4; scrollNext(); });
-//    $('#downBtnSole').click(function(){		currentScreen = 5; scrollNext(); });
-//    $('#downBtnBrowser').click(function(){	currentScreen = 6; scrollNext(); });
 
     $('#scrollToTop').click(function(){
         scrollReady = false;
@@ -205,8 +201,15 @@ $(document).ready(function() {
     $('#nav_colors a').click(function(event){ event.preventDefault(); currentScreen = 6; performScroll(); });
     $('#nav_getyours a').click(function(event){ event.preventDefault(); currentScreen = 7; performScroll(); });
 
+    $('.service').bind('inview', function(event, isVisible) {
+        if (!isVisible) {
+            $(this).css('opacity', 0);
+            return;
+        }
 
-
+        var randomDelay = Math.random() * 600;
+        $(this).delay(randomDelay).animate({ opacity: 1 }, 600);
+    });
 
     // Ready to go
     $(window).load(function () {
@@ -232,6 +235,8 @@ $(document).ready(function() {
             setupKeyScrollHandler();
         }
     });
+
+    scrollToTop();
 });
 
 
@@ -420,7 +425,8 @@ function scrollPrev() {
 }
 function performScroll() {
     scrollReady = false;
-    var newYPos = Math.ceil($('#'+screens[currentScreen]).offset().top);
+    var screen = screens[currentScreen];
+    var newYPos = Math.ceil($('#'+screen).offset().top);
     $("html, body").animate(
         {scrollTop: newYPos },
         screenAnimationTime,
@@ -1004,12 +1010,6 @@ function animationStepBackward() {
         $('#shoe-build-midsole').show();
     }
 }
-
-
-
-
-
-
 
 
 
