@@ -171,9 +171,8 @@ $(document).ready(function() {
             });
     }
 
-    $('.nav-button').click(clickScroll);
-    $('.green-button').click(clickScroll);
-
+    $('.downBtn').click(clickScroll);
+    
     function clickScroll(e)
     {
         e.preventDefault();

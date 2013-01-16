@@ -71,8 +71,6 @@ $(document).ready(function () {
         });
     });
 
-//    $('.nav-button').live('click', navButtonClicked);
-//    $('.green-button').live('click', navButtonClicked);
     $(window).bind('resize', set_slide_heights);
 
     skrollr.init({
@@ -182,8 +180,6 @@ function skrollr_init() {
         // When the window is scrolled...
         $(window).scroll(function () {
 
-//            console.log($window.scrollTop());
-
             // If this section is in view
             if (($window.scrollTop() + $window.height()) > (topOffset) &&
                 ( (topOffset + $self.height()) > $window.scrollTop() )) {
@@ -257,12 +253,6 @@ function skrollr_init() {
         }); // window scroll
 
     });	// each data-type
-}
-
-function navButtonClicked(e) {
-    var nav_to = $(this).attr('href');
-
-    $.scrollTo(nav_to, 1500);
 }
 
 function init_screen_scroll(){
