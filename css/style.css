@@ -402,6 +402,44 @@ img {
     text-align: center;
     top: 30%;
 }
+#our-goal{
+    background: url(../images/13/background-white.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#spark-emotion{
+    background-image: url(../images/13/spark.png);
+    height: 200px;
+    width: 497px;
+    position: absolute;
+}
+#our-goal #educate-consumers {
+    background-image: url(../images/13/educate.png);
+    height: 209px;
+    width: 511px;
+    position: absolute;
+}
+#our-goal #incentive {
+    background-image: url(../images/13/incentive.png);
+    height: 190px;
+    width: 494px;
+    position: absolute;
+}
+#our-goal #conversation {
+    background-image: url(../images/13/start.png);
+    height: 124px;
+    width: 424px;
+    position: absolute;
+}
+#our-goal-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 10%;
+}
 /* Home Slide */
 #my-first {
     background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
