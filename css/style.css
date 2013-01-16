@@ -43,13 +43,12 @@ img {
 }
 .downBtn {
     position: absolute;
-    z-index: 5;
     display: block;
     left: 50%;
     bottom: 5%;
     margin-left: -25px;
     display: block; 
-    z-index: 999999; 
+    z-index: 1000;
     height: 40px;
     width: 66px;
 }
@@ -340,6 +339,69 @@ img {
 #generations-gap{
 
 }
+#clients{
+    background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#clients #client-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 50%;
+    height: 30px;
+}
+#portfolio{
+    background: url(../images/11/background-green.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#portfolio #portfolio-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 50%;
+    height: 30px;
+    margin-top: 20px;
+}
+#portfolio .container{
+    margin-top: 10%;
+    position: relative;
+}
+#video{
+    background: url(../images/12/background-green.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#video #watch{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 20%;
+    height: 30px;
+    margin-top: 20px;
+}
+#video #play{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 40%;
+}
+#video #play-video-container{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
 /* Home Slide */
 #my-first {
     background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
@@ -396,11 +458,12 @@ img {
     -o-background-size: cover;
     background-size: cover;
 }
-
-/* Leadership */
 #leadership {
     background: url(../images/04/background-white.jpg) 50% 0 no-repeat fixed;
-    z-index: 898;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #leadership .leadership-text{

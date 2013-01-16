@@ -205,9 +205,38 @@ $(document).ready(function() {
             $(this).css('opacity', 0);
             return;
         }
-
         var randomDelay = Math.random() * 600;
         $(this).delay(randomDelay).animate({ opacity: 1 }, 600);
+    });
+
+    $('#clients #client-text').bind('inview', function(event, isVisible){
+        if(!isVisible){
+            $(this).animate({height: '30px' }, 100);
+            return;
+        }
+        $(this).delay(400).animate({height: '81px'}, 500);
+    });
+
+    $('#portfolio #portfolio-text').bind('inview', function(event, isVisible){
+        if(!isVisible){
+            $(this).animate({height: '30px' }, 100);
+            return;
+        }
+        $(this).delay(400).animate({height: '81px'}, 500);
+    });
+
+    $('.play-video').fancybox({
+        'autoDimensions': false,
+//        autoHeight: false,
+//        autoWidth: false,
+        minWidth: '70%',
+        minHeight: '65%',
+        openEffect: 'fade',
+        'transitionIn': 'elastic',
+        scrolling: 'no',
+        'transitionOut': 'fade',
+        beforeClose: function(){ scrollLocked = false; },
+        'afterShow': function() { scrollLocked = true; }
     });
 
     // Ready to go
@@ -247,17 +276,9 @@ var scrollDirection = 'down';
 var MIN_HEIGHT = 600;
 var screenHeight = $(window).height() > MIN_HEIGHT ? $(window).height() : MIN_HEIGHT;
 var documentWrapWidth = 1100;
-var shoeBuildLeftOffset = 190;
-var shoeOffsetTop = 0;
-var shoeOffsetLeft = 0;
 var documentGutterWidth = (($(document).width() - documentWrapWidth) / 2);
 var screenAnimationTime = 1000;
 var screens = mint.screens;
-
-
-// Perspective Background
-var perspBgWidth = 2100;
-var perspBgHeight = 1500;
 
 // Shoe Builder Screens
 var flexfilmSetupComplete = false;
@@ -327,13 +348,6 @@ function sizeToWindow() {
     $('#chooser_menu').css('left', colorBrowserMenuLeftOffset + "px" );
     $('#chooser_selected').css('left', colorBrowserMenuLeftOffset + ((colorBrowserCurrentItem-1)*colorBrowserMenuItemWidth) + "px");
 
-
-    $('.persp_background').css('top', ((screenHeight-perspBgHeight)/2) + "px");
-    $('.persp_background').css('left', ($(window).width()-perspBgWidth)/2 + "px");
-    $('.glow').css('top', ((screenHeight-perspBgHeight)/2) + "px");
-    $('.glow').css('left', ($(window).width()-perspBgWidth)/2 + "px");
-
-
     shoeOffsetLeft = ($(window).width()-$('.shoe_part').width())/2;
     shoeOffsetTop = ((screenHeight-$('.shoe_part').height())/2);
 
@@ -399,6 +413,8 @@ function sizeToWindow() {
  ***************************************************************************************/
 function setupScrollHandler() {
     $("body").bind("mousewheel", function (delta, aS, aQ, deltaY) {
+        if(scrollLocked)
+            return;
         delta.preventDefault();
         if (deltaY > 0) {
             scrollPrev();
