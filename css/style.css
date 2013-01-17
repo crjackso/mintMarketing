@@ -77,6 +77,11 @@ img {
     right: 0px;
     overflow: hidden;
 }
+#teamMemberDialog .banner{
+    overflow: hidden;
+    height: 100px;
+    background: url(../images/05/headerbar.png);
+}
 .teamTextPic{
     position: absolute;
     top: 25px;
@@ -113,8 +118,6 @@ img {
     background-color: lime;
 }​
 
-/* Introduction */
-#first .smashinglogo { background: url(../images/smashing-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #logo-container{
     text-align: center;
     overflow: hidden;
@@ -478,6 +481,120 @@ img.boomer{
     display: block;
     top: 10%;
 }
+#target-segment{
+    background: url(../images/14/00background-cloudpage.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#our-target-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 10%;
+}
+#millenials-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 15%;
+}
+#purchasing-power{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 20%;
+}
+#boomers{
+    position: relative;
+    display: block;
+    top: 15%;
+    left: 5%;
+}
+#digital-ads{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    /*top: 10%;*/
+    right: 5%;
+}
+#stimulation{
+    position: relative;
+    left: 25%;
+    display: block;
+    top: 5%;
+}
+#persuade{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    right: 15%;
+    top: 5%;
+}
+#high-loyalty{
+    position: relative;
+    left: 40%;
+    display: block;
+}
+#engagement{
+    position: relative;
+    left: 10%;
+}
+#cloud1{
+    height:692px;
+    background: url(../images/14/03cloud.png);
+    margin-top:-346px;
+    top:100%;
+}
+#cloud2{
+    height:484px;
+    background: url(../images/14/03cloud.png);
+    margin-top:-242px;
+    top:90%;
+}
+#cloud3{
+    height:444px;
+    background: url(../images/14/03cloud.png);
+    margin-top:-222px;
+    top:70%;
+}
+#cloud4{
+    height:444px;
+    background: url(../images/14/03cloud.png);
+    margin-top:-222px;
+    top:70%;
+}#cloud5{
+     height:444px;
+     background: url(../images/14/03cloud.png);
+     margin-top:-222px;
+     top:70%;
+ }#cloud5{
+      height:444px;
+      background: url(../images/14/03cloud.png);
+      margin-top:-222px;
+      top:70%;
+  }#cloud6{
+       height:444px;
+       background: url(../images/14/03cloud.png);
+       margin-top:-222px;
+       top:70%;
+   }
+#cloud7{
+    height:444px;
+    background: url(../images/14/03cloud.png);
+    margin-top:-222px;
+    top:70%;
+}
+#cloud8{
+    height:444px;
+    background: url(../images/14/03cloud.png);
+    margin-top:-222px;
+    top:70%;
+}
 /* Home Slide */
 #my-first {
     background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
@@ -486,6 +603,7 @@ img.boomer{
     -o-background-size: cover;
     background-size: cover;
 }
+#logo-container{text-align: center;}
 #my-first .smashinglogo { background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #my-first article { width: 100%; top: 300px; position: absolute; text-align: center; }
 #my-first article p,

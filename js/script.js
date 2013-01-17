@@ -14,7 +14,8 @@ mint.screens = [
     "clients",
     "portfolio",
     "video",
-    "our-goal"
+    "our-goal",
+    "target-segment"
 ];
 
 mint.screenCount = mint.screens.length;
@@ -49,38 +50,18 @@ $(document).ready(function () {
         closeEffect:'elastic'
     });
 
-    $('.various').live('click', function (e) {
-        e.preventDefault();
-        var id = $(this).data('person');
-        var person = people[id];
-
-        var source = $("#entry-template").html();
-        var template = Handlebars.compile(source);
-
-        var context = {};
-        context = $.extend(context, person);
-
-        var html = template(context);
-        $('#teamMemberPlaceholder').html(html);
-
-        $(this).fancybox({
-            minHeight:'70%',
-            openEffect:'elastic'
-        });
-    });
-
     $(window).bind('resize', set_slide_heights);
 
-//    skrollr.init({
-//        forceHeight:false,
-//        smoothScrolling:true,
-//        easing:{
-//            WTF:Math.random,
-//            inverted:function (p) {
-//                return 1 - p;
-//            }
-//        }
-//    });
+    skrollr.init({
+        forceHeight:false,
+        smoothScrolling:true,
+        easing:{
+            WTF:Math.random,
+            inverted:function (p) {
+                return 1 - p;
+            }
+        }
+    });
 
     $("#teamJson").val(JSON.stringify(people));
 });
