@@ -7,20 +7,21 @@ img {
 }
 .story {
     height: 864px;
-    /*_height: 300px;*/
     padding: 0;
     width: 100%;
     max-width: 1920px;
     position: relative; 
     margin: 0 auto;
-    /*border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.4);
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
     overflow: hidden;
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
+}
+.long-story{
+    height: 1100px;
+    padding: 0;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .transition{ height:700px; margin: 0 auto; width: 100%; }
 .scene {
@@ -615,6 +616,50 @@ img.boomer{
     margin-right: auto;
     display: block;
     top: 15%;
+}
+#win-win{
+    background: url(../images/17/background-green.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#win-win-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 25%;
+}
+#always-win-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 15%;
+}
+#win-win-case{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 45%;
+    text-align: center;
+}
+/*#win-win-case li { display: inline-block; }*/
+#thank-you{
+    background: url(../images/18/background-last.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#thank-you-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 35%;
 }
 /* Home Slide */
 #my-first {
