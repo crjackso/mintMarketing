@@ -488,6 +488,13 @@ img.boomer{
     -o-background-size: cover;
     background-size: cover;
 }
+#target-segment-transition{
+    background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #our-target-text{
     position: relative;
     margin-left: auto;
@@ -594,6 +601,20 @@ img.boomer{
     background: url(../images/14/03cloud.png);
     margin-top:-222px;
     top:70%;
+}
+#excitement{
+    background: url(../images/15/00.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#excitement-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 15%;
 }
 /* Home Slide */
 #my-first {

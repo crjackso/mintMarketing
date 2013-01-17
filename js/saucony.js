@@ -21,8 +21,6 @@ $(document).ready(function() {
 
         // Prevent scrolling when scroller is not ready
         if(scrollLocked) preventScroll();
-
-        console.log($(window).scrollTop());
     });
 
     /****************************************************************************************
