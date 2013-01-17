@@ -362,9 +362,17 @@ img {
 }
 .genY{
     margin-top: 15px;
+    position:relative;
+    left: 500px;
 }
-.boomer{
+img.genX{
+    position:relative;
+    left: 500px;
+}
+img.boomer{
     margin-top: -5px;
+    left: 300px;
+    position: relative;
 }
 .boomer-title{
     margin-top: 5px;

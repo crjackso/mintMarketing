@@ -71,16 +71,16 @@ $(document).ready(function () {
 
     $(window).bind('resize', set_slide_heights);
 
-    skrollr.init({
-        forceHeight:false,
-        smoothScrolling:true,
-        easing:{
-            WTF:Math.random,
-            inverted:function (p) {
-                return 1 - p;
-            }
-        }
-    });
+//    skrollr.init({
+//        forceHeight:false,
+//        smoothScrolling:true,
+//        easing:{
+//            WTF:Math.random,
+//            inverted:function (p) {
+//                return 1 - p;
+//            }
+//        }
+//    });
 
     $("#teamJson").val(JSON.stringify(people));
 });
