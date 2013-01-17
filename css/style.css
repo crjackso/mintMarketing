@@ -339,6 +339,36 @@ img {
 #generations-gap{
 
 }
+#preferred-text{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    top: 15%;
+}
+#gap-column-container{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.gap-title{
+    margin-bottom: 60px;
+}
+.gap-column{
+    float: left;
+    width: 290px;
+    height: 575px;
+}
+.genY{
+    margin-top: 15px;
+}
+.boomer{
+    margin-top: -5px;
+}
+.boomer-title{
+    margin-top: 5px;
+}
 #clients{
     background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
