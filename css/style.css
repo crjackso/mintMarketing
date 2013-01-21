@@ -39,6 +39,8 @@ li{margin-top: 10px;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc); 
 }
 .leaf-transition{
     background: url(../images/leaf-transition.jpg) 50% 0 no-repeat fixed;
@@ -46,13 +48,14 @@ li{margin-top: 10px;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 .scene {
     position: fixed;
     width: 940px;
     overflow: hidden;
 }
-
 .scene>img {
     position: absolute;    
 }
@@ -85,6 +88,8 @@ li{margin-top: 10px;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #team .contain {
     top: 20%;
@@ -171,6 +176,8 @@ li{margin-top: 10px;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 
 #who-we-are #easel{
@@ -230,6 +237,8 @@ li{margin-top: 10px;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 
 #core-services .digital-campaigns{
@@ -261,6 +270,8 @@ li{margin-top: 10px;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 
 #core-services-roundup .banner{
@@ -336,6 +347,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #content-management{
     background: url(../images/07-02/background-orange.jpg) 50% 0 no-repeat fixed;
@@ -344,6 +357,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #corporate-identity{
     background: url(../images/07-03/background-teal.jpg) 50% 0 no-repeat fixed;
@@ -352,6 +367,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #digital-web{
     background: url(../images/07-04/background-lightblue.jpg) 50% 0 no-repeat fixed;
@@ -360,6 +377,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #experiential-marketing{
     background: url(../images/07-05/background-red.jpg) 50% 0 no-repeat fixed;
@@ -368,6 +387,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #market-research{
     background: url(../images/07-06/background-lightgreen.jpg) 50% 0 no-repeat fixed;
@@ -376,6 +397,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #public-relations{
     background: url(../images/07-07/background-brown.jpg) 50% 0 no-repeat fixed;
@@ -384,6 +407,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #seo{
     background: url(../images/07-08/background-yellow.jpg) 50% 0 no-repeat fixed;
@@ -392,6 +417,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #social-media{
     background: url(../images/07-09/background-gray.jpg) 50% 0 no-repeat fixed;
@@ -400,6 +427,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 #video-production{
     background: url(../images/07-10/background-magenta.jpg) 50% 0 no-repeat fixed;
@@ -408,6 +437,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
+    /*-ms-behavior: url(backgroundsize.min.htc);*/
+   /*behavior: url(backgroundsize.min.htc);*/    
 }
 .inner img{
     top: 30%;
@@ -445,6 +476,8 @@ li{margin-top: 10px;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #our-process #our-process-text{
     top: 15%;
@@ -513,6 +546,8 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #clients #client-text{
     position: relative;
@@ -528,6 +563,8 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #portfolio .contain {
     top: 20%;
@@ -552,6 +589,8 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #video #watch{
     position: relative;
@@ -580,6 +619,8 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #spark-emotion{
     background-image: url(../images/13/spark.png);
@@ -618,15 +659,9 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
-
-/*#target-segment-transition{*/
-    /*background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
 #our-target-text{
     position: relative;
     margin-left: auto;
@@ -741,6 +776,8 @@ img.boomer{
     -o-background-size: cover;
     background-size: cover;
     background-position: 0%;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #excitement-text{
     position: relative;
@@ -755,6 +792,8 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #win-win-text{
     position: relative;
@@ -793,6 +832,8 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #thank-you-text{
     position: relative;
@@ -803,13 +844,13 @@ img.boomer{
 }
 /* Home Slide */
 #home {
-/*    background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
+    background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);*/
+    behavior: url(backgroundsize.min.htc);
 }
 #home img.bg {
     /* Set rules to fill background */
@@ -840,8 +881,6 @@ img.boomer{
 #home article a { text-decoration: underline; }
 #home article a:hover { color: #fff; }
 
-/*#home-transition { background: url(../images/01/01-transition.jpg) 50% 0 no-repeat fixed; }*/
-
 /* Our Mission */
 #mission {
     background: url(../images/03/background-green-glow.jpg) 50% 0 no-repeat fixed;
@@ -851,6 +890,8 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #mission-container{position: relative;}
 #mission #our-mission-is {
@@ -874,20 +915,14 @@ img.boomer{
     margin-right: auto;
     display: block;
 }
-/*#mission-transition  */
-/*{*/
-    /*background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed; */
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
 #leadership {
     background: url(../images/04/background-white.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #leadership .leadership-text{
     top: 40%;
@@ -914,15 +949,6 @@ img.boomer{
 #leadership-bio #leadership-gale-bio{position: absolute; top: 20%; left: 37%;}
 #leadership-bio .leadership-text{position: absolute; right: 5%; top: 3%;}
 #leadership-bio .green-button {bottom: 8%}
-/*#leadership-transition  */
-/*{*/
-    /*background: url(../images/02/02-transition.jpg) 50% 0 no-repeat fixed;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
-
 
 /* HTML5 Video */
 #fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
