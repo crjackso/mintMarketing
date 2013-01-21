@@ -54,49 +54,49 @@
 <article id="my-first" class="story" data-speed="8" data-type="background">
     <div id="logo-container">
         <img id="logo" src="images/01/mint-logo.png" alt="" data-0="display:inline-block;transform:scale(1); opacity:1"
-             data-500="display:inline-block;transform:scale(5);opacity:1;"
-             data-700="display:inline-block;transform:scale(8);opacity:0;"
+             data-500="display:inline-block;transform:scale(2);opacity:1;"
+             data-700="display:inline-block;transform:scale(3);opacity:0;"
              data-1100="display:none"/>
     </div>
     <div class="downBtn white-button" data-slide="1"></div>
 </article>
-<article id="first-transition" class="transition" data-speed="4" data-type="background">
+<article class="transition leaf-transition" data-speed="4" data-type="background">
 </article>
 <article id="who-we-are" class="story" data-speed="200" data-type="background">
     <img id="easel" src="images/02/easel.png" alt="" data-1400="opacity:0" data-1700="opacity:1"
          data-1900="opacity:1"/>
     <img id="result-driven" src="images/02/results-driven.png" alt="" data-1300="opacity:0"
          data-1600="opacity:1"/>
-    <img src="images/02/bishop.png" style="position: absolute;" data-1450="bottom: 100px; left:-200px; opacity:1"
+    <img id="bishop" src="images/02/bishop.png" data-1450="bottom: 100px; left:-200px; opacity:1"
          data-1500="bottom: 100px; left: 100px;opacity:1"/>
     <img id="sound-in-strategy" src="images/02/sound-strategy.png" alt=""
-         data-100-top="top:0%" data-center-center="top:65%" data-anchor-target="#who-we-are"/>
+         data-100-top="top:90%" data-center-center="top: 60%" data-top-center="top:-30%"
+         data-anchor-target="#who-we-are"/>
     <img id="brand-loyalty" src="images/02/creators-of.png" alt=""
-         data-100-top="top:-30%" data-center-center="top: 40%" data-anchor-target="#who-we-are"/>
-
+         data-100-top="top:-60%" data-center-center="top: 40%" data-top-center="top:100%"
+         data-anchor-target="#who-we-are"/>
     <div class="mint-logo-small green"></div>
     <div class="downBtn green-button" data-slide="2"></div>
 </article>
-<article id="mission-transition" class="transition" data-speed="-40" data-type="transition">
+<article class="transition compass-transition" data-speed="-1000" data-type="transition">
 </article>
-<!-- Section #3 / Mission -->
 <article id="mission" class="story" data-speed="200" data-type="background">
-    <img id="our-mission-is" src="images/03/ourmissionis.png" alt="" data-bottom-center="opacity:0"
-         data-center-center="opacity:1"/>
-    <img id="evolve-brands" src="images/03/evolvebrands.png" alt="" data-bottom-center="opacity:0"
-         data-center-center="opacity:1" data-top="opacity:1" data-3450="opacity:0"/>
-    <img id="mint-leaf" src="images/03/mintleaf.png" alt="" data-bottom-center="opacity:0"
-         data-center-center="opacity:1"/>
-
+    <div id="mission-container"
+         data-bottom-center="top: -100%" data-center-center="top: 30%" data-top-center="top:100%"
+         data-anchor-target="#mission">
+        <img id="our-mission-is" src="images/03/ourmissionis.png" alt=""/>
+        <img id="evolve-brands" src="images/03/evolvebrands.png" alt="" />
+        <img id="mint-leaf" src="images/03/mintleaf.png" alt=""/>
+    </div>
     <div class="mint-logo-small white"></div>
     <div class="downBtn white-button" data-slide="3"></div>
 </article>
-<article id="leadership-transition" class="transition" data-speed="-40" data-type="transition"
-         data-offsety="-200">
+<article class="transition leaf-transition" data-type="transition">
 </article>
 <article id="leadership" class="story" data-speed="200" data-type="background">
-    <img class="leadership-text" src="images/04/leadership.png" alt="" data-4500="right: -60%"
-         data-4600="right: 15%" data-5500="right: -60%"/>
+    <img class="leadership-text" src="images/04/leadership.png" alt=""
+         data-bottom-center="top: -100%" data-center-center="top: 40%" data-top-center="top:100%"
+         data-anchor-target="#leadership"/>
     <img id="leadership-gale" src="images/04/gale-pic.png" alt=""/>
     <img id="leadership-gale-text" src="images/04/galehill.png" alt="" data-4500="opacity:0"
          data-4600="opacity:1" data-4900="opacity:0"/>
@@ -104,14 +104,13 @@
         <img id="leadership-learn-more" src="images/04/learn-more.png" alt="" data-bottom-center="left: -50%"
              data-center-center="left: 65%" data--100-top="left: 120%"/>
     </a>
-    <img id="leadership-experience" src="images/04/previous-experience.png" alt="" data-4500="right: -60%"
-         data-4600="right: 45%" data-5500="right: -60%"/>
-
+    <img id="leadership-experience" src="images/04/previous-experience.png" alt=""
+         data-bottom-center="left:0%" data-center-center="left: 50%"
+         data-anchor-target="#leadership"/>
     <div class="mint-logo-small green"></div>
     <div class="downBtn green-button" data-slide="4"></div>
 </article>
-<article id="team-transition" class="transition" data-speed="-40" data-type="transition"
-         data-offsety="-200">
+<article class="transition leaf-transition">
 </article>
 <article id="team" class="story" data-speed="200" data-type="background">
     <div class="banner">
@@ -164,6 +163,8 @@
     <div class="mint-logo-small white"></div>
     <div class="downBtn white-button" data-slide="5"></div>
 </article>
+<article class="transition compass-transition" data-speed="-1000" data-type="transition">
+</article>
 <article id="core-services" class="story" data-speed="200" data-type="background">
     <img src="images/06/digital-campaigns.png" alt="" class='digital-campaigns'/>
     <img src="images/06/amp.png" alt="" class='amp'/>
@@ -172,6 +173,8 @@
 
     <div class="mint-logo-small white"></div>
     <div class="downBtn white-button" data-slide="6"></div>
+</article>
+<article class="transition leaf-transition">
 </article>
 <article id="core-services-slider" class="story">
     <div class="touchslider">
@@ -311,7 +314,7 @@
                     <div class="inner">
                         <div class="fluid">
                             <div class="fullRow">
-                                <img src="images/07-08/seo.png" alt=""/>
+                                <img src="images/07-09/social-media.png" alt=""/>
                             </div>
                             <div class="fullRow text">
                                 The social media ecosystem relies on shareable and consistent content management
@@ -391,6 +394,8 @@
     <div class="mint-logo-small white"></div>
     <div class="downBtn white-button" data-slide="9"></div>
 </article>
+<article class="transition compass-transition">
+</article>
 <article id="generations-gap" class="story">
     <img src="images/09/preferred.png" alt="" id="preferred-text"/>
 
@@ -469,6 +474,8 @@
     <div class="mint-logo-small green"></div>
     <div class="downBtn green-button" data-slide="14"></div>
 </article>
+<article class="transition leaf-transition">
+</article>
 <article id="target-segment" class="story">
     <img id="our-target-text" src="images/14/01our-target-segment.png" alt=""/>
     <img id="millenials-text" src="images/14/01millenials.png" alt=""/>
@@ -496,14 +503,14 @@
     <div class="mint-logo-small green"></div>
     <div class="downBtn green-button" data-slide="15"></div>
 </article>
-<article id="target-segment-transition" class="transition" data-speed="-40" data-type="transition">
+<article class="transition compass-transition">
 </article>
 <article id="excitement" class="long-story">
     <img src="images/15/01.png" alt="" id="excitement-text"
          data-bottom-center="top: -100%" data-center-center="top: 15%" data-anchor-target="#excitement"/>
 
     <div class="mint-logo-small white"></div>
-    <div class="downBtn white-button" data-slide="13"></div>
+    <div class="downBtn white-button" data-slide="17"></div>
 </article>
 <article id="win-win" class="story">
     <img id="always-win-text" src="images/17/always.png" alt=""/>
@@ -517,14 +524,12 @@
         </ul>
     </div>
     <div class="mint-logo-small white"></div>
-    <div class="downBtn white-button" data-slide="13"></div>
+    <div class="downBtn white-button" data-slide="18"></div>
 </article>
 <article id="thank-you" class="story">
     <img id="thank-you-text" alt="" src="images/18/thankyou.png"
          data-bottom-center="top: -100%" data-center-center="top: 35%" data-anchor-target="#thank-you"/>
-
     <div class="mint-logo-small green"></div>
-    <div class="downBtn green-button" data-slide="13"></div>
 </article>
 <div id="teamMemberPlaceholder" style="display: none">
 </div>

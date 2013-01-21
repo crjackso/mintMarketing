@@ -15,7 +15,10 @@ mint.screens = [
     "portfolio",
     "video",
     "our-goal",
-    "target-segment"
+    "target-segment",
+    "excitement",
+    "win-win",
+    "thank-you"
 ];
 
 mint.screenCount = mint.screens.length;
