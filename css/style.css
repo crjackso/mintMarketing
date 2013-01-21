@@ -347,8 +347,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);   
 }
 #content-management{
     background: url(../images/07-02/background-orange.jpg) 50% 0 no-repeat fixed;
@@ -357,8 +357,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);   
 }
 #corporate-identity{
     background: url(../images/07-03/background-teal.jpg) 50% 0 no-repeat fixed;
@@ -367,8 +367,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);   
 }
 #digital-web{
     background: url(../images/07-04/background-lightblue.jpg) 50% 0 no-repeat fixed;
@@ -377,8 +377,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #experiential-marketing{
     background: url(../images/07-05/background-red.jpg) 50% 0 no-repeat fixed;
@@ -387,8 +387,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #market-research{
     background: url(../images/07-06/background-lightgreen.jpg) 50% 0 no-repeat fixed;
@@ -397,8 +397,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #public-relations{
     background: url(../images/07-07/background-brown.jpg) 50% 0 no-repeat fixed;
@@ -407,8 +407,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #seo{
     background: url(../images/07-08/background-yellow.jpg) 50% 0 no-repeat fixed;
@@ -417,8 +417,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);  
 }
 #social-media{
     background: url(../images/07-09/background-gray.jpg) 50% 0 no-repeat fixed;
@@ -427,8 +427,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);  
 }
 #video-production{
     background: url(../images/07-10/background-magenta.jpg) 50% 0 no-repeat fixed;
@@ -437,8 +437,8 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
     width: 2000px;
-    /*-ms-behavior: url(backgroundsize.min.htc);*/
-   /*behavior: url(backgroundsize.min.htc);*/    
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 .inner img{
     top: 30%;
