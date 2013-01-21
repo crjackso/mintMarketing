@@ -1,5 +1,8 @@
-body{ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif }
-article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF;
+}
+/*article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }*/
 img {
     background: transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
@@ -452,6 +455,11 @@ li{margin-top: 10px;}
     margin-top: 15%;
     text-align: center;
     margin-left: 5%;
+}
+.our-process-div{
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 15px;
 }
 #generations-gap{
 
