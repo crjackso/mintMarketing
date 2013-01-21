@@ -72,7 +72,7 @@ function set_slide_heights() {
     var newHeight = parseInt(height) + 'px';
     $(".story").css('height', newHeight);
 
-    $('.touchslider-item img').css('width', width + 'px');
-    $('.touchslider-item img').height(height);
+    $('.touchslider-item .inner').css('width', width + 'px');
+    $('.touchslider-item .inner').height(height);
     $('.touchslider-viewport').height(height - 20);
 }

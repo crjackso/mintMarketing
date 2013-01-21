@@ -1,3 +1,4 @@
+body{ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif }
 article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
 img {
     background: transparent;
@@ -5,6 +6,7 @@ img {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */
     zoom: 1;
 }
+li{margin-top: 10px;}
 .story {
     height: 864px;
     padding: 0;
@@ -181,7 +183,8 @@ img {
     margin: 0 auto;
 }
 #who-we-are #sound-in-strategy{
-    bottom:20%;
+    /*bottom:20%;*/
+    top: 65%;
     left:12%;
     position: absolute;
 }
@@ -320,7 +323,115 @@ img {
     top: 80%;
     left: 60%;
 }
-
+#advertising{
+    background: url(../images/07-01/background-purple.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#content-management{
+    background: url(../images/07-02/background-orange.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#corporate-identity{
+    background: url(../images/07-03/background-teal.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#digital-web{
+    background: url(../images/07-04/background-lightblue.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#experiential-marketing{
+    background: url(../images/07-05/background-red.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#market-research{
+    background: url(../images/07-06/background-lightgreen.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#public-relations{
+    background: url(../images/07-07/background-brown.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#seo{
+    background: url(../images/07-08/background-yellow.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#social-media{
+    background: url(../images/07-09/background-gray.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+#video-production{
+    background: url(../images/07-10/background-magenta.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2000px;
+}
+.inner img{
+    top: 30%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.inner #icons{
+    margin-top: 3%;
+}
+.inner{ text-align: center;}
+.inner .text{
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 5%;
+}
+.fluid{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    position: relative;
+}
+.fluid [class*="span"]:first-child {
+    margin-left: 0;
+}
+.fluid .fullRow {
+    width: 100%;
+}
 #our-process{
     background: url(../images/08/background-green.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
@@ -638,13 +749,21 @@ img.boomer{
     display: block;
     top: 15%;
 }
-#win-win-case{
+#win-win-container{
+    /*text-align: center;*/
+    margin: 0 auto;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    display: table;
+    top: 30%;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    top: 45%;
-    text-align: center;
+}
+#win-win-case{
+    color: #FFF;
+    font-size: 1.8em;
+}
+#win-win-case li{
+    margin-top: 35px;
 }
 /*#win-win-case li { display: inline-block; }*/
 #thank-you{
@@ -1814,85 +1933,6 @@ a#visit_facebook:hover, a#visit_facebook:active {
 
 
 
-
-
-
-/* =============================================================================
-   ColorBox
-   ========================================================================== */
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:99999; overflow:hidden;}
-#cboxOverlay{position:fixed; width:100%; height:100%;}
-#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
-#cboxContent{position:relative;}
-#cboxLoadedContent{overflow:auto;}
-#cboxTitle{margin:0;}
-#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
-.cboxPhoto{float:left; margin:auto; border:0; display:block;}
-.cboxIframe{width:100%; height:293px; display:block; border:0;}
-
-#cboxOverlay{background:url('../images/saucony/colorbox-overlay.png') repeat 0 0;}
-#colorbox{}
-#cboxTopLeft{width:0; height:0}
-#cboxTopCenter{height:0;}
-#cboxTopRight{width:0; height:0;}
-#cboxBottomLeft{width:0; height:0;}
-#cboxBottomCenter{height:0; }
-#cboxBottomRight{width:0; height:0;}
-#cboxMiddleLeft{width:0;}
-#cboxMiddleRight{width:0;}
-#cboxContent{background-color: #fff; overflow:hidden;}
-#cboxContent img { margin-top: 0 !important; }
-.cboxIframe{background:#fff;}
-#cboxError{padding:50px; border:1px solid #ccc;}
-#cboxLoadedContent{margin-bottom:0px;}
-#cboxTitle{
-    background-color: #000;
-    position:absolute;
-    bottom:0px;
-    left:0;
-    text-align:left;
-    height:48px;
-    width:100%;
-    color:#fff;
-    font-size: 0.875em;
-    padding: 20px 0 0 20px;
-}
-#cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
-#cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
-#cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
-#cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
-#cboxLoadingOverlay{background:#fff url(../images/saucony/colorbox-loading.gif) no-repeat 5px 5px;}
-#cboxClose{
-    position:absolute;
-    bottom:20px; right:20px;
-    width: 25px; height: 25px;
-    display:block;
-    background: url('../images/saucony/colorbox-close-btn.png') no-repeat 0 0;
-    color:#fff;
-    text-indent: -999999px;
-}
-#cboxClose:hover { background-position: -25px 0; }
-
-/*
-  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
-  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
-  See: http://jacklmoore.com/notes/ie-transparency-problems/
-*/
-.cboxIE #cboxTopLeft,
-.cboxIE #cboxTopCenter,
-.cboxIE #cboxTopRight,
-.cboxIE #cboxBottomLeft,
-.cboxIE #cboxBottomCenter,
-.cboxIE #cboxBottomRight,
-.cboxIE #cboxMiddleLeft,
-.cboxIE #cboxMiddleRight {
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
-}
-
-
-
-
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
@@ -1921,38 +1961,28 @@ a#visit_facebook:hover, a#visit_facebook:active {
 /* limit content to certain viewport */
 .wrap { width: 1100px; margin:0px auto; text-align:left; position: relative; }
 
-#men-disp-1{
-    background: url(../images/07-01advertising.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .touchslider-viewport {
     height: 900px;
     overflow: hidden;
 }
 .touchslider-prev {
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 3%;
     cursor: pointer;
 }
 .touchslider-next {
     position: absolute;
-    top: 35%;
+    top: 45%;
     right: 3%;
     cursor: pointer;
 }
 #services-menu{
     position: absolute;
-    top: 4%;
-    left: 23%;
     z-index: 1;
-    color: white;
+    color: #DDD;
     list-style: none;
-    font-size: 1.2em;
+    width: 25%;
 }
 #services-menu > li{
     cursor: pointer;
@@ -1963,4 +1993,6 @@ a#visit_facebook:hover, a#visit_facebook:active {
 }
 .touchslider-nav-item-current{
     font-weight: bold;
+    margin-left: 5%;
+    font-size: 1.2em;
 }
