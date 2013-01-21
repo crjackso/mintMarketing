@@ -399,19 +399,4 @@ $(document).ready(function () {
         goToByScroll(dataslide);
 
     });
-
-//    skrollr.init({
-//        beforerender:function (data) {
-//            //console.log('beforerender');
-//        },
-//        render:function () {
-//            //console.log('render');
-//        },
-//        easing:{
-//            WTF:Math.random,
-//            inverted:function (p) {
-//                return 1 - p;
-//            }
-//        }
-//    });
 });

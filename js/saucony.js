@@ -255,20 +255,17 @@ function scrollNext() {
     if( currentScreen < screens.length-1 && scrollReady == true ) {
         currentScreen++;
         performScroll();
-        console.log('next');
     }
 }
 function scrollPrev() {
     if( currentScreen > 0 && scrollReady == true ) {
         currentScreen--;
         performScroll();
-        console.log('prev');
     }
 }
 function performScroll() {
     scrollReady = false;
-    var screen = screens[currentScreen];
-    console.log(screen);
+    var screen = screens[currentScreen];    
     var newYPos = Math.ceil($('#'+screen).offset().top);
     $("html, body").animate(
         {scrollTop: newYPos },
