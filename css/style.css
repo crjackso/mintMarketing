@@ -150,15 +150,7 @@ li{margin-top: 10px;}
     overflow: hidden;
 }
 #logo{margin-top: 3%;}
-#home .mintlogo {
-    background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed;
-    min-height: 1000px;
-    padding: 0;
-    width: 100%;
-    max-width: 1920px;
-    position: relative; margin: 0 auto;
-    overflow: hidden;
-}
+
 #first article { width: 100%; top: 300px; position: absolute; text-align: center; }
 #first article p,
 #first article a { color: #ccc; }
@@ -182,6 +174,8 @@ li{margin-top: 10px;}
     top:23%;
     left:13%;
     position: absolute;
+    /* Mozilla ignores crazy MS image filters, so it will skip the following */
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale);
 }
 #who-we-are #bishop {
     position: absolute;
@@ -799,6 +793,17 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+}
+#home .mintlogo {
+    background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed;
+    min-height: 1000px;
+    padding: 0;
+    width: 100%;
+    max-width: 1920px;
+    position: relative; margin: 0 auto;
+    overflow: hidden;
 }
 #logo-container{text-align: center;}
 #home .smashinglogo { background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }

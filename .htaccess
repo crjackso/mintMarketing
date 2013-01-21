@@ -1,2 +1,4 @@
 php_flag engine off
 DirectoryIndex skroll.html
+
+AddType text/x-component .htc
