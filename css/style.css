@@ -710,7 +710,7 @@ img.boomer{
     display: block;
 }
 #engagement{
-    position: relative;
+    position: absolute;
     left: 10%;
 }
 #cloud1{
