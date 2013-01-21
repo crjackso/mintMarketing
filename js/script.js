@@ -32,27 +32,6 @@ $(document).ready(function () {
 
     set_slide_heights();
 
-    $(".show-gale").fancybox({
-        'autoDimensions':false,
-        'width':'80%',
-        height:'95%',
-        autoHeight:false,
-        autoWidth:false,
-        minWidth:'80%',
-        minHeight:'95%',
-        openEffect:'fade',
-        'transitionIn':'elastic',
-        scrolling:'no',
-        'transitionOut':'fade'
-    });
-
-    $('.various').fancybox({
-        minHeight:'70%',
-        minWidth:'50%',
-        openEffect:'fade',
-        closeEffect:'elastic'
-    });
-
     $(window).bind('resize', set_slide_heights);
 
     skrollr.init({

@@ -59,7 +59,7 @@ var krystal = new Person({
     name: 'Krystal Mays',
     title: 'Market Research Analyst',
     school: 'Clark Atlanta University',
-    major: 'Electrical Engineering',
+    major: 'MBA Marketing',
     picture_url: 'images/people/krystal.png',
     experience: 'Experienced Market Analyst in various sectors including real estate and retail',
     specialties:[
@@ -86,14 +86,14 @@ var arthur = new Person({
 
 var clint = new Person({
     id: 'arthur',
-    name: 'Arthur Sawyer',
+    name: 'Clint Bernard III',
     title: 'Account Executive',
     school: 'Michigan State University',
     major: '',
     picture_url: 'images/people/clint.png',
     experience: '12 years experience in web solutions and IT Management',
     specialties: [
-        'Political campaign Management',
+        'Political campaign management',
         'Web design'
     ]
 });

@@ -152,6 +152,34 @@ $(document).ready(function() {
         'afterShow': function() { scrollLocked = true; }
     });
 
+    $(".show-gale").fancybox({
+        'autoDimensions':false,
+        'width':'80%',
+        height:'95%',
+        autoHeight:false,
+        autoWidth:false,
+        minWidth:'80%',
+        minHeight:'95%',
+        openEffect:'fade',
+        'transitionIn':'elastic',
+        scrolling:'no',
+        'transitionOut':'fade',
+        beforeClose: function(){ scrollLocked = false; },
+        afterShow: function() { scrollLocked = true; }
+    });
+
+    $('.various').fancybox({
+        minHeight:'55%',
+        height: '55%',
+        minWidth:'40%',
+        width: '40%',
+        openEffect:'fade',
+        scrolling: 'no',
+        closeEffect:'elastic',
+        beforeClose: function(){ scrollLocked = false; },
+        afterShow: function() { scrollLocked = true; }
+    });
+
     $('.various').live('click', function (e) {
         e.preventDefault();
         var id = $(this).data('person');
@@ -167,8 +195,9 @@ $(document).ready(function() {
         $('#teamMemberPlaceholder').html(html);
 
         $(this).fancybox({
-            minHeight:'70%',
             openEffect:'elastic',
+            minHeight: '55%',
+            height: '55%',
             beforeClose: function(){ scrollLocked = false; },
             afterShow: function() { scrollLocked = true; }
         });

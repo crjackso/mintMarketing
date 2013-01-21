@@ -20,23 +20,22 @@
             <div class="banner">
                 <img src="images/05/header-leaf.png" alt="" class="bannerLeaf">
             </div>
-            <img src="images/05/the-team.png" alt="" class="teamTextPic">
-
+            <!--<img src="images/05/the-team.png" alt="" class="teamTextPic">-->
+            <span class="teamTextPic">{{name}}</span>
             <div id="teamMember" class="row">
                 <div class="profile-pic span4">
                     <img src="{{picture_url}}" alt=""/>
                 </div>
-                <div class="span8">
+                <div class="span8 profile-details">
                     <div class="span12">
-                        <h1 style="text-align:left;float:left;">{{name}}, </h1>
-
+                        <!--<h1 style="text-align:left;float:left;">{{name}}, </h1>-->
                         <h2>{{title}}</h2>
                     </div>
-                    <div class="span12">
+                    <div class="span12 profile-details">
                         <span>{{school}}</span><br/>
                         <span>{{major}}</span><br/>
                     </div>
-                    <div class="span12">
+                    <div class="span12 profile-details">
                         Specialties:<br>
                         <ul class="specialty_list">
                             {{#each specialties}}
@@ -353,7 +352,9 @@
     </div>
     <div class="downBtn white-button" data-slide="7"></div>
 </article>
-<article id="core-services-roundup" class="story" data-speed="200" data-type="background">
+<article class="transition compass-transition">
+</article>
+<article id="core-services-roundup" class="story">
     <div class="banner">
         <img src="images/07/headerleaf-green.png" alt="" class="bannerLeaf">
     </div>
@@ -372,6 +373,8 @@
     </div>
     <div class="mint-logo-small green"></div>
     <div class="downBtn green-button" data-slide="8"></div>
+</article>
+<article class="transition compass-transition">
 </article>
 <article id="our-process" class="story">
     <img id="our-process-text" src="images/08/our-process.png" alt="" data-bottom-center="opacity:0"
@@ -420,6 +423,8 @@
     <div class="mint-logo-small green"></div>
     <div class="downBtn green-button" data-slide="10"></div>
 </article>
+<article class="transition leaf-transition">
+</article>
 <article id="clients" class="story">
     <img src="images/10/clients.png" alt="" id="client-text"/>
 
@@ -463,6 +468,8 @@
     </div>
     <div class="mint-logo-small white"></div>
     <div class="downBtn white-button" data-slide="13"></div>
+</article>
+<article class="transition leaf-transition">
 </article>
 <article id="our-goal" class="story">
     <img src="images/13/our-goal.png" alt="" id="our-goal-text"/>
@@ -525,6 +532,8 @@
     </div>
     <div class="mint-logo-small white"></div>
     <div class="downBtn white-button" data-slide="17"></div>
+</article>
+<article class="transition compass-transition">
 </article>
 <article id="thank-you" class="story">
     <img id="thank-you-text" alt="" src="images/18/thankyou.png"
