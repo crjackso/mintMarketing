@@ -140,7 +140,7 @@ li{margin-top: 10px;}
     overflow: hidden;
 }
 #logo{margin-top: 3%;}
-#my-first .mintlogo {
+#home .mintlogo {
     background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed;
     min-height: 1000px;
     padding: 0;
@@ -154,20 +154,6 @@ li{margin-top: 10px;}
 #first article a { color: #ccc; }
 #first article a { text-decoration: underline; }
 #first article a:hover { color: #fff; }
-/*#first-transition  */
-/*{*/
-    /*background: url(../images/01/01-transition.jpg) 50% 0 no-repeat fixed; */
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
-
-/* Background Only */
-#second { padding: 50px 0;}
-#second article { background: url(../images/grain.png) repeat #333; color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#second article p { margin-bottom: 25px; }
-#second article a { color: #ff0;}
 
 #who-we-are {
     background: url(../images/02/background-white.jpg) 50% 0 no-repeat fixed;
@@ -730,6 +716,7 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: 0%;
 }
 #excitement-text{
     position: relative;
@@ -770,7 +757,7 @@ img.boomer{
 }
 #win-win-case{
     color: #FFF;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 #win-win-case li{
     margin-top: 35px;
@@ -791,7 +778,7 @@ img.boomer{
     top: 35%;
 }
 /* Home Slide */
-#my-first {
+#home {
     background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -799,14 +786,14 @@ img.boomer{
     background-size: cover;
 }
 #logo-container{text-align: center;}
-#my-first .smashinglogo { background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-#my-first article { width: 100%; top: 300px; position: absolute; text-align: center; }
-#my-first article p,
-#my-first article a { color: #ccc; }
-#my-first article a { text-decoration: underline; }
-#my-first article a:hover { color: #fff; }
+#home .smashinglogo { background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#home article { width: 100%; top: 300px; position: absolute; text-align: center; }
+#home article p,
+#home article a { color: #ccc; }
+#home article a { text-decoration: underline; }
+#home article a:hover { color: #fff; }
 
-/*#my-first-transition { background: url(../images/01/01-transition.jpg) 50% 0 no-repeat fixed; }*/
+/*#home-transition { background: url(../images/01/01-transition.jpg) 50% 0 no-repeat fixed; }*/
 
 /* Our Mission */
 #mission {

@@ -1,7 +1,7 @@
 var mint = {};
 
 mint.screens = [
-    "my-first",
+    "home",
     "who-we-are",
     "mission",
     "leadership",
