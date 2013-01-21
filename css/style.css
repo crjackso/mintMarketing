@@ -19,14 +19,18 @@ li{margin-top: 10px;}
     margin: 0 auto;
     overflow: hidden;
 }
-.long-story{
-    height: 1100px;
-    padding: 0;
-    width: 100%;
-    max-width: 1920px;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
+.contain {
+    margin-right: auto;
+    margin-left: auto;
+    width: 980px;
+}
+.cell3 {
+    width: 220px;
+    float: left;    
+}
+.cell4 {
+    float: left;
+    width: 300px;
 }
 .transition{ height:700px; margin: 0 auto; width: 100%; }
 .compass-transition{
@@ -82,6 +86,11 @@ li{margin-top: 10px;}
     -o-background-size: cover;
     background-size: cover;
 }
+#team .contain {
+    top: 20%;
+    position: relative;
+    text-align: center;
+}
 .specialty_list li{
     margin-left: 25px;
 }
@@ -117,7 +126,6 @@ li{margin-top: 10px;}
 }
 #teamMember{
     z-index:1000;
-    margin-top: 3%;
 }
 .profile-pic {
     float: left;
@@ -132,7 +140,7 @@ li{margin-top: 10px;}
 }
 #team .profile-box {
     max-height: 220px;
-    height: 205px;
+    height: 175px;
     overflow: hidden;
     background: url(../images/05/profile-box.png) no-repeat fixed;
  }
@@ -448,12 +456,15 @@ li{margin-top: 10px;}
 #our-process-container{
     margin-top: 15%;
     text-align: center;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 .our-process-div{
     text-align: center;
     margin-left: 0px;
     margin-top: 15px;
+    font-size: 1.3em;
 }
 #generations-gap{
 
@@ -517,6 +528,10 @@ img.boomer{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+#portfolio .contain {
+    top: 20%;
+    position: relative;
 }
 #portfolio #portfolio-text{
     position: relative;
@@ -788,13 +803,25 @@ img.boomer{
 }
 /* Home Slide */
 #home {
-    background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
+/*    background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);*/
+}
+#home img.bg {
+    /* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+			
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+			
+	/* Set up positioning */
+	position: fixed;
 }
 #home .mintlogo {
     background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed;
@@ -805,7 +832,7 @@ img.boomer{
     position: relative; margin: 0 auto;
     overflow: hidden;
 }
-#logo-container{text-align: center;}
+#logo-container{text-align: center;z-index: 100;position: relative;}
 #home .smashinglogo { background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 #home article { width: 100%; top: 300px; position: absolute; text-align: center; }
 #home article p,
