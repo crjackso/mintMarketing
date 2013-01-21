@@ -184,8 +184,7 @@ li{margin-top: 10px;}
     top:23%;
     left:13%;
     position: absolute;
-    /* Mozilla ignores crazy MS image filters, so it will skip the following */    
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/02/results-driven.png') alpha(opacity=0);
+    
 }
 #who-we-are #bishop {
     position: absolute;
