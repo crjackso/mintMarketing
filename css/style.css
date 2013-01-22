@@ -111,6 +111,7 @@ li{margin-top: 10px;}
     -webkit-box-shadow: 0px 4px 7px rgba(50, 50, 50, 0.55);
     -moz-box-shadow:    0px 4px 7px rgba(50, 50, 50, 0.55);
     box-shadow:         0px 4px 7px rgba(50, 50, 50, 0.55);
+    behavior: url(PIE.htc);
 }
 .teamTextPic{
     position: absolute;
@@ -134,6 +135,10 @@ li{margin-top: 10px;}
 }
 #teamMember .profile-details{
     margin-top: 8px;
+    font-size: 1.1em;
+}
+#teamMember .main {
+    
 }
 #teamMember .profile-details span{
     margin-top: 20px;

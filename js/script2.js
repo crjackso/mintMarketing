@@ -186,8 +186,8 @@ $(document).ready(function () {
         height: '55%',
         minWidth: '40%',
         width: '40%',
-        openEffect: 'fade',
-        scrolling: 'yes',
+        openEffect: 'elastic',
+        scrolling: 'no',
         closeEffect: 'elastic',
         beforeClose: function () { scrollLocked = false; },
         afterShow: function () { scrollLocked = true; }
