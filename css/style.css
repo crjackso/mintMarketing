@@ -157,7 +157,7 @@ li{margin-top: 10px;}
     text-align: center;
     overflow: hidden;
 }
-#logo{margin-top: 3%;}
+/*#logo{margin-top: 3%;}*/
 
 #first article { width: 100%; top: 300px; position: absolute; text-align: center; }
 #first article p,
@@ -928,9 +928,17 @@ img.boomer{
     position: relative;
     bottom: -15%;
     z-index: 999;
-    left: -4%;}
+    left: -4%;
+    display: block;
+}
 #leadership #leadership-gale-text{position:absolute; bottom: 45%; left: 50%;}
-#leadership #leadership-learn-more{ position: absolute; bottom: 40%; cursor: pointer;}
+#leadership #leadership-learn-more 
+{
+    position: absolute;
+    bottom: 40%;
+    cursor: pointer;
+    left: 48%;
+}
 #leadership #leadership-experience{
     position: absolute;
     bottom: 30%

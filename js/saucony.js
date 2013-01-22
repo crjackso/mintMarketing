@@ -166,13 +166,13 @@ $(document).ready(function () {
     });
 
     $(".show-gale").fancybox({
-        'autoDimensions': false,
-        'width': '65%',
-        height: '80%',
+        autoDimensions: false,
+        minWidth: '65%',
+        maxWidth: '85%',
+        height: '85%',
         autoHeight: false,
         autoWidth: false,
-        minWidth: '65%',
-        minHeight: '80%',
+        minHeight: '85%',
         openEffect: 'fade',
         'transitionIn': 'elastic',
         scrolling: 'no',
@@ -241,7 +241,7 @@ var MIN_HEIGHT = 600;
 var screenHeight = $(window).height() > MIN_HEIGHT ? $(window).height() : MIN_HEIGHT;
 var documentWrapWidth = 1100;
 var documentGutterWidth = (($(document).width() - documentWrapWidth) / 2);
-var screenAnimationTime = 800;
+var screenAnimationTime = 1800;
 var screens = mint.screens;
 
 
@@ -250,8 +250,6 @@ var screens = mint.screens;
  ***************************************************************************************/
 function setupScrollHandler() {
     $("body").bind("mousewheel", function (delta, aS, aQ, deltaY) {
-        if(scrollLocked)
-            return;
         delta.preventDefault();
         if (deltaY > 0) {
             scrollPrev();
