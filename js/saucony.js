@@ -80,18 +80,28 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.service').bind('inview', function (event, isVisible) {
+    if (jQuery.support.opacity) {
 
-        if (!jQuery.support.opacity)
-            return;
+        $('.service').bind('inview', function (event, isVisible) {
+            if (!isVisible) {
+                $(this).css('opacity', 0);
+                return;
+            }
+            var randomDelay = Math.random() * 600;
+            $(this).delay(randomDelay).animate({ opacity: 1 }, 600);
+        });
 
-        if (!isVisible) {
-            $(this).css('opacity', 0);
-            return;
-        }
-        var randomDelay = Math.random() * 600;
-        $(this).delay(randomDelay).animate({ opacity: 1 }, 600);
-    });
+        $('#our-process-container .process-column').each(function (index, element) {
+            $(element).bind('inview', function (event, isVisible) {
+
+                if (!isVisible) {
+                    $(this).css('opacity', 0);
+                    return;
+                }
+                $(this).delay(index * 200).animate({ opacity: 1 }, 600);
+            });
+        });
+    }
 
     $('#clients #client-text').bind('inview', function (event, isVisible) {
         if (!isVisible) {
