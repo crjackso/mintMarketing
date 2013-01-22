@@ -179,11 +179,20 @@ li{margin-top: 3px;}
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
-
+#who-we-are .banner{
+    background-image: url(../images/02/header.jpg);
+    background-size: 1700px 200px;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
 #who-we-are #easel{
     position: absolute;
     left:7%;
-    top: 11%;
+    top: 20%;
 }
 #who-we-are #result-driven{
     top:23%;
@@ -233,10 +242,10 @@ li{margin-top: 3px;}
 
 #core-services{
     background: url(../images/06/green-background.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
@@ -472,10 +481,10 @@ li{margin-top: 3px;}
 }
 #our-process{
     background: url(../images/08/background-green.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
@@ -524,7 +533,6 @@ li{margin-top: 3px;}
     height: 575px;
 }
 .genY{
-    margin-top: 15px;
     position:relative;
     left: 500px;
 }
@@ -637,8 +645,8 @@ img.boomer{
 }
 #our-goal #incentive {
     background-image: url(../images/13/incentive.png);
-    height: 190px;
-    width: 494px;
+    height: 159px;
+    width: 491px;
     position: absolute;
     left: 10%;
 }
@@ -848,10 +856,10 @@ img.boomer{
 /* Home Slide */
 #home {
     background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
