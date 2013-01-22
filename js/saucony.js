@@ -98,7 +98,7 @@ $(document).ready(function () {
                     $(this).css('opacity', 0);
                     return;
                 }
-                $(this).delay(index * 200).animate({ opacity: 1 }, 600);
+                $(this).delay(index * 500).animate({ opacity: 1 }, 600);
             });
         });
     }
