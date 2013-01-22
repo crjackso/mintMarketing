@@ -188,6 +188,7 @@ li{margin-top: 10px;}
 }
 #who-we-are #bishop {
     position: absolute;
+    bottom: 75px;
 }
 #who-we-are #sound-in-strategy{
     /*bottom:20%;*/
@@ -936,11 +937,19 @@ img.boomer{
 }
 #leadership-bio {
     background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
-    height: 100%;
+    height: 700px;
+    min-height: 700px;
+    max-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
 }
 #leadership-bio #gale-bio-pic{position: absolute; left:-10%;}
 #leadership-bio #leadership-back{position: absolute;bottom: 20%;z-index: 1;left: 2%;cursor: pointer;}
-#leadership-bio #leadership-gale-bio{position: absolute; top: 20%; left: 37%;}
+#leadership-bio #leadership-gale-bio{position: absolute; top: 23%; left: 37%;}
 #leadership-bio .leadership-text{position: absolute; right: 5%; top: 3%;}
 #leadership-bio .green-button {bottom: 8%}
 

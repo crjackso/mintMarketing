@@ -154,12 +154,12 @@ $(document).ready(function() {
 
     $(".show-gale").fancybox({
         'autoDimensions':false,
-        'width':'80%',
-        height:'95%',
+        'width':'65%',
+        height:'80%',
         autoHeight:false,
         autoWidth:false,
-        minWidth:'80%',
-        minHeight:'95%',
+        minWidth:'65%',
+        minHeight:'80%',
         openEffect:'fade',
         'transitionIn':'elastic',
         scrolling:'no',
@@ -174,7 +174,7 @@ $(document).ready(function() {
         minWidth:'40%',
         width: '40%',
         openEffect:'fade',
-        scrolling: 'no',
+        scrolling: 'yes',
         closeEffect:'elastic',
         beforeClose: function(){ scrollLocked = false; },
         afterShow: function() { scrollLocked = true; }
