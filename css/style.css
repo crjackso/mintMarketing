@@ -634,12 +634,14 @@ img.boomer{
     height: 190px;
     width: 494px;
     position: absolute;
+    left: 10%;
 }
 #our-goal #conversation {
     background-image: url(../images/13/start.png);
     height: 124px;
     width: 424px;
     position: absolute;
+    left: 55%;
 }
 #our-goal-text{
     position: relative;
