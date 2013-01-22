@@ -268,7 +268,6 @@ li{margin-top: 10px;}
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
-
 #core-services-roundup .banner{
     top: 0;
     /*position: absolute;*/
@@ -288,6 +287,7 @@ li{margin-top: 10px;}
     position: absolute;
     left: 5%;
     top: 25%;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='scale',src='../images/07/corporate-identity.png');
 }
 
 #core-services-roundup .content-management{

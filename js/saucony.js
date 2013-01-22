@@ -3,34 +3,34 @@
 
 (function(a){function d(b){var c=b||window.event,d=[].slice.call(arguments,1),e=0,f=!0,g=0,h=0;return b=a.event.fix(c),b.type="mousewheel",c.wheelDelta&&(e=c.wheelDelta/120),c.detail&&(e=-c.detail/3),h=e,c.axis!==undefined&&c.axis===c.HORIZONTAL_AXIS&&(h=0,g=-1*e),c.wheelDeltaY!==undefined&&(h=c.wheelDeltaY/120),c.wheelDeltaX!==undefined&&(g=-1*c.wheelDeltaX/120),d.unshift(b,e,g,h),(a.event.dispatch||a.event.handle).apply(this,d)}var b=["DOMMouseScroll","mousewheel"];if(a.event.fixHooks)for(var c=b.length;c;)a.event.fixHooks[b[--c]]=a.event.mouseHooks;a.event.special.mousewheel={setup:function(){if(this.addEventListener)for(var a=b.length;a;)this.addEventListener(b[--a],d,!1);else this.onmousewheel=d},teardown:function(){if(this.removeEventListener)for(var a=b.length;a;)this.removeEventListener(b[--a],d,!1);else this.onmousewheel=null}},a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})})(jQuery);
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     /****************************************************************************************
-     Process Window Scroll Movements
-     ***************************************************************************************/
+    Process Window Scroll Movements
+    ***************************************************************************************/
     var lastScrollTop = 0;
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
 
         // Save which direction we are going to a global
-        if( lastScrollTop >= wintop ) scrollDirection = 'up';
+        if (lastScrollTop >= wintop) scrollDirection = 'up';
         else scrollDirection = 'down';
 
         // Records last scroll top for acertaining direction
         lastScrollTop = wintop;
 
         // Prevent scrolling when scroller is not ready
-        if(scrollLocked) preventScroll();
+        if (scrollLocked) preventScroll();
     });
 
     /****************************************************************************************
-     Process Window Resizing - Delay reaction until resize complete
-     ***************************************************************************************/
+    Process Window Resizing - Delay reaction until resize complete
+    ***************************************************************************************/
 
-    var rtime = new Date(1, 1, 2000, 12,00,00);
+    var rtime = new Date(1, 1, 2000, 12, 00, 00);
     var timeout = false;
     var delta = 200;
-    $(window).resize(function() {
+    $(window).resize(function () {
         rtime = new Date();
         if (timeout === false) {
             timeout = true;
@@ -43,45 +43,48 @@ $(document).ready(function() {
             setTimeout(resizeend, delta);
         } else {
             timeout = false;
-//            sizeToWindow();
+            //            sizeToWindow();
             performScroll(); // Reset Viewport
         }
     }
 
     /****************************************************************************************
-     Button Click / Hover Actions
-     ***************************************************************************************/
+    Button Click / Hover Actions
+    ***************************************************************************************/
 
     function scrollToTop() {
         scrollReady = false;
-        $("html,body").animate({scrollTop:"0px"}, 2500,
-            function(){
+        $("html,body").animate({ scrollTop: "0px" }, 2500,
+            function () {
                 scrollReady = true;
                 currentScreen = 0;
             });
     }
 
     $('.downBtn').click(clickScroll);
-    
-    function clickScroll(e)
-    {
+
+    function clickScroll(e) {
         e.preventDefault();
         var slideNumber = $(this).data('slide');
         currentScreen = parseInt(slideNumber);
         performScroll();
     }
 
-    $('#scrollToTop').click(function(){
+    $('#scrollToTop').click(function () {
         scrollReady = false;
-        $("html,body").animate({scrollTop:"0px"}, 2500,
-            function(){
+        $("html,body").animate({ scrollTop: "0px" }, 2500,
+            function () {
                 scrollReady = true;
                 currentScreen = 0;
             });
         return false;
     });
 
-    $('.service').bind('inview', function(event, isVisible) {
+    $('.service').bind('inview', function (event, isVisible) {
+
+        if (!jQuery.support.opacity)
+            return;
+
         if (!isVisible) {
             $(this).css('opacity', 0);
             return;
@@ -90,94 +93,94 @@ $(document).ready(function() {
         $(this).delay(randomDelay).animate({ opacity: 1 }, 600);
     });
 
-    $('#clients #client-text').bind('inview', function(event, isVisible){
-        if(!isVisible){
-            $(this).animate({height: '30px' }, 100);
+    $('#clients #client-text').bind('inview', function (event, isVisible) {
+        if (!isVisible) {
+            $(this).animate({ height: '30px' }, 100);
             return;
         }
-        $(this).delay(400).animate({height: '81px'}, 500);
+        $(this).delay(400).animate({ height: '81px' }, 500);
     });
 
-    $('#portfolio #portfolio-text').bind('inview', function(event, isVisible){
-        if(!isVisible){
-            $(this).animate({height: '30px' }, 100);
+    $('#portfolio #portfolio-text').bind('inview', function (event, isVisible) {
+        if (!isVisible) {
+            $(this).animate({ height: '30px' }, 100);
             return;
         }
-        $(this).delay(400).animate({height: '81px'}, 500);
+        $(this).delay(400).animate({ height: '81px' }, 500);
     });
 
-    $('img.boomer').bind('inview', function(event, isVisible){
-        if(!isVisible){
+    $('img.boomer').bind('inview', function (event, isVisible) {
+        if (!isVisible) {
             $(this).css('left', '1000px');
             return;
         }
-        $(this).delay(100).animate({left: '0px'}, 400);
+        $(this).delay(100).animate({ left: '0px' }, 400);
     });
 
-    $('img.genY').bind('inview', function(event, isVisible){
-        if(!isVisible){
+    $('img.genY').bind('inview', function (event, isVisible) {
+        if (!isVisible) {
             $(this).css('left', '1000px');
             return;
         }
-        $(this).delay(300).animate({left: '0px'}, 500);
+        $(this).delay(300).animate({ left: '0px' }, 500);
     });
 
-    $('img.genX').bind('inview', function(event, isVisible){
-        if(!isVisible){
+    $('img.genX').bind('inview', function (event, isVisible) {
+        if (!isVisible) {
             $(this).css('left', '500px');
             return;
         }
-        $(this).delay(500).animate({left: '0px'}, 400);
+        $(this).delay(500).animate({ left: '0px' }, 400);
     });
 
-    $('img.genZ').bind('inview', function(event, isVisible){
-        if(!isVisible){
+    $('img.genZ').bind('inview', function (event, isVisible) {
+        if (!isVisible) {
             $(this).css('left', '1000px');
             return;
         }
-        $(this).delay(700).animate({left: '0px'}, 400);
+        $(this).delay(700).animate({ left: '0px' }, 400);
     });
 
     $('.play-video').fancybox({
         'autoDimensions': false,
-//        autoHeight: false,
-//        autoWidth: false,
+        //        autoHeight: false,
+        //        autoWidth: false,
         minWidth: '70%',
         minHeight: '65%',
         openEffect: 'fade',
         'transitionIn': 'elastic',
         scrolling: 'no',
         'transitionOut': 'fade',
-        beforeClose: function(){ scrollLocked = false; },
-        'afterShow': function() { scrollLocked = true; }
+        beforeClose: function () { scrollLocked = false; },
+        'afterShow': function () { scrollLocked = true; }
     });
 
     $(".show-gale").fancybox({
-        'autoDimensions':false,
-        'width':'65%',
-        height:'80%',
-        autoHeight:false,
-        autoWidth:false,
-        minWidth:'65%',
-        minHeight:'80%',
-        openEffect:'fade',
-        'transitionIn':'elastic',
-        scrolling:'no',
-        'transitionOut':'fade',
-        beforeClose: function(){ scrollLocked = false; },
-        afterShow: function() { scrollLocked = true; }
+        'autoDimensions': false,
+        'width': '65%',
+        height: '80%',
+        autoHeight: false,
+        autoWidth: false,
+        minWidth: '65%',
+        minHeight: '80%',
+        openEffect: 'fade',
+        'transitionIn': 'elastic',
+        scrolling: 'no',
+        'transitionOut': 'fade',
+        beforeClose: function () { scrollLocked = false; },
+        afterShow: function () { scrollLocked = true; }
     });
 
     $('.various').fancybox({
-        minHeight:'55%',
+        minHeight: '55%',
         height: '55%',
-        minWidth:'40%',
+        minWidth: '40%',
         width: '40%',
-        openEffect:'fade',
+        openEffect: 'fade',
         scrolling: 'yes',
-        closeEffect:'elastic',
-        beforeClose: function(){ scrollLocked = false; },
-        afterShow: function() { scrollLocked = true; }
+        closeEffect: 'elastic',
+        beforeClose: function () { scrollLocked = false; },
+        afterShow: function () { scrollLocked = true; }
     });
 
     $('.various').live('click', function (e) {
@@ -195,11 +198,11 @@ $(document).ready(function() {
         $('#teamMemberPlaceholder').html(html);
 
         $(this).fancybox({
-            openEffect:'elastic',
+            openEffect: 'elastic',
             minHeight: '55%',
             height: '55%',
-            beforeClose: function(){ scrollLocked = false; },
-            afterShow: function() { scrollLocked = true; }
+            beforeClose: function () { scrollLocked = false; },
+            afterShow: function () { scrollLocked = true; }
         });
     });
 
@@ -207,8 +210,7 @@ $(document).ready(function() {
     $(window).load(function () {
 
         // Handle IE 6
-        if( !$('html').hasClass('lt-ie7') )
-        {
+        if (!$('html').hasClass('lt-ie7')) {
             // Ready for Scroll Handlers
             scrollReady = true;
             setupScrollHandler();
