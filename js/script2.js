@@ -5,6 +5,7 @@
 
 $(document).ready(function () {
 
+    window.audioPlayed = false;
     /****************************************************************************************
     Process Window Scroll Movements
     ***************************************************************************************/
@@ -184,9 +185,10 @@ $(document).ready(function () {
 //    });
 
     $('#excitement').bind('inview', function (event, isVisible) {
-        if (isVisible) {
+        if (isVisible && window.audioPlayed === false) {
             var audioControl = document.getElementById("crowd");
             audioControl.play();
+            window.audioPlayed = true;
         }
     });
 
