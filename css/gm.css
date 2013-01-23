@@ -5,10 +5,16 @@
     height: auto;
 }
 #gm-campus-cruze {
-    background: url(../images/signDrive-cruze.jpeg) 50% 0 no-repeat fixed;
+    background: url(../images/gm-slices/cruze/cruzeback.jpg) 50% 0 no-repeat fixed;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     height: auto;
+}
+#cruze-vehicle{
+    position: absolute;
+}
+#cruze-left-menu{
+    position: absolute;
 }
 #gm-campus-spark {
     background: url(../images/signDrive-spark.jpeg) 50% 0 no-repeat fixed;
