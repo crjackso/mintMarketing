@@ -172,6 +172,13 @@ $(document).ready(function () {
         $(this).delay(700).animate({ left: '0px' }, 400);
     });
 
+    $('#excitement').bind('inview', function (event, isVisible) {
+        if (isVisible) {
+            var audioControl = document.getElementById("crowd");
+            audioControl.play();
+        }
+    });
+
     $('.play-video').fancybox({
         'autoDimensions': false,
         //        autoHeight: false,
@@ -252,8 +259,6 @@ $(document).ready(function () {
         prev: ".services-prev",
         margin: 0
     });
-
-    //    b.speak();
 
     //    $('.profile-box .various').bind('mouseover', function () {
     //        var id = $(this).first('a').data('person');

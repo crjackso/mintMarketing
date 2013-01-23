@@ -103,18 +103,18 @@
                 <div class="leadership-slider-viewport">
                     <div>
                         <div class="touchslider-item story" id="leadership-1">
-                                                        <div>
-                            <img class="leadership-text" src="images/04/leadership.png" alt="" data-bottom-center="top: -100%"
-                                data-center-center="top: 20%" data-top-center="top:100%" data-anchor-target="#leadership" />
-                            <img id="leadership-gale" class="gale-pic" src="images/04/gale-pic.png" alt="" />
-                            <img id="leadership-gale-text" src="images/04/galehill.png" alt="" data-bottom-center="opacity:0"
-                                data-center-center="opacity: 1" data--100-top="opacity:0" data-anchor-target="#leadership" />
-                            <div class="leadership-slider-next">
-                                <img id="leadership-learn-more" src="images/04/learn-more.png" alt="" />
+                            <div>
+                                <img class="leadership-text" src="images/04/leadership.png" alt="" data-bottom-center="top: -100%"
+                                    data-center-center="top: 20%" data-top-center="top:100%" data-anchor-target="#leadership" />
+                                <img id="leadership-gale" class="gale-pic" src="images/04/gale-pic.png" alt="" />
+                                <img id="leadership-gale-text" src="images/04/galehill.png" alt="" data-bottom-center="opacity:0"
+                                    data-center-center="opacity: 1" data--100-top="opacity:0" data-anchor-target="#leadership" />
+                                <div class="leadership-slider-next">
+                                    <img id="leadership-learn-more" src="images/04/learn-more.png" alt="" />
+                                </div>
+                                <img id="leadership-experience" src="images/04/previous-experience.png" alt="" data-bottom-center="left:0%"
+                                    data-center-center="left: 60%" data-anchor-target="#leadership" />
                             </div>
-                            <img id="leadership-experience" src="images/04/previous-experience.png" alt="" data-bottom-center="left:0%"
-                                data-center-center="left: 60%" data-anchor-target="#leadership" />
-                                                        </div>
                             <div class="downBtn green-button" data-slide="4">
                             </div>
                         </div>
@@ -642,13 +642,9 @@
         </article>
         <div id="teamMemberPlaceholder" style="display: none">
         </div>
-        <!--        <div id="leadership-bio" style="display: none">-->
-        <!--            <img id="gale-bio-pic" src="images/04/gale-pic.png" alt="" />-->
-        <!--            <img class="leadership-text" src="images/04A/leadership.png" alt="" />-->
-        <!--            <img id="leadership-gale-bio" src="images/04A/galebio.png" alt="" />-->
-        <!--            <img id="leadership-back" src="images/04A/back-arrow.png" alt="" data-5500="opacity:0"-->
-        <!--                data-5600="opacity:1" data-5700="opacity:0" />-->
-        <!--        </div>-->
+        <audio id="crowd" style="visibility: hidden">
+            <source src="resources\crowd.wav" type="audio/wav" />
+        </audio>
         <div id="video-reel" style="display: none">
             <iframe src="http://player.vimeo.com/video/57910693" width="100%" height="100%" frameborder="0"
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -656,6 +652,7 @@
     </div>
     <input type="hidden" id="teamJson" name="teamJson" />
     <script src='js/libs/jquery-1.7.2.min.js'></script>
+    <script src="http://mediaplayer.yahoo.com/js"></script>
     <script src='js/libs/string.js'></script>
     <script src='js/libs/modernizr-2.5.0.min.js'></script>
     <script src='js/libs/jquery.jquery-ui.min.js'></script>
