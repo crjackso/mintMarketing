@@ -982,23 +982,27 @@ li{margin-top: 3px;}
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
+.gale-container{
+    bottom: -60px;
+    position: relative;
+}
 #leadership-1 .leadership-text{
-    top: 20%;
-    left: 40%;
-    position: absolute;
     height: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 #leadership-2 .leadership-text{
     top: 20%;
     left: 40%;
-    position: relative;
+    position: absolute;
     height: auto;
+    margin-top: 20%;
 }
 #leadership .gale-pic{
-    position: absolute;
+    position: relative;
     bottom: -10%;
-    left: -4%;
-    display: block;
+    left: -5%;
+    height: auto;
 }
 .leadership-slider-prev {
     position: relative;
@@ -1006,13 +1010,12 @@ li{margin-top: 3px;}
     z-index: 999;
     cursor: pointer;
 }
-#leadership #leadership-gale-text{position:absolute; bottom: 45%; left: 60%;}
+#leadership #leadership-gale-text{margin-left: 20%;}
 #leadership #leadership-learn-more 
 {
-    position: absolute;
-    bottom: 40%;
     cursor: pointer;
-    right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 #leadership-gale-bio {
     right: 30%;
@@ -1020,18 +1023,22 @@ li{margin-top: 3px;}
     top: 20%;
 }
 #leadership #leadership-experience{
-    position: absolute;
-    bottom: 30%
+    position: relative;
+    top: 85%;
+    left: 25%;
+}
+.leadership-slider-next{
+    position: relative;
+    left: 10%;
 }
 
-
 /* HTML5 Video */
-#fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
-#fourth article p { width: 300px; margin: 50px 0; }
-#fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}
+/*#fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }*/
+/*#fourth article p { width: 300px; margin: 50px 0; }*/
+/*#fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}*/
 
 /* The End */
-#theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+/*#theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }*/
 
 
 .sub-page1{

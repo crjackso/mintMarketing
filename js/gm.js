@@ -57,6 +57,7 @@ function set_slide_heights() {
     $('.gm-slide').css('background-size', newPosition);
     $('.story').css('background-size', newPosition);
 
+    $('.touchslider-item').css('width', width + 'px');
     $('.touchslider-item .inner').css('width', width + 'px');
     $('.touchslider-item .inner').height(height);
     $('.touchslider-viewport').height(height);
