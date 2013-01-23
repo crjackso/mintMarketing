@@ -103,26 +103,26 @@ $(document).ready(function () {
         });
     }
 
-    $(document).tooltip({
-        content: function () {
-            var element = $(this);
-            var id = $(element).data('person');
-            var person = people[id];
-            return String.format("<div><p>{0}</p><p>{1}</p></div>", person.name, person.title);
-        },
-        position: {
-            //            my: "center bottom-20",
-            at: "center top",
-            using: function (position, feedback) {
-                $(this).css(position);
-                //                $("<div>")
-                //                        .addClass("arrow")
-                //                        .addClass(feedback.vertical)
-                //                        .addClass(feedback.horizontal)
-                //                        .appendTo(this);
-            }
-        }
-    });
+//    $(document).tooltip({
+//        content: function () {
+//            var element = $(this);
+//            var id = $(element).data('person');
+//            var person = people[id];
+//            return String.format("<div><p>{0}</p><p>{1}</p></div>", person.name, person.title);
+//        },
+//        position: {
+//            //            my: "center bottom-20",
+//            at: "center top",
+//            using: function (position, feedback) {
+//                $(this).css(position);
+//                //                $("<div>")
+//                //                        .addClass("arrow")
+//                //                        .addClass(feedback.vertical)
+//                //                        .addClass(feedback.horizontal)
+//                //                        .appendTo(this);
+//            }
+//        }
+//    });
 
     $('#clients #client-text').bind('inview', function (event, isVisible) {
         if (!isVisible) {
