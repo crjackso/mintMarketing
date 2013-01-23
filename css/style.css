@@ -594,6 +594,11 @@ li{margin-top: 3px;}
     margin-top: 10%;
     position: relative;
 }
+.portfolio-slider-btn{
+    position: relative;
+    top: 35%;
+    cursor: pointer;
+}
 .client-name{
     text-align: left;
     color: grey;

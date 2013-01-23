@@ -261,7 +261,14 @@ $(document).ready(function () {
         mouseTouch: true,
         namespace: 'portfolio-philanthropy-slider',
         margin: 0
-    })
+    });
+
+    $('.portfolio-contemporary-slider').touchSlider({
+        duration: 350,
+        mouseTouch: true,
+        namespace: 'portfolio-contemporary-slider',
+        margin: 0
+    });
 
     //    $('.profile-box .various').bind('mouseover', function () {
     //        var id = $(this).first('a').data('person');
