@@ -277,26 +277,26 @@ li{margin-top: 3px;}
 }
 
 #core-services .digital-campaigns{
-    position: absolute;
-    top: 55%;
-    left: 5%;
+    position: relative;
+    margin-top: 55%;
+    /*max-width: 90%;*/
 }
 #core-services .amp{
     position: absolute;
     top: 45%;
-    left: 45%;
+    /*left: 45%;*/
 }
 #core-services .core-services{
     position: relative;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    top: 25%;
+    margin-top: 5%;
 }
 #core-services .spotlights{
-    position: absolute;
-    top: 15%;
-    left: 60%;
+    position: relative;
+    /*top: 15%;*/
+    left: 20%;
 }
 
 #core-services-roundup {
