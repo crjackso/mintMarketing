@@ -25,11 +25,6 @@ mint.screenCount = mint.screens.length;
 
 $(document).ready(function () {
 
-    $(".touchslider").touchSlider({
-        duration:350,
-        mouseTouch:true
-    });
-
     set_slide_heights();
 
     $(window).bind('resize', set_slide_heights);

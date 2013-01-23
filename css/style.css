@@ -950,6 +950,14 @@ img.boomer{
     margin-right: auto;
     display: block;
 }
+#leadership-1 {
+    background: url(../images/04/background-white.jpg) 50% 0 no-repeat fixed;
+    width: 2000px;
+}
+#leadership-2 {
+    background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
+    width: 2000px;
+}
 #leadership {
     background: url(../images/04/background-white.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
@@ -959,47 +967,48 @@ img.boomer{
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
-#leadership .leadership-text{
-    top: 40%;
-    left: 45%;
+#leadership-1 .leadership-text{
+    top: 20%;
+    left: 40%;
     position: absolute;
+    height: auto;
 }
-#leadership #leadership-gale{
+#leadership-2 .leadership-text{
+    top: 20%;
+    left: 40%;
     position: relative;
-    bottom: -15%;
-    z-index: 999;
+    height: auto;
+}
+#leadership .gale-pic{
+    position: absolute;
+    bottom: -10%;
     left: -4%;
     display: block;
 }
-#leadership #leadership-gale-text{position:absolute; bottom: 45%; left: 50%;}
+.leadership-slider-prev {
+    position: relative;
+    top: 45%;
+    z-index: 999;
+    cursor: pointer;
+}
+#leadership #leadership-gale-text{position:absolute; bottom: 45%; left: 60%;}
 #leadership #leadership-learn-more 
 {
     position: absolute;
     bottom: 40%;
     cursor: pointer;
-    left: 48%;
+    right: 3%;
+}
+#leadership-gale-bio {
+    right: 30%;
+    position: absolute;
+    top: 20%;
 }
 #leadership #leadership-experience{
     position: absolute;
     bottom: 30%
 }
-#leadership-bio {
-    background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
-    height: 700px;
-    min-height: 700px;
-    max-height: 700px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);
-}
-#leadership-bio #gale-bio-pic{position: absolute; left:-10%;}
-#leadership-bio #leadership-back{position: absolute;bottom: 20%;z-index: 1;left: 2%;cursor: pointer;}
-#leadership-bio #leadership-gale-bio{position: absolute; top: 23%; left: 37%;}
-#leadership-bio .leadership-text{position: absolute; right: 5%; top: 3%;}
-#leadership-bio .green-button {bottom: 8%}
+
 
 /* HTML5 Video */
 #fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
@@ -1403,13 +1412,13 @@ img.boomer{
     height: 900px;
     overflow: hidden;
 }
-.touchslider-prev {
+.services-prev {
     position: absolute;
     top: 45%;
     left: 3%;
     cursor: pointer;
 }
-.touchslider-next {
+.services-next {
     position: absolute;
     top: 45%;
     right: 3%;

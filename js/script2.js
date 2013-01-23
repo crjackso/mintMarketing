@@ -111,15 +111,15 @@ $(document).ready(function () {
             return String.format("<div><p>{0}</p><p>{1}</p></div>", person.name, person.title);
         },
         position: {
-//            my: "center bottom-20",
+            //            my: "center bottom-20",
             at: "center top",
             using: function (position, feedback) {
                 $(this).css(position);
-//                $("<div>")
-//                        .addClass("arrow")
-//                        .addClass(feedback.vertical)
-//                        .addClass(feedback.horizontal)
-//                        .appendTo(this);
+                //                $("<div>")
+                //                        .addClass("arrow")
+                //                        .addClass(feedback.vertical)
+                //                        .addClass(feedback.horizontal)
+                //                        .appendTo(this);
             }
         }
     });
@@ -236,6 +236,24 @@ $(document).ready(function () {
             afterShow: function () { scrollLocked = true; }
         });
     });
+
+    $('.leadership-slider').touchSlider({
+        duration: 550,
+        margin: 0,
+        next: '.leadership-slider-next',
+        namespace: 'leadership-slider'
+    });
+
+    $(".services").touchSlider({
+        duration: 350,
+        mouseTouch: true,
+        namespace: 'services',
+        next: ".services-next",
+        prev: ".services-prev",
+        margin: 0
+    });
+
+    //    b.speak();
 
     //    $('.profile-box .various').bind('mouseover', function () {
     //        var id = $(this).first('a').data('person');
