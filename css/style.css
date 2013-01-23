@@ -661,12 +661,12 @@ li{margin-top: 3px;}
 }
 #target-segment{
     background: url(../images/14/00background-cloudpage.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+}
+#target-segment img{
+    max-width: 80%;
+    z-index: 999;
 }
 #our-target-text{
     position: relative;
@@ -684,96 +684,72 @@ li{margin-top: 3px;}
 }
 #purchasing-power{
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    top: 20%;
+    margin-top: 20%;
 }
 #boomers{
     position: relative;
-    display: block;
-    top: 15%;
-    left: 5%;
+    margin-left: 20%;
 }
 #digital-ads{
     position: relative;
-    margin-left: auto;
-    display: block;
-    /*top: 10%;*/
-    right: 5%;
+    margin-top: 5%;
 }
 #stimulation{
     position: relative;
-    left: 25%;
-    display: block;
-    top: 5%;
+    margin-left: 25%;
+    margin-top: 5%;
 }
 #persuade{
     position: relative;
-    margin-left: auto;
-    display: block;
-    right: 15%;
-    top: 5%;
+    margin-left: 20%;
 }
 #high-loyalty{
     position: relative;
-    left: 40%;
-    display: block;
+    margin-left: 10%;
+    margin-top: 15%;
 }
 #engagement{
-    position: absolute;
-    left: 10%;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+.cloud{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width:1152px;
+    height: 864px;
+    /*margin-left:-1000px;*/
+    /*left:50%;*/
 }
 #cloud1{
-    height:692px;
     background: url(../images/14/03cloud.png);
-    margin-top:-346px;
-    top:100%;
+    right: 0;
 }
 #cloud2{
-    height:484px;
-    background: url(../images/14/03cloud.png);
-    margin-top:-242px;
-    top:90%;
+    background: url(../images/14/05cloud.png);
+    right:0;
 }
 #cloud3{
-    height:444px;
-    background: url(../images/14/03cloud.png);
-    margin-top:-222px;
-    top:70%;
+    background: url(../images/14/06cloud.png);
 }
-#cloud4{
-    height:444px;
-    background: url(../images/14/03cloud.png);
-    margin-top:-222px;
-    top:70%;
-}#cloud5{
-     height:444px;
-     background: url(../images/14/03cloud.png);
-     margin-top:-222px;
-     top:70%;
- }#cloud5{
-      height:444px;
-      background: url(../images/14/03cloud.png);
-      margin-top:-222px;
-      top:70%;
-  }#cloud6{
-       height:444px;
-       background: url(../images/14/03cloud.png);
-       margin-top:-222px;
-       top:70%;
-   }
+#cloud4 {
+    background: url(../images/14/09cloud.png);
+    left: 0;
+}
+#cloud5{
+     background: url(../images/14/11cloud.png);
+}
+#cloud6{
+    background: url(../images/14/12cloud.png);
+    left: 0;
+}
 #cloud7{
-    height:444px;
-    background: url(../images/14/03cloud.png);
-    margin-top:-222px;
-    top:70%;
+   background: url(../images/14/14cloud.png);
+    right: 0;
 }
 #cloud8{
-    height:444px;
-    background: url(../images/14/03cloud.png);
-    margin-top:-222px;
-    top:70%;
+    background: url(../images/14/15cloud.png);
 }
 #excitement{
     background: url(../images/15/00.jpg) 50% 0 no-repeat fixed;

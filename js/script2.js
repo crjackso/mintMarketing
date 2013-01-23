@@ -101,6 +101,17 @@ $(document).ready(function () {
                 $(this).delay(index * 500).animate({ opacity: 1 }, 600);
             });
         });
+
+        $('div.cloud').each(function (index, element) {
+            $(element).bind('inview', function (event, isVisible) {
+
+                if (!isVisible) {
+                    $(this).css('opacity', 0);
+                    return;
+                }
+                $(this).delay(index * 500).animate({ opacity: 1 }, 600);
+            });
+        });
     }
 
 //    $(document).tooltip({

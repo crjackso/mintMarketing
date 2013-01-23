@@ -63,7 +63,6 @@ function set_slide_heights() {
     $('.touchslider-viewport').height(height);
 
 
-
 //    var ww = window.innerWidth;
 //    var wh = window.innerHeight;
 //    var aspect = Math.floor((ww / wh) * 100) / 100; // set to 2 decimal points
