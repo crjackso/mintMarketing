@@ -992,7 +992,7 @@ li{margin-top: 3px;}
     z-index: 999;
     cursor: pointer;
 }
-#leadership #leadership-gale-text{margin-left: 20%;}
+#leadership #leadership-gale-text{margin-left: 15%;max-width: 80%;}
 #leadership #leadership-learn-more 
 {
     cursor: pointer;
