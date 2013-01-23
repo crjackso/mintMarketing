@@ -60,4 +60,22 @@ function set_slide_heights() {
     $('.touchslider-item .inner').css('width', width + 'px');
     $('.touchslider-item .inner').height(height);
     $('.touchslider-viewport').height(height);
+
+
+
+    var ww = window.innerWidth;
+    var wh = window.innerHeight;
+    var aspect = Math.floor((ww / wh) * 100) / 100; // set to 2 decimal points
+    var landscape = aspect > 1 ? true : false;
+    var portrait = aspect < 1 ? true : false;
+    var orientation = (landscape == true && portrait == false) ? "Landscape" :(landscape == false && portrait == true) ? "Portrait" : "Square";
+
+    console.log(orientation + " " + aspect);
+
+//    $('.story img').each(function () {
+//        var image = $(this);
+//        var originalWidth = image.width();
+//        var newWidth = originalWidth * aspect;
+//        image.css('width', newWidth);
+//    });
 }

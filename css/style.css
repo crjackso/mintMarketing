@@ -1,9 +1,26 @@
+@media (max-width: 400px) {
+    img { max-width: 15%; }
+}
+
+@media (max-width: 900px) {
+    img { max-width: 65%; }
+}
+
+@media (max-width: 1200px) {
+    img { max-width: 45%; }
+}
+
+@media (max-width: 1500px) {
+    img { max-width: 85%; }
+}
+.image-container {
+    max-width: 40%;    
+}
 body{
     font-family: Verdana, Geneva, sans-serif;
     color: #FFF;
 }
-/*article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }*/
-
+/*.responsive-image { max-width:100%; height:auto; }*/
 li{margin-top: 3px;}
 .story {
     height: 864px;
@@ -226,7 +243,7 @@ li{margin-top: 3px;}
 }
 #who-we-are #bishop {
     position: absolute;
-    bottom: 75px;
+    bottom: 3%;
 }
 #who-we-are #sound-in-strategy{
     /*bottom:20%;*/
@@ -246,7 +263,7 @@ li{margin-top: 3px;}
 #brand-loyalty{
     position:absolute;
     top:40%;
-    left:900px;
+    right:5%;
 }
 .mint-logo-small{
     position:absolute;
