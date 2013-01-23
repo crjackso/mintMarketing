@@ -43,6 +43,36 @@ $(document).ready(function () {
         }
     });
 
+    if (jQuery.support.opacity) {
+
+        $('#gm-campus-cruze').bind('inview', function (event, isVisible) {
+            if (!isVisible) {
+                return;
+            }
+            $('#cruze-headlights').delay(1500).fadeIn(100, function() {
+                $(this).fadeOut(400);
+            });
+        });
+
+        $('#gm-campus-spark').bind('inview', function (event, isVisible) {
+            if (!isVisible) {
+                return;
+            }
+            $('#spark-headlights').delay(1500).fadeIn(100, function() {
+                $(this).fadeOut(400);
+            });
+        });
+
+        $('#gm-campus-sonic').bind('inview', function (event, isVisible) {
+            if (!isVisible) {
+                return;
+            }
+            $('#sonic-headlights').delay(1500).fadeIn(100, function() {
+                $(this).fadeOut(400);
+            });
+        });
+    }
+
     $("#teamJson").val(JSON.stringify(people));
 });
 

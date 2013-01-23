@@ -34,10 +34,6 @@
     max-width: 100%;
     height: 100%;
 }
-#spark-header{
-    position: absolute;
-    width: 100%;
-}
 #gm-campus-spark {
     background: url(../images/gm-slices/spark/sparkback.jpg) 50% 0 no-repeat fixed;
     -ms-behavior: url(backgroundsize.min.htc);
@@ -45,8 +41,22 @@
     height: auto;
 }
 #gm-campus-sonic {
-    background: url(../images/signDrive-sonic.jpeg) 50% 0 no-repeat fixed;
+    background: url(../images/gm-slices/sonic/background.png) 50% 0 no-repeat fixed;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     height: auto;
+}
+#sonic-vehicle{
+    position: absolute;
+    max-width: 100%;
+}
+#sonic-left-menu{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.gm-slide-header{
+    position: absolute;
+    width: 100%;
 }
