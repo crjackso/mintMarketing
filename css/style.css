@@ -641,30 +641,16 @@ li{margin-top: 3px;}
     behavior: url(backgroundsize.min.htc);
 }
 #spark-emotion{
-    background-image: url(../images/13/spark.png);
-    height: 200px;
-    width: 497px;
-    position: absolute;
+    position: relative;
 }
 #our-goal #educate-consumers {
-    background-image: url(../images/13/educate.png);
-    height: 209px;
-    width: 511px;
-    position: absolute;
+    position: relative;
 }
 #our-goal #incentive {
-    background-image: url(../images/13/incentive.png);
-    height: 159px;
-    width: 491px;
-    position: absolute;
-    left: 10%;
+    position: relative;
 }
 #our-goal #conversation {
-    background-image: url(../images/13/start.png);
-    height: 124px;
-    width: 424px;
-    position: absolute;
-    left: 55%;
+    position: relative;
 }
 #our-goal-text{
     position: relative;
