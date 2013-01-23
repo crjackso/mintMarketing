@@ -1,18 +1,18 @@
-@media (max-width: 400px) {
-    img { max-width: 15%; }
-}
+/*@media (max-width: 400px) {*/
+    /*img { max-width: 15%; }*/
+/*}*/
 
-@media (max-width: 900px) {
-    img { max-width: 65%; }
-}
+/*@media (max-width: 900px) {*/
+    /*img { max-width: 65%; }*/
+/*}*/
 
-@media (max-width: 1200px) {
-    img { max-width: 45%; }
-}
+/*@media (max-width: 1200px) {*/
+    /*img { max-width: 45%; }*/
+/*}*/
 
-@media (max-width: 1500px) {
-    img { max-width: 85%; }
-}
+/*@media (max-width: 1500px) {*/
+    /*img { max-width: 85%; }*/
+/*}*/
 .image-container {
     max-width: 40%;    
 }
@@ -615,6 +615,18 @@ img.boomer{
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
+.portfolio-philanthropy-slider-next {
+    position: relative;
+    top: 35%;
+    /*right: 3%;*/
+    cursor: pointer;
+}
+.portfolio-philanthropy-slider-prev {
+    position: relative;
+    top: 35%;
+    /*right: 3%;*/
+    cursor: pointer;
+}
 #portfolio .contain {
     top: 20%;
     position: relative;
@@ -632,6 +644,26 @@ img.boomer{
 #portfolio .container{
     margin-top: 10%;
     position: relative;
+}
+.client-name{
+    text-align: left;
+    color: grey;
+    font-size: 2.4em;
+    margin: 1%;
+}
+.mac{
+    width: 80%;
+    margin-top: 3%;
+}
+.philanthropy{
+    background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+    width: 2000px;
 }
 #video{
     background: url(../images/12/background-green.jpg) 50% 0 no-repeat fixed;
@@ -1271,137 +1303,6 @@ img.boomer{
 
 .quote5_1 { color: #9a9a9a; font-size: 0.938em; line-height: 1.200em; }
 .quote5_2 { color: #666666; font-size: 0.750em; line-height: 1.167em; }
-
-.keyword {
-    font-family: "Interstate Black";
-    font-weight: normal;
-    letter-spacing: -15px;
-    position: absolute;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.keyword2_1 { color: #cdcdcd; font-size: 13.717em; 	z-index: 2000; }
-.keyword3_1 { color: #bfbfbf; font-size: 12.726em; 	z-index: 200; }
-.keyword4_1 { color: #a4a4a4; font-size: 14.063em; 	z-index: 200; line-height: .7em; }
-.keyword .note { font: 0.09em/2em Helvetica, Arial; font-weight: bold; padding-left: 40%; letter-spacing: normal; }
-
-
-.vidWrap, .detailWrap {
-    position: absolute;
-    width: 184px;
-    height: 184px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    z-index: 5000;
-}
-
-.videoBtn, .detailBtn { position: absolute; z-index: 777; width: 184px; height: 184px; cursor: pointer; }
-.videoBtnHover, .detailBtnHover { position: absolute; z-index: 776; width: 184px; height: 184px; cursor: pointer; opacity: 0; filter: alpha(opacity=0); }
-
-.videoLbl, .detailLbl {
-    background: url('../images/saucony/block-lbl-background.png') repeat;
-    text-transform: uppercase;
-    position: absolute;
-    z-index: 5005;
-    height: 12px;
-    width: 172px;
-    padding: 7px 0 5px 8px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-#detail_lbl_sole_2 { width: 190px; }
-.videoLbl a, .detailLbl a { text-decoration: none; }
-
-.videoLbl h2, .detailLbl h2 {
-    color: #fff;
-    font: 0.688em Helvetica;
-    font-weight: bold;
-}
-
-
-#video_overview_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat 0 0; }
-#video_overview_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -184px 0; }
-#detail_flexfilm_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat 0 -184px; }
-#detail_flexfilm_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -184px -184px; }
-#detail_flexfilm_2_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat 0 -368px; }
-#detail_flexfilm_2_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -184px -368px; }
-#detail_flexfilm_3_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat 0 -368px; }
-#detail_flexfilm_3_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -184px -368px; }
-
-#video_philosophy_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -368px 0;  }
-#video_philosophy_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -552px 0; }
-#detail_upper_1_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -368px -368px; }
-#detail_upper_1_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -552px -368px; }
-#detail_upper_2_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -368px -184px; }
-#detail_upper_2_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -552px -184px; }
-
-#video_progrid_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -736px 0; }
-#video_progrid_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -920px 0; }
-#detail_progrid_1_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -736px -184px; }
-#detail_progrid_1_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -920px -184px; }
-
-#video_midsole_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -1104px 0; }
-#video_midsole_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -1288px 0; }
-#detail_midsole_1_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -1104px -184px; }
-#detail_midsole_1_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -1288px -184px; }
-#detail_midsole_2_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -1472px -184px; }
-#detail_midsole_2_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -1656px -184px; }
-
-#video_sole_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -1472px 0; }
-#video_sole_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -1656px 0; }
-#detail_sole_2_btn { background: url('../images/saucony/block-backgrounds.png') no-repeat -1472px -368px; }
-#detail_sole_2_btn_hover { background: url('../images/saucony/block-backgrounds.png') no-repeat -1656px -368px; }
-
-
-#shoeBrowser { background: #dddddd; position: relative; overflow: hidden; display: none; }
-
-
-#scrollWrap {
-    position: absolute;
-    width: 1100px;
-    height: 600px;
-    overflow: hidden;
-    bottom: 0;
-}
-#zebra_stripe {
-    height: 857px;
-    position: absolute;
-    top: 0px;
-    background-color: #88cb11;
-}
-#zebra_stripe .color_b {
-    width: 100%;
-    height: 857px;
-    background-color: #88cb11;
-    position: absolute;
-}
-#zebra_stripe .pattern {
-    background-image: url('../images/saucony/zebra-pattern.png');
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 857px;
-    position: absolute;
-}
-
-#genderNav { position: absolute; top: 150px; left: -425px; }
-
-#genderNav h1 { font-size: 5.693em; font-family: "Interstate Black"; font-weight: normal; color: #191919; margin: 0px; padding: 0px; line-height: 0.8em; letter-spacing: -0.05em; }
-#genderNav h2 { font: normal 5.693em/0.8em "Interstate Black"; letter-spacing: -0.05em; margin: 0px; padding: 0px; margin-top: 10px; }
-#genderNav h2 a { color: #fff; opacity: 0.4; text-decoration: none; margin: 0px; padding: 0px; line-height: 0.8em; display: block; }
-#genderNav h2 a.men { width: 2.8em; }
-#genderNav h2 a.women { width: 4.5em; }
-#genderNav h2 a:hover { color: #fff; opacity: 1; background: url('../images/saucony/shoe-browser-gender-arrow.png') no-repeat center right; }
-#genderNav h2 a.current { color: #fff; opacity: 1; background: url('../images/saucony/shoe-browser-gender-arrow.png') no-repeat center right; }
-#genderNav p { font: bold 1em Interstate; color: #fff; letter-spacing: -0.01em; padding-left: 5px; }
-#genderNav p#shopNowLink a { color: #fff; text-decoration: none; padding-left: 12px; background: url('../images/saucony/shop-now-arrow.png') 0 3px no-repeat; }
-
-#shoe_scroller { position: absolute; top: 2px; }
-#shoe_display { position: absolute; top: 2px; width: 100%; height: 569px; display: none;}
-#shoe_display .stock, #shoe_scroller .stock { position: absolute; top: 140px; left: 600px; width: 200px; color: #fff; font: bold 1em Interstate; }
-#shoeBrowser .scrollLeft { position: absolute; top: 345px; left: -51px; z-index:100 }
-#shoeBrowser .scrollRight { position: absolute; top: 345px; right: -51px; z-index:100 }
 
 .btnScrollLeft {
     border-top-right-radius: 5px;

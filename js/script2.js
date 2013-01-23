@@ -193,18 +193,14 @@ $(document).ready(function () {
         'afterShow': function () { scrollLocked = true; }
     });
 
-    $(".show-gale").fancybox({
-        autoDimensions: false,
-        minWidth: '65%',
-        maxWidth: '85%',
-        height: '85%',
-        autoHeight: false,
-        autoWidth: false,
-        minHeight: '85%',
-        openEffect: 'fade',
-        'transitionIn': 'elastic',
+    $('.portfolio-prompt').fancybox({
+        minHeight: '55%',
+        height: '55%',
+        minWidth: '80%',
+        width: '80%',
+        openEffect: 'elastic',
         scrolling: 'no',
-        'transitionOut': 'fade',
+        closeEffect: 'elastic',
         beforeClose: function () { scrollLocked = false; },
         afterShow: function () { scrollLocked = true; }
     });
@@ -259,6 +255,13 @@ $(document).ready(function () {
         prev: ".services-prev",
         margin: 0
     });
+
+    $('.portfolio-philanthropy-slider').touchSlider({
+        duration: 350,
+        mouseTouch: true,
+        namespace: 'portfolio-philanthropy-slider',
+        margin: 0
+    })
 
     //    $('.profile-box .various').bind('mouseover', function () {
     //        var id = $(this).first('a').data('person');
