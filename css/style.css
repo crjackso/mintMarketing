@@ -145,6 +145,7 @@ li{margin-top: 3px;}
 }
 #team .profile-box {
     max-height: 220px;
+    margin: 2px;
     height: 175px;
     overflow: hidden;
     background: url(../images/05/profile-box.png) no-repeat fixed;
@@ -157,6 +158,29 @@ li{margin-top: 3px;}
     margin-left: 200px;
     background-color: lime;
 }​
+.ui-tooltip, .arrow:after {
+    background: black;
+    border: 2px solid white;
+}
+.ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+    width: 135px;
+    max-width: 135px;
+}
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
 
 #logo-container{
     text-align: center;
