@@ -113,15 +113,21 @@ $(document).ready(function () {
                 $(this).delay(index * 500).animate({ opacity: 1 }, 600);
             });
         });
-
         $('#gm-campus-cruze').bind('inview', function (event, isVisible) {
-
             if (!isVisible) {
                 return;
             }
+            $('#cruze-headlights').delay(1500).fadeIn(100, function() {
+                $(this).fadeOut(400);
+            });
+        });
 
-            $('#cruze-headlights').delay(1500).fadeIn('fast', function() {
-                $(this).fadeOut('slow');
+        $('#gm-campus-spark').bind('inview', function (event, isVisible) {
+            if (!isVisible) {
+                return;
+            }
+            $('#spark-headlights').delay(1500).fadeIn(100, function() {
+                $(this).fadeOut(400);
             });
         });
     }
