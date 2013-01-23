@@ -18,6 +18,12 @@
     position: absolute;
     width: 100%;
 }
+#cruze-headlights{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
 #spark-vehicle{
     position: absolute;
     max-width: 100%;
