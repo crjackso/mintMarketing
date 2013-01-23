@@ -88,10 +88,11 @@ li{margin-top: 3px;}
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
-#team .contain {
-    top: 20%;
+#team .pics-container {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
     position: relative;
-    text-align: center;
 }
 .specialty_list li{
     margin-left: 25px;
@@ -153,8 +154,9 @@ li{margin-top: 3px;}
     background: url(../images/05/profile-box.png) no-repeat fixed;
  }
 #team .various < img{
-    width: 220px;
-    height: 255px;
+    /*width: 220px;
+    height: 255px;*/
+    max-width: 95%;
 }
 #team .profile-bio {
     margin-left: 200px;
