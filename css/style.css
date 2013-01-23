@@ -975,11 +975,8 @@ li{margin-top: 3px;}
     margin-bottom: 10%;
 }
 #leadership-2 .leadership-text{
-    top: 20%;
-    left: 40%;
-    position: absolute;
     height: auto;
-    margin-top: 20%;
+    margin-top: -1%;
 }
 #leadership .gale-pic{
     position: relative;
@@ -1001,9 +998,9 @@ li{margin-top: 3px;}
     margin-bottom: 2%;
 }
 #leadership-gale-bio {
-    right: 30%;
-    position: absolute;
-    top: 20%;
+    position: relative;
+    margin-top: 7%;
+    z-index: 999;
 }
 #leadership #leadership-experience{
     position: relative;
