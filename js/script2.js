@@ -140,37 +140,37 @@ $(document).ready(function () {
         $(this).delay(400).animate({ height: '81px' }, 500);
     });
 
-    $('img.boomer').bind('inview', function (event, isVisible) {
-        if (!isVisible) {
-            $(this).css('left', '1000px');
-            return;
-        }
-        $(this).delay(100).animate({ left: '0px' }, 400);
-    });
-
-    $('img.genY').bind('inview', function (event, isVisible) {
-        if (!isVisible) {
-            $(this).css('left', '1000px');
-            return;
-        }
-        $(this).delay(300).animate({ left: '0px' }, 500);
-    });
-
-    $('img.genX').bind('inview', function (event, isVisible) {
-        if (!isVisible) {
-            $(this).css('left', '500px');
-            return;
-        }
-        $(this).delay(500).animate({ left: '0px' }, 400);
-    });
-
-    $('img.genZ').bind('inview', function (event, isVisible) {
-        if (!isVisible) {
-            $(this).css('left', '1000px');
-            return;
-        }
-        $(this).delay(700).animate({ left: '0px' }, 400);
-    });
+//    $('img.boomer').bind('inview', function (event, isVisible) {
+//        if (!isVisible) {
+//            $(this).css('left', '1000px');
+//            return;
+//        }
+//        $(this).delay(100).animate({ left: '0px' }, 400);
+//    });
+//
+//    $('img.genY').bind('inview', function (event, isVisible) {
+//        if (!isVisible) {
+//            $(this).css('left', '1000px');
+//            return;
+//        }
+//        $(this).delay(300).animate({ left: '0px' }, 500);
+//    });
+//
+//    $('img.genX').bind('inview', function (event, isVisible) {
+//        if (!isVisible) {
+//            $(this).css('left', '500px');
+//            return;
+//        }
+//        $(this).delay(500).animate({ left: '0px' }, 400);
+//    });
+//
+//    $('img.genZ').bind('inview', function (event, isVisible) {
+//        if (!isVisible) {
+//            $(this).css('left', '1000px');
+//            return;
+//        }
+//        $(this).delay(700).animate({ left: '0px' }, 400);
+//    });
 
     $('#excitement').bind('inview', function (event, isVisible) {
         if (isVisible) {
