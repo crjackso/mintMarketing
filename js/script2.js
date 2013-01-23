@@ -91,7 +91,7 @@ $(document).ready(function () {
             $(this).delay(randomDelay).animate({ opacity: 1 }, 600);
         });
 
-        $('#our-process-container .process-column').each(function (index, element) {
+        $('.process-column').each(function (index, element) {
             $(element).bind('inview', function (event, isVisible) {
 
                 if (!isVisible) {
