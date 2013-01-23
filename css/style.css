@@ -301,10 +301,6 @@ li{margin-top: 3px;}
 
 #core-services-roundup {
     background: url(../images/07/background-white.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
@@ -322,58 +318,46 @@ li{margin-top: 3px;}
 #core-services-roundup .service{
     opacity: 0;
 }
-
 #core-services-roundup .corporate-identity{
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='scale',src='../images/07/corporate-identity.png');
+    position: relative;
 }
-
 #core-services-roundup .content-management{
-    position: absolute;
-    top: 30%;
-    left: 35%;
+    position: relative;
 }
 #core-services-roundup .exp-marketing{
-    position: absolute;
-    top: 50%;
-    left: 5%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 65%;
 }
 #core-services-roundup .advertising{
-    position: absolute;
-    top: 70%;
-    left: 8%;
+    position: relative;
+    margin-top: 15%;
 }
 #core-services-roundup .public-relations{
-    position: absolute;
-    top: 85%;
-    left: 15%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: -15%;
 }
 #core-services-roundup .digital-web{
-    position: absolute;
-    top: 60%;
-    left: 30%;
+    position: relative;
 }
 #core-services-roundup .videography{
-    position: absolute;
-    top: 25%;
-    left: 65%;
+    position: relative;
+    margin-top: 10%;
 }
 #core-services-roundup .seo{
-    position: absolute;
-    top: 40%;
-    left: 70%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 40%;
 }
 #core-services-roundup .market-research{
-    position: absolute;
-    top: 60%;
-    left: 70%;
+    position: relative;
+    margin-left: 30%;
 }
 #core-services-roundup .social-media{
-    position: absolute;
-    top: 80%;
-    left: 60%;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 65%;
 }
 #advertising{
     background: url(../images/07-01/background-purple.jpg) 50% 0 no-repeat fixed;
