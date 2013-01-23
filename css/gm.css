@@ -1,10 +1,4 @@
-﻿#gm-campus-fun {
-    background: url(../images/signDrive-fun.jpeg) 50% 0 no-repeat fixed;
-    -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);
-    height: auto;
-}
-#gm-campus-cruze {
+﻿#gm-campus-cruze {
     background: url(../images/gm-slices/cruze/cruzeback.jpg) 50% 0 no-repeat fixed;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);

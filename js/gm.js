@@ -17,7 +17,6 @@ mint.screens = [
     "our-goal",
     "target-segment",
     "excitement",
-    "gm-campus-fun",
     "gm-campus-cruze",
     "gm-campus-spark",
     "gm-campus-sonic",
