@@ -270,6 +270,20 @@ $(document).ready(function () {
         margin: 0
     });
 
+    $('.portfolio-savisa-slider').touchSlider({
+        duration: 350,
+        mouseTouch: true,
+        namespace: 'portfolio-savisa-slider',
+        margin: 0
+    });
+
+    $('.portfolio-peterson-slider').touchSlider({
+        duration: 350,
+        mouseTouch: true,
+        namespace: 'portfolio-peterson-slider',
+        margin: 0
+    });
+
     //    $('.profile-box .various').bind('mouseover', function () {
     //        var id = $(this).first('a').data('person');
     //        var person = people[id];

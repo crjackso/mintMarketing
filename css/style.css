@@ -609,12 +609,8 @@ li{margin-top: 3px;}
     width: 80%;
     margin-top: 3%;
 }
-.philanthropy{
+.portfolio-slide{
     background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     width: 2000px;
