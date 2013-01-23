@@ -1,26 +1,11 @@
-/*@media (max-width: 400px) {*/
-    /*img { max-width: 15%; }*/
-/*}*/
-
-/*@media (max-width: 900px) {*/
-    /*img { max-width: 65%; }*/
-/*}*/
-
-/*@media (max-width: 1200px) {*/
-    /*img { max-width: 45%; }*/
-/*}*/
-
-/*@media (max-width: 1500px) {*/
-    /*img { max-width: 85%; }*/
-/*}*/
-.image-container {
-    max-width: 40%;    
-}
 body{
     font-family: Verdana, Geneva, sans-serif;
     color: #FFF;
 }
-/*.responsive-image { max-width:100%; height:auto; }*/
+.image-container {
+    max-width: 40%;
+}
+.wrapper{overflow: hidden;}
 li{margin-top: 3px;}
 .story {
     height: 864px;
@@ -231,15 +216,13 @@ li{margin-top: 3px;}
     overflow: hidden;
 }
 #who-we-are #easel{
-    position: absolute;
-    left:7%;
-    top: 20%;
+    position: relative;
+    left: 7%;
+    margin-top: -3%;
 }
 #who-we-are #result-driven{
     top:23%;
-    left:13%;
-    position: absolute;
-    
+    position: relative;
 }
 #who-we-are #bishop {
     position: absolute;
@@ -249,7 +232,7 @@ li{margin-top: 3px;}
     /*bottom:20%;*/
     top: 65%;
     left:12%;
-    position: absolute;
+    position: relative;
 }
 #who-we-are #sound-strategy {
     background: url(../images/02/sound-strategy.png) transparent 15% 100px no-repeat fixed;
@@ -261,9 +244,9 @@ li{margin-top: 3px;}
     margin: 0 auto;
 }
 #brand-loyalty{
-    position:absolute;
+    position:relative;
     top:40%;
-    right:5%;
+    left: 15%;
 }
 .mint-logo-small{
     position:absolute;
