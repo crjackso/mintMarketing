@@ -196,11 +196,11 @@ li{margin-top: 3px;}
 }
 /*#logo{margin-top: 3%;}*/
 
-#first article { width: 100%; top: 300px; position: absolute; text-align: center; }
-#first article p,
-#first article a { color: #ccc; }
-#first article a { text-decoration: underline; }
-#first article a:hover { color: #fff; }
+/*#first article { width: 100%; top: 300px; position: absolute; text-align: center; }*/
+/*#first article p,*/
+/*#first article a { color: #ccc; }*/
+/*#first article a { text-decoration: underline; }*/
+/*#first article a:hover { color: #fff; }*/
 
 #who-we-are {
     background: url(../images/02/background-white.jpg) 50% 0 no-repeat fixed;
@@ -858,13 +858,14 @@ li{margin-top: 3px;}
     position: relative; margin: 0 auto;
     overflow: hidden;
 }
-#logo-container{text-align: center;z-index: 100;position: relative;}
-#home #logo{max-width: 50%;}
-#home article { width: 100%; top: 300px; position: absolute; text-align: center; }
-#home article p,
-#home article a { color: #ccc; }
-#home article a { text-decoration: underline; }
-#home article a:hover { color: #fff; }
+#logo-container{text-align: center; z-index: 100; position: relative;}
+#shadow{ margin-top: 5%; }
+/*#home #logo{max-width: 50%;}*/
+/*#home article { width: 100%; top: 300px; position: absolute; text-align: center; }*/
+/*#home article p,*/
+/*#home article a { color: #ccc; }*/
+/*#home article a { text-decoration: underline; }*/
+/*#home article a:hover { color: #fff; }*/
 
 /* Our Mission */
 #mission {
