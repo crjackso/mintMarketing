@@ -2,6 +2,10 @@ body{
     font-family: Verdana, Geneva, sans-serif;
     color: #FFF;
 }
+object{
+    position: absolute;
+    outline: none;
+}
 .image-container {
     max-width: 40%;
 }
