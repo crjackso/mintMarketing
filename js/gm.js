@@ -65,7 +65,10 @@ $(document).ready(function () {
 
         $('#gm-campus-sonic').bind('inview', function (event, isVisible) {
             if (!isVisible) {
+                $('#sonic-map-lit').hide();
                 $('#sonic-map').css('top', '');
+                $('#sonic-calendar').css('top', '-100%');
+                $('#sonic-cursor').css({top: '100%', right: '-10%'});
                 return;
             }
 
@@ -77,13 +80,15 @@ $(document).ready(function () {
 //                'top': '0'
 //            }, 900);
 
-            $('#sonic-cursor').delay(1500).stop()
-                .css({ 'top': '10%', 'right': '-10%'})
+            $('#sonic-cursor').delay(3500)
                 .animate({
-                    top: '0%'
-                    }, 200, function() {
+                    top: '0%',
+                    right: '10%'
+                    }, 1000, function() {
                     $('#sonic-map-lit').show();
-//                    $('#')
+                    $('#sonic-calendar').animate({
+                        top: 0
+                    }, 1000);
                 });
         });
     }
