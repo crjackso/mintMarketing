@@ -197,7 +197,7 @@ $(document).ready(function () {
         //        autoHeight: false,
         //        autoWidth: false,
         minWidth: '70%',
-        minHeight: '65%',
+        minHeight: '55%',
         openEffect: 'fade',
         'transitionIn': 'elastic',
         scrolling: 'no',
