@@ -65,11 +65,26 @@ $(document).ready(function () {
 
         $('#gm-campus-sonic').bind('inview', function (event, isVisible) {
             if (!isVisible) {
+                $('#sonic-map').css('top', '');
                 return;
             }
-            $('#sonic-headlights').delay(1500).fadeIn(100, function() {
+
+            $('#sonic-headlights').delay(800).fadeIn(100, function() {
                 $(this).fadeOut(400);
             });
+
+//            $('.map').delay(1200).animate({
+//                'top': '0'
+//            }, 900);
+
+            $('#sonic-cursor').delay(1500).stop()
+                .css({ 'top': '10%', 'right': '-10%'})
+                .animate({
+                    top: '0%'
+                    }, 200, function() {
+                    $('#sonic-map-lit').show();
+//                    $('#')
+                });
         });
     }
 
