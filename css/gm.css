@@ -63,7 +63,7 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 .sonic-headlights{
     position: absolute;
@@ -76,7 +76,7 @@
 #sonic-map{
     position: absolute;
     max-width: 100%;
-    /*top: 0;*/
+    z-index:2;
 }
 #sonic-calendar{
     position: absolute;
@@ -86,7 +86,8 @@
 #sonic-map-lit{
     position: absolute;
     max-width: 100%;
-    /*top: 0;*/
+    z-index:2;
+    display: none;
 }
 .gm-slide-header{
     position: absolute;
