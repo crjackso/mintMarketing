@@ -2,9 +2,9 @@ body{
     font-family: Verdana, Geneva, sans-serif;
     color: #FFF;
 }
-.image-container {
-    max-width: 40%;
-}
+.image-container {max-width: 40%;}
+.full-width{ width: 100%; }
+.center{text-align: center;}
 .wrapper{overflow: hidden;}
 li{margin-top: 3px;}
 .story {
@@ -78,7 +78,10 @@ li{margin-top: 3px;}
 }
 
 /* Team */
-
+#teamMemberPlaceholder{
+    display: none;
+    width: 650px;
+}
 #team{
     background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;

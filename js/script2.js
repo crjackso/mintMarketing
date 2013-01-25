@@ -248,6 +248,10 @@ $(document).ready(function () {
             openEffect: 'elastic',
             minHeight: '55%',
             height: '55%',
+            minWidth: '650px',
+            width: 650,
+            autoSize: false,
+            autoResize: false,
             beforeClose: function () { scrollLocked = false; },
             afterShow: function () { scrollLocked = true; }
         });
