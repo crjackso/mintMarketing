@@ -2,10 +2,6 @@ body{
     font-family: Verdana, Geneva, sans-serif;
     color: #FFF;
 }
-object{
-    position: absolute;
-    outline: none;
-}
 .image-container {
     max-width: 40%;
 }
@@ -16,7 +12,7 @@ li{margin-top: 3px;}
     padding: 0;
     width: 100%;
     max-width: 1920px;
-    position: relative; 
+    position: relative;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -27,7 +23,7 @@ li{margin-top: 3px;}
 }
 .cell3 {
     width: 220px;
-    float: left;    
+    float: left;
 }
 .cell4 {
     float: left;
@@ -41,7 +37,7 @@ li{margin-top: 3px;}
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc); 
+    behavior: url(backgroundsize.min.htc);
 }
 .leaf-transition{
     background: url(../images/leaf-transition.jpg) 50% 0 no-repeat fixed;
@@ -58,7 +54,7 @@ li{margin-top: 3px;}
     overflow: hidden;
 }
 .scene>img {
-    position: absolute;    
+    position: absolute;
 }
 .white-button {
     background-image:url(../images/01/down-arrow-white.png);
@@ -75,7 +71,7 @@ li{margin-top: 3px;}
     left: 50%;
     bottom: 5%;
     margin-left: -25px;
-    display: block; 
+    display: block;
     z-index: 1000;
     height: 40px;
     width: 66px;
@@ -145,7 +141,7 @@ li{margin-top: 3px;}
     font-size: 1.1em;
 }
 #teamMember .main {
-    
+
 }
 #teamMember .profile-details span{
     margin-top: 20px;
@@ -156,7 +152,7 @@ li{margin-top: 3px;}
     height: 175px;
     overflow: hidden;
     background: url(../images/05/profile-box.png) no-repeat fixed;
- }
+}
 #team .various < img{
     /*width: 220px;
     height: 255px;*/
@@ -167,9 +163,9 @@ li{margin-top: 3px;}
     background-color: lime;
 }​
 .ui-tooltip, .arrow:after {
-    background: black;
-    border: 2px solid white;
-}
+     background: black;
+     border: 2px solid white;
+ }
 .ui-tooltip {
     padding: 10px 20px;
     color: white;
@@ -196,11 +192,11 @@ li{margin-top: 3px;}
 }
 /*#logo{margin-top: 3%;}*/
 
-/*#first article { width: 100%; top: 300px; position: absolute; text-align: center; }*/
-/*#first article p,*/
-/*#first article a { color: #ccc; }*/
-/*#first article a { text-decoration: underline; }*/
-/*#first article a:hover { color: #fff; }*/
+#first article { width: 100%; top: 300px; position: absolute; text-align: center; }
+#first article p,
+#first article a { color: #ccc; }
+#first article a { text-decoration: underline; }
+#first article a:hover { color: #fff; }
 
 #who-we-are {
     background: url(../images/02/background-white.jpg) 50% 0 no-repeat fixed;
@@ -371,7 +367,7 @@ li{margin-top: 3px;}
     background-size: cover;
     width: 2000px;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);   
+    behavior: url(backgroundsize.min.htc);
 }
 #content-management{
     background: url(../images/07-02/background-orange.jpg) 50% 0 no-repeat fixed;
@@ -381,7 +377,7 @@ li{margin-top: 3px;}
     background-size: cover;
     width: 2000px;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);   
+    behavior: url(backgroundsize.min.htc);
 }
 #corporate-identity{
     background: url(../images/07-03/background-teal.jpg) 50% 0 no-repeat fixed;
@@ -391,7 +387,7 @@ li{margin-top: 3px;}
     background-size: cover;
     width: 2000px;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);   
+    behavior: url(backgroundsize.min.htc);
 }
 #digital-web{
     background: url(../images/07-04/background-lightblue.jpg) 50% 0 no-repeat fixed;
@@ -441,7 +437,7 @@ li{margin-top: 3px;}
     background-size: cover;
     width: 2000px;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);  
+    behavior: url(backgroundsize.min.htc);
 }
 #social-media{
     background: url(../images/07-09/background-gray.jpg) 50% 0 no-repeat fixed;
@@ -451,7 +447,7 @@ li{margin-top: 3px;}
     background-size: cover;
     width: 2000px;
     -ms-behavior: url(backgroundsize.min.htc);
-    behavior: url(backgroundsize.min.htc);  
+    behavior: url(backgroundsize.min.htc);
 }
 #video-production{
     background: url(../images/07-10/background-magenta.jpg) 50% 0 no-repeat fixed;
@@ -741,14 +737,14 @@ li{margin-top: 3px;}
     left: 0;
 }
 #cloud5{
-     background: url(../images/14/11cloud.png);
+    background: url(../images/14/11cloud.png);
 }
 #cloud6{
     background: url(../images/14/12cloud.png);
     left: 0;
 }
 #cloud7{
-   background: url(../images/14/14cloud.png);
+    background: url(../images/14/14cloud.png);
     right: 0;
 }
 #cloud8{
@@ -839,15 +835,15 @@ li{margin-top: 3px;}
 }
 #home img.bg {
     /* Set rules to fill background */
-	min-height: 100%;
-	min-width: 1024px;
-			
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
-			
-	/* Set up positioning */
-	position: fixed;
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
 }
 #home .mintlogo {
     background: url(../images/01/mint-logo.png) 50% 100px no-repeat fixed;
@@ -858,14 +854,13 @@ li{margin-top: 3px;}
     position: relative; margin: 0 auto;
     overflow: hidden;
 }
-#logo-container{text-align: center; z-index: 100; position: relative;}
-#shadow{ margin-top: 5%; }
-/*#home #logo{max-width: 50%;}*/
-/*#home article { width: 100%; top: 300px; position: absolute; text-align: center; }*/
-/*#home article p,*/
-/*#home article a { color: #ccc; }*/
-/*#home article a { text-decoration: underline; }*/
-/*#home article a:hover { color: #fff; }*/
+#logo-container{text-align: center;z-index: 100;position: relative;}
+#home #logo{max-width: 50%;}
+#home article { width: 100%; top: 300px; position: absolute; text-align: center; }
+#home article p,
+#home article a { color: #ccc; }
+#home article a { text-decoration: underline; }
+#home article a:hover { color: #fff; }
 
 /* Our Mission */
 #mission {
@@ -945,7 +940,7 @@ li{margin-top: 3px;}
     cursor: pointer;
 }
 #leadership #leadership-gale-text{margin-left: 15%;max-width: 80%;}
-#leadership #leadership-learn-more 
+#leadership #leadership-learn-more
 {
     cursor: pointer;
     margin-top: 2%;

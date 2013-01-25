@@ -49,7 +49,11 @@ function set_slide_heights() {
     var newHeight = parseInt(height) + 'px';
     $(".story").css('height', newHeight);
 
+    var newPosition = width + 'px ' + height + 'px';
+    $('.story').css('background-size', newPosition);
+
+    $('.touchslider-item').css('width', width + 'px');
     $('.touchslider-item .inner').css('width', width + 'px');
     $('.touchslider-item .inner').height(height);
-    $('.touchslider-viewport').height(height - 20);
+    $('.touchslider-viewport').height(height);
 }
