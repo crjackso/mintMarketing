@@ -1,4 +1,4 @@
 php_flag engine off
-DirectoryIndex gm.html
+DirectoryIndex general.html
 
 AddType text/x-component .htc
