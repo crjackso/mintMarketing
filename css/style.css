@@ -535,12 +535,15 @@ li{margin-top: 3px;}
 }
 #portfolio{
     background: url(../images/11/background-green.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+}
+#portfolio-container{
+    margin-top: 5%;
+    text-align: center;
+}
+#portfolio-container .row-fluid{
+    margin-bottom: 3%;
 }
 .portfolio-philanthropy-slider-next {
     position: relative;
@@ -584,7 +587,6 @@ li{margin-top: 3px;}
     margin: 1%;
 }
 .mac{
-    width: 80%;
     margin-top: 3%;
 }
 .portfolio-slide{
