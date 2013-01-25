@@ -7,17 +7,14 @@ mint.screens = [
     "leadership",
     "team",
     "core-services",
-    "core-services-slider",
     "core-services-roundup",
+    "core-services-slider",
     "our-process",
     "generations-gap",
     "clients",
     "portfolio",
     "video",
     "our-goal",
-    "target-segment",
-    "excitement",
-    "win-win",
     "thank-you"
 ];
 
