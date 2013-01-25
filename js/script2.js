@@ -96,10 +96,10 @@ $(document).ready(function () {
             $(element).bind('inview', function (event, isVisible) {
 
                 if (!isVisible) {
-                    $(this).css('opacity', 0);
+                    $('.process-column').css('opacity', 0);
                     return;
                 }
-                $(this).delay(index * 500).animate({ opacity: 1 }, 600);
+                $(this).delay(index * 800).animate({ opacity: 1 }, 600);
             });
         });
 
