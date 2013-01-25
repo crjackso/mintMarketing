@@ -210,6 +210,7 @@ li{margin-top: 3px;}
 #who-we-are .banner{
     background-image: url(../images/02/header.jpg);
     background-size: 1700px 200px;
+    background-repeat: no-repeat;
     top: 0;
     width: 100%;
     height: 200px;
@@ -227,13 +228,13 @@ li{margin-top: 3px;}
     position: relative;
 }
 #who-we-are #bishop {
-    position: absolute;
-    bottom: 3%;
+    position: relative;
+    max-width: 95%;
+    margin-top: -45%;
 }
 #who-we-are #sound-in-strategy{
-    /*bottom:20%;*/
     top: 65%;
-    left:12%;
+    left: -32%;
     position: relative;
 }
 #who-we-are #sound-strategy {
@@ -249,6 +250,7 @@ li{margin-top: 3px;}
     position:relative;
     top:40%;
     left: 15%;
+    max-width: 95%;
 }
 .mint-logo-small{
     position:absolute;
