@@ -308,6 +308,16 @@ $(document).ready(function () {
     //        alert(person.title);
     //    });
 
+    $('#scrollToTop').click(function(){
+        scrollReady = false;
+        $("html,body").animate({scrollTop:"0px"}, 2500,
+            function(){
+                scrollReady = true;
+                currentScreen = 0;
+            });
+        return false;
+    });
+
     // Ready to go
     $(window).load(function () {
 
