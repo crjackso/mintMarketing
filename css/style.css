@@ -83,6 +83,7 @@ li{margin-top: 3px;}
     margin: 0 auto;
     margin-top: 10%;
     position: relative;
+    text-align: center;
 }
 .specialty_list li{
     margin-left: 25px;
@@ -125,10 +126,12 @@ li{margin-top: 3px;}
     float: left;
     width: 200px;
     margin-right: 8px;
+    margin-top: 10px;
 }
 #teamMember .profile-details{
     margin-top: 8px;
     font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
 }
 #teamMember .main {
 
@@ -538,6 +541,9 @@ li{margin-top: 3px;}
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
+.portfolio-lone{
+    background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;
+}
 #portfolio-container{
     margin-top: 5%;
     text-align: center;
@@ -585,6 +591,7 @@ li{margin-top: 3px;}
     color: grey;
     font-size: 2.4em;
     margin: 1%;
+    font-family: 'Lato', sans-serif;
 }
 .mac{
     margin-top: 3%;
@@ -954,74 +961,6 @@ li{margin-top: 3px;}
     position: relative;
     left: 10%;
 }
-
-/* HTML5 Video */
-/*#fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }*/
-/*#fourth article p { width: 300px; margin: 50px 0; }*/
-/*#fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}*/
-
-/* The End */
-/*#theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }*/
-
-
-.sub-page1{
-    z-index: 900;
-}
-.sub-container{
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    max-width: 1600px;
-    min-width: 960px;
-    height: 100%;
-    left: 100%;
-    overflow: hidden;
-    background: #000;
-    z-index: 999;
-}
-.sub-page{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    left: 100%;
-    max-width: 1600px;
-    min-width: 960px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-}
-.greybg{
-    background: url(../images/grey_bg.jpg);
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-}
-
-.close-all{
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    text-align: center;
-    width: 45px;
-    height: 45px;
-    background-position: right bottom;
-    background-color: #000;
-    -moz-transition: background-color 0.2s ease 0s;
-    -webkit-transition: background-color .2s;
-    o-transition: background-color .2s;
-}
-
-.close-all:hover{
-    background-color: #777;
-}
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
-#three div.ingress{
-    width: 960px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
 #wrapper{
     position: fixed;
     height: 1000px;
@@ -1032,173 +971,6 @@ li{margin-top: 3px;}
     overflow: hidden;
 }
 
-
-
-
-
-
-
-
-#topNav .wrap .logo {
-    background: url(../images/saucony/topNav-logo.png) no-repeat;
-    float: left; margin-left: 75px;
-    width: 103px; height: 47px;
-}
-
-#topNav .wrap h1 {
-    float: right;
-    color: #fff;
-    font-family: "Interstate Black";
-    font-size: 0.938em;
-    letter-spacing: -1px;
-    margin-right: 75px;
-    font-weight: bold;
-    margin-top: 23px;
-    line-height: 0.74em;
-}
-
-
-/* Start Sceen Social */
-#social { text-align:right; padding-right: 72px; padding-top: 24px; }
-#social button { cursor: pointer; margin-left: 3px; }
-#social button.socialFacebook {
-    border: 0px; outline: 0px;
-    background: url(../images/saucony/social-icons.png) no-repeat 0 0;
-    width: 36px; height: 35px;
-    text-indent: -99999px;
-}
-#social button.socialFacebook:hover { background-position: 0 -35px; }
-#social button.socialTwitter {
-    border: 0px; outline: 0px;
-    background: url(../images/saucony/social-icons.png) no-repeat -36px 0;
-    width: 36px; height: 35px;
-    text-indent: -99999px;
-}
-#social button.socialTwitter:hover { background-position: -36px -35px; }
-
-/* Start Sceen Content */
-#startScreenWrap {
-    width: 1020px;
-    height: 650px;
-    position: absolute;
-    top: 120px;
-    display: none;
-}
-
-#startScreenWrap h1 {
-    font: normal 5.250em/0.833em "Interstate Black";
-    color: #fff;
-    letter-spacing: -2px;
-    margin-bottom: 25px;
-}
-
-#startScreenWrap h2 {
-    font: normal 2.750em/0.909em "Interstate Black";
-    color: #000;
-    letter-spacing: -2px;
-    text-transform: uppercase;
-}
-
-#startScreenWrap div.shoeSplash {
-    position: absolute;
-    left: 0; top: 150px;
-    text-align: right;
-    z-index: 0;
-}
-#startScreenWrap p { position: relative; z-index: 10; }
-#startScreenWrap p a {
-    color: #D41010; text-decoration: none;
-    font: bold 1.081em Interstate;
-    text-transform: uppercase;
-    background: url('../images/saucony/home-shoesplash-link-arrow.png') 0 3px no-repeat;
-    padding-left: 13px;
-    z-index: 10;
-}
-
-#startScreenWrap p a:hover {
-    color: #fff;
-    background-position: 0 -17px;
-}
-
-#intro {
-    color: #8d8d8d;
-    font: 0.813em/1.3em Helvetica;
-    width: 740px;
-    margin-left: 52px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-#usbStrap {
-    background: url(../images/saucony/startPage-usb-strap.png) no-repeat;
-    width: 1000px; height: 142px;
-}
-#usbStrap h2 {
-    font-family: "Interstate Black";
-    font-size: 1.559em;
-    color: #fff;
-    font-weight: normal;
-    letter-spacing: -0.01em;
-    padding: 26px 0 0 390px;
-}
-
-#startScreen #startShoes {
-    position: absolute;
-    z-index: 5;
-    display: block;
-    right: 0;
-    bottom: 0;
-    margin-left: 85px;
-}
-
-
-
-.persp_background {
-    width: 2100px;
-    height: 1500px;
-    position: absolute;
-}
-#flexfilm-bg { background: url('../images/saucony/build-bg-1.png') repeat-x; }
-#upper-bg { background: url('../images/saucony/build-bg-2.png') repeat-x; }
-#progrid-bg { background: url('../images/saucony/build-bg-3.png') repeat-x; }
-#midsole-bg { background: url('../images/saucony/build-bg-4.png') repeat-x; }
-#sole-bg { background: url('../images/saucony/build-bg-5.png') repeat-x; }
-
-.glow {
-    width: 1600px;
-    height: 1050px;
-    position: absolute;
-}
-
-#contentWrap { display: none; }
-#contentWrap section {
-    position:relative;
-    overflow:hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.quote {
-    position: absolute;
-    width: 300px;
-    font-weight: bold;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.quote p { margin-bottom: 8px; }
-.quote1_1 { color: #a7a7a7; font-size: 1.125em; line-height: 1.111em; }
-.quote1_2 { color: #4a4a4a; font-size: 0.750em; line-height: 1.167em; }
-
-.quote2_1 { color: #a7a7a7; font-size: 0.938em; line-height: 1.133em; }
-.quote2_2 { color: #8e8e8e; font-size: 0.750em; line-height: 1.167em; }
-
-.quote3_1 { color: #737373; font-size: 1.125em; line-height: 1.111em; }
-.quote3_2 { color: #000000; font-size: 0.750em; line-height: 1.167em; }
-
-.quote4_1 { color: #666666; font-size: 0.750em; line-height: 1.167em; }
-.quote4_2 { color: #818181; font-size: 1.016em; line-height: 1.137em; }
-
-.quote5_1 { color: #9a9a9a; font-size: 0.938em; line-height: 1.200em; }
-.quote5_2 { color: #666666; font-size: 0.750em; line-height: 1.167em; }
 
 .btnScrollLeft {
     border-top-right-radius: 5px;
