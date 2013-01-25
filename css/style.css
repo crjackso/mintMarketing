@@ -16,19 +16,6 @@ li{margin-top: 3px;}
     margin: 0 auto;
     overflow: hidden;
 }
-.contain {
-    margin-right: auto;
-    margin-left: auto;
-    width: 940px;
-}
-.cell3 {
-    width: 220px;
-    float: left;
-}
-.cell4 {
-    float: left;
-    width: 300px;
-}
 .transition{ height:700px; margin: 0 auto; width: 100%; }
 .compass-transition{
     background: url(../images/compass-transition.jpg) 50% 0 no-repeat fixed;
