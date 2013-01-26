@@ -22,7 +22,33 @@ $(document).ready(function () {
 
         // Prevent scrolling when scroller is not ready
         if (scrollLocked) preventScroll();
+
+        var processInView = $("#our-process").is(":within-viewport");
+
+        if(processInView){
+            animateProcessSlide();
+        }
+        else{
+            hideProcessColumns();
+        }
     });
+
+    function hideProcessColumns(){
+        if(mint.screens[currentScreen] != 'our-process'){
+            $('.process-column').css('opacity', 0);
+        }
+    }
+
+    function animateProcessSlide(){
+        if(!jQuery.support.opacity){
+            return;
+        }
+
+        $('.process-column').each(function(index, element){
+            var index = parseInt($(this).data('index'));
+            $(this).delay(index * 1000).animate({ opacity: 1 }, 500);
+        });
+    }
 
     /****************************************************************************************
     Process Window Resizing - Delay reaction until resize complete
@@ -31,6 +57,7 @@ $(document).ready(function () {
     var rtime = new Date(1, 1, 2000, 12, 00, 00);
     var timeout = false;
     var delta = 200;
+    var _processTransitioning = false;
     $(window).resize(function () {
         rtime = new Date();
         if (timeout === false) {
@@ -90,17 +117,6 @@ $(document).ready(function () {
             }
             var randomDelay = Math.random() * 600;
             $(this).delay(randomDelay).animate({ opacity: 1 }, 600);
-        });
-
-        $('.process-column').each(function (index, element) {
-            $(element).bind('inview', function (event, isVisible) {
-
-                if (!isVisible) {
-                    $('.process-column').css('opacity', 0);
-                    return;
-                }
-                $(this).delay(index * 800).animate({ opacity: 1 }, 600);
-            });
         });
 
         $('div.cloud').each(function (index, element) {
