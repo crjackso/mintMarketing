@@ -49,6 +49,9 @@ li{margin-top: 3px;}
 .green-button{
     background-image:url(../images/02/down-arrow-green.png);
 }
+.up-button{
+    background-image:url(../images/02/up-arrow-green.png);
+}
 .white-button:hover, .green-button:hover{
     cursor:pointer;
 }
@@ -73,6 +76,7 @@ li{margin-top: 3px;}
     z-index: 1000;
     height: 40px;
     width: 66px;
+    cursor: pointer;
 }
 
 /* Team */
