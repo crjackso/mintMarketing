@@ -54,5 +54,6 @@ function set_slide_heights() {
     $('.touchslider-item .inner').height(height);
     $('.touchslider-viewport').height(height);
     $('.full-height').height(height);
+    $('.full-width').css('width', width + 'px');
     $('.leadership-slider').css('width', width + 'px');
 }

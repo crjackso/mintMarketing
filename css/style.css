@@ -6,6 +6,14 @@ body{
 .full-width{ width: 100%; }
 .center{text-align: center;}
 .wrapper{overflow: hidden;}
+.block {text-align: center;margin: 0px;}
+.block:before { content: '';display: inline-block;height: 100%;vertical-align: middle;margin-right: -0.25em;}
+
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 15px;
+}
 li{margin-top: 3px;}
 .story {
     height: 864px;
@@ -883,6 +891,9 @@ li{margin-top: 3px;}
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
+#mission-block-text{
+    margin-top: -5%;
+}
 #mission-container{position: relative;}
 #mission #our-mission-is {
     top: 15%;
@@ -897,7 +908,7 @@ li{margin-top: 3px;}
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-width: 80%;
+    max-width: 95%;
 }
 #mission #mint-leaf{
     top: 30%;
