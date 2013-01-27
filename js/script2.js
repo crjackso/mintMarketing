@@ -23,6 +23,10 @@ $(document).ready(function () {
         // Prevent scrolling when scroller is not ready
         if (scrollLocked) preventScroll();
 
+        evaluateProcessSlide();
+    });
+
+    function evaluateProcessSlide(){
         var processInView = $("#our-process").is(":within-viewport");
 
         if(processInView){
@@ -31,7 +35,7 @@ $(document).ready(function () {
         else{
             hideProcessColumns();
         }
-    });
+    }
 
     function hideProcessColumns(){
         if(mint.screens[currentScreen] != 'our-process'){
@@ -131,27 +135,6 @@ $(document).ready(function () {
         });
     }
 
-//    $(document).tooltip({
-//        content: function () {
-//            var element = $(this);
-//            var id = $(element).data('person');
-//            var person = people[id];
-//            return String.format("<div><p>{0}</p><p>{1}</p></div>", person.name, person.title);
-//        },
-//        position: {
-//            //            my: "center bottom-20",
-//            at: "center top",
-//            using: function (position, feedback) {
-//                $(this).css(position);
-//                //                $("<div>")
-//                //                        .addClass("arrow")
-//                //                        .addClass(feedback.vertical)
-//                //                        .addClass(feedback.horizontal)
-//                //                        .appendTo(this);
-//            }
-//        }
-//    });
-
     $('#clients #client-text').bind('inview', function (event, isVisible) {
         if (!isVisible) {
             $(this).animate({ height: '30px' }, 100);
@@ -210,8 +193,6 @@ $(document).ready(function () {
 
     $('.play-video').fancybox({
         'autoDimensions': false,
-        //        autoHeight: false,
-        //        autoWidth: false,
         minWidth: '70%',
         minHeight: '55%',
         openEffect: 'fade',
@@ -272,14 +253,6 @@ $(document).ready(function () {
             afterShow: function () { scrollLocked = true; }
         });
     });
-
-//    $('.leadership-slider').touchSlider({
-//        duration: 550,
-//        margin: 0,
-//        next: '.leadership-slider-next',
-//        namespace: 'leadership-slider'
-//    });
-
 
     var slider = $('.bxslider').bxSlider({
         infiniteLoop: false,
@@ -458,56 +431,3 @@ function unbindKeys() {
 $("input, textarea, select").live("focus", function () { unbindKeys(); });
 $("input, textarea, select").live("blur", function () {setupKeyScrollHandler(); });
 
-
-/***********************************************************
- Helper Functions
- **********************************************************/
-$.fn.makeFancy = function() {
-
-    var formSelect = $(this);
-    var newId = $(this).attr('id') + "_fancy";
-
-    var selectBoxContainer = $('<div id="'+newId+'">').addClass('fancySelect').html('<div class="selectBox"></div>');
-
-    var dropDown = $('<ul>').addClass('dropDown');
-    var selectBox = selectBoxContainer.find('.selectBox');
-
-    formSelect.find('option').each(function(i){
-        var option = $(this);
-        if(i==formSelect.prop('selectedIndex')) selectBox.html(option.text());
-        if(option.data('skip')) return true;
-        var li = $('<li>',{ html:	option.text() });
-        li.click(function(){
-            selectBox.html(option.text());
-            dropDown.trigger('hide');
-            formSelect.val(option.val());
-            return false;
-        });
-        dropDown.append(li);
-    });
-
-    selectBoxContainer.append(dropDown.hide());
-    formSelect.hide().after(selectBoxContainer);
-
-    dropDown.on('show',function(){
-        if(dropDown.is(':animated')) return false;
-        selectBox.addClass('expanded');
-        dropDown.slideDown();
-    }).on('hide',function(){
-            if(dropDown.is(':animated')) return false;
-            selectBox.removeClass('expanded');
-            dropDown.slideUp();
-        }).on('toggle',function(){
-            if(selectBox.hasClass('expanded')) dropDown.trigger('hide');
-            else dropDown.trigger('show');
-        });
-
-    selectBox.on('click', function(){
-        dropDown.trigger('toggle');
-        return false;
-    });
-
-    $(document).click(function(){
-        dropDown.trigger('hide');
-    });
-}
