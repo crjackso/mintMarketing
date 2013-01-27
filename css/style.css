@@ -528,7 +528,9 @@ li{margin-top: 3px;}
     text-align: center;
     margin-left: 0px;
     margin-top: 15px;
-    font-size: 1.3em;
+    font-size: 1.8em;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.1em;
 }
 #preferred-text{
     margin-left: auto;
