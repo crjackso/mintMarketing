@@ -672,9 +672,11 @@ li{margin-top: 3px;}
 }
 #our-goal #incentive {
     position: relative;
+    margin-left: 10%;
 }
 #our-goal #conversation {
     position: relative;
+    margin-left: 15%;
 }
 #our-goal-text{
     position: relative;
