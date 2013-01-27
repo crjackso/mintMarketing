@@ -907,12 +907,12 @@ li{margin-top: 3px;}
     display: block;
 }
 #leadership-1 {
-    background: url(../images/04/background-white.jpg) 50% 0 no-repeat fixed;
-    width: 2000px;
+    background: url(../images/04/background-white.jpg) 50% 0 no-repeat;
+    /*width: 2000px;*/
 }
 #leadership-2 {
-    background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat fixed;
-    width: 2000px;
+    background: url(../images/04A/background-leadership.jpg) 50% 0 no-repeat;
+    /*width: 2000px;*/
 }
 #leadership {
     background: url(../images/04/background-white.jpg) 50% 0 no-repeat fixed;
@@ -942,16 +942,18 @@ li{margin-top: 3px;}
 #leadership .gale-pic{
     position: absolute;
     bottom: 0;
-    left: -5%;
+    left: -10%;
     height: auto;
+    max-width: 85%;
 }
-.leadership-slider-prev {
+#leadership-slider-prev {
     position: relative;
     top: 45%;
     z-index: 999;
     cursor: pointer;
+    width: 95px;
 }
-#leadership #leadership-gale-text{margin-left: 15%;max-width: 80%;}
+#leadership #leadership-gale-text{max-width: 80%;}
 #leadership #leadership-learn-more
 {
     cursor: pointer;
@@ -960,17 +962,15 @@ li{margin-top: 3px;}
 }
 #leadership-gale-bio {
     position: relative;
-    margin-top: 7%;
+    margin-top: 10%;
     z-index: 999;
+    max-width: 85%;
 }
 #leadership #leadership-experience{
-    position: relative;
-    top: 85%;
-    left: 25%;
+    max-width: 45%;
 }
 .leadership-slider-next{
-    position: relative;
-    left: 10%;
+
 }
 #wrapper{
     position: fixed;

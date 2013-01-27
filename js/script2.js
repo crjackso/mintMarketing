@@ -273,11 +273,30 @@ $(document).ready(function () {
         });
     });
 
-    $('.leadership-slider').touchSlider({
-        duration: 550,
-        margin: 0,
-        next: '.leadership-slider-next',
-        namespace: 'leadership-slider'
+//    $('.leadership-slider').touchSlider({
+//        duration: 550,
+//        margin: 0,
+//        next: '.leadership-slider-next',
+//        namespace: 'leadership-slider'
+//    });
+
+
+    var slider = $('.bxslider').bxSlider({
+        infiniteLoop: false,
+        controls: false,
+        hideControlOnEnd: true,
+        slideMargin: 10,
+        pager: false
+    });
+
+    $('#leadership-learn-more').click(function(){
+        slider.goToNextSlide();
+        return false;
+    });
+
+    $('#leadership-slider-prev').click(function(){
+        slider.goToPrevSlide();
+        return false;
     });
 
     $(".services").touchSlider({
