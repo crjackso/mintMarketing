@@ -31,6 +31,9 @@ $(document).ready(function () {
     set_slide_heights();
 
     $(window).bind('resize', set_slide_heights);
+    $(window).scroll(function(){
+       handleSonicAnimation();
+    });
 
     skrollr.init({
         forceHeight:false,
@@ -62,35 +65,37 @@ $(document).ready(function () {
                 $(this).fadeOut(400);
             });
         });
+    }
 
-        $('#gm-campus-sonic').bind('inview', function (event, isVisible) {
-            if (!isVisible) {
-                $('#sonic-map-lit').hide();
-                $('#sonic-map').css('top', '');
-                $('#sonic-calendar').css('top', '-100%');
-                $('#sonic-cursor').css({top: '100%', right: '-10%'});
-                return;
-            }
+    function handleSonicAnimation(){
+        var inView = $("#gm-campus-sonic").is(":within-viewport");
 
-            $('#sonic-headlights').delay(800).fadeIn(100, function() {
-                $(this).fadeOut(400);
-            });
+        if(inView === false || !jQuery.support.opacity){
+            $('#sonic-map-lit').hide();
+            $('#sonic-map').css('top', '');
+            $('#sonic-calendar').css('top', '-100%');
+            $('#sonic-cursor').css({top: '10%', right: '-20%'});
+            return;
+        }
+
+        $('#sonic-headlights').delay(800).fadeIn(100, function() {
+            $(this).fadeOut(400);
+        });
 
 //            $('.map').delay(1200).animate({
 //                'top': '0'
 //            }, 900);
 
-            $('#sonic-cursor').delay(3500)
-                .animate({
-                    top: '0%',
-                    right: '10%'
-                    }, 1000, function() {
-                    $('#sonic-map-lit').show();
-                    $('#sonic-calendar').animate({
-                        top: 0
-                    }, 1000);
-                });
-        });
+        $('#sonic-cursor').delay(3500)
+            .animate({
+                top: '-3%',
+                right: '20%'
+            }, 1000, function() {
+                $('#sonic-map-lit').show();
+                $('#sonic-calendar').animate({
+                    top: 0
+                }, 1000);
+            });
     }
 
     $("#teamJson").val(JSON.stringify(people));
@@ -101,30 +106,15 @@ function set_slide_heights() {
     var height = $(window).height();
     var newHeight = parseInt(height) + 'px';
     $(".story").css('height', newHeight);
-    
+
     var newPosition = width + 'px ' + height + 'px';
-    $('.gm-slide').css('background-size', newPosition);
     $('.story').css('background-size', newPosition);
 
     $('.touchslider-item').css('width', width + 'px');
     $('.touchslider-item .inner').css('width', width + 'px');
     $('.touchslider-item .inner').height(height);
     $('.touchslider-viewport').height(height);
-
-
-//    var ww = window.innerWidth;
-//    var wh = window.innerHeight;
-//    var aspect = Math.floor((ww / wh) * 100) / 100; // set to 2 decimal points
-//    var landscape = aspect > 1 ? true : false;
-//    var portrait = aspect < 1 ? true : false;
-//    var orientation = (landscape == true && portrait == false) ? "Landscape" :(landscape == false && portrait == true) ? "Portrait" : "Square";
-
-//    console.log(orientation + " " + aspect);
-
-//    $('.story img').each(function () {
-//        var image = $(this);
-//        var originalWidth = image.width();
-//        var newWidth = originalWidth * aspect;
-//        image.css('width', newWidth);
-//    });
+    $('.full-height').height(height);
+    $('.full-width').css('width', width + 'px');
+    $('.leadership-slider').css('width', width + 'px');
 }
