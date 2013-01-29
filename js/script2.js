@@ -151,6 +151,12 @@ $(document).ready(function () {
         $(this).delay(400).animate({ height: '81px' }, 500);
     });
 
+    $('.process-column').hover(function(){
+         $(this).children('.our-process-div').slideDown();
+    },function(){
+        $(this).children('.our-process-div').slideUp();
+    });
+
 //    $('img.boomer').bind('inview', function (event, isVisible) {
 //        if (!isVisible) {
 //            $(this).css('left', '1000px');
