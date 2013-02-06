@@ -48,6 +48,13 @@ mint.PresentationManager = function(){
             margin: 0
         });
 
+        $('.portfolio-mcdonalds-slider').touchSlider({
+            duration: 350,
+            mouseTouch: true,
+            namespace: 'portfolio-mcdonalds-slider',
+            margin: 0
+        });
+
         $('#leadership-learn-more').click(function(){
             return self.goToNextLeadershipSlide();
         });
