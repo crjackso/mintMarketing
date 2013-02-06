@@ -566,7 +566,8 @@ li{margin-top: 3px;}
     behavior: url(backgroundsize.min.htc);
 }
 .portfolio-lone{
-    background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;
+    /* todo */
+    /*background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;*/
 }
 #portfolio-container{
     margin-top: 5%;
