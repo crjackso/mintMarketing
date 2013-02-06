@@ -1026,13 +1026,13 @@ li{margin-top: 3px;}
     height: 900px;
     overflow: hidden;
 }
-.services-prev {
+#services-prev {
     position: absolute;
     top: 45%;
     left: 3%;
     cursor: pointer;
 }
-.services-next {
+#services-next {
     position: absolute;
     top: 45%;
     right: 3%;

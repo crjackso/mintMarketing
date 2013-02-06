@@ -6,27 +6,46 @@ var _presentationManager = {};
 (function(a){function d(b){var c=b||window.event,d=[].slice.call(arguments,1),e=0,f=!0,g=0,h=0;return b=a.event.fix(c),b.type="mousewheel",c.wheelDelta&&(e=c.wheelDelta/120),c.detail&&(e=-c.detail/3),h=e,c.axis!==undefined&&c.axis===c.HORIZONTAL_AXIS&&(h=0,g=-1*e),c.wheelDeltaY!==undefined&&(h=c.wheelDeltaY/120),c.wheelDeltaX!==undefined&&(g=-1*c.wheelDeltaX/120),d.unshift(b,e,g,h),(a.event.dispatch||a.event.handle).apply(this,d)}var b=["DOMMouseScroll","mousewheel"];if(a.event.fixHooks)for(var c=b.length;c;)a.event.fixHooks[b[--c]]=a.event.mouseHooks;a.event.special.mousewheel={setup:function(){if(this.addEventListener)for(var a=b.length;a;)this.addEventListener(b[--a],d,!1);else this.onmousewheel=d},teardown:function(){if(this.removeEventListener)for(var a=b.length;a;)this.removeEventListener(b[--a],d,!1);else this.onmousewheel=null}},a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})})(jQuery);
 
 mint.PresentationManager = function(){
-    var self, leadershipSlider;
+    var self, _leadershipSlider;
     self = this;
 
     self.goToNextLeadershipSlide = function() {
-        leadershipSlider.goToNextSlide();
+        _leadershipSlider.goToNextSlide();
         return false;
     };
 
     self.goToPreviousLeadershipSlide = function(){
-        leadershipSlider.goToPrevSlide();
+        _leadershipSlider.goToPrevSlide();
+        return false;
+    };
+
+    self.goToNextServiceSlide = function(){
+        $('#services-next').trigger('click');
+        return false;
+    };
+
+    self.goToPreviousServiceSlide = function(){
+        $('#services-prev').trigger('click');
         return false;
     };
 
     self.init = function() {
 
-        leadershipSlider = $('.leadership-slider').bxSlider({
+        _leadershipSlider = $('.leadership-slider').bxSlider({
             infiniteLoop: false,
             controls: false,
             hideControlOnEnd: true,
             slideMargin: 10,
             pager: false
+        });
+
+        $(".services").touchSlider({
+            duration: 350,
+            mouseTouch: true,
+            namespace: 'services',
+            next: "#services-next",
+            prev: "#services-prev",
+            margin: 0
         });
 
         $('#leadership-learn-more').click(function(){
@@ -302,15 +321,6 @@ $(document).ready(function () {
         });
     });
 
-    $(".services").touchSlider({
-        duration: 350,
-        mouseTouch: true,
-        namespace: 'services',
-        next: ".services-next",
-        prev: ".services-prev",
-        margin: 0
-    });
-
     $('.portfolio-philanthropy-slider').touchSlider({
         duration: 350,
         mouseTouch: true,
@@ -449,7 +459,17 @@ function setupKeyScrollHandler() {
                 _presentationManager.goToPreviousLeadershipSlide();
             }
         }
+
+        if($('#core-services-slider').is(":within-viewport")){
+            if(event.keyCode == 39){
+                _presentationManager.goToNextServiceSlide();
+            }
+            else if(event.keyCode == 37){
+                _presentationManager.goToPreviousServiceSlide();
+            }
+        }
     });
+
     $(document).bind("keydown", function (event) {
         if (event.keyCode == 40 || event.keyCode == 38) {
             event.preventDefault();
