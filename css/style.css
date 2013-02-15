@@ -478,6 +478,15 @@ li{margin-top: 3px;}
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
+#video-production-text{
+    position: absolute;
+    margin-top: 55%;
+}
+#camera{
+    position: absolute;
+    left: -20%;
+    top: -30%;
+}
 .inner img{
     top: 30%;
     position: relative;
@@ -980,7 +989,7 @@ li{margin-top: 3px;}
 }
 #leadership-gale-bio {
     position: relative;
-    margin-top: 10%;
+    margin-top: 15%;
     z-index: 999;
     max-width: 85%;
 }
