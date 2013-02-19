@@ -29,6 +29,41 @@ mint.PresentationManager = function(){
         return false;
     };
 
+    function initializeTeamModal() {
+        $('a[rel=team]').each(function () {
+            var id = $(this).data('person');
+            var person = people[id];
+
+            var source = $("#entry-template").html();
+            var template = Handlebars.compile(source);
+
+            var context = {};
+            context = $.extend(context, person);
+
+            var html = template(context);
+            $('#teamMemberPlaceholder').append(html);
+        });
+
+        $('a[rel=team]').fancybox({
+            type: 'inline',
+            openEffect: 'elastic',
+            minHeight: '55%',
+            height: '55%',
+            minWidth: '650px',
+            padding: 0,
+            arrows: false,
+            width: 650,
+            autoSize: false,
+            autoResize: false,
+            beforeClose: function () {
+                scrollLocked = false;
+            },
+            afterShow: function () {
+                scrollLocked = true;
+            }
+        });
+    }
+
     self.init = function() {
 
         _leadershipSlider = $('.leadership-slider').bxSlider({
@@ -62,6 +97,8 @@ mint.PresentationManager = function(){
         $('#leadership-slider-prev').click(function(){
             return self.goToPreviousLeadershipSlide();
         });
+
+        initializeTeamModal();
     };
 
     return self;
@@ -301,32 +338,22 @@ $(document).ready(function () {
         afterShow: function () { scrollLocked = true; }
     });
 
-    $('.various').live('click', function (e) {
-        e.preventDefault();
-        var id = $(this).data('person');
-        var person = people[id];
+//    $('a[rel=gallery]').live('click', function (e) {
+//        e.preventDefault();
+//        var id = $(this).data('person');
+//        var person = people[id];
+//
+//        var source = $("#entry-template").html();
+//        var template = Handlebars.compile(source);
+//
+//        var context = {};
+//        context = $.extend(context, person);
 
-        var source = $("#entry-template").html();
-        var template = Handlebars.compile(source);
+//        var html = template(context);
+//        $('#teamMemberPlaceholder').html(html);
 
-        var context = {};
-        context = $.extend(context, person);
 
-        var html = template(context);
-        $('#teamMemberPlaceholder').html(html);
-
-        $(this).fancybox({
-            openEffect: 'elastic',
-            minHeight: '55%',
-            height: '55%',
-            minWidth: '650px',
-            width: 650,
-            autoSize: false,
-            autoResize: false,
-            beforeClose: function () { scrollLocked = false; },
-            afterShow: function () { scrollLocked = true; }
-        });
-    });
+//    });
 
     $('.portfolio-philanthropy-slider').touchSlider({
         duration: 350,

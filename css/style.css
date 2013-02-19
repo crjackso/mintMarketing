@@ -88,7 +88,7 @@ li{margin-top: 3px;}
 }
 
 /* Team */
-#teamMemberPlaceholder{
+.teamMemberPlaceholder{
     display: none;
     width: 650px;
 }
@@ -111,7 +111,7 @@ li{margin-top: 3px;}
 .specialty_list li{
     margin-left: 25px;
 }
-#teamMemberDialog{
+.teamMemberDialog{
     position: relative;
 }
 #team .banner{
@@ -121,7 +121,7 @@ li{margin-top: 3px;}
     overflow: hidden;
     background-image: url(../images/05/headerbar.png);
 }
-#teamMemberDialog .banner{
+.teamMemberDialog .banner{
     overflow: hidden;
     height: 100px;
     background: url(../images/05/headerbar.png);
@@ -142,7 +142,7 @@ li{margin-top: 3px;}
     height: 345px;
     z-index: 1;
 }
-#teamMember{
+.teamMember{
     z-index:1000;
 }
 .profile-pic {
@@ -151,15 +151,15 @@ li{margin-top: 3px;}
     margin-right: 8px;
     margin-top: 10px;
 }
-#teamMember .profile-details{
+.teamMember .profile-details{
     margin-top: 8px;
     font-size: 1.1em;
     font-family: 'Lato', sans-serif;
 }
-#teamMember .main {
+.teamMember .main {
 
 }
-#teamMember .profile-details span{
+.teamMember .profile-details span{
     margin-top: 20px;
 }
 #team .profile-box {
