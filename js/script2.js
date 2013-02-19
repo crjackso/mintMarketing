@@ -315,8 +315,8 @@ $(document).ready(function () {
     });
 
     $('.portfolio-prompt').fancybox({
-        minHeight: '55%',
-        height: '55%',
+        minHeight: '95%',
+        height: '95%',
         minWidth: '80%',
         width: '80%',
         openEffect: 'elastic',
@@ -326,17 +326,17 @@ $(document).ready(function () {
         afterShow: function () { scrollLocked = true; }
     });
 
-    $('.various').fancybox({
-        minHeight: '55%',
-        height: '55%',
-        minWidth: '40%',
-        width: '40%',
-        openEffect: 'elastic',
-        scrolling: 'no',
-        closeEffect: 'elastic',
-        beforeClose: function () { scrollLocked = false; },
-        afterShow: function () { scrollLocked = true; }
-    });
+//    $('.various').fancybox({
+//        minHeight: '55%',
+//        height: '55%',
+//        minWidth: '40%',
+//        width: '40%',
+//        openEffect: 'elastic',
+//        scrolling: 'no',
+//        closeEffect: 'elastic',
+//        beforeClose: function () { scrollLocked = false; },
+//        afterShow: function () { scrollLocked = true; }
+//    });
 
 //    $('a[rel=gallery]').live('click', function (e) {
 //        e.preventDefault();
