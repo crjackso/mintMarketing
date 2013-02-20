@@ -2,7 +2,7 @@ RewriteEngine On
 php_flag engine off
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteRule ^([a-z]+-?[a-z]+)/gm gm.html
+RewriteRule ^([a-z]+-?[a-z]+)/$ /$1.html
 DirectoryIndex general.html
 
 AddType text/x-component .htc
