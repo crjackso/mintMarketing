@@ -829,22 +829,19 @@ li{margin-top: 3px;}
     top: 15%;
 }
 #win-win-container{
-    /*text-align: center;*/
     margin: 0 auto;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     display: table;
     top: 30%;
     position: relative;
 }
 #win-win-case{
     color: #FFF;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
 }
 #win-win-case li{
     margin-top: 35px;
 }
-/*#win-win-case li { display: inline-block; }*/
 #thank-you{
     background: url(../images/18/background-last.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;

@@ -28,6 +28,7 @@ mint.screenCount = mint.screens.length;
 
 $(document).ready(function () {
 
+    var _sonicHandled = false;
     set_slide_heights();
 
     $(window).bind('resize', set_slide_heights);
@@ -70,21 +71,21 @@ $(document).ready(function () {
     function handleSonicAnimation(){
         var inView = $("#gm-campus-sonic").is(":within-viewport");
 
-        if(inView === false || !jQuery.support.opacity){
-            $('#sonic-map-lit').hide();
-            $('#sonic-map').css('top', '');
-            $('#sonic-calendar').css('top', '-100%');
-            $('#sonic-cursor').css({top: '10%', right: '-20%'});
+        if(_sonicHandled === true){
             return;
         }
 
+        if(inView === false || !jQuery.support.opacity){
+            $('#sonic-map-lit').hide();
+            $('#sonic-map').css('top', '');
+            $('#sonic-calendar').css('top', '-30%');
+            $('#sonic-cursor').css({top: '10%', right: '-20%'});
+            return;
+        }
+        _sonicHandled = true;
         $('#sonic-headlights').delay(800).fadeIn(100, function() {
             $(this).fadeOut(400);
         });
-
-//            $('.map').delay(1200).animate({
-//                'top': '0'
-//            }, 900);
 
         $('#sonic-cursor').delay(3500)
             .animate({
