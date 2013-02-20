@@ -28,12 +28,13 @@ mint.screenCount = mint.screens.length;
 
 $(document).ready(function () {
 
-    var _sonicHandled = false;
+    window.audioPlayed = false;
+    window.sonicHandled = false;
     set_slide_heights();
 
     $(window).bind('resize', set_slide_heights);
     $(window).scroll(function(){
-       handleSonicAnimation();
+       handleAnimations();
     });
 
     skrollr.init({
@@ -49,15 +50,6 @@ $(document).ready(function () {
 
     if (jQuery.support.opacity) {
 
-        $('#gm-campus-cruze').bind('inview', function (event, isVisible) {
-            if (!isVisible) {
-                return;
-            }
-            $('#cruze-headlights').delay(1500).fadeIn(100, function() {
-                $(this).fadeOut(400);
-            });
-        });
-
         $('#gm-campus-spark').bind('inview', function (event, isVisible) {
             if (!isVisible) {
                 return;
@@ -68,10 +60,42 @@ $(document).ready(function () {
         });
     }
 
-    function handleSonicAnimation(){
+    $('#excitement').bind('inview', function (event, isVisible) {
+        if (isVisible && window.audioPlayed === false) {
+            var audioControl = document.getElementById("crowd");
+            audioControl.play();
+            window.audioPlayed = true;
+        }
+    });
+
+    function handleAnimations(){
+        handleSonicAnimations();
+        handleCruzeAnimations();
+    }
+
+    function handleCruzeAnimations(){
+        var inView = $("#gm-campus-cruze").is(":within-viewport");
+
+        if(!inView){
+            return;
+        }
+
+        $('#cruze-headlights').delay(1500).fadeIn(100, function() {
+            $(this).fadeOut(400);
+        });
+
+    }
+
+    function handleSonicAnimations(){
         var inView = $("#gm-campus-sonic").is(":within-viewport");
 
-        if(_sonicHandled === true){
+        if(inView){
+            $('#sonic-headlights').delay(800).fadeIn(100, function() {
+                $(this).fadeOut(400);
+            });
+        }
+
+        if(window.sonicHandled === true){
             return;
         }
 
@@ -82,12 +106,9 @@ $(document).ready(function () {
             $('#sonic-cursor').css({top: '10%', right: '-20%'});
             return;
         }
-        _sonicHandled = true;
-        $('#sonic-headlights').delay(800).fadeIn(100, function() {
-            $(this).fadeOut(400);
-        });
+        window.sonicHandled = true;
 
-        $('#sonic-cursor').delay(3500)
+        $('#sonic-cursor').delay(2500)
             .animate({
                 top: '-3%',
                 right: '20%'

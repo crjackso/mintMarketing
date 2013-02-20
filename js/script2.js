@@ -106,8 +106,6 @@ mint.PresentationManager = function(){
 
 $(document).ready(function () {
 
-    window.audioPlayed = false;
-
     _presentationManager = new mint.PresentationManager();
     _presentationManager.init();
 
@@ -260,14 +258,6 @@ $(document).ready(function () {
          $(this).children('.our-process-div').slideDown();
     },function(){
         $(this).children('.our-process-div').slideUp();
-    });
-
-    $('#excitement').bind('inview', function (event, isVisible) {
-        if (isVisible && window.audioPlayed === false) {
-            var audioControl = document.getElementById("crowd");
-            audioControl.play();
-            window.audioPlayed = true;
-        }
     });
 
     $('.play-video').fancybox({
