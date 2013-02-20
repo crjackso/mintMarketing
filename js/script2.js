@@ -66,6 +66,14 @@ mint.PresentationManager = function(){
 
     self.init = function() {
 
+        $("body").queryLoader2({
+//            barColor: "#6e6d73",
+//            backgroundColor: "#fff1b0",
+            percentage: true,
+//            barHeight: 30,
+            completeAnimation: "grow"
+        });
+
         _leadershipSlider = $('.leadership-slider').bxSlider({
             infiniteLoop: false,
             controls: false,
@@ -106,6 +114,7 @@ mint.PresentationManager = function(){
 
 $(document).ready(function () {
 
+    window.console.log('start');
     window.audioPlayed = false;
 
     _presentationManager = new mint.PresentationManager();
@@ -262,38 +271,6 @@ $(document).ready(function () {
         $(this).children('.our-process-div').slideUp();
     });
 
-//    $('img.boomer').bind('inview', function (event, isVisible) {
-//        if (!isVisible) {
-//            $(this).css('left', '1000px');
-//            return;
-//        }
-//        $(this).delay(100).animate({ left: '0px' }, 400);
-//    });
-//
-//    $('img.genY').bind('inview', function (event, isVisible) {
-//        if (!isVisible) {
-//            $(this).css('left', '1000px');
-//            return;
-//        }
-//        $(this).delay(300).animate({ left: '0px' }, 500);
-//    });
-//
-//    $('img.genX').bind('inview', function (event, isVisible) {
-//        if (!isVisible) {
-//            $(this).css('left', '500px');
-//            return;
-//        }
-//        $(this).delay(500).animate({ left: '0px' }, 400);
-//    });
-//
-//    $('img.genZ').bind('inview', function (event, isVisible) {
-//        if (!isVisible) {
-//            $(this).css('left', '1000px');
-//            return;
-//        }
-//        $(this).delay(700).animate({ left: '0px' }, 400);
-//    });
-
     $('#excitement').bind('inview', function (event, isVisible) {
         if (isVisible && window.audioPlayed === false) {
             var audioControl = document.getElementById("crowd");
@@ -326,35 +303,6 @@ $(document).ready(function () {
         afterShow: function () { scrollLocked = true; }
     });
 
-//    $('.various').fancybox({
-//        minHeight: '55%',
-//        height: '55%',
-//        minWidth: '40%',
-//        width: '40%',
-//        openEffect: 'elastic',
-//        scrolling: 'no',
-//        closeEffect: 'elastic',
-//        beforeClose: function () { scrollLocked = false; },
-//        afterShow: function () { scrollLocked = true; }
-//    });
-
-//    $('a[rel=gallery]').live('click', function (e) {
-//        e.preventDefault();
-//        var id = $(this).data('person');
-//        var person = people[id];
-//
-//        var source = $("#entry-template").html();
-//        var template = Handlebars.compile(source);
-//
-//        var context = {};
-//        context = $.extend(context, person);
-
-//        var html = template(context);
-//        $('#teamMemberPlaceholder').html(html);
-
-
-//    });
-
     $('.portfolio-philanthropy-slider').touchSlider({
         duration: 350,
         mouseTouch: true,
@@ -383,13 +331,6 @@ $(document).ready(function () {
         margin: 0
     });
 
-    //    $('.profile-box .various').bind('mouseover', function () {
-    //        var id = $(this).first('a').data('person');
-    //        var person = people[id];
-    //
-    //        alert(person.title);
-    //    });
-
     $('#scrollToTop').click(function(){
         scrollReady = false;
         $("html,body").animate({scrollTop:"0px"}, 2500,
@@ -403,6 +344,8 @@ $(document).ready(function () {
     // Ready to go
     $(window).load(function () {
 
+        window.console.log('stop');
+
         // Handle IE 6
         if (!$('html').hasClass('lt-ie7')) {
             // Ready for Scroll Handlers
@@ -414,7 +357,6 @@ $(document).ready(function () {
 
     scrollToTop();
 });
-
 
 var currentScreen = 0;
 var scrollReady = false;
@@ -510,11 +452,4 @@ function setupKeyScrollHandler() {
         }
     })
 }
-// Bind and unbind keys for form elements
-//function unbindKeys() {
-//    $(document).unbind("keyup");
-//    $(document).unbind("keydown");
-//}
-//$("input, textarea, select").live("focus", function () { unbindKeys(); });
-//$("input, textarea, select").live("blur", function () {setupKeyScrollHandler(); });
 
