@@ -480,7 +480,7 @@ li{margin-top: 3px;}
 }
 #video-production-text{
     position: absolute;
-    margin-top: 55%;
+    /*margin-top: 55%;*/
 }
 #camera{
     position: absolute;
