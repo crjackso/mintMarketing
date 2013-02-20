@@ -66,14 +66,6 @@ mint.PresentationManager = function(){
 
     self.init = function() {
 
-        $("body").queryLoader2({
-//            barColor: "#6e6d73",
-//            backgroundColor: "#fff1b0",
-            percentage: true,
-//            barHeight: 30,
-            completeAnimation: "grow"
-        });
-
         _leadershipSlider = $('.leadership-slider').bxSlider({
             infiniteLoop: false,
             controls: false,
@@ -114,7 +106,6 @@ mint.PresentationManager = function(){
 
 $(document).ready(function () {
 
-    window.console.log('start');
     window.audioPlayed = false;
 
     _presentationManager = new mint.PresentationManager();
@@ -343,8 +334,6 @@ $(document).ready(function () {
 
     // Ready to go
     $(window).load(function () {
-
-        window.console.log('stop');
 
         // Handle IE 6
         if (!$('html').hasClass('lt-ie7')) {
