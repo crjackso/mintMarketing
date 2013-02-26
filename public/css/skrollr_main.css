@@ -232,34 +232,4 @@ h4 {
     vertical-align: middle;
 }
 
-/*--- Content2 ---*/
-#content2 {
-    width: 100%;
-    height: 1080px;
-    /*background-color:rgba(120,255,0,0.3);*/
-}
 
-.contenedorContent2 {
-    width: 960px;
-    height: 1080px;
-    /*background-color:rgba(142,210,0,0.3);*/
-    margin: 0 auto;
-
-}
-
-#content2_contenido1 {
-    width: 940px;
-    height: 462px;
-    /*background-color:rgba(255,255,255,0.3);*/
-    position: absolute;
-    top: 150px;
-    margin-left: 10px;
-}
-
-#conten2_part1 {
-    width: 780px;
-    height: 462px;
-    background: url(../img/lines.png) no-repeat;
-    margin-left: 80px;
-    position: absolute;
-}
