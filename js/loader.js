@@ -4,15 +4,18 @@ $(document).ready(function () {
         return;
     }
 
-    $("body").queryLoader2({
-        percentage: true,
-        completeAnimation: "grow"
-    });
-
-//    window.addEventListener('DOMContentLoaded', function () {
-//        $("body").queryLoader2({
-//            percentage: true,
-//            completeAnimation: "grow"
-//        });
-//    });
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+        $("body").queryLoader2({
+            percentage: true,
+            completeAnimation: "grow"
+        });
+    }
+    else {
+        window.addEventListener('DOMContentLoaded', function () {
+            $("body").queryLoader2({
+                percentage: true,
+                completeAnimation: "grow"
+            });
+        });
+    }
 });
