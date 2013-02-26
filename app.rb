@@ -7,15 +7,16 @@ end
 
 helpers do
   def cache_for(time)
-    response['Cache-Control'] = "public, max-age=#{time.to_i}"
+    cache_control :public, :must_revalidate, max_age: time.to_i, expires: time.to_i
   end
 end
 
 get '/' do
-  cache_for 10*60
+  cache_for 604800
   redirect 'general.html'
 end
 
 get '/gm' do
+  cache_for 604800
   redirect 'gm.html'
 end
