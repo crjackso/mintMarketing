@@ -1,5 +1,7 @@
 RewriteEngine On
 php_flag engine off
+a2enmod headers
+
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html
@@ -8,3 +10,18 @@ DirectoryIndex general.html
 
 AddType text/x-component .htc
 AddType application/x-shockwave-flash .swf
+
+Header unset Pragma
+FileETag None
+Header unset ETag
+
+# cache images/pdf docs for 10 days
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">
+  Header set Cache-Control "max-age=864000, public, must-revalidate"
+  Header unset Last-Modified
+</FilesMatch>
+
+# cache html/htm/xml/txt files for 2 days
+<FilesMatch "\.(html|htm|xml|txt|xsl)$">
+  Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
