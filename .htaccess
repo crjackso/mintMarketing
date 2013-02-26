@@ -1,6 +1,8 @@
 RewriteEngine On
 php_flag engine off
 
+LoadModule headers_module modules/mod_headers.so
+
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html
