@@ -37,7 +37,3 @@ AddType application/x-shockwave-flash .swf
     ExpiresDefault "access plus 2 days"
 </IfModule>
 ## EXPIRES CACHING ##
-
-<FilesMatch ".(jpg|jpeg|png|gif|js|css|ico|swf)$">
-Header set Cache-Control "max-age=2592000"
-</FilesMatch>
