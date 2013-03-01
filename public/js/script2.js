@@ -29,6 +29,18 @@ mint.PresentationManager = function(){
         return false;
     };
 
+    function registerMobileGestures(){
+        var hammertime = Hammer($('#skrollr-body'));
+
+        hammertime
+            .on("swipeup", function(e) {
+                alert('just swiped up');
+            })
+            .on("swipedown", function(e){
+                alert('just swiped down');
+            });
+    }
+
     function initializeTeamModal() {
         $('a[rel=team]').each(function () {
             var id = $(this).data('person');
@@ -65,6 +77,8 @@ mint.PresentationManager = function(){
     }
 
     self.init = function() {
+
+        registerMobileGestures();
 
         _leadershipSlider = $('.leadership-slider').bxSlider({
             infiniteLoop: false,
