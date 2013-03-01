@@ -33,6 +33,9 @@ mint.PresentationManager = function(){
         var hammertime = Hammer($('#skrollr-body'));
 
         hammertime
+            .on("tap", function(e){
+                alert('tap');
+            })
             .on("swipeup", function(e) {
                 alert('just swiped up');
             })
