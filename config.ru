@@ -9,6 +9,10 @@ use Rack::Cache,
     :metastore   => 'file:/var/cache/rack/meta',
     :entitystore => 'file:/var/cache/rack/body'
 
+map "/gm" do
+  run Rack::File.new("public/gm.html")
+end
+
 run lambda { |env|
   [
       200,

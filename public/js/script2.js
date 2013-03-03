@@ -30,18 +30,18 @@ mint.PresentationManager = function(){
     };
 
     function registerMobileGestures(){
-        var hammertime = Hammer($('#skrollr-body'));
+//        var hammertime = Hammer($('#skrollr-body'));
 
-        hammertime
-            .on("tap", function(e){
-                alert('tap');
-            })
-            .on("swipeup", function(e) {
-                alert('just swiped up');
-            })
-            .on("swipedown", function(e){
-                alert('just swiped down');
-            });
+//        hammertime
+//            .on("tap", function(e){
+//                alert('tap');
+//            })
+//            .on("swipeup", function(e) {
+//                alert('just swiped up');
+//            })
+//            .on("swipedown", function(e){
+//                alert('just swiped down');
+//            });
     }
 
     function initializeTeamModal() {
