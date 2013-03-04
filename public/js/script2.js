@@ -17,7 +17,11 @@ mint.PresentationManager = function(){
         down: 40,
         up: 38,
         left: 37,
-        right: 39
+        right: 39,
+        c: 67,
+        d: 68,
+        e: 69,
+        s: 83
     };
 
     self.goToNextLeadershipSlide = function() {
@@ -38,6 +42,31 @@ mint.PresentationManager = function(){
     self.goToPreviousServiceSlide = function(){
         $('#services-prev').trigger('click');
         return false;
+    };
+
+    self.showServiceSlide = function(keyCode){
+        var element;
+
+        switch(keyCode){
+            case self.keyCodes.c:
+                element = $("a.services-nav-item:contains('Corporate Identity')");
+                break;
+            case self.keyCodes.d:
+                element = $("a.services-nav-item:contains('Digital and Web')");
+                break;
+            case self.keyCodes.e:
+                element = $("a.services-nav-item:contains('Experiential Marketing')");
+                break;
+            case self.keyCodes.s:
+                element = $("a.services-nav-item:contains('Social Media')");
+                break;
+            default:
+                break;
+        }
+
+        if (element) {
+            element.click();
+        }
     };
 
     self.showProcessColumn = function(keyCode){
@@ -65,7 +94,7 @@ mint.PresentationManager = function(){
         }
 
         $(element).children('.our-process-div').slideDown(400, function(){
-            var $this = $(this)
+            var $this = $(this);
             timeout = setTimeout(function(){
                 $this.slideUp('slow');
             }, 5000);
@@ -481,11 +510,19 @@ function setupKeyScrollHandler() {
         }
 
         if($('#core-services-slider').is(":within-viewport")){
-            if(event.keyCode == _presentationManager.keyCodes.right){
-                _presentationManager.goToNextServiceSlide();
-            }
-            else if(event.keyCode == _presentationManager.keyCodes.left){
-                _presentationManager.goToPreviousServiceSlide();
+            switch(parseInt(event.keyCode)){
+                case _presentationManager.keyCodes.right:
+                    _presentationManager.goToNextServiceSlide();
+                    break;
+                case _presentationManager.keyCodes.left:
+                    _presentationManager.goToPreviousServiceSlide();
+                    break;
+                case _presentationManager.keyCodes.c:
+                case _presentationManager.keyCodes.d:
+                case _presentationManager.keyCodes.e:
+                case _presentationManager.keyCodes.s:
+                    _presentationManager.showServiceSlide(parseInt(event.keyCode));
+                    break;
             }
         }
 
