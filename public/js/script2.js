@@ -9,6 +9,17 @@ mint.PresentationManager = function(){
     var self, _leadershipSlider;
     self = this;
 
+    self.keyCodes = {
+        one: 49,
+        two: 50,
+        three: 51,
+        four: 52,
+        down: 40,
+        up: 38,
+        left: 37,
+        right: 39
+    };
+
     self.goToNextLeadershipSlide = function() {
         _leadershipSlider.goToNextSlide();
         return false;
@@ -29,6 +40,46 @@ mint.PresentationManager = function(){
         return false;
     };
 
+    self.showProcessColumn = function(keyCode){
+        var element;
+
+        switch(keyCode){
+            case self.keyCodes.one:
+                element = $(".process-column").filter(function() { return $.data(this, "index") == "1"; });
+                break;
+            case self.keyCodes.two:
+                element = $(".process-column").filter(function() { return $.data(this, "index") == "2"; });
+                break;
+            case self.keyCodes.three:
+                element = $(".process-column").filter(function() { return $.data(this, "index") == "3"; });
+                break;
+            case self.keyCodes.four:
+                element = $(".process-column").filter(function() { return $.data(this, "index") == "4"; });
+                break;
+            default:
+                break;
+        }
+
+        if(!element){
+            return;
+        }
+
+        $(element).children('.our-process-div').slideDown(400, function(){
+            var $this = $(this)
+            timeout = setTimeout(function(){
+                $this.slideUp('slow');
+            }, 5000);
+        });
+    };
+
+    function ourProcessInit(){
+        $('.process-column').hover(function(){
+            $(this).children('.our-process-div').slideDown();
+        },function(){
+            $(this).children('.our-process-div').slideUp();
+        });
+    }
+
     function registerMobileGestures(){
 //        var hammertime = Hammer($('#skrollr-body'));
 
@@ -44,7 +95,7 @@ mint.PresentationManager = function(){
 //            });
     }
 
-    function initializeTeamModal() {
+    function teamModalInit() {
         $('a[rel=team]').each(function () {
             var id = $(this).data('person');
             var person = people[id];
@@ -115,7 +166,8 @@ mint.PresentationManager = function(){
             return self.goToPreviousLeadershipSlide();
         });
 
-        initializeTeamModal();
+        teamModalInit();
+        ourProcessInit();
     };
 
     return self;
@@ -159,6 +211,9 @@ $(document).ready(function () {
 
     function hideProcessColumns(){
         if(mint.screens[currentScreen] != 'our-process'){
+            if(!jQuery.support.opacity){
+                return;
+            }
             $('.process-column').css('opacity', 0);
         }
     }
@@ -167,7 +222,6 @@ $(document).ready(function () {
         if(!jQuery.support.opacity){
             return;
         }
-
         $('.process-column').each(function(index, element){
             var index = parseInt($(this).data('index'));
             $(this).delay(index * 1000).animate({ opacity: 1 }, 500);
@@ -269,12 +323,6 @@ $(document).ready(function () {
             return;
         }
         $(this).delay(400).animate({ height: '81px' }, 500);
-    });
-
-    $('.process-column').hover(function(){
-         $(this).children('.our-process-div').slideDown();
-    },function(){
-        $(this).children('.our-process-div').slideUp();
     });
 
     $('.play-video').fancybox({
@@ -409,14 +457,14 @@ function preventScroll() {
 // Binds Key Up / Key Down for Scrolling
 function setupKeyScrollHandler() {
     $(document).bind("keyup", function (event) {
-        if (event.keyCode == 40 || event.keyCode == 38) {
+        if (event.keyCode == _presentationManager.keyCodes.up || event.keyCode == _presentationManager.keyCodes.down) {
             event.preventDefault();
-            if (event.keyCode == 40) {
+            if (event.keyCode == _presentationManager.keyCodes.down) {
                 if (scrollReady == true) {
                     scrollNext();
                 }
             } else {
-                if (event.keyCode == 38) {
+                if (event.keyCode == _presentationManager.keyCodes.up) {
                     if (scrollReady == true) {
                         scrollPrev();
                     }
@@ -424,26 +472,32 @@ function setupKeyScrollHandler() {
             }
         }
         if($("#leadership").is(":within-viewport")){
-            if(event.keyCode == 39){
+            if(event.keyCode == _presentationManager.keyCodes.right){
                 _presentationManager.goToNextLeadershipSlide();
             }
-            else if(event.keyCode == 37){
+            else if(event.keyCode == _presentationManager.keyCodes.left){
                 _presentationManager.goToPreviousLeadershipSlide();
             }
         }
 
         if($('#core-services-slider').is(":within-viewport")){
-            if(event.keyCode == 39){
+            if(event.keyCode == _presentationManager.keyCodes.right){
                 _presentationManager.goToNextServiceSlide();
             }
-            else if(event.keyCode == 37){
+            else if(event.keyCode == _presentationManager.keyCodes.left){
                 _presentationManager.goToPreviousServiceSlide();
+            }
+        }
+
+        if($('#our-process').is(":within-viewport")){
+            if($.inArray(parseInt(event.keyCode), [49, 50, 51, 52]) != -1){
+                _presentationManager.showProcessColumn(parseInt(event.keyCode));
             }
         }
     });
 
     $(document).bind("keydown", function (event) {
-        if (event.keyCode == 40 || event.keyCode == 38) {
+        if (event.keyCode == _presentationManager.keyCodes.up || event.keyCode == _presentationManager.keyCodes.down) {
             event.preventDefault();
         }
     })
