@@ -119,24 +119,6 @@ mint.PresentationManager = function(){
         if(element){
            element.click();
         }
-//            if(!$.inArray(teamNumbers, keyCode)){
-//            return;
-//        }
-//
-//        switch(keyCode){
-//            case self.keyCodes.one:
-//                $("a").attr('href', '#andre').click();
-//                break;
-//            case self.keyCodes.two:
-//                $("a").attr('href', '#ryan').click();
-//                break;
-//            case self.keyCodes.three:
-//                $("a").attr('href', '#chris').click();
-//                break;
-//            case self.keyCodes.four:
-//                $("a").attr('href', '#chris').click();
-//                break;
-//        }
     };
 
     function ourProcessInit(){
