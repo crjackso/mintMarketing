@@ -93,12 +93,7 @@ mint.PresentationManager = function(){
             return;
         }
 
-        $(element).children('.our-process-div').slideDown(400, function(){
-            var $this = $(this);
-            timeout = setTimeout(function(){
-                $this.slideUp('slow');
-            }, 5000);
-        });
+        $(element).children('.our-process-div').slideDown();
     };
 
     function ourProcessInit(){

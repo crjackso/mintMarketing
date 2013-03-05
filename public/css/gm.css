@@ -94,3 +94,103 @@
     max-width: 100%;
     z-index: 10;
 }
+
+#excitement{
+    background: url(../images/15/00.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0%;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+}
+#excitement-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 5%;
+}
+#excitement-sign-drive{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 10%;
+}
+#win-win{
+    background: url(../images/17/background-green.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+}
+#win-win-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 25%;
+}
+#always-win-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 15%;
+}
+#win-win-container{
+    margin: 0 auto;
+    display: table;
+    top: 30%;
+    position: relative;
+}
+#win-win-case{
+    color: #FFF;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+}
+#win-win-case li{
+    margin-top: 35px;
+}
+.cloud{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width:1152px;
+    height: 864px;
+    /*margin-left:-1000px;*/
+    /*left:50%;*/
+}
+#cloud1{
+    background: url(../images/14/03cloud.png);
+    right: 0;
+}
+#cloud2{
+    background: url(../images/14/05cloud.png);
+    right:0;
+}
+#cloud3{
+    background: url(../images/14/06cloud.png);
+}
+#cloud4 {
+    background: url(../images/14/09cloud.png);
+    left: 0;
+}
+#cloud5{
+    background: url(../images/14/11cloud.png);
+}
+#cloud6{
+    background: url(../images/14/12cloud.png);
+    left: 0;
+}
+#cloud7{
+    background: url(../images/14/14cloud.png);
+    right: 0;
+}
+#cloud8{
+    background: url(../images/14/15cloud.png);
+}
