@@ -13,6 +13,10 @@ map "/gm" do
   run Rack::File.new("public/gm.html")
 end
 
+map "/crowd.wav" do
+  run Rack::File.new("public/crowd.wav")
+end
+
 run lambda { |env|
   [
       200,
