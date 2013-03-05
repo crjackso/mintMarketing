@@ -28,11 +28,6 @@ mint.PresentationManager = function(){
         s: 83
     };
 
-    var teamNumbers = [
-        self.keyCodes.one, self.keyCodes.two, self.keyCodes.three, self.keyCodes.four, self.keyCodes.five,
-        self.keyCodes.six, self.keyCodes.seven, self.keyCodes.eight
-    ];
-
     self.goToNextLeadershipSlide = function() {
         _leadershipSlider.goToNextSlide();
         return false;
@@ -107,7 +102,7 @@ mint.PresentationManager = function(){
 
     self.handleTeamSlideKeyCode = function(keyCode){
         var element;
-        var character = String.fromCharCode(event.keyCode);
+        var character = String.fromCharCode(keyCode);
         var num = parseInt(character);
 
         if(!num) {
@@ -118,6 +113,22 @@ mint.PresentationManager = function(){
 
         if(element){
            element.click();
+        }
+    };
+
+    self.handlePortfolioSlideKeyCode = function(keyCode){
+        var element;
+        var character = String.fromCharCode(keyCode);
+        var num = parseInt(character);
+
+        if(!num) {
+            return;
+        }
+
+        element = $("a.portfolio-prompt[data-index='" + num + "']");
+
+        if(element){
+            element.click();
         }
     };
 
@@ -231,9 +242,8 @@ $(document).ready(function () {
     Process Window Scroll Movements
     ***************************************************************************************/
     var lastScrollTop = 0;
-    $(window).scroll(function () {
-        var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
-
+    $(window).scroll(function (e) {
+        var wintop = $(window).scrollTop();
         // Save which direction we are going to a global
         if (lastScrollTop >= wintop) scrollDirection = 'up';
         else scrollDirection = 'down';
@@ -242,7 +252,7 @@ $(document).ready(function () {
         lastScrollTop = wintop;
 
         // Prevent scrolling when scroller is not ready
-        if (scrollLocked) preventScroll();
+        if (scrollLocked === true) preventScroll();
 
         evaluateProcessSlide();
     });
@@ -464,6 +474,11 @@ var screens = mint.screens;
  ***************************************************************************************/
 function setupScrollHandler() {
     $("body").bind("mousewheel", function (delta, aS, aQ, deltaY) {
+
+        if(scrollLocked){
+            return;
+        }
+
         delta.preventDefault();
         if (deltaY > 0) {
             scrollPrev();
@@ -506,6 +521,7 @@ function preventScroll() {
 // Binds Key Up / Key Down for Scrolling
 function setupKeyScrollHandler() {
     $(document).bind("keyup", function (event) {
+        if(scrollLocked) return;
         if (event.keyCode == _presentationManager.keyCodes.up || event.keyCode == _presentationManager.keyCodes.down) {
             event.preventDefault();
             if (event.keyCode == _presentationManager.keyCodes.down) {
@@ -520,6 +536,7 @@ function setupKeyScrollHandler() {
                 }
             }
         }
+
         if($("#leadership").is(":within-viewport")){
             if(event.keyCode == _presentationManager.keyCodes.right){
                 _presentationManager.goToNextLeadershipSlide();
@@ -554,6 +571,10 @@ function setupKeyScrollHandler() {
 
         if($("#team").is(":within-viewport")){
             _presentationManager.handleTeamSlideKeyCode(event.keyCode);
+        }
+
+        if($("#portfolio").is(":within-viewport")){
+            _presentationManager.handlePortfolioSlideKeyCode(event.keyCode);
         }
     });
 
