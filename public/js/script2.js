@@ -521,9 +521,9 @@ function preventScroll() {
 // Binds Key Up / Key Down for Scrolling
 function setupKeyScrollHandler() {
     $(document).bind("keyup", function (event) {
-        if(scrollLocked) return;
         if (event.keyCode == _presentationManager.keyCodes.up || event.keyCode == _presentationManager.keyCodes.down) {
             event.preventDefault();
+            if(scrollLocked) return;
             if (event.keyCode == _presentationManager.keyCodes.down) {
                 if (scrollReady == true) {
                     scrollNext();
