@@ -14,6 +14,10 @@ mint.PresentationManager = function(){
         two: 50,
         three: 51,
         four: 52,
+        five: 53,
+        six: 54,
+        seven: 55,
+        eight: 56,
         down: 40,
         up: 38,
         left: 37,
@@ -23,6 +27,11 @@ mint.PresentationManager = function(){
         e: 69,
         s: 83
     };
+
+    var teamNumbers = [
+        self.keyCodes.one, self.keyCodes.two, self.keyCodes.three, self.keyCodes.four, self.keyCodes.five,
+        self.keyCodes.six, self.keyCodes.seven, self.keyCodes.eight
+    ];
 
     self.goToNextLeadershipSlide = function() {
         _leadershipSlider.goToNextSlide();
@@ -94,6 +103,40 @@ mint.PresentationManager = function(){
         }
 
         $(element).children('.our-process-div').slideDown();
+    };
+
+    self.handleTeamSlideKeyCode = function(keyCode){
+        var element;
+        var character = String.fromCharCode(event.keyCode);
+        var num = parseInt(character);
+
+        if(!num) {
+            return;
+        }
+
+        element = $(".profile-box").children("a[data-index='" + num + "']");
+
+        if(element){
+           element.click();
+        }
+//            if(!$.inArray(teamNumbers, keyCode)){
+//            return;
+//        }
+//
+//        switch(keyCode){
+//            case self.keyCodes.one:
+//                $("a").attr('href', '#andre').click();
+//                break;
+//            case self.keyCodes.two:
+//                $("a").attr('href', '#ryan').click();
+//                break;
+//            case self.keyCodes.three:
+//                $("a").attr('href', '#chris').click();
+//                break;
+//            case self.keyCodes.four:
+//                $("a").attr('href', '#chris').click();
+//                break;
+//        }
     };
 
     function ourProcessInit(){
@@ -525,6 +568,10 @@ function setupKeyScrollHandler() {
             if($.inArray(parseInt(event.keyCode), [49, 50, 51, 52]) != -1){
                 _presentationManager.showProcessColumn(parseInt(event.keyCode));
             }
+        }
+
+        if($("#team").is(":within-viewport")){
+            _presentationManager.handleTeamSlideKeyCode(event.keyCode);
         }
     });
 
