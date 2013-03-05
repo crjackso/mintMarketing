@@ -1,12 +1,18 @@
 
 var _presentationManager = {};
+var currentScreen = 0;
+var scrollReady = false;
+var scrollLocked = false;
+var scrollDirection = 'down';
+var screenAnimationTime = 1800;
+var screens = mint.screens;
 
 (function(a){function p(a){if((new Date).getTime()<d+c)return;d=(new Date).getTime();var b=f.offset()!=null?f.offset().left:0,i=f.offset()!=null?f.offset().top:0,j=a.pageX-b,k=a.pageY-i;if(j<0||j>f.width()||k<0||k>f.height())return;if(g==true){var l=window.orientation?(window.orientation+180)%360/90:2,m=a.accelerationIncludingGravity,n=l%2==0?-m.x:m.y,o=l%2==0?m.y:m.x;j=l>=2?n:-n;k=l>=2?o:-o;j=(j+h)/2;k=(k+h)/2;if(j<0){j=0}else if(j>h){j=h}if(k<0){k=0}else if(k>h){k=h}}var p=j/(g==true?h:f.width()),q=k/(g==true?h:f.height()),r,l;for(l=e.length;l--;){r=e[l];newX=r.startX+r.inversionFactor*r.xRange*p;newY=r.startY+r.inversionFactor*r.yRange*q;if(r.background){r.obj.css("background-position",newX+"px "+newY+"px")}else{r.obj.css("left",newX).css("top",newY)}}}function o(b){if((new Date).getTime()<d+c)return;if(n()){var e=b.accelerationIncludingGravity,f=e.x,o=e.y;if(k.xArray.length>=5){k.xArray.shift()}if(k.yArray.length>=5){k.yArray.shift()}k.xArray.push(f);k.yArray.push(o);k.xMotion=Math.round((m(k.xArray)-l(k.xArray))*1e3)/1e3;k.yMotion=Math.round((m(k.yArray)-l(k.yArray))*1e3)/1e3;if(k.xMotion>1.5||k.yMotion>1.5){if(h!=10){h=10}}if(k.xMotion>i||k.yMotion>i){j++}else{j=0}if(j>=5){g=true;a(document).unbind("mousemove.plax");a(window).bind("devicemotion",p(b))}else{g=false;a(window).unbind("devicemotion");a(document).bind("mousemove.plax",function(a){p(a)})}}}function n(){return window.DeviceMotionEvent!=undefined}function m(a){return Math.max.apply({},a)}function l(a){return Math.min.apply({},a)}var b=25,c=1/b*1e3,d=(new Date).getTime(),e=[],f=a(window),g=false,h=1,i=.05,j=0,k={xArray:[0,0,0,0,0],yArray:[0,0,0,0,0],xMotion:0,yMotion:0};a.fn.plaxify=function(b){return this.each(function(){var c=-1;var d={xRange:a(this).data("xrange")||0,yRange:a(this).data("yrange")||0,invert:a(this).data("invert")||false,background:a(this).data("background")||false};for(var f=0;f<e.length;f++){if(this===e[f].obj.get(0)){c=f}}for(var g in b){if(d[g]==0){d[g]=b[g]}}d.inversionFactor=d.invert?-1:1;d.obj=a(this);if(d.background){pos=(d.obj.css("background-position")||"0px 0px").split(/ /);if(pos.length!=2){return}x=pos[0].match(/^((-?\d+)\s*px|0+\s*%|left)$/);y=pos[1].match(/^((-?\d+)\s*px|0+\s*%|top)$/);if(!x||!y){return}d.startX=x[2]||0;d.startY=y[2]||0}else{var h=d.obj.position();d.obj.css({top:h.top,left:h.left,right:"",bottom:""});d.startX=this.offsetLeft;d.startY=this.offsetTop}d.startX-=d.inversionFactor*Math.floor(d.xRange/2);d.startY-=d.inversionFactor*Math.floor(d.yRange/2);if(c>=0){e.splice(c,1,d)}else{e.push(d)}})};a.plax={enable:function(b){a(document).bind("mousemove.plax",function(c){if(b){f=b.activityTarget||a(window)}p(c)});if(n()){window.ondevicemotion=function(a){o(a)}}},disable:function(){a(document).unbind("mousemove.plax");window.ondevicemotion=undefined}};if(typeof ender!=="undefined"){a.ender(a.fn,true)}})(function(){return typeof jQuery!=="undefined"?jQuery:ender}());
 
 (function(a){function d(b){var c=b||window.event,d=[].slice.call(arguments,1),e=0,f=!0,g=0,h=0;return b=a.event.fix(c),b.type="mousewheel",c.wheelDelta&&(e=c.wheelDelta/120),c.detail&&(e=-c.detail/3),h=e,c.axis!==undefined&&c.axis===c.HORIZONTAL_AXIS&&(h=0,g=-1*e),c.wheelDeltaY!==undefined&&(h=c.wheelDeltaY/120),c.wheelDeltaX!==undefined&&(g=-1*c.wheelDeltaX/120),d.unshift(b,e,g,h),(a.event.dispatch||a.event.handle).apply(this,d)}var b=["DOMMouseScroll","mousewheel"];if(a.event.fixHooks)for(var c=b.length;c;)a.event.fixHooks[b[--c]]=a.event.mouseHooks;a.event.special.mousewheel={setup:function(){if(this.addEventListener)for(var a=b.length;a;)this.addEventListener(b[--a],d,!1);else this.onmousewheel=d},teardown:function(){if(this.removeEventListener)for(var a=b.length;a;)this.removeEventListener(b[--a],d,!1);else this.onmousewheel=null}},a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})})(jQuery);
 
 mint.PresentationManager = function(){
-    var self, _leadershipSlider;
+    var self, _leadershipSlider, _activePortfolioSlide;
     self = this;
 
     self.keyCodes = {
@@ -121,14 +127,32 @@ mint.PresentationManager = function(){
         var character = String.fromCharCode(keyCode);
         var num = parseInt(character);
 
-        if(!num) {
+        if(num) {
+            element = $("a.portfolio-prompt[data-index='" + num + "']");
+
+            if(element){
+                element.click();
+            }
             return;
         }
 
-        element = $("a.portfolio-prompt[data-index='" + num + "']");
+        if(!$.inArray([self.keyCodes.left, self.keyCodes.right], keyCode)){
+            return;
+        }
 
-        if(element){
-            element.click();
+        var sliderName = _activePortfolioSlide.attr('href').replace('#', '');
+
+        if(keyCode == self.keyCodes.left){
+            var prev = $('.' + sliderName + '-slider-prev');
+            if (prev.length > 0) {
+                prev.click();
+            }
+        }
+        else if(keyCode == self.keyCodes.right){
+            var next = $('.' + sliderName + '-slider-next');
+            if (next.length > 0) {
+                next.click();
+            }
         }
     };
 
@@ -190,6 +214,23 @@ mint.PresentationManager = function(){
         });
     }
 
+    function portfolioInit(){
+        $('.portfolio-prompt').fancybox({
+            minHeight: '95%',
+            height: '95%',
+            minWidth: '80%',
+            width: '80%',
+            openEffect: 'elastic',
+            scrolling: 'no',
+            closeEffect: 'elastic',
+            beforeClose: function () { scrollLocked = false; },
+            afterShow: function () {
+                scrollLocked = true;
+                _activePortfolioSlide = $(this);
+            }
+        });
+    }
+
     self.init = function() {
 
         registerMobileGestures();
@@ -228,6 +269,7 @@ mint.PresentationManager = function(){
 
         teamModalInit();
         ourProcessInit();
+        portfolioInit();
     };
 
     return self;
@@ -396,18 +438,6 @@ $(document).ready(function () {
         'afterShow': function () { scrollLocked = true; }
     });
 
-    $('.portfolio-prompt').fancybox({
-        minHeight: '95%',
-        height: '95%',
-        minWidth: '80%',
-        width: '80%',
-        openEffect: 'elastic',
-        scrolling: 'no',
-        closeEffect: 'elastic',
-        beforeClose: function () { scrollLocked = false; },
-        afterShow: function () { scrollLocked = true; }
-    });
-
     $('.portfolio-philanthropy-slider').touchSlider({
         duration: 350,
         mouseTouch: true,
@@ -460,14 +490,6 @@ $(document).ready(function () {
 
     scrollToTop();
 });
-
-var currentScreen = 0;
-var scrollReady = false;
-var scrollLocked = false;
-var scrollDirection = 'down';
-var screenAnimationTime = 1800;
-var screens = mint.screens;
-
 
 /****************************************************************************************
  Scroll Snapping for mousewheel and Up/Down Key Presses
