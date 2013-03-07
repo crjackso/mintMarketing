@@ -16,7 +16,6 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gm.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <script id="entry-template" type="text/x-handlebars-template">
         <div id="{{id}}" class="teamMemberDialog">
@@ -54,7 +53,7 @@
 </head>
 <body>
 <div id="skrollr-body" class="wrapper">
-<article id="home" class="story">
+<article id="home" class="story" data-speed="8" data-type="background">
     <div class="row-fluid">
         <div class="span12">
             <div id="logo-container" data-center-center="margin-top: 10%"
@@ -131,7 +130,7 @@
     <div class="downBtn white-button" data-slide="3">
     </div>
 </article>
-<article class="transition leaf-transition">
+<article class="transition leaf-transition" data-type="transition">
 </article>
 <article id="leadership" class="story">
     <ul class="leadership-slider">
@@ -193,42 +192,42 @@
          data-center-center="margin-top: 10%" data-top-center="margin-top:100%" data-anchor-target="#team">
         <div class="row-fluid">
             <div class="profile-box span3">
-                <a rel='team' href="#andre" data-person="andre" title="">
+                <a rel='team' href="#andre" data-person="andre" data-index="1" title="">
                     <img src="images/people/andre.png" alt=""/>
                 </a>
             </div>
             <div class="profile-box span3">
-                <a rel='team' href="#ryan" data-person="ryan" title="">
+                <a rel='team' href="#ryan" data-person="ryan" data-index="2"  title="">
                     <img src="images/people/ryan.png" alt=""/>
                 </a>
             </div>
             <div class="profile-box span3">
-                <a rel='team' href="#chris" data-person="chris" title="">
+                <a rel='team' href="#chris" data-person="chris" data-index="3"  title="">
                     <img src="images/people/chris.png" alt=""/>
                 </a>
             </div>
             <div class="profile-box span3">
-                <a rel='team' href="#krystal" data-person="krystal" title="">
+                <a rel='team' href="#krystal" data-person="krystal" data-index="4"  title="">
                     <img src="images/people/krystal.png" alt=""/>
                 </a>
             </div>
             <div class="profile-box span3">
-                <a rel='team' href="#arthur" data-person="arthur" title="">
+                <a rel='team' href="#arthur" data-person="arthur" data-index="5"  title="">
                     <img src="images/people/arthur.png" alt=""/>
                 </a>
             </div>
             <div class="profile-box span3">
-                <a rel='team' href="#clint" data-person="clint" title="">
+                <a rel='team' href="#clint" data-person="clint" data-index="6"  title="">
                     <img src="images/people/clint.png" alt=""/>
                 </a>
             </div>
             <div class="profile-box span3">
-                <a rel='team' href="#stesha" data-person="stesha" title="">
+                <a rel='team' href="#stesha" data-person="stesha" data-index="7"  title="">
                     <img src="images/people/stesha.png" alt=""/>
                 </a>
             </div>
             <div class="profile-box span3">
-                <a rel='team' href="#trish" data-person="trish" title="">
+                <a rel='team' href="#trish" data-person="trish" data-index="8"  title="">
                     <img src="images/people/trish.png" alt=""/>
                 </a>
             </div>
@@ -248,19 +247,10 @@
             <div class="span12">
                 <img src="images/06/ourcoreservices.png" alt="" class='core-services'/>
             </div>
-            <div class="span5">
+            <div class="span12 digital-campaigns-container">
                 <img src="images/06/digital-campaigns.png" alt="" class='digital-campaigns'
                      data-bottom-center="margin-top: -100%"
-                     data-center-center="margin-top: 45%" data-top-center="margin-top:100%"
-                     data-anchor-target="#core-services"/>
-            </div>
-            <div class="span1">
-                <img src="images/06/amp.png" alt="" class='amp'/>
-            </div>
-            <div class="span5">
-                <img src="images/06/spotlights.png" alt="" class='spotlights'
-                     data-bottom-center="margin-left: 100%"
-                     data-center-center="margin-left: 0%" data-top-center="margin-left:100%"
+                     data-center-center="margin-top: 5%" data-top-center="margin-top:100%"
                      data-anchor-target="#core-services"/>
             </div>
         </div>
@@ -499,6 +489,113 @@
 </article>
 <article class="transition compass-transition">
 </article>
+<article id="generations-gap" class="story">
+    <img src="images/09/preferred.png" alt="" id="preferred-text"/>
+
+    <div class="row-fluid">
+        <div class="span3 boomer">
+            <img src="images/09/titleboomer.png" alt="" class="gap-title boomer-title"/>
+            <img src="images/09/boxboomer.png" alt=""/>
+        </div>
+        <div class="span3">
+            <img src="images/09/title34.png" alt="" class="gap-title"/>
+            <img src="images/09/box34.png" alt="" class="genX"/>
+        </div>
+        <div class="span3">
+            <img src="images/09/title20.png" alt="" class="gap-title"/>
+            <img src="images/09/box20.png" alt="" class="genY"/>
+        </div>
+        <div class="span3">
+            <img src="images/09/title0.png" alt="" class="gap-title"/>
+            <img src="images/09/box0.png" alt="" class="genZ"/>
+        </div>
+    </div>
+    <div class="mint-logo-small green">
+    </div>
+    <div class="downBtn green-button" data-slide="9">
+    </div>
+
+</article>
+<article class="transition leaf-transition">
+</article>
+<article id="clients" class="story">
+    <img src="images/10/clients.png" alt="" id="client-text"/>
+
+    <div class="mint-logo-small green">
+    </div>
+    <div class="downBtn green-button" data-slide="10">
+    </div>
+</article>
+<article class="transition compass-transition">
+</article>
+<article id="portfolio" class="story">
+    <div id="portfolio-container" class="container-fluid">
+        <div class="row-fluid"  data-bottom-center="margin-left: 50%"
+             data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
+             data-anchor-target="#portfolio">
+            <div class="span4">
+                <a data-index="1" class="portfolio-prompt" href="#portfolio-philanthropy">
+                    <img src="images/11/philanthropy.png" alt=""/>
+                </a>
+            </div>
+            <div class="span4">
+                <a data-index="2" class="portfolio-prompt" href="#portfolio-contemporary">
+                    <img src="images/11/contemporary.png" alt=""/>
+                </a>
+            </div>
+            <div class="span4">
+                <a data-index="3" class="portfolio-prompt" href="#portfolio-cube">
+                    <img src="images/11/cubemation.png" alt=""/>
+                </a>
+            </div>
+        </div>
+        <div class="row-fluid" data-bottom-center="margin-left: 50%"
+             data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
+             data-anchor-target="#portfolio">
+            <div class="span12">
+                <img src="images/11/our-portfolio.png" alt="" id="portfolio-text"/>
+            </div>
+        </div>
+        <div class="row-fluid" data-bottom-center="margin-left: -50%"
+             data-center-center="margin-left: 0%" data-top-center="margin-left: 50%"
+             data-anchor-target="#portfolio">
+            <div class="span4">
+                <a data-index="4" class="portfolio-prompt" href="#portfolio-savisa">
+                    <img src="images/11/savisa.png" alt=""/>
+                </a>
+            </div>
+            <div class="span4">
+                <a data-index="5" class="portfolio-prompt" href="#portfolio-peterson">
+                    <img src="images/11/peterson.png" alt=""/>
+                </a>
+            </div>
+            <div class="span4">
+                <a data-index="6" class="portfolio-prompt" href="#portfolio-mcdonalds">
+                    <img src="images/11/mcdonalds.png" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mint-logo-small white">
+    </div>
+    <div class="downBtn white-button" data-slide="11">
+    </div>
+</article>
+<article id="video" class="story">
+    <img src="images/12/watch.png" alt="" id="watch"/>
+
+    <div id="play-video-container">
+        <a class="play-video" href="#video-reel">
+            <img src="images/12/play.png" alt="" id="play"/>
+        </a>
+    </div>
+    <div class="mint-logo-small white">
+    </div>
+    <div class="downBtn white-button" data-slide="12">
+    </div>
+</article>
+<article class="transition leaf-transition">
+</article>
 <article id="our-process" class="story">
     <img id="our-process-text" src="images/08/our-process.png" alt="" data-bottom-center="opacity:0"
          data-center-center="opacity:1"/>
@@ -556,118 +653,11 @@
         </div>
     </div>
     <div class="row-fluid">
-        <div class="downBtn white-button" data-slide="9">
+        <div class="downBtn white-button" data-slide="13">
         </div>
     </div>
 </article>
 <article class="transition compass-transition">
-</article>
-<article id="generations-gap" class="story">
-    <img src="images/09/preferred.png" alt="" id="preferred-text"/>
-
-    <div class="row-fluid">
-        <div class="span3 boomer">
-            <img src="images/09/titleboomer.png" alt="" class="gap-title boomer-title"/>
-            <img src="images/09/boxboomer.png" alt=""/>
-        </div>
-        <div class="span3">
-            <img src="images/09/title34.png" alt="" class="gap-title"/>
-            <img src="images/09/box34.png" alt="" class="genX"/>
-        </div>
-        <div class="span3">
-            <img src="images/09/title20.png" alt="" class="gap-title"/>
-            <img src="images/09/box20.png" alt="" class="genY"/>
-        </div>
-        <div class="span3">
-            <img src="images/09/title0.png" alt="" class="gap-title"/>
-            <img src="images/09/box0.png" alt="" class="genZ"/>
-        </div>
-    </div>
-    <div class="mint-logo-small green">
-    </div>
-    <div class="downBtn green-button" data-slide="10">
-    </div>
-
-</article>
-<article class="transition leaf-transition">
-</article>
-<article id="clients" class="story">
-    <img src="images/10/clients.png" alt="" id="client-text"/>
-
-    <div class="mint-logo-small green">
-    </div>
-    <div class="downBtn green-button" data-slide="11">
-    </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="portfolio" class="story">
-    <div id="portfolio-container" class="container-fluid">
-        <div class="row-fluid" data-bottom-center="margin-left: 50%"
-             data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
-             data-anchor-target="#portfolio">
-            <div class="span4">
-                <a class="portfolio-prompt" href="#portfolio-philanthropy">
-                    <img src="images/11/philanthropy.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a class="portfolio-prompt" href="#portfolio-contemporary">
-                    <img src="images/11/contemporary.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a class="portfolio-prompt" href="#portfolio-cube">
-                    <img src="images/11/cubemation.png" alt=""/>
-                </a>
-            </div>
-        </div>
-        <div class="row-fluid" data-bottom-center="margin-left: 50%"
-             data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
-             data-anchor-target="#portfolio">
-            <div class="span12">
-                <img src="images/11/our-portfolio.png" alt="" id="portfolio-text"/>
-            </div>
-        </div>
-        <div class="row-fluid" data-bottom-center="margin-left: -50%"
-             data-center-center="margin-left: 0%" data-top-center="margin-left: 50%"
-             data-anchor-target="#portfolio">
-            <div class="span4">
-                <a class="portfolio-prompt" href="#portfolio-savisa">
-                    <img src="images/11/savisa.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a class="portfolio-prompt" href="#portfolio-peterson">
-                    <img src="images/11/peterson.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a class="portfolio-prompt" href="#portfolio-mcdonalds">
-                    <img src="images/11/mcdonalds.png" alt=""/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="mint-logo-small white">
-    </div>
-    <div class="downBtn white-button" data-slide="12">
-    </div>
-</article>
-<article id="video" class="story">
-    <img src="images/12/watch.png" alt="" id="watch"/>
-
-    <div id="play-video-container">
-        <a class="play-video" href="#video-reel">
-            <img src="images/12/play.png" alt="" id="play"/>
-        </a>
-    </div>
-    <div class="mint-logo-small white">
-    </div>
-    <div class="downBtn white-button" data-slide="13">
-    </div>
-</article>
-<article class="transition leaf-transition">
 </article>
 <article id="our-goal" class="story">
     <img src="images/13/our-goal.png" alt="" id="our-goal-text"/>
@@ -766,7 +756,7 @@
                             McDONALD'S
                         </div>
                         <div class="span8">
-                            <img class="mac" src="/images/portfolio-imac-images/mcdonalds/mcd-01.png" alt=""/>
+                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-01.png" alt=""/>
                         </div>
                         <div class="portfolio-mcdonalds-slider-next portfolio-slider-btn span1">
                             <img src="images/11A/right-arrow.png"/>
@@ -798,7 +788,7 @@
                             <img src="images/11A/left-arrow.png"/>
                         </div>
                         <div class="span8">
-                            <img class="mac" src="/images/portfolio-imac-images/mcdonalds/mcd-03.png" alt=""/>
+                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-03.png" alt=""/>
                         </div>
                     </div>
                 </div>
@@ -864,7 +854,7 @@
                             SAVISA
                         </div>
                         <div class="span8">
-                            <img class="mac" src="/images/portfolio-imac-images/savisa/savisa-01.png" alt=""/>
+                            <img class="mac" src="images/portfolio-imac-images/savisa/savisa-01.png" alt=""/>
                         </div>
                         <div class="portfolio-savisa-slider-next portfolio-slider-btn span1">
                             <img src="images/11A/right-arrow.png"/>
@@ -914,7 +904,7 @@
                             PETERSON & CALUNAS, PLLC
                         </div>
                         <div class="span8">
-                            <img class="mac" src="/images/portfolio-imac-images/petersoncalunas/pc-01.png" alt=""/>
+                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-01.png" alt=""/>
                         </div>
                         <div class="portfolio-peterson-slider-next portfolio-slider-btn span1">
                             <img src="images/11A/right-arrow.png"/>
@@ -946,7 +936,7 @@
                             <img src="images/11A/left-arrow.png"/>
                         </div>
                         <div class="span8">
-                            <img class="mac" src="/images/portfolio-imac-images/petersoncalunas/pc-03.png" alt=""/>
+                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-03.png" alt=""/>
                         </div>
                     </div>
                 </div>
@@ -956,7 +946,7 @@
 </div>
 </div>
 <input type="hidden" id="teamJson" name="teamJson"/>
-<script src='js/libs/jquery.hammer.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/hammer.js/0.6.4/hammer.js'></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
 <script src="http://mediaplayer.yahoo.com/js"></script>
 <script src='js/libs/string.js'></script>

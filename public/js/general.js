@@ -9,11 +9,11 @@ mint.screens = [
     "core-services",
     "core-services-roundup",
     "core-services-slider",
-    "our-process",
     "generations-gap",
     "clients",
     "portfolio",
     "video",
+    "our-process",
     "our-goal",
     "thank-you"
 ];
