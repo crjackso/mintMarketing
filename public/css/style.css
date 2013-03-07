@@ -275,29 +275,23 @@ li{margin-top: 3px;}
     width: 130px;
     height: 67px;
 }
-
 .mint-logo-small.green {
     background-image: url(../images/mint-logo-small-green.png);
 }
-
 .mint-logo-small.white {
     background-image: url(../images/mint-logo-small-white.png);
 }
-
 #core-services{
-    background: url(../images/06/green-background.jpg) 50% 0 no-repeat fixed;
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
+    background: url(../images/03/background-green-glow.jpg) 50% 0 no-repeat fixed;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
 }
-
+#core-services .digital-campaigns-container{ text-align: center;}
 #core-services .digital-campaigns{
     position: relative;
     margin-top: 55%;
-    margin-left: 10%;
+    margin-left: -5%;
+    width: 65%;
     /*max-width: 90%;*/
 }
 #core-services .amp{
