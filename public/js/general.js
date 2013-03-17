@@ -3,9 +3,10 @@ var mint = {};
 mint.screens = [
     "home",
     "who-we-are",
-    "mission",
     "leadership",
     "team",
+    "mission",
+    "our-goal",
     "core-services",
     "core-services-roundup",
     "core-services-slider",
@@ -14,7 +15,6 @@ mint.screens = [
     "portfolio",
     "video",
     "our-process",
-    "our-goal",
     "thank-you"
 ];
 
