@@ -11,7 +11,7 @@
     <![endif]-->
     <link rel="stylesheet" href="css/skrollr_main.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.min.css">
@@ -304,13 +304,28 @@
         </div>
         <div class="span12" style="margin-top: 10%;">
             <div class="span4">
-                <img src="images/07/corporate-identity.png" alt="" class="corporate-identity service">
+                <img class="corporate-identity service popover-prompt" src="images/07/corporate-identity.png" alt=""
+                     data-placement="right" data-trigger="hover" data-animation="true"
+                     data-content="We have full copywriting and design services that will allow us to create slogans,
+                     logos, media kits, sales kits, brochures or the direct marketing materials needed to best engage
+                     your clients."
+                 />
             </div>
             <div class="span4">
-                <img src="images/07/content-mgmt.png" alt="" class="content-management service">
+                <img class="content-management service popover-prompt" src="images/07/content-mgmt.png" alt=""
+                     data-placement="bottom" data-trigger="hover" data-animation="true"
+                     data-content="Publishing sharable, relevant content will create brand loyalty no matter the product.
+                        We have the tools to maintain to regular communication to your target audience creating
+                        white papers, articles, webinars, podcasts, newsletters, case studies, microsites
+                        and more."
+                />
             </div>
             <div class="span4">
-                <img src="images/07/videography.png" alt="" class="videography service"/>
+                <img class="videography service popover-prompt" src="images/07/videography.png" alt=""
+                     data-placement="left" data-trigger="hover" data-animation="true"
+                     data-content="Our resident photographers and videographers provide experienced editing and sound
+                     enhancement services to tell your brand story on any digital platform."
+                />
             </div>
             <div class="span4">
                 <img src="images/07/advertising.png" alt="" class="advertising service"/>
@@ -947,8 +962,8 @@
 </div>
 </div>
 <input type="hidden" id="teamJson" name="teamJson"/>
+<script src='js/libs/jquery-ui-1.10.2.custom.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/hammer.js/0.6.4/hammer.js'></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
 <script src="http://mediaplayer.yahoo.com/js"></script>
 <script src='js/libs/string.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'></script>
@@ -967,6 +982,7 @@
 <script src="js/libs/jquery.bxslider.min.js"></script>
 <script src="js/libs/jquery.inview.min.js"></script>
 <script src="js/libs/jquery.localScroll-min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
 <script src="js/general.js"></script>
 <script src='js/script2.js'></script>
 </body>

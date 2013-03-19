@@ -270,6 +270,7 @@ mint.PresentationManager = function(){
         teamModalInit();
         ourProcessInit();
         portfolioInit();
+        $('.popover-prompt').popover();
     };
 
     return self;
