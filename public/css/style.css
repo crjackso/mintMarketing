@@ -535,6 +535,12 @@ li{margin-top: 3px;}
     display: block;
     top: 5%;
 }
+.gap-column{
+    margin-right: -4%;
+}
+.gap-columns{margin-left: -10%}
+.gap-arrow{padding-left: 1%}
+.gap-arrow img{ max-width: 65%}
 #generations-gap .row-fluid{margin-top: 6%;}
 #generations-gap .gap-title{margin-bottom: 2%;}
 #generations-gap .span3{ text-align: center;}
