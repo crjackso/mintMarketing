@@ -10,6 +10,7 @@ mint.screens = [
     "core-services",
     "core-services-roundup",
     "generations-gap",
+    "target-segment",
     "clients",
     "portfolio",
     "video",
