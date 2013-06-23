@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     $(window).scroll(function (e) {
         if ($("#team .pics-container").is(":within-viewport")) {
-            
+
         }
     });
 
@@ -45,10 +45,17 @@ $(document).ready(function () {
             return;
         }
 
+        $(String.format('div[data-key="{0}"]', code)).click();
+
         if (code == 's') {
-            $("a[href='#ryan']").click();
+            setTimeout(
+                function() {
+                    $("a[href='#ryan']").click();
+                },
+                2000);
+            
         } else {
-            $(String.format('div[data-key="{0}"]', code)).click();
+            $.fancybox.close();
         }
     }
 
