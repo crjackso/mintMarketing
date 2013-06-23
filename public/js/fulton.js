@@ -16,7 +16,6 @@ $(document).ready(function () {
     set_slide_heights();
 
     $(window).bind('resize', set_slide_heights);
-
     $(window).bind('keydown', onKeyDown);
 
     skrollr.init({
