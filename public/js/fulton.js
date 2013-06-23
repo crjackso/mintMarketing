@@ -19,12 +19,6 @@ $(document).ready(function () {
 
     $(window).bind('keydown', onKeyDown);
 
-    $(window).scroll(function (e) {
-        if ($("#team .pics-container").is(":within-viewport")) {
-
-        }
-    });
-
     skrollr.init({
         forceHeight: false,
         smoothScrolling: true,
