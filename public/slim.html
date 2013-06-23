@@ -1,0 +1,550 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mint Marketing Agency</title>
+    <meta name="description" content="The Mint Marketing Agency">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/skrollr_main.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div id="{{id}}" class="teamMemberDialog">
+            <div class="banner">
+                <img src="images/05/header-leaf.png" alt="" class="bannerLeaf">
+            </div>
+            <h1 class="teamTextPic">{{name}}</h1>
+
+            <div class="teamMember row-fluid">
+                <div class="profile-pic span3">
+                    <img src="{{picture_url}}" alt=""/>
+                </div>
+                <div class="span8 profile-details main">
+                    <div class="span12">
+                        <h3>{{title}}</h3>
+                    </div>
+                    <div class="span12 profile-details">
+                        <span>{{school}}</span><br/>
+                        <span>{{major}}</span><br/>
+                    </div>
+                    <div class="span12 profile-details">
+                        Specialties:<br>
+                        <ul class="specialty_list">
+                            {{#each specialties}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src='js/loader.js'></script>
+</head>
+<body>
+<div id="skrollr-body" class="wrapper">
+<article id="home" class="story" data-speed="8" data-type="background">
+    <div class="row-fluid">
+        <div class="span12">
+            <div id="logo-container" data-center-center="margin-top: 10%"
+                 data-top-center="margin-top:100%" data-anchor-target="#home">
+                <img id="logo" src="images/01/mint-logo.png" alt=""/>
+            </div>
+        </div>
+        <div class="span12" style="text-align: center;">
+            <img id="shadow" src="images/01/shadow-mint-logo.png" data-center-center="margin-top: 5%"
+                 data-top-center="margin-top:-20%" data-anchor-target="#home"/>
+        </div>
+        <div class="span12">
+            <div class="downBtn white-button" data-slide="1" data-key="a">
+            </div>
+        </div>
+    </div>
+</article>
+<article class="transition leaf-transition">
+</article>
+<article id="leadership" class="story">
+    <ul class="leadership-slider">
+        <li>
+            <div id="leadership-1" class="story full-height">
+                <div class="row-fluid">
+                    <div class="span6 gale-container full-height" data-bottom-center="left: -30%"
+                         data-center-center="left: 0%" data-top-center="left: -30%"
+                         data-anchor-target="#leadership">
+                        <img id="leadership-gale" class="gale-pic" src="images/people/gale-pic.png" alt=""/>
+                    </div>
+                    <div class="span6 full-height" data-bottom-center="margin-top: -100%"
+                         data-center-center="margin-top: 15%" data-top-center="margin-top:100%"
+                         data-anchor-target="#leadership">
+                        <img class="leadership-text" src="images/04/leadership.png" alt=""/>
+                        <img id="leadership-gale-text" src="images/04/galehill.png" alt=""/>
+                        <img id="leadership-learn-more" src="images/04/learn-more.png" alt=""/>
+                        <img id="leadership-experience" src="images/04/previous-experience.png" alt=""/>
+                    </div>
+                </div>
+                <div class="downBtn green-button" data-slide="2">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div id="leadership-2" class="story full-height">
+                <!--<div id="leadership-slider-prev">-->
+                <img id="leadership-slider-prev" src="images/04A/back-arrow.png"/>
+                <!--</div>-->
+                <!--<div>-->
+                <div class="row-fluid full-height">
+                    <div class="span6 gale-container full-height">
+                        <img class="gale-pic" src="images/people/gale-pic.png" alt=""/>
+                    </div>
+                    <div class="span6" style="margin-left: -10%">
+                        <img class="leadership-text" src="images/04A/leadership.png" alt=""/>
+                        <img id="leadership-gale-bio" src="images/04A/galebio.png" alt=""/>
+                    </div>
+                </div>
+                <div class="downBtn white-button" data-slide="2" data-key="s">
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="mint-logo-small green">
+    </div>
+</article>
+<article class="transition leaf-transition">
+</article>
+<article id="team" class="story">
+    <div class="row-fluid">
+        <div class="span12 banner">
+            <img src="images/05/header-leaf.png" alt="" class="bannerLeaf">
+        </div>
+        <img src="images/05/the-team.png" alt="" class="teamTextPic">
+    </div>
+
+    <div class="pics-container container-fluid" data-bottom-center="margin-top: -100%"
+         data-center-center="margin-top: 10%" data-top-center="margin-top:100%" data-anchor-target="#team">
+        <div class="row-fluid">
+            <div class="profile-box span3">
+                <a rel='team' href="#andre" data-person="andre" data-index="1" title="">
+                    <img src="images/people/andre.png" alt=""/>
+                </a>
+            </div>
+            <div class="profile-box span3">
+                <a rel='team' href="#ryan" data-person="ryan" data-index="2"  title="">
+                    <img src="images/people/ryan.png" alt=""/>
+                </a>
+            </div>
+            <div class="profile-box span3">
+                <a rel='team' href="#chris" data-person="chris" data-index="3"  title="">
+                    <img src="images/people/chris.png" alt=""/>
+                </a>
+            </div>
+            <div class="profile-box span3">
+                <a rel='team' href="#krystal" data-person="krystal" data-index="4"  title="">
+                    <img src="images/people/krystal.png" alt=""/>
+                </a>
+            </div>
+            <div class="profile-box span3">
+                <a rel='team' href="#arthur" data-person="arthur" data-index="5"  title="">
+                    <img src="images/people/arthur.png" alt=""/>
+                </a>
+            </div>
+            <div class="profile-box span3">
+                <a rel='team' href="#clint" data-person="clint" data-index="6"  title="">
+                    <img src="images/people/clint.png" alt=""/>
+                </a>
+            </div>
+            <div class="profile-box span3">
+                <a rel='team' href="#stesha" data-person="stesha" data-index="7"  title="">
+                    <img src="images/people/stesha.png" alt=""/>
+                </a>
+            </div>
+            <div class="profile-box span3">
+                <a rel='team' href="#trish" data-person="trish" data-index="8"  title="">
+                    <img src="images/people/trish.png" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mint-logo-small white">
+    </div>
+    <div class="downBtn white-button" data-slide="3" data-key="d">
+    </div>
+</article>
+<article class="transition compass-transition">
+</article>
+<article id="target-segment" class="story">
+
+    <div class="row-fluid">
+        <div class="span12" style="margin-top:5%;">
+            <img id="our-target-text" src="images/14/01our-target-segment.png" alt=""/>
+            <img id="millenials-text" src="images/14/01millenials.png" alt=""/>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span3">
+            <img src="images/14/13million.png" alt="" id="boomers" data-bottom-center="top: -100%"
+                 data-center-center="top: 10%"/>
+        </div>
+        <div class="span3">
+            <img src="images/14/16billion.png" alt="" id="purchasing-power"/>
+        </div>
+        <div class="span3">
+            <img src="images/14/02digital.png" alt="" id="digital-ads" data-bottom-center="right:-50%"
+                 data-center-center="right: 5%"/>
+        </div>
+        <div class="span3"></div>
+        <div class="span4">
+            <img src="images/14/07stimulation.png" alt="" id="stimulation" data-bottom-center="left:0%"
+                 data-center-center="left: 15%"/>
+        </div>
+        <div class="span4">
+            <img src="images/14/04harder.png" alt="" id="persuade" data-anchor-target="#our-target-text"
+                 data-bottom-center="top: -100%" data-center-center="top: 0%"/></div>
+        <div class="span3">
+            <img src="images/14/08engagement.png" alt="" id="engagement" data-bottom-center="top: -100%"
+                 data-center-center="top: 80%" data-top-center="top:100%"
+                 data-anchor-target="#target-segment"/>
+        </div>
+        <div class="span3">
+            <img src="images/14/10highsense.png" alt="" id="high-loyalty" data-center-center="bottom:0%"
+                 data--100-top="bottom: 20%" data-anchor-target="#our-target-text"/>
+        </div>
+        <div class="span12">
+            <div class="mint-logo-small green">
+            </div>
+        </div>
+    </div>
+
+    <div class="cloud" id="cloud1"></div>
+    <div class="cloud" id="cloud2"></div>
+    <div class="cloud" id="cloud3"></div>
+    <div class="cloud" id="cloud4"></div>
+    <div class="cloud" id="cloud5"></div>
+    <div class="cloud" id="cloud6"></div>
+    <div class="cloud" id="cloud7"></div>
+    <div class="cloud" id="cloud8"></div>
+
+
+    <div class="downBtn green-button" data-slide="4" data-key="f">
+    </div>
+</article>
+<article class="transition leaf-transition">
+</article>
+<article id="generations-gap" class="story">
+    <img src="images/09/preferred.png" alt="" id="preferred-text"/>
+    <div class="row-fluid">
+        <div class="span2 gap-arrow">
+            <img src="images/09/vertical-bar.png" alt="" />
+        </div>
+        <div class="span10">
+            <div class="row gap-columns">
+                <div class="span3 gap-column">
+                    <img src="images/09/titleboomer.png" alt="" class="gap-title boomer-title"/>
+                    <img src="images/09/boxboomer.png" alt=""/>
+                </div>
+                <div class="span3 gap-column">
+                    <img src="images/09/title34.png" alt="" class="gap-title"/>
+                    <img src="images/09/box34.png" alt="" class="genX"/>
+                </div>
+                <div class="span3 gap-column">
+                    <img src="images/09/title20.png" alt="" class="gap-title"/>
+                    <img src="images/09/box20.png" alt="" class="genY"/>
+                </div>
+                <div class="span3 gap-column">
+                    <img src="images/09/title0.png" alt="" class="gap-title"/>
+                    <img src="images/09/box0.png" alt="" class="genZ"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mint-logo-small green">
+    </div>
+    <div class="downBtn green-button" data-slide="5">
+    </div>
+</article>
+<article class="transition leaf-transition">
+</article>
+<article id="thank-you" class="story">
+    <div class="row-fluid">
+        <div class="span12">
+            <img id="thank-you-text" alt="" src="images/18/thankyou.png" data-bottom-center="margin-top: -100%"
+                 data-center-center="margin-top: 15%" data-anchor-target="#thank-you"/>
+        </div>
+        <div class="span12">
+            <div id="scrollToTop" class="up-button">
+            </div>
+        </div>
+    </div>
+    <div class="mint-logo-small green">
+    </div>
+</article>
+<div id="teamMemberPlaceholder" style="display: none">
+</div>
+<div id="portfolio-philanthropy" style="display:none">
+    <div class="portfolio-philanthropy-slider">
+        <div class="portfolio-philanthropy-slider-viewport">
+            <div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="span12 client-name">
+                            PHILANTHROPY
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/philanthropy/pil-01.png" alt=""/>
+                        </div>
+                        <div class="portfolio-philanthropy-slider-next span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            PHILANTHROPY
+                        </div>
+                        <div class="portfolio-philanthropy-slider-prev span1">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/philanthropy/pil-02.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-mcdonalds" style="display:none">
+    <div class="portfolio-mcdonalds-slider">
+        <div class="portfolio-mcdonalds-slider-viewport">
+            <div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="span12 client-name">
+                            McDONALD'S
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-01.png" alt=""/>
+                        </div>
+                        <div class="portfolio-mcdonalds-slider-next portfolio-slider-btn span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            McDONALD'S
+                        </div>
+                        <div class="portfolio-mcdonalds-slider-prev span1 portfolio-slider-btn">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span7">
+                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-02.png" alt=""/>
+                        </div>
+                        <div class="portfolio-mcdonalds-slider-next portfolio-slider-btn span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            McDONALD'S
+                        </div>
+                        <div class="portfolio-mcdonalds-slider-prev span1 portfolio-slider-btn">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-03.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-cube" class="center portfolio-lone" style="display:none">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12 client-name">
+                CUBEMATION
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12">
+                <img class="mac" src="images/portfolio-imac-images/cubemation/cube.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-contemporary" style="display:none">
+    <div class="portfolio-contemporary-slider">
+        <div class="portfolio-contemporary-slider-viewport">
+            <div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="span12 client-name">
+                            CONTEMPORARY
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/contemporary/cc-01.png" alt=""/>
+                        </div>
+                        <div class="portfolio-contemporary-slider-next portfolio-slider-btn span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            CONTEMPORARY
+                        </div>
+                        <div class="portfolio-contemporary-slider-prev span1 portfolio-slider-btn">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/contemporary/cc-02.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-savisa" style="display:none">
+    <div class="portfolio-savisa-slider">
+        <div class="portfolio-savisa-slider-viewport">
+            <div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="span12 client-name">
+                            SAVISA
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/savisa/savisa-01.png" alt=""/>
+                        </div>
+                        <div class="portfolio-savisa-slider-next portfolio-slider-btn span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            SAVISA
+                        </div>
+                        <div class="portfolio-savisa-slider-prev span1 portfolio-slider-btn">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span7">
+                            <img class="mac" src="images/portfolio-imac-images/savisa/savisa-02.png" alt=""/>
+                        </div>
+                        <div class="portfolio-savisa-slider-next portfolio-slider-btn span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            SAVISA
+                        </div>
+                        <div class="portfolio-savisa-slider-prev span1 portfolio-slider-btn">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/savisa/savisa-03.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-peterson" style="display:none">
+    <div class="portfolio-peterson-slider">
+        <div class="portfolio-peterson-slider-viewport">
+            <div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="span12 client-name">
+                            PETERSON & CALUNAS, PLLC
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-01.png" alt=""/>
+                        </div>
+                        <div class="portfolio-peterson-slider-next portfolio-slider-btn span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            PETERSON & CALUNAS, PLLC
+                        </div>
+                        <div class="portfolio-peterson-slider-prev span1 portfolio-slider-btn">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span7">
+                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-02.png" alt=""/>
+                        </div>
+                        <div class="portfolio-peterson-slider-next portfolio-slider-btn span1">
+                            <img src="images/11A/right-arrow.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="touchslider-item story portfolio-slide">
+                    <div class="inner row-fluid">
+                        <div class="client-name">
+                            PETERSON & CALUNAS, PLLC
+                        </div>
+                        <div class="portfolio-peterson-slider-prev span1 portfolio-slider-btn">
+                            <img src="images/11A/left-arrow.png"/>
+                        </div>
+                        <div class="span8">
+                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-03.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<input type="hidden" id="teamJson" name="teamJson"/>
+<script src='js/libs/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/hammer.js/0.6.4/hammer.js'></script>
+<script src="http://mediaplayer.yahoo.com/js"></script>
+<script src='js/libs/string.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'></script>
+<script src='js/libs/jquery.touchslider.min.js'></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.js"></script>
+<script src='js/libs/skrollr.min.js'></script>
+<!--[if lt IE 9]>
+<script src='js/libs/skrollr.ie.min.js'></script>
+<![endif]-->
+<script src='js/libs/jquery.fancybox.pack.js'></script>
+<script src="js/team.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+<script src="js/libs/jquery.queryLoader2.min.js"></script>
+<script src="js/libs/withinViewport.js"></script>
+<script src="js/libs/jquery.withinViewport.js"></script>
+<script src="js/libs/jquery.bxslider.min.js"></script>
+<script src="js/libs/jquery.inview.min.js"></script>
+<script src="js/libs/jquery.localScroll-min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/slim.js"></script>
+<script src='js/script2.js'></script>
+</body>
+</html>
