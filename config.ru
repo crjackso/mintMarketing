@@ -17,6 +17,10 @@ map "/fulton" do
   run Rack::File.new("public/fulton.html")
 end
 
+map "/staging" do
+  run Rack::File.new("public/staging.html")
+end
+
 map "/crowd.wav" do
   run Rack::File.new("public/crowd.wav")
 end
