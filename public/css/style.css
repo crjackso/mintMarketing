@@ -553,20 +553,19 @@ li{margin-top: 3px;}
 #generations-gap .span3{ text-align: center;}
 .cloud{
     position:absolute;
-    top: 0;
     right: 0;
     width:1152px;
     height: 864px;
-    /*margin-left:-1000px;*/
-    /*left:50%;*/
 }
 #cloud1{
     background: url(../images/14/03cloud.png);
     right: 0;
+    bottom: 0;
 }
 #cloud2{
     background: url(../images/14/05cloud.png);
     right:0;
+    bottom: 0;
 }
 #cloud3{
     background: url(../images/14/06cloud.png);
@@ -574,20 +573,25 @@ li{margin-top: 3px;}
 #cloud4 {
     background: url(../images/14/09cloud.png);
     left: 0;
+    bottom: 0;
 }
 #cloud5{
     background: url(../images/14/11cloud.png);
+    bottom: 0;
 }
 #cloud6{
     background: url(../images/14/12cloud.png);
     left: 0;
+    bottom: 0;
 }
 #cloud7{
     background: url(../images/14/14cloud.png);
     right: 0;
+    bottom: 0;
 }
 #cloud8{
     background: url(../images/14/15cloud.png);
+    bottom: 0;
 }
 
 #clients{
