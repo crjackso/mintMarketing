@@ -446,10 +446,10 @@ $(document).ready(function () {
         margin: 0
     });
 
-    $('.portfolio-contemporary-slider').touchSlider({
+    $('.portfolio-fulton-slider').touchSlider({
         duration: 350,
         mouseTouch: true,
-        namespace: 'portfolio-contemporary-slider',
+        namespace: 'portfolio-fulton-slider',
         margin: 0
     });
 
@@ -464,6 +464,13 @@ $(document).ready(function () {
         duration: 350,
         mouseTouch: true,
         namespace: 'portfolio-peterson-slider',
+        margin: 0
+    });
+
+    $('.portfolio-gateway-slider').touchSlider({
+        duration: 350,
+        mouseTouch: true,
+        namespace: 'portfolio-gateway-slider',
         margin: 0
     });
 

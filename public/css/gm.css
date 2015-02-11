@@ -1,8 +1,10 @@
 ﻿#gm-campus-cruze {
-    background: url(../images/gm-slices/cruze/cruzeback.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/gm-slices/cruze/cruzeback.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     height: auto;
+    background-position: center;
+    background-size: cover;
 }
 .vehicle{
     position: absolute;
@@ -37,13 +39,13 @@
     left: 0;
 }
 #gm-campus-spark {
-    background: url(../images/gm-slices/spark/sparkback.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/gm-slices/spark/sparkback.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     height: auto;
 }
 #gm-campus-sonic {
-    background: url(../images/gm-slices/sonic/background.png) 50% 0 no-repeat fixed;
+    /*background: url(../images/gm-slices/sonic/background.png) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     height: auto;
@@ -96,7 +98,7 @@
 }
 
 #excitement{
-    background: url(../images/15/00.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/15/00.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -104,6 +106,7 @@
     background-position: 0%;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
 }
 #excitement-text{
     position: relative;
@@ -120,13 +123,14 @@
     top: 10%;
 }
 #win-win{
-    background: url(../images/17/background-green.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/17/background-green.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
 }
 #win-win-text{
     position: relative;

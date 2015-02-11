@@ -93,13 +93,14 @@ li{margin-top: 3px;}
     width: 650px;
 }
 #team{
-    background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/01/background-green.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
 }
 #team .pics-container {
     max-width: 80%;
@@ -272,9 +273,11 @@ li{margin-top: 3px;}
     background-image: url(../images/mint-logo-small-white.png);
 }
 #core-services{
-    background: url(../images/03/background-green-glow.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/03/background-green-glow.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
+    background-size: cover;
 }
 #core-services .digital-campaigns-container{ text-align: center;}
 #core-services .digital-campaigns{
@@ -306,9 +309,11 @@ li{margin-top: 3px;}
     position: relative;
 }
 #core-services-roundup {
-    background: url(../images/07/background-white.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/07/background-white.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
+    background-size: cover;
 }
 #core-services-roundup .banner{
     top: 0;
@@ -504,9 +509,11 @@ li{margin-top: 3px;}
     width: 100%;
 }
 #our-process{
-    background: url(../images/08/background-green.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/08/background-green.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
+    background-size: cover;
 }
 #our-process #our-process-text{
     top: 5%;
@@ -601,9 +608,11 @@ li{margin-top: 3px;}
     height: 30px;
 }
 #portfolio{
-    background: url(../images/11/background-green.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/11/background-green.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
+    background-size: cover;
 }
 .portfolio-lone{
     /* todo */
@@ -669,7 +678,7 @@ li{margin-top: 3px;}
     width: 2000px;
 }
 #video{
-    background: url(../images/12/background-green.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/12/background-green.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -699,13 +708,14 @@ li{margin-top: 3px;}
     top: 30%;
 }
 #our-goal{
-    background: url(../images/13/background-white.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/13/background-white.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
 }
 #spark-emotion{
     position: relative;
@@ -729,9 +739,11 @@ li{margin-top: 3px;}
     top: 10%;
 }
 #target-segment{
-    background: url(../images/14/00background-cloudpage.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/14/00background-cloudpage.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-size: cover;
+    background-position: center;
 }
 #target-segment img{
     max-width: 80%;
@@ -782,13 +794,14 @@ li{margin-top: 3px;}
     margin-top: 20%;
 }
 #thank-you{
-    background: url(../images/18/background-last.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/18/background-last.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
 }
 #thank-you-text{
     position: relative;
@@ -834,7 +847,6 @@ li{margin-top: 3px;}
 
 /* Our Mission */
 #mission {
-    background: url(../images/03/background-green-glow.jpg) 50% 0 no-repeat fixed;
     margin: 0 auto;
     text-align: center;
     -webkit-background-size: cover;
@@ -843,6 +855,7 @@ li{margin-top: 3px;}
     background-size: cover;
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
+    background-position: center;
 }
 #mission-block-text{
     margin-top: -5%;
