@@ -1,477 +1,477 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Mint Marketing Agency</title>
-    <meta name="description" content="The Mint Marketing Agency">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--[if lt IE 9]>
-    <script src="js/libs/html5shiv.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="css/skrollr_main.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <script id="entry-template" type="text/x-handlebars-template">
-        <div id="{{id}}" class="teamMemberDialog">
-            <div class="banner">
-                <img src="images/05/header-leaf.png" alt="" class="bannerLeaf">
-            </div>
-            <h1 class="teamTextPic">{{name}}</h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mint Marketing Agency</title>
+  <meta name="description" content="The Mint Marketing Agency">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--[if lt IE 9]>
+  <script src="js/libs/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="css/skrollr_main.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div id="{{id}}" class="teamMemberDialog">
+      <div class="banner">
+        <img src="images/05/header-leaf.png" alt="" class="bannerLeaf">
+      </div>
+      <h1 class="teamTextPic">{{name}}</h1>
 
-            <div class="teamMember row-fluid">
-                <div class="profile-pic span3">
-                    <img src="{{picture_url}}" alt=""/>
-                </div>
-                <div class="span8 profile-details main">
-                    <div class="span12">
-                        <h3>{{title}}</h3>
-                    </div>
-                    <div class="span12 profile-details">
-                        <span>{{school}}</span><br/>
-                        <span>{{major}}</span><br/>
-                    </div>
-                    <div class="span12 profile-details">
-                        Specialties:<br>
-                        <ul class="specialty_list">
-                            {{#each specialties}}
-                            <li>{{this}}</li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="teamMember row-fluid">
+        <div class="profile-pic span3">
+          <img src="{{picture_url}}" alt=""/>
         </div>
-    </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src='js/loader.js'></script>
+        <div class="span8 profile-details main">
+          <div class="span12">
+            <h3>{{title}}</h3>
+          </div>
+          <div class="span12 profile-details">
+            <span>{{school}}</span><br/>
+            <span>{{major}}</span><br/>
+          </div>
+          <div class="span12 profile-details">
+            Specialties:<br>
+            <ul class="specialty_list">
+              {{#each specialties}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src='js/loader.js'></script>
 </head>
 <body>
 <div id="skrollr-body" class="wrapper">
-<article id="home" class="story" data-speed="8" data-type="background">
+  <article id="home" class="story" data-speed="8" data-type="background">
     <div class="row-fluid">
-        <div class="span12">
-            <div id="logo-container" data-center-center="margin-top: 10%"
-                 data-top-center="margin-top:100%" data-anchor-target="#home">
-                <img id="logo" src="images/01/mint-logo.png" alt=""/>
-            </div>
+      <div class="span12">
+        <div id="logo-container" data-center-center="margin-top: 10%"
+             data-top-center="margin-top:100%" data-anchor-target="#home">
+          <img id="logo" src="images/01/mint-logo.png" alt=""/>
         </div>
-        <div class="span12" style="text-align: center;">
-            <img id="shadow" src="images/01/shadow-mint-logo.png" data-center-center="margin-top: 5%"
-                 data-top-center="margin-top:-20%" data-anchor-target="#home"/>
+      </div>
+      <div class="span12" style="text-align: center;">
+        <img id="shadow" src="images/01/shadow-mint-logo.png" data-center-center="margin-top: 5%"
+             data-top-center="margin-top:-20%" data-anchor-target="#home"/>
+      </div>
+      <div class="span12">
+        <div class="downBtn white-button" data-slide="1">
         </div>
-        <div class="span12">
-            <div class="downBtn white-button" data-slide="1">
-            </div>
-        </div>
+      </div>
     </div>
-</article>
-<article class="transition leaf-transition">
-</article>
-<article id="who-we-are" class="story">
+  </article>
+  <article class="transition leaf-transition">
+  </article>
+  <article id="who-we-are" class="story">
     <div class="row-fluid">
-        <img class="full-width" src="images/02/header.jpg" alt=""/>
+      <img class="full-width" src="images/02/header.jpg" alt=""/>
 
-        <div class="row-fluid">
-            <div class="span6">
-                <img id="easel" src="images/02/easel.png" alt=""/>
-                <img id="result-driven" src="images/02/results-driven.png" alt=""/>
-            </div>
-            <div class="span5">
-                <img id="brand-loyalty" src="images/02/creators-of.png" alt="" data-100-top="margin-top:-100%"
-                     data-center-center="margin-top: 20%" data-top-center="margin-top:100%"
-                     data-anchor-target="#who-we-are"/>
-            </div>
+      <div class="row-fluid">
+        <div class="span6">
+          <img id="easel" src="images/02/easel.png" alt=""/>
+          <img id="result-driven" src="images/02/results-driven.png" alt=""/>
         </div>
-        <div class="row-fluid">
-            <div class="span12">
-                <div class="span3">
-                    <img id="bishop" alt="" src="images/02/bishop.png" data-bottom-center="left:-100%"
-                         data-center-center="left:10%" data--100-top="left:50%" data-anchor-target="#who-we-are"/>
-                </div>
-                <div class="span6">
-                    <img id="sound-in-strategy" src="images/02/sound-strategy.png" alt=""
-                         data-100-top="margin-bottom:-100%"
-                         data-center-center="margin-bottom: -20%" data-top-center="margin-bottom:-20%"
-                         data-anchor-target="#who-we-are"/>
-                </div>
-            </div>
-            <div class="span6"></div>
+        <div class="span5">
+          <img id="brand-loyalty" src="images/02/creators-of.png" alt="" data-100-top="margin-top:-100%"
+               data-center-center="margin-top: 20%" data-top-center="margin-top:100%"
+               data-anchor-target="#who-we-are"/>
         </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="span3">
+            <img id="bishop" alt="" src="images/02/bishop.png" data-bottom-center="left:-100%"
+                 data-center-center="left:10%" data--100-top="left:50%" data-anchor-target="#who-we-are"/>
+          </div>
+          <div class="span6">
+            <img id="sound-in-strategy" src="images/02/sound-strategy.png" alt=""
+                 data-100-top="margin-bottom:-100%"
+                 data-center-center="margin-bottom: -20%" data-top-center="margin-bottom:-20%"
+                 data-anchor-target="#who-we-are"/>
+          </div>
+        </div>
+        <div class="span6"></div>
+      </div>
     </div>
     <div class="mint-logo-small green">
     </div>
     <div class="downBtn green-button" data-slide="2">
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="leadership" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="leadership" class="story">
     <ul class="leadership-slider">
-        <li>
-            <div id="leadership-1" class="story full-height">
-                <div class="row-fluid">
-                    <div class="span6 gale-container full-height" data-bottom-center="left: -30%"
-                         data-center-center="left: 0%" data-top-center="left: -30%"
-                         data-anchor-target="#leadership">
-                        <img id="leadership-gale" class="gale-pic" src="images/people/gale-pic.png" alt=""/>
-                    </div>
-                    <div class="span6 full-height" data-bottom-center="margin-top: -100%"
-                         data-center-center="margin-top: 15%" data-top-center="margin-top:100%"
-                         data-anchor-target="#leadership">
-                        <img class="leadership-text" src="images/04/leadership.png" alt=""/>
-                        <img id="leadership-gale-text" src="images/04/galehill.png" alt=""/>
-                        <img id="leadership-learn-more" src="images/04/learn-more.png" alt=""/>
-                        <img id="leadership-experience" src="images/04/previous-experience.png" alt=""/>
-                    </div>
-                </div>
-                <div class="downBtn green-button" data-slide="3">
-                </div>
+      <li>
+        <div id="leadership-1" class="story full-height">
+          <div class="row-fluid">
+            <div class="span6 gale-container full-height" data-bottom-center="left: -30%"
+                 data-center-center="left: 0%" data-top-center="left: -30%"
+                 data-anchor-target="#leadership">
+              <img id="leadership-gale" class="gale-pic" src="images/people/gale-pic.png" alt=""/>
             </div>
-        </li>
-        <li>
-            <div id="leadership-2" class="story full-height">
-                <!--<div id="leadership-slider-prev">-->
-                <img id="leadership-slider-prev" src="images/04A/back-arrow.png"/>
-                <!--</div>-->
-                <!--<div>-->
-                <div class="row-fluid full-height">
-                    <div class="span6 gale-container full-height">
-                        <img class="gale-pic" src="images/people/gale-pic.png" alt=""/>
-                    </div>
-                    <div class="span6" style="margin-left: -10%">
-                        <img class="leadership-text" src="images/04A/leadership.png" alt=""/>
-                        <img id="leadership-gale-bio" src="images/04A/galebio.png" alt=""/>
-                    </div>
-                </div>
-                <div class="downBtn white-button" data-slide="3">
-                </div>
+            <div class="span6 full-height" data-bottom-center="margin-top: -100%"
+                 data-center-center="margin-top: 15%" data-top-center="margin-top:100%"
+                 data-anchor-target="#leadership">
+              <img class="leadership-text" src="images/04/leadership.png" alt=""/>
+              <img id="leadership-gale-text" src="images/04/galehill.png" alt=""/>
+              <img id="leadership-learn-more" src="images/04/learn-more.png" alt=""/>
+              <img id="leadership-experience" src="images/04/previous-experience.png" alt=""/>
             </div>
-        </li>
+          </div>
+          <div class="downBtn green-button" data-slide="3">
+          </div>
+        </div>
+      </li>
+      <li>
+        <div id="leadership-2" class="story full-height">
+          <!--<div id="leadership-slider-prev">-->
+          <img id="leadership-slider-prev" src="images/04A/back-arrow.png"/>
+          <!--</div>-->
+          <!--<div>-->
+          <div class="row-fluid full-height">
+            <div class="span6 gale-container full-height">
+              <img class="gale-pic" src="images/people/gale-pic.png" alt=""/>
+            </div>
+            <div class="span6" style="margin-left: -10%">
+              <img class="leadership-text" src="images/04A/leadership.png" alt=""/>
+              <img id="leadership-gale-bio" src="images/04A/galebio.png" alt=""/>
+            </div>
+          </div>
+          <div class="downBtn white-button" data-slide="3">
+          </div>
+        </div>
+      </li>
     </ul>
     <div class="mint-logo-small green">
     </div>
-</article>
-<article class="transition leaf-transition">
-</article>
-<article id="team" class="story">
+  </article>
+  <article class="transition leaf-transition">
+  </article>
+  <article id="team" class="story" style="background-image: url(images/01/background-green.jpg)">
     <div class="row-fluid">
-        <div class="span12 banner">
-            <img src="images/05/header-leaf.png" alt="" class="bannerLeaf">
-        </div>
-        <img src="images/05/the-team.png" alt="" class="teamTextPic">
+      <div class="span12 banner">
+        <img src="images/05/header-leaf.png" alt="" class="bannerLeaf">
+      </div>
+      <img src="images/05/the-team.png" alt="" class="teamTextPic">
     </div>
 
     <div class="pics-container container-fluid" data-bottom-center="margin-top: -100%"
          data-center-center="margin-top: 10%" data-top-center="margin-top:100%" data-anchor-target="#team">
-        <div class="row-fluid">
-            <div class="profile-box span3">
-                <a rel='team' href="#andre" data-person="andre" data-index="1" title="">
-                    <img src="images/people/andre.png" alt=""/>
-                </a>
-            </div>
-            <div class="profile-box span3">
-                <a rel='team' href="#ryan" data-person="ryan" data-index="2"  title="">
-                    <img src="images/people/ryan.png" alt=""/>
-                </a>
-            </div>
-            <div class="profile-box span3">
-                <a rel='team' href="#chris" data-person="chris" data-index="3"  title="">
-                    <img src="images/people/chris.png" alt=""/>
-                </a>
-            </div>
-            <div class="profile-box span3">
-                <a rel='team' href="#krystal" data-person="krystal" data-index="4"  title="">
-                    <img src="images/people/krystal.png" alt=""/>
-                </a>
-            </div>
-            <div class="profile-box span3">
-                <a rel='team' href="#arthur" data-person="arthur" data-index="5"  title="">
-                    <img src="images/people/arthur.png" alt=""/>
-                </a>
-            </div>
-            <div class="profile-box span3">
-                <a rel='team' href="#clint" data-person="clint" data-index="6"  title="">
-                    <img src="images/people/clint.png" alt=""/>
-                </a>
-            </div>
-            <div class="profile-box span3">
-                <a rel='team' href="#stesha" data-person="stesha" data-index="7"  title="">
-                    <img src="images/people/stesha.png" alt=""/>
-                </a>
-            </div>
-            <div class="profile-box span3">
-                <a rel='team' href="#trish" data-person="trish" data-index="8"  title="">
-                    <img src="images/people/trish.png" alt=""/>
-                </a>
-            </div>
+      <div class="row-fluid">
+        <div class="profile-box span3">
+          <a rel='team' href="#andre" data-person="andre" data-index="1" title="">
+            <img src="images/people/andre.png" alt=""/>
+          </a>
         </div>
+        <div class="profile-box span3">
+          <a rel='team' href="#ryan" data-person="ryan" data-index="2" title="">
+            <img src="images/people/ryan.png" alt=""/>
+          </a>
+        </div>
+        <div class="profile-box span3">
+          <a rel='team' href="#chris" data-person="chris" data-index="3" title="">
+            <img src="images/people/chris.png" alt=""/>
+          </a>
+        </div>
+        <div class="profile-box span3">
+          <a rel='team' href="#krystal" data-person="krystal" data-index="4" title="">
+            <img src="images/people/krystal.png" alt=""/>
+          </a>
+        </div>
+        <div class="profile-box span3">
+          <a rel='team' href="#arthur" data-person="arthur" data-index="5" title="">
+            <img src="images/people/arthur.png" alt=""/>
+          </a>
+        </div>
+        <div class="profile-box span3">
+          <a rel='team' href="#clint" data-person="clint" data-index="6" title="">
+            <img src="images/people/clint.png" alt=""/>
+          </a>
+        </div>
+        <div class="profile-box span3">
+          <a rel='team' href="#stesha" data-person="stesha" data-index="7" title="">
+            <img src="images/people/stesha.png" alt=""/>
+          </a>
+        </div>
+        <div class="profile-box span3">
+          <a rel='team' href="#trish" data-person="trish" data-index="8" title="">
+            <img src="images/people/trish.png" alt=""/>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="mint-logo-small white">
     </div>
     <div class="downBtn white-button" data-slide="4">
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="mission" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="mission" class="story" style="background-image: url(images/03/background-green-glow.jpg)">
     <div class="row-fluid">
-        <div id="mission-container" class="span12">
-            <div class="block full-height">
-                <div id="mission-block-text" class="centered"
-                     data-bottom-center="margin-top: -100%" data-center-center="margin-top: -5%"
-                     data-top-center="margin-top:100%" data-anchor-target="#mission">
-                    <img id="our-mission-is" src="images/03/ourmissionis.png" alt=""/>
-                    <img id="evolve-brands" src="images/03/evolvebrands.png" alt=""/>
-                </div>
-            </div>
-            <img id="mint-leaf" src="images/03/mintleaf.png" alt=""/>
+      <div id="mission-container" class="span12">
+        <div class="block full-height">
+          <div id="mission-block-text" class="centered"
+               data-bottom-center="margin-top: -100%" data-center-center="margin-top: -5%"
+               data-top-center="margin-top:100%" data-anchor-target="#mission">
+            <img id="our-mission-is" src="images/03/ourmissionis.png" alt=""/>
+            <img id="evolve-brands" src="images/03/evolvebrands.png" alt=""/>
+          </div>
         </div>
+        <img id="mint-leaf" src="images/03/mintleaf.png" alt=""/>
+      </div>
     </div>
     <div class="mint-logo-small white">
     </div>
     <div class="downBtn white-button" data-slide="5">
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="our-goal" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="our-goal" class="story" style="background-image: url(images/13/background-white.jpg);">
     <img src="images/13/our-goal.png" alt="" id="our-goal-text"/>
+
     <div class="row-fluid" style="margin-top: 10%;">
-        <div class="span6">
-            <img id="spark-emotion" src="images/13/spark.png" alt=""
-                 data-bottom-center="margin-top: -100%"
-                 data-center-center="margin-top: 0%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
-        </div>
-        <div class="span6">
-            <img id="educate-consumers" src="images/13/educate.png" alt="" data-bottom-center="margin-top: -100%"
-                 data-center-center="margin-top: 0%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
-        </div>
+      <div class="span6">
+        <img id="spark-emotion" src="images/13/spark.png" alt=""
+             data-bottom-center="margin-top: -100%"
+             data-center-center="margin-top: 0%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
+      </div>
+      <div class="span6">
+        <img id="educate-consumers" src="images/13/educate.png" alt="" data-bottom-center="margin-top: -100%"
+             data-center-center="margin-top: 0%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
+      </div>
     </div>
     <div class="row-fluid">
-        <div class="span5">
-            <img id="incentive" src="images/13/incentive.png" alt="" data-bottom-center="margin-top: -100%"
-                 data-center-center="margin-top: 10%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
+      <div class="span5">
+        <img id="incentive" src="images/13/incentive.png" alt="" data-bottom-center="margin-top: -100%"
+             data-center-center="margin-top: 10%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
+      </div>
+      <div class="span6">
+        <img id="conversation" src="images/13/start.png" alt="" data-bottom-center="margin-top: -100%"
+             data-center-center="margin-top: 15%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
+      </div>
+      <div class="span12">
+        <div class="mint-logo-small green">
         </div>
-        <div class="span6">
-            <img id="conversation" src="images/13/start.png" alt="" data-bottom-center="margin-top: -100%"
-                 data-center-center="margin-top: 15%" data-top-center="margin-top:100%" data-anchor-target="#our-goal"/>
-        </div>
-        <div class="span12">
-            <div class="mint-logo-small green">
-            </div>
-        </div>
+      </div>
     </div>
     <div class="downBtn green-button" data-slide="6">
     </div>
-</article>
-<article class="transition leaf-transition">
-</article>
-<article id="core-services" class="story">
-
+  </article>
+  <article class="transition leaf-transition">
+  </article>
+  <article id="core-services" class="story" style="background-image: url(images/03/background-green-glow.jpg)">
     <div class="row-fluid">
-        <div>
-            <div class="span12">
-                <img src="images/06/ourcoreservices.png" alt="" class='core-services'/>
-            </div>
-            <div class="span12 digital-campaigns-container">
-                <img src="images/06/digital-campaigns.png" alt="" class='digital-campaigns'
-                     data-bottom-center="margin-top: -100%"
-                     data-center-center="margin-top: 5%" data-top-center="margin-top:100%"
-                     data-anchor-target="#core-services"/>
-            </div>
+      <div>
+        <div class="span12">
+          <img src="images/06/ourcoreservices.png" alt="" class='core-services'/>
         </div>
+        <div class="span12 digital-campaigns-container">
+          <img src="images/06/digital-campaigns.png" alt="" class='digital-campaigns'
+               data-bottom-center="margin-top: -100%"
+               data-center-center="margin-top: 5%" data-top-center="margin-top:100%"
+               data-anchor-target="#core-services"/>
+        </div>
+      </div>
     </div>
 
     <div class="mint-logo-small white">
     </div>
     <div class="downBtn white-button" data-slide="7">
     </div>
-</article>
-<article class="transition leaf-transition">
-</article>
-<article id="core-services-roundup" class="story">
+  </article>
+  <article class="transition leaf-transition">
+  </article>
+  <article id="core-services-roundup" class="story" style="background-image: url(images/07/background-white.jpg);">
     <div class="row-fluid">
-
-        <div class="banner span12">
-            <img src="images/07/ourservices.png" alt="" class="teamTextPic service">
-            <img src="images/07/headerleaf-green.png" alt="" class="bannerLeaf">
+      <div class="banner span12">
+        <img src="images/07/ourservices.png" alt="" class="teamTextPic service">
+        <img src="images/07/headerleaf-green.png" alt="" class="bannerLeaf">
+      </div>
+      <div class="span12" style="margin-top: 10%;">
+        <div class="span4">
+          <img class="corporate-identity service popover-prompt" src="images/07/corporate-identity.png" alt=""
+               data-placement="right" data-trigger="hover" data-animation="true"
+               data-content="We have full copywriting and design services that will allow us to create slogans,
+                   logos, media kits, sales kits, brochures or the direct marketing materials needed to best engage
+                   your clients."
+              />
         </div>
-        <div class="span12" style="margin-top: 10%;">
-            <div class="span4">
-                <img class="corporate-identity service popover-prompt" src="images/07/corporate-identity.png" alt=""
-                     data-placement="right" data-trigger="hover" data-animation="true"
-                     data-content="We have full copywriting and design services that will allow us to create slogans,
-                     logos, media kits, sales kits, brochures or the direct marketing materials needed to best engage
-                     your clients."
-                 />
-            </div>
-            <div class="span4">
-                <img class="content-management service popover-prompt" src="images/07/content-mgmt.png" alt=""
-                     data-placement="bottom" data-trigger="hover" data-animation="true"
-                     data-content="Publishing sharable, relevant content will create brand loyalty no matter the product.
-                        We have the tools to maintain to regular communication to your target audience creating
-                        white papers, articles, webinars, podcasts, newsletters, case studies, microsites
-                        and more."
-                />
-            </div>
-            <div class="span4">
-                <img class="videography service popover-prompt" src="images/07/videography.png" alt=""
-                     data-placement="left" data-trigger="hover" data-animation="true"
-                     data-content="Our resident photographers and videographers provide experienced editing and sound
-                     enhancement services to tell your brand story on any digital platform."
-                />
-            </div>
-            <div class="span4">
-                <img src="images/07/advertising.png" alt="" class="advertising service popover-prompt"
-                     data-placement="right" data-trigger="hover" data-animation="true"
-                     data-content="Our professionals can consult with traditional media buys, assist with price
-                        negotiations and campaign strategy for television, radio and print buys."
-                />
-            </div>
-            <div class="span4">
-                <img src="images/07/pr.png" alt="" class="public-relations service popover-prompt"
-                     data-placement="top" data-trigger="hover" data-animation="true"
-                     data-content="We help you maintain a positive public image with nationwide media outlets, ensuring
-                        visibility of your brand, your accomplishments or key personnel by helping you create
-                        or enhance your communications plan."
-                />
-            </div>
-            <div class="span4">
-                <img src="images/07/exp-marketing.png" alt="" class="exp-marketing service popover-prompt"
-                     data-placement="top" data-trigger="hover" data-animation="true"
-                     data-content="We bring your brand to people by providing the ultimate brand experience for your
-                        target audience. We provide event staffing and management for tradeshows, corporate
-                        or community events, working with sponsors to meet client needs."
-                />
-            </div>
-            <div class="span4">
-                <img src="images/07/digital-web.png" alt="" class="digital-web service popover-prompt"
-                     data-placement="right" data-trigger="hover" data-animation="true" data-html="true"
-                     data-content="<div class='fullRow text'>
-                    Nowadays all advertising forms must transcend onto a digital platform. We help you
-                    wow your customers with interactive banner ads and mobile promotions, social media,
-                    and email campaigns that emotionally cultivate the human mind.
-                    </div>
-                    <div class='fullRow text'>
-                        Our software development team can create market surveys, capture consumer driven
-                        data and create database warehousing units. We can design websites, microsites,
-                        and create mobile applications.
-                    </div>"
-                />
-            </div>
-            <div class="span4">
-                <img src="images/07/seo.png" alt="" class="seo service popover-prompt"
-                     data-placement="top" data-trigger="hover" data-animation="true"
-                     data-content="We do more than help you get found on the web. We help you get chosen by combining
-                        user analytics and consumer behavior research to launch content in a way that will
-                        garner the maximum response."
-                />
-            </div>
-            <div class="span4">
-                <img src="images/07/market-research.png" alt="" class="market-research service popover-prompt"
-                     data-placement="right" data-trigger="hover" data-animation="true"
-                     data-content="We study consumer buying behavior and competitive brand analysis to effectively
-                        connect your products to consumers. We utilize third party partners to evaluate
-                        campaign success and return on investment."
-                />
-            </div>
-            <div class="span4">
-                <img src="images/07/social-media.png" alt="" class="social-media service popover-prompt"
-                     data-placement="left" data-trigger="hover" data-animation="true"
-                     data-content="The social media ecosystem relies on shareable and consistent content management
-                        and we work with you to create a social media approach and sustain measurable campaigns."
-                />
-            </div>
+        <div class="span4">
+          <img class="content-management service popover-prompt" src="images/07/content-mgmt.png" alt=""
+               data-placement="bottom" data-trigger="hover" data-animation="true"
+               data-content="Publishing sharable, relevant content will create brand loyalty no matter the product.
+                      We have the tools to maintain to regular communication to your target audience creating
+                      white papers, articles, webinars, podcasts, newsletters, case studies, microsites
+                      and more."
+              />
         </div>
+        <div class="span4">
+          <img class="videography service popover-prompt" src="images/07/videography.png" alt=""
+               data-placement="left" data-trigger="hover" data-animation="true"
+               data-content="Our resident photographers and videographers provide experienced editing and sound
+                   enhancement services to tell your brand story on any digital platform."
+              />
+        </div>
+        <div class="span4">
+          <img src="images/07/advertising.png" alt="" class="advertising service popover-prompt"
+               data-placement="right" data-trigger="hover" data-animation="true"
+               data-content="Our professionals can consult with traditional media buys, assist with price
+                      negotiations and campaign strategy for television, radio and print buys."
+              />
+        </div>
+        <div class="span4">
+          <img src="images/07/pr.png" alt="" class="public-relations service popover-prompt"
+               data-placement="top" data-trigger="hover" data-animation="true"
+               data-content="We help you maintain a positive public image with nationwide media outlets, ensuring
+                      visibility of your brand, your accomplishments or key personnel by helping you create
+                      or enhance your communications plan."
+              />
+        </div>
+        <div class="span4">
+          <img src="images/07/exp-marketing.png" alt="" class="exp-marketing service popover-prompt"
+               data-placement="top" data-trigger="hover" data-animation="true"
+               data-content="We bring your brand to people by providing the ultimate brand experience for your
+                      target audience. We provide event staffing and management for tradeshows, corporate
+                      or community events, working with sponsors to meet client needs."
+              />
+        </div>
+        <div class="span4">
+          <img src="images/07/digital-web.png" alt="" class="digital-web service popover-prompt"
+               data-placement="right" data-trigger="hover" data-animation="true" data-html="true"
+               data-content="<div class='fullRow text'>
+                  Nowadays all advertising forms must transcend onto a digital platform. We help you
+                  wow your customers with interactive banner ads and mobile promotions, social media,
+                  and email campaigns that emotionally cultivate the human mind.
+                  </div>
+                  <div class='fullRow text'>
+                      Our software development team can create market surveys, capture consumer driven
+                      data and create database warehousing units. We can design websites, microsites,
+                      and create mobile applications.
+                  </div>"
+              />
+        </div>
+        <div class="span4">
+          <img src="images/07/seo.png" alt="" class="seo service popover-prompt"
+               data-placement="top" data-trigger="hover" data-animation="true"
+               data-content="We do more than help you get found on the web. We help you get chosen by combining
+                      user analytics and consumer behavior research to launch content in a way that will
+                      garner the maximum response."
+              />
+        </div>
+        <div class="span4">
+          <img src="images/07/market-research.png" alt="" class="market-research service popover-prompt"
+               data-placement="right" data-trigger="hover" data-animation="true"
+               data-content="We study consumer buying behavior and competitive brand analysis to effectively
+                      connect your products to consumers. We utilize third party partners to evaluate
+                      campaign success and return on investment."
+              />
+        </div>
+        <div class="span4">
+          <img src="images/07/social-media.png" alt="" class="social-media service popover-prompt"
+               data-placement="left" data-trigger="hover" data-animation="true"
+               data-content="The social media ecosystem relies on shareable and consistent content management
+                      and we work with you to create a social media approach and sustain measurable campaigns."
+              />
+        </div>
+      </div>
     </div>
     <div class="mint-logo-small green">
     </div>
     <div class="downBtn green-button" data-slide="8">
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="generations-gap" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="generations-gap" class="story">
     <img src="images/09/preferred.png" alt="" id="preferred-text"/>
+
     <div class="row-fluid">
-        <div class="span2 gap-arrow">
-            <img src="images/09/vertical-bar.png" alt="" />
+      <div class="span2 gap-arrow">
+        <img src="images/09/vertical-bar.png" alt=""/>
+      </div>
+      <div class="span10">
+        <div class="row gap-columns">
+          <div class="span3 gap-column">
+            <img src="images/09/titleboomer.png" alt="" class="gap-title boomer-title"/>
+            <img src="images/09/boxboomer.png" alt=""/>
+          </div>
+          <div class="span3 gap-column">
+            <img src="images/09/title34.png" alt="" class="gap-title"/>
+            <img src="images/09/box34.png" alt="" class="genX"/>
+          </div>
+          <div class="span3 gap-column">
+            <img src="images/09/title20.png" alt="" class="gap-title"/>
+            <img src="images/09/box20.png" alt="" class="genY"/>
+          </div>
+          <div class="span3 gap-column">
+            <img src="images/09/title0.png" alt="" class="gap-title"/>
+            <img src="images/09/box0.png" alt="" class="genZ"/>
+          </div>
         </div>
-        <div class="span10">
-            <div class="row gap-columns">
-                <div class="span3 gap-column">
-                    <img src="images/09/titleboomer.png" alt="" class="gap-title boomer-title"/>
-                    <img src="images/09/boxboomer.png" alt=""/>
-                </div>
-                <div class="span3 gap-column">
-                    <img src="images/09/title34.png" alt="" class="gap-title"/>
-                    <img src="images/09/box34.png" alt="" class="genX"/>
-                </div>
-                <div class="span3 gap-column">
-                    <img src="images/09/title20.png" alt="" class="gap-title"/>
-                    <img src="images/09/box20.png" alt="" class="genY"/>
-                </div>
-                <div class="span3 gap-column">
-                    <img src="images/09/title0.png" alt="" class="gap-title"/>
-                    <img src="images/09/box0.png" alt="" class="genZ"/>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="mint-logo-small green">
     </div>
     <div class="downBtn green-button" data-slide="9">
     </div>
-</article>
-<article class="transition leaf-transition">
-</article>
-<article id="target-segment" class="story">
+  </article>
+  <article class="transition leaf-transition">
+  </article>
+  <article id="target-segment" class="story" style="background-image: url(images/14/00background-cloudpage.jpg)">
 
     <div class="row-fluid">
-        <div class="span12" style="margin-top:5%;">
-            <img id="our-target-text" src="images/14/01our-target-segment.png" alt=""/>
-            <img id="millenials-text" src="images/14/01millenials.png" alt=""/>
-        </div>
+      <div class="span12" style="margin-top:5%;">
+        <img id="our-target-text" src="images/14/01our-target-segment.png" alt=""/>
+        <img id="millenials-text" src="images/14/01millenials.png" alt=""/>
+      </div>
     </div>
     <div class="row-fluid">
-        <div class="span3">
-            <img src="images/14/13million.png" alt="" id="boomers" data-bottom-center="top: -100%"
-                 data-center-center="top: 10%"/>
+      <div class="span3">
+        <img src="images/14/13million.png" alt="" id="boomers" data-bottom-center="top: -100%"
+             data-center-center="top: 10%"/>
+      </div>
+      <div class="span3">
+        <img src="images/14/16billion.png" alt="" id="purchasing-power"/>
+      </div>
+      <div class="span3">
+        <img src="images/14/02digital.png" alt="" id="digital-ads" data-bottom-center="right:-50%"
+             data-center-center="right: 5%"/>
+      </div>
+      <div class="span3"></div>
+      <div class="span4">
+        <img src="images/14/07stimulation.png" alt="" id="stimulation" data-bottom-center="left:0%"
+             data-center-center="left: 15%"/>
+      </div>
+      <div class="span4">
+        <img src="images/14/04harder.png" alt="" id="persuade" data-anchor-target="#our-target-text"
+             data-bottom-center="top: -100%" data-center-center="top: 0%"/></div>
+      <div class="span3">
+        <img src="images/14/08engagement.png" alt="" id="engagement" data-bottom-center="top: -100%"
+             data-center-center="top: 80%" data-top-center="top:100%"
+             data-anchor-target="#target-segment"/>
+      </div>
+      <div class="span3">
+        <img src="images/14/10highsense.png" alt="" id="high-loyalty" data-center-center="bottom:0%"
+             data--100-top="bottom: 20%" data-anchor-target="#our-target-text"/>
+      </div>
+      <div class="span12">
+        <div class="mint-logo-small green">
         </div>
-        <div class="span3">
-            <img src="images/14/16billion.png" alt="" id="purchasing-power"/>
-        </div>
-        <div class="span3">
-            <img src="images/14/02digital.png" alt="" id="digital-ads" data-bottom-center="right:-50%"
-                 data-center-center="right: 5%"/>
-        </div>
-        <div class="span3"></div>
-        <div class="span4">
-            <img src="images/14/07stimulation.png" alt="" id="stimulation" data-bottom-center="left:0%"
-                 data-center-center="left: 15%"/>
-        </div>
-        <div class="span4">
-            <img src="images/14/04harder.png" alt="" id="persuade" data-anchor-target="#our-target-text"
-                 data-bottom-center="top: -100%" data-center-center="top: 0%"/></div>
-        <div class="span3">
-            <img src="images/14/08engagement.png" alt="" id="engagement" data-bottom-center="top: -100%"
-                 data-center-center="top: 80%" data-top-center="top:100%"
-                 data-anchor-target="#target-segment"/>
-        </div>
-        <div class="span3">
-            <img src="images/14/10highsense.png" alt="" id="high-loyalty" data-center-center="bottom:0%"
-                 data--100-top="bottom: 20%" data-anchor-target="#our-target-text"/>
-        </div>
-        <div class="span12">
-            <div class="mint-logo-small green">
-            </div>
-        </div>
+      </div>
     </div>
 
     <div class="cloud" id="cloud1"></div>
@@ -486,404 +486,456 @@
 
     <div class="downBtn green-button" data-slide="10">
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="clients" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="clients" class="story">
     <img src="images/10/clients.png" alt="" id="client-text"/>
 
     <div class="mint-logo-small green">
     </div>
     <div class="downBtn green-button" data-slide="11">
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="portfolio" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="portfolio" class="story" style="background-image: url(images/01/background-green.jpg)">
     <div id="portfolio-container" class="container-fluid">
-        <div class="row-fluid"  data-bottom-center="margin-left: 50%"
-             data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
-             data-anchor-target="#portfolio">
-            <div class="span4">
-                <a data-index="1" class="portfolio-prompt" href="#portfolio-philanthropy">
-                    <img src="images/11/philanthropy.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a data-index="2" class="portfolio-prompt" href="#portfolio-contemporary">
-                    <img src="images/11/contemporary.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a data-index="3" class="portfolio-prompt" href="#portfolio-cube">
-                    <img src="images/11/cubemation.png" alt=""/>
-                </a>
-            </div>
+      <div class="row-fluid" data-bottom-center="margin-left: 50%"
+           data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
+           data-anchor-target="#portfolio">
+        <div class="span4">
+          <a data-index="1" class="portfolio-prompt" href="#portfolio-philanthropy">
+            <img src="images/11/philanthropy.png" alt=""/>
+          </a>
         </div>
-        <div class="row-fluid" data-bottom-center="margin-left: 50%"
-             data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
-             data-anchor-target="#portfolio">
-            <div class="span12">
-                <img src="images/11/our-portfolio.png" alt="" id="portfolio-text"/>
-            </div>
+        <div class="span4">
+          <a data-index="2" class="portfolio-prompt" href="#portfolio-fulton">
+            <img src="images/11/fulton.png" alt=""/>
+          </a>
         </div>
-        <div class="row-fluid" data-bottom-center="margin-left: -50%"
-             data-center-center="margin-left: 0%" data-top-center="margin-left: 50%"
-             data-anchor-target="#portfolio">
-            <div class="span4">
-                <a data-index="4" class="portfolio-prompt" href="#portfolio-savisa">
-                    <img src="images/11/savisa.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a data-index="5" class="portfolio-prompt" href="#portfolio-peterson">
-                    <img src="images/11/peterson.png" alt=""/>
-                </a>
-            </div>
-            <div class="span4">
-                <a data-index="6" class="portfolio-prompt" href="#portfolio-mcdonalds">
-                    <img src="images/11/mcdonalds.png" alt=""/>
-                </a>
-            </div>
+        <div class="span4">
+          <a data-index="3" class="portfolio-prompt" href="#portfolio-gateway">
+            <img src="images/11/gateway.png" alt=""/>
+          </a>
         </div>
+      </div>
+      <div class="row-fluid" data-bottom-center="margin-left: 50%"
+           data-center-center="margin-left: 0%" data-top-center="margin-left: -50%"
+           data-anchor-target="#portfolio">
+        <div class="span12">
+          <img src="images/11/our-portfolio.png" alt="" id="portfolio-text"/>
+        </div>
+      </div>
+      <div class="row-fluid" data-bottom-center="margin-left: -50%"
+           data-center-center="margin-left: 0%" data-top-center="margin-left: 50%"
+           data-anchor-target="#portfolio">
+        <div class="span4">
+          <a data-index="4" class="portfolio-prompt" href="#portfolio-savisa">
+            <img src="images/11/savisa.png" alt=""/>
+          </a>
+        </div>
+        <div class="span4">
+          <a data-index="5" class="portfolio-prompt" href="#portfolio-peterson">
+            <img src="images/11/peterson.png" alt=""/>
+          </a>
+        </div>
+        <div class="span4">
+          <a data-index="6" class="portfolio-prompt" href="#portfolio-mcdonalds">
+            <img src="images/11/mcdonalds.png" alt=""/>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="mint-logo-small white">
     </div>
     <div class="downBtn white-button" data-slide="12">
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="video" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="video" class="story" style="background-image: url(images/01/background-green.jpg)">
     <img src="images/12/watch.png" alt="" id="watch"/>
 
     <div id="play-video-container">
-        <a class="play-video" href="#video-reel">
-            <img src="images/12/play.png" alt="" id="play"/>
-        </a>
+      <a class="play-video" href="#video-reel">
+        <img src="images/12/play.png" alt="" id="play"/>
+      </a>
     </div>
     <div class="mint-logo-small white">
     </div>
     <div class="downBtn white-button" data-slide="13">
     </div>
-</article>
-<article class="transition leaf-transition">
-</article>
-<article id="our-process" class="story">
+  </article>
+  <article class="transition leaf-transition">
+  </article>
+  <article id="our-process" class="story" style="background-image: url(images/01/background-green.jpg)">
     <img id="our-process-text" src="images/08/our-process.png" alt="" data-bottom-center="opacity:0"
          data-center-center="opacity:1"/>
 
     <div class="row-fluid" style="margin-top: 5%;">
-        <div data-index="1" class="span3 process-column">
-            <img id="client-needs" src="images/08/clientneeds.png" alt=""/>
+      <div data-index="1" class="span3 process-column">
+        <img id="client-needs" src="images/08/clientneeds.png" alt=""/>
 
-            <div class="our-process-div">
-                Discover, evaluate and define marketing objectives and client needs
-            </div>
+        <div class="our-process-div">
+          Discover, evaluate and define marketing objectives and client needs
         </div>
-        <div data-index="2" class="span3 process-column">
-            <img id="design" src="images/08/design.png" alt=""/>
+      </div>
+      <div data-index="2" class="span3 process-column">
+        <img id="design" src="images/08/design.png" alt=""/>
 
-            <div class="our-process-div">
-                Create campaign vision, design graphics and outline blueprint strategy
-            </div>
+        <div class="our-process-div">
+          Create campaign vision, design graphics and outline blueprint strategy
         </div>
-        <div data-index="3" class="span3 process-column">
-            <img id="creative" src="images/08/creative.png" alt=""/>
+      </div>
+      <div data-index="3" class="span3 process-column">
+        <img id="creative" src="images/08/creative.png" alt=""/>
 
-            <div class="our-process-div">
-                Assemble our design team, copywriters and coordinators to create campaign materials
-            </div>
-            <div class="our-process-div">
-                Submit drafts for client approval and review
-            </div>
+        <div class="our-process-div">
+          Assemble our design team, copywriters and coordinators to create campaign materials
         </div>
-        <div data-index="4" class="span3 process-column">
-            <img id="execution" src="images/08/execution.png" alt=""/>
+        <div class="our-process-div">
+          Submit drafts for client approval and review
+        </div>
+      </div>
+      <div data-index="4" class="span3 process-column">
+        <img id="execution" src="images/08/execution.png" alt=""/>
 
-            <div class="our-process-div">
-                Campaign Launch
-            </div>
-            <div class="our-process-div">
-                <strong>Affinity</strong><br/>
-                Spark Emotion
-            </div>
-            <div class="our-process-div">
-                <strong>Knowledge</strong><br/>
-                Learn new information
-            </div>
-            <div class="our-process-div">
-                <strong>Incentive</strong><br/>
-                Make a purchase
-            </div>
-            <div class="our-process-div">
-                <strong>Social</strong><br/>
-                Start brand conversations
-            </div>
-            <div class="our-process-div">
-                Measure and review overall campaign effectiveness
-            </div>
+        <div class="our-process-div">
+          Campaign Launch
         </div>
+        <div class="our-process-div">
+          <strong>Affinity</strong><br/>
+          Spark Emotion
+        </div>
+        <div class="our-process-div">
+          <strong>Knowledge</strong><br/>
+          Learn new information
+        </div>
+        <div class="our-process-div">
+          <strong>Incentive</strong><br/>
+          Make a purchase
+        </div>
+        <div class="our-process-div">
+          <strong>Social</strong><br/>
+          Start brand conversations
+        </div>
+        <div class="our-process-div">
+          Measure and review overall campaign effectiveness
+        </div>
+      </div>
     </div>
     <div class="row-fluid">
-        <div class="downBtn white-button" data-slide="14">
-        </div>
+      <div class="downBtn white-button" data-slide="14">
+      </div>
     </div>
-</article>
-<article class="transition compass-transition">
-</article>
-<article id="thank-you" class="story">
+  </article>
+  <article class="transition compass-transition">
+  </article>
+  <article id="thank-you" class="story" style="background-image: url(images/18/background-last.jpg)">
     <div class="row-fluid">
-        <div class="span12">
-            <img id="thank-you-text" alt="" src="images/18/thankyou.png" data-bottom-center="margin-top: -100%"
-                 data-center-center="margin-top: 15%" data-anchor-target="#thank-you"/>
+      <div class="span12">
+        <img id="thank-you-text" alt="" src="images/18/thankyou.png" data-bottom-center="margin-top: -100%"
+             data-center-center="margin-top: 15%" data-anchor-target="#thank-you"/>
+      </div>
+      <div class="span12">
+        <div id="scrollToTop" class="up-button">
         </div>
-        <div class="span12">
-            <div id="scrollToTop" class="up-button">
-            </div>
-        </div>
+      </div>
     </div>
     <div class="mint-logo-small green">
     </div>
-</article>
-<div id="teamMemberPlaceholder" style="display: none">
-</div>
-<div id="video-reel" style="display: none">
+  </article>
+  <div id="teamMemberPlaceholder" style="display: none">
+  </div>
+  <div id="video-reel" style="display: none">
     <iframe src="http://player.vimeo.com/video/57910693" width="100%" height="400" frameborder="0"
             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-<div id="portfolio-philanthropy" style="display:none">
+  </div>
+  <div id="portfolio-philanthropy" style="display:none">
     <div class="portfolio-philanthropy-slider">
-        <div class="portfolio-philanthropy-slider-viewport">
-            <div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="span12 client-name">
-                            PHILANTHROPY
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/philanthropy/pil-01.png" alt=""/>
-                        </div>
-                        <div class="portfolio-philanthropy-slider-next span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            PHILANTHROPY
-                        </div>
-                        <div class="portfolio-philanthropy-slider-prev span1">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/philanthropy/pil-02.png" alt=""/>
-                        </div>
-                    </div>
-                </div>
+      <div class="portfolio-philanthropy-slider-viewport">
+        <div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="span12 client-name">
+                PHILANTHROPY
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/philanthropy/pil-01.png" alt=""/>
+              </div>
+              <div class="portfolio-philanthropy-slider-next span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
             </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                PHILANTHROPY
+              </div>
+              <div class="portfolio-philanthropy-slider-prev span1">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/philanthropy/pil-02.png" alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="portfolio-mcdonalds" style="display:none">
+  </div>
+  <div id="portfolio-mcdonalds" style="display:none">
     <div class="portfolio-mcdonalds-slider">
-        <div class="portfolio-mcdonalds-slider-viewport">
-            <div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="span12 client-name">
-                            McDONALD'S
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-01.png" alt=""/>
-                        </div>
-                        <div class="portfolio-mcdonalds-slider-next portfolio-slider-btn span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            McDONALD'S
-                        </div>
-                        <div class="portfolio-mcdonalds-slider-prev span1 portfolio-slider-btn">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span7">
-                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-02.png" alt=""/>
-                        </div>
-                        <div class="portfolio-mcdonalds-slider-next portfolio-slider-btn span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            McDONALD'S
-                        </div>
-                        <div class="portfolio-mcdonalds-slider-prev span1 portfolio-slider-btn">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-03.png" alt=""/>
-                        </div>
-                    </div>
-                </div>
+      <div class="portfolio-mcdonalds-slider-viewport">
+        <div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="span12 client-name">
+                McDONALD'S
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-01.png" alt=""/>
+              </div>
+              <div class="portfolio-mcdonalds-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
             </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                McDONALD'S
+              </div>
+              <div class="portfolio-mcdonalds-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span7">
+                <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-02.png" alt=""/>
+              </div>
+              <div class="portfolio-mcdonalds-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                McDONALD'S
+              </div>
+              <div class="portfolio-mcdonalds-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/mcdonalds/mcd-03.png" alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="portfolio-cube" class="center portfolio-lone" style="display:none">
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span12 client-name">
-                CUBEMATION
+  </div>
+  <div id="portfolio-gateway" style="display:none">
+    <div class="portfolio-gateway-slider">
+      <div class="portfolio-gateway-slider-viewport">
+        <div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="span12 client-name">
+                SUPPLIER GATEWAY
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/gateway/cube.png" alt=""/>
+              </div>
+              <div class="portfolio-gateway-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
             </div>
-        </div>
-        <div class="row-fluid">
-            <div class="span12">
-                <img class="mac" src="images/portfolio-imac-images/cubemation/cube.png" alt="">
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                SUPPLIER GATEWAY
+              </div>
+              <div class="portfolio-gateway-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span7">
+                <img class="mac" src="images/portfolio-imac-images/gateway/cube02.png" alt=""/>
+              </div>
+              <div class="portfolio-gateway-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
             </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                SUPPLIER GATEWAY
+              </div>
+              <div class="portfolio-gateway-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/gateway/cube03.png" alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="portfolio-contemporary" style="display:none">
-    <div class="portfolio-contemporary-slider">
-        <div class="portfolio-contemporary-slider-viewport">
-            <div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="span12 client-name">
-                            CONTEMPORARY
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/contemporary/cc-01.png" alt=""/>
-                        </div>
-                        <div class="portfolio-contemporary-slider-next portfolio-slider-btn span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            CONTEMPORARY
-                        </div>
-                        <div class="portfolio-contemporary-slider-prev span1 portfolio-slider-btn">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/contemporary/cc-02.png" alt=""/>
-                        </div>
-                    </div>
-                </div>
+  </div>
+  <div id="portfolio-fulton" style="display:none">
+    <div class="portfolio-fulton-slider">
+      <div class="portfolio-fulton-slider-viewport">
+        <div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="span12 client-name">
+                FULTON COUNTY
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/fulton/cc-01.png" alt=""/>
+              </div>
+              <div class="portfolio-fulton-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
             </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                FULTON COUNTY
+              </div>
+              <div class="portfolio-fulton-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span7">
+                <img class="mac" src="images/portfolio-imac-images/fulton/cc-02.png" alt=""/>
+              </div>
+              <div class="portfolio-fulton-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                FULTON COUNTY
+              </div>
+              <div class="portfolio-fulton-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/fulton/cc-03.png" alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="portfolio-savisa" style="display:none">
+  </div>
+  <div id="portfolio-savisa" style="display:none">
     <div class="portfolio-savisa-slider">
-        <div class="portfolio-savisa-slider-viewport">
-            <div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="span12 client-name">
-                            SAVISA
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/savisa/savisa-01.png" alt=""/>
-                        </div>
-                        <div class="portfolio-savisa-slider-next portfolio-slider-btn span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            SAVISA
-                        </div>
-                        <div class="portfolio-savisa-slider-prev span1 portfolio-slider-btn">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span7">
-                            <img class="mac" src="images/portfolio-imac-images/savisa/savisa-02.png" alt=""/>
-                        </div>
-                        <div class="portfolio-savisa-slider-next portfolio-slider-btn span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            SAVISA
-                        </div>
-                        <div class="portfolio-savisa-slider-prev span1 portfolio-slider-btn">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/savisa/savisa-03.png" alt=""/>
-                        </div>
-                    </div>
-                </div>
+      <div class="portfolio-savisa-slider-viewport">
+        <div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="span12 client-name">
+                SAVISA
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/savisa/savisa-01.png" alt=""/>
+              </div>
+              <div class="portfolio-savisa-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
             </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                SAVISA
+              </div>
+              <div class="portfolio-savisa-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span7">
+                <img class="mac" src="images/portfolio-imac-images/savisa/savisa-02.png" alt=""/>
+              </div>
+              <div class="portfolio-savisa-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                SAVISA
+              </div>
+              <div class="portfolio-savisa-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/savisa/savisa-03.png" alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="portfolio-peterson" style="display:none">
+  </div>
+  <div id="portfolio-peterson" style="display:none">
     <div class="portfolio-peterson-slider">
-        <div class="portfolio-peterson-slider-viewport">
-            <div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="span12 client-name">
-                            PETERSON & CALUNAS, PLLC
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-01.png" alt=""/>
-                        </div>
-                        <div class="portfolio-peterson-slider-next portfolio-slider-btn span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            PETERSON & CALUNAS, PLLC
-                        </div>
-                        <div class="portfolio-peterson-slider-prev span1 portfolio-slider-btn">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span7">
-                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-02.png" alt=""/>
-                        </div>
-                        <div class="portfolio-peterson-slider-next portfolio-slider-btn span1">
-                            <img src="images/11A/right-arrow.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="touchslider-item story portfolio-slide">
-                    <div class="inner row-fluid">
-                        <div class="client-name">
-                            PETERSON & CALUNAS, PLLC
-                        </div>
-                        <div class="portfolio-peterson-slider-prev span1 portfolio-slider-btn">
-                            <img src="images/11A/left-arrow.png"/>
-                        </div>
-                        <div class="span8">
-                            <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-03.png" alt=""/>
-                        </div>
-                    </div>
-                </div>
+      <div class="portfolio-peterson-slider-viewport">
+        <div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="span12 client-name">
+                PETERSON & CALUNAS, PLLC
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-01.png" alt=""/>
+              </div>
+              <div class="portfolio-peterson-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
             </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                PETERSON & CALUNAS, PLLC
+              </div>
+              <div class="portfolio-peterson-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span7">
+                <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-02.png" alt=""/>
+              </div>
+              <div class="portfolio-peterson-slider-next portfolio-slider-btn span1">
+                <img src="images/11A/right-arrow.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="touchslider-item story portfolio-slide">
+            <div class="inner row-fluid">
+              <div class="client-name">
+                PETERSON & CALUNAS, PLLC
+              </div>
+              <div class="portfolio-peterson-slider-prev span1 portfolio-slider-btn">
+                <img src="images/11A/left-arrow.png"/>
+              </div>
+              <div class="span8">
+                <img class="mac" src="images/portfolio-imac-images/petersoncalunas/pc-03.png" alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 </div>
 <input type="hidden" id="teamJson" name="teamJson"/>
 <script src='js/libs/jquery-ui-1.10.2.custom.min.js'></script>
