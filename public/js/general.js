@@ -4,7 +4,6 @@ mint.screens = [
     "home",
     "who-we-are",
     "leadership",
-    "team",
     "mission",
     "our-goal",
     "core-services",
@@ -36,8 +35,6 @@ $(document).ready(function () {
             }
         }
     });
-
-    $("#teamJson").val(JSON.stringify(people));
 });
 
 function set_slide_heights() {
