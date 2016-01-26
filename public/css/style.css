@@ -179,20 +179,6 @@ li{margin-top: 3px;}
     margin-left: 200px;
     background-color: lime;
 }​
-/*.ui-tooltip, .arrow:after {*/
-     /*background: black;*/
-     /*border: 2px solid white;*/
- /*}*/
-/*.ui-tooltip {*/
-    /*padding: 10px 20px;*/
-    /*color: white;*/
-    /*border-radius: 20px;*/
-    /*font: bold 14px "Helvetica Neue", Sans-Serif;*/
-    /*text-transform: uppercase;*/
-    /*box-shadow: 0 0 7px black;*/
-    /*width: 135px;*/
-    /*max-width: 135px;*/
-/*}*/
 #logo-container{
     text-align: center;
     overflow: hidden;
@@ -612,15 +598,10 @@ li{margin-top: 3px;}
     height: 30px;
 }
 #portfolio{
-    /*background: url(../images/11/background-green.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     background-position: center;
     background-size: cover;
-}
-.portfolio-lone{
-    /* todo */
-    /*background: url(../images/10/background-white.jpg) 50% 0 no-repeat fixed;*/
 }
 #portfolio-container{
     margin-top: 5%;
@@ -682,7 +663,6 @@ li{margin-top: 3px;}
     width: 2000px;
 }
 #video{
-    /*background: url(../images/12/background-green.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -712,7 +692,6 @@ li{margin-top: 3px;}
     top: 30%;
 }
 #our-goal{
-    /*background: url(../images/13/background-white.jpg) 50% 0 no-repeat fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -743,7 +722,6 @@ li{margin-top: 3px;}
     top: 10%;
 }
 #target-segment{
-    /*background: url(../images/14/00background-cloudpage.jpg) 50% 0 no-repeat fixed;*/
     -ms-behavior: url(backgroundsize.min.htc);
     behavior: url(backgroundsize.min.htc);
     background-size: cover;

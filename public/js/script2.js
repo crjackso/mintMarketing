@@ -439,10 +439,10 @@ $(document).ready(function () {
         'afterShow': function () { scrollLocked = true; }
     });
 
-    $('.portfolio-philanthropy-slider').touchSlider({
+    $('.portfolio-gm-slider').touchSlider({
         duration: 350,
         mouseTouch: true,
-        namespace: 'portfolio-philanthropy-slider',
+        namespace: 'portfolio-gm-slider',
         margin: 0
     });
 
@@ -453,10 +453,10 @@ $(document).ready(function () {
         margin: 0
     });
 
-    $('.portfolio-savisa-slider').touchSlider({
+    $('.portfolio-onyx-slider').touchSlider({
         duration: 350,
         mouseTouch: true,
-        namespace: 'portfolio-savisa-slider',
+        namespace: 'portfolio-onyx-slider',
         margin: 0
     });
 
@@ -534,7 +534,7 @@ function scrollPrev() {
 }
 function performScroll() {
     scrollReady = false;
-    var screen = screens[currentScreen];    
+    var screen = screens[currentScreen];
     var newYPos = Math.ceil($('#'+screen).offset().top);
     $("html, body").animate(
         {scrollTop: newYPos },
@@ -614,4 +614,3 @@ function setupKeyScrollHandler() {
         }
     })
 }
-
